@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Werewolf Encyclopedia</h1>
+    <div style={{ color: "white", background: "black", height: "100vh" }}>
+      <h1>IT WORKS</h1>
     </div>
   );
 }
