@@ -18,12 +18,17 @@ export default async function WerewolfGuidePage({
   params,
 }: WerewolfGuidePageProps) {
   const { slug } = await params;
-  const guide = await getGuideBySlug(slug);
+  const guide = getGuideBySlug(slug);
 
   return (
     <main>
       <h1>{guide.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+      {guide.sections.map((section) => (
+        <section key={section.title}>
+          <h2>{section.title}</h2>
+          <p>{section.content}</p>
+        </section>
+      ))}
     </main>
   );
 }

@@ -1,15 +1,18 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
 
 const guidesDirectory = path.join(process.cwd(), "content", "guides");
+
+export type GuideSection = {
+  title: string;
+  content: string;
+};
 
 export type Guide = {
   slug: string;
   title: string;
-  contentHtml: string;
+  sections: GuideSection[];
 };
 
 export function getGuideSlugs() {
@@ -19,15 +22,28 @@ export function getGuideSlugs() {
     .map((fileName) => fileName.replace(/\.md$/, ""));
 }
 
-export async function getGuideBySlug(slug: string): Promise<Guide> {
+function getSections(value: unknown): GuideSection[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value.filter(
+    (section): section is GuideSection =>
+      typeof section === "object" &&
+      section !== null &&
+      typeof section.title === "string" &&
+      typeof section.content === "string",
+  );
+}
+
+export function getGuideBySlug(slug: string): Guide {
   const fullPath = path.join(guidesDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { content, data } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
+  const { data } = matter(fileContents);
 
   return {
     slug,
     title: typeof data.title === "string" ? data.title : slug,
-    contentHtml: processedContent.toString(),
+    sections: getSections(data.sections),
   };
 }
