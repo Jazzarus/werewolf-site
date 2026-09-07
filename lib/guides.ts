@@ -19,8 +19,18 @@ export type GuideSection = {
 export type Guide = {
   slug: string;
   title: string;
+  image: string;
+  class: string;
+  tier: string;
   sections: GuideSection[];
 };
+
+export type GuideGroup = {
+  name: string;
+  guides: Guide[];
+};
+
+type GuideGroupKey = "class" | "tier";
 
 export function getGuideSlugs() {
   return fs
@@ -65,6 +75,41 @@ export async function getGuideBySlug(slug: string): Promise<Guide> {
   return {
     slug,
     title: typeof data.title === "string" ? data.title : slug,
+    image:
+      typeof data.image === "string"
+        ? data.image
+        : `/images/ascendancies/${slug}.png`,
+    class: typeof data.class === "string" ? data.class : "",
+    tier: typeof data.tier === "string" ? data.tier : "",
     sections,
   };
+}
+
+export async function getAllGuides(): Promise<Guide[]> {
+  const guides = await Promise.all(
+    getGuideSlugs().map((slug) => getGuideBySlug(slug)),
+  );
+
+  return sortGuidesByTitle(guides);
+}
+
+export function sortGuidesByTitle(guides: Guide[]): Guide[] {
+  return [...guides].sort((firstGuide, secondGuide) =>
+    firstGuide.title.localeCompare(secondGuide.title),
+  );
+}
+
+export function groupGuidesByMetadata(
+  guides: Guide[],
+  key: GuideGroupKey,
+  order: string[],
+): GuideGroup[] {
+  return order
+    .map((name) => ({
+      name,
+      guides: sortGuidesByTitle(
+        guides.filter((guide) => guide[key] === name),
+      ),
+    }))
+    .filter((group) => group.guides.length > 0);
 }

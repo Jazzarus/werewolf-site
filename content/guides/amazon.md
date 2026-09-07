@@ -1,13 +1,15 @@
 ---
-title: "Test Werewolf Guide"
+title: Amazon
+class: Huntress
+tier: B
 sections:
-  - title: "Intro"
+  - title: Intro
     content: |
       This is a **test guide**.
 
       * Bullet 1
       * Bullet 2
-  - title: "Media"
+  - title: Media
     content: |
       ![Test Image](/images/test.png)
 
