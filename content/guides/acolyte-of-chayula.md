@@ -1,6 +1,5 @@
 ---
 title: Acolyte of Chayula
-slug: acolyte-of-chayula
 image: /images/ascendancies/acolyte-of-chayula.png
 class: Monk
 tier: B

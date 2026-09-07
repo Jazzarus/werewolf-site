@@ -1,6 +1,5 @@
 ---
 title: Disciple of Varashta
-slug: disciple-of-varashta
 image: /images/ascendancies/disciple-of-varashta.png
 class: Sorceress
 tier: B

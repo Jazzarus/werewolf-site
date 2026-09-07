@@ -1,6 +1,5 @@
 ---
 title: Invoker
-slug: invoker
 image: /images/ascendancies/invoker.png
 class: Monk
 tier: B

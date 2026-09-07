@@ -1,6 +1,5 @@
 ---
 title: Smith of Kitava
-slug: smith-of-kitava
 image: /images/ascendancies/smith-of-kitava.png
 class: Warrior
 tier: B

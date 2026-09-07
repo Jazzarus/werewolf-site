@@ -1,6 +1,5 @@
 ---
 title: Warbringer
-slug: warbringer
 image: /images/ascendancies/warbringer.png
 class: Warrior
 tier: B

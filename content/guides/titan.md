@@ -1,6 +1,5 @@
 ---
 title: Titan
-slug: titan
 image: /images/ascendancies/titan.png
 class: Warrior
 tier: B

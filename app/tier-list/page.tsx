@@ -1,8 +1,10 @@
-import { getAllGuides, groupGuidesByMetadata } from "@/lib/guides";
+import {
+  getAllGuides,
+  groupGuidesByMetadata,
+  GUIDE_TIER_ORDER,
+} from "@/lib/guides";
 import { GuideCard } from "@/app/werewolf/GuideCard";
 import styles from "@/app/werewolf/werewolf.module.css";
-
-const tierOrder = ["S", "A", "B", "C", "D", "F"];
 
 export default function TierList() {
   return (
@@ -25,7 +27,11 @@ export default function TierList() {
 
 async function TierSections() {
   const guides = await getAllGuides();
-  const guideGroups = groupGuidesByMetadata(guides, "tier", tierOrder);
+  const guideGroups = groupGuidesByMetadata(
+    guides,
+    "tier",
+    GUIDE_TIER_ORDER,
+  );
 
   return guideGroups.map((group) => (
     <section key={group.name} aria-labelledby={`${group.name}-tier`}>

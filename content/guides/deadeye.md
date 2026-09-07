@@ -1,6 +1,5 @@
 ---
 title: Deadeye
-slug: deadeye
 image: /images/ascendancies/deadeye.png
 class: Ranger
 tier: B

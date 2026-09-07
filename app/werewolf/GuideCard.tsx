@@ -12,7 +12,6 @@ export function GuideCard({ guide }: GuideCardProps) {
     <Link
       className={styles.guideCard}
       href={`/werewolf/${guide.slug}`}
-      key={guide.slug}
     >
       <div className={styles.imageContainer}>
         <Image
@@ -23,7 +22,7 @@ export function GuideCard({ guide }: GuideCardProps) {
           className={styles.guideImage}
         />
       </div>
-      <h2>{guide.title}</h2>
+      <h3>{guide.title}</h3>
     </Link>
   );
 }

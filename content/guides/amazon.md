@@ -1,5 +1,6 @@
 ---
 title: Amazon
+image: /images/ascendancies/amazon.png
 class: Huntress
 tier: B
 sections:
@@ -10,8 +11,5 @@ sections:
       * Bullet 1
       * Bullet 2
   - title: Media
-    content: |
-      ![Test Image](/images/test.png)
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+    content: Coming soon.
 ---

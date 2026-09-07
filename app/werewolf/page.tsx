@@ -1,25 +1,18 @@
-import { getAllGuides, groupGuidesByMetadata } from "@/lib/guides";
+import {
+  getAllGuides,
+  groupGuidesByMetadata,
+  GUIDE_CLASS_ORDER,
+} from "@/lib/guides";
 import { GuideCard } from "./GuideCard";
 import styles from "./werewolf.module.css";
 
-const classOrder = [
-  "Huntress",
-  "Mercenary",
-  "Monk",
-  "Sorceress",
-  "Witch",
-  "Warrior",
-  "Druid",
-  "Ranger",
-  "Shadow",
-  "Marauder",
-  "Duelist",
-  "Templar",
-];
-
 export default async function WerewolfPage() {
   const guides = await getAllGuides();
-  const guideGroups = groupGuidesByMetadata(guides, "class", classOrder);
+  const guideGroups = groupGuidesByMetadata(
+    guides,
+    "class",
+    GUIDE_CLASS_ORDER,
+  );
 
   return (
     <main>

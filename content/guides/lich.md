@@ -1,6 +1,5 @@
 ---
 title: Lich
-slug: lich
 image: /images/ascendancies/lich.png
 class: Witch
 tier: B

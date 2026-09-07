@@ -1,6 +1,5 @@
 ---
 title: Stormweaver
-slug: stormweaver
 image: /images/ascendancies/stormweaver.png
 class: Sorceress
 tier: B

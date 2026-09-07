@@ -1,6 +1,5 @@
 ---
 title: Gemling Legionnaire
-slug: gemling-legionnaire
 image: /images/ascendancies/gemling-legionnaire.png
 class: Mercenary
 tier: B

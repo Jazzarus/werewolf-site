@@ -1,5 +1,26 @@
+.html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .body {
   margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-fontin), serif;
+}
+
+.body button,
+.body input,
+.body select,
+.body textarea,
+.body code,
+.body kbd,
+.body samp,
+.body pre {
+  font-family: inherit;
 }
 
 .banner {

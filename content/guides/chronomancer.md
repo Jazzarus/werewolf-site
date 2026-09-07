@@ -1,6 +1,5 @@
 ---
 title: Chronomancer
-slug: chronomancer
 image: /images/ascendancies/chronomancer.png
 class: Sorceress
 tier: B

@@ -1,6 +1,5 @@
 ---
 title: Tactician
-slug: tactician
 image: /images/ascendancies/tactician.png
 class: Mercenary
 tier: B

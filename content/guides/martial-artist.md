@@ -1,6 +1,5 @@
 ---
 title: Martial Artist
-slug: martial-artist
 image: /images/ascendancies/martial-artist.png
 class: Monk
 tier: B

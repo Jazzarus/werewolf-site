@@ -1,6 +1,5 @@
 ---
 title: Witchhunter
-slug: witchhunter
 image: /images/ascendancies/witchhunter.png
 class: Mercenary
 tier: B

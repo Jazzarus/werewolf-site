@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Werewolf Guides
 
-## Getting Started
+A statically exported Path of Exile 2 Werewolf guide site built with Next.js App Router, TypeScript, Markdown, and TinaCMS.
 
-First, run the development server:
+## Architecture
+
+- `content/guides/*.md` is the source of truth for guide titles, card images, classes, tiers, and sections.
+- The Markdown filename is the canonical URL slug. For example, `amazon.md` is published at `/werewolf/amazon/`; do not add a separate `slug` field.
+- `lib/guides.ts` validates and renders guide data during the build.
+- `app/layout.tsx` owns the shared banner, navigation, content area, and sidebar.
+- `app/werewolf/GuideCard.tsx` is shared by the class index and tier list.
+- Next.js writes the deployable static site to `out/`.
+
+The current guides intentionally contain placeholder copy while the site is being built.
+
+## Local development
+
+Install dependencies and start Next.js with the local TinaCMS editor:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site is available at `http://localhost:3000`. TinaCMS generates its local admin interface under `public/admin/`; generated Tina and Next.js output is ignored by Git.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Guide format
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Each guide must provide all fields below. Card image paths are relative to `public/` and are checked during the build.
 
-## Learn More
+```yaml
+---
+title: Amazon
+image: /images/ascendancies/amazon.png
+class: Huntress
+tier: B
+sections:
+  - title: Intro
+    content: Coming soon.
+---
+```
 
-To learn more about Next.js, take a look at the following resources:
+Section content supports Markdown. Raw HTML is sanitized; interactive embeds should be implemented through a dedicated component or structured metadata rather than pasted HTML.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Checks and production build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+npx tsc --noEmit --incremental false
+npm run build
+```
 
-## Deploy on Vercel
+The production build removes the local Tina admin and creates a static export in `out/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cloudflare Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The repository is connected to GitHub. Configure Cloudflare Pages with:
+
+- Production branch: `main`
+- Build command: `npm run build`
+- Build output directory: `out`
+
+The application uses trailing-slash URLs so routes are exported as directories containing `index.html`.

@@ -1,6 +1,5 @@
 ---
 title: Pathfinder
-slug: pathfinder
 image: /images/ascendancies/pathfinder.png
 class: Ranger
 tier: B

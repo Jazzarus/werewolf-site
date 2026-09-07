@@ -1,6 +1,5 @@
 ---
 title: Oracle
-slug: oracle
 image: /images/ascendancies/oracle.png
 class: Druid
 tier: B

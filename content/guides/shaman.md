@@ -1,6 +1,5 @@
 ---
 title: Shaman
-slug: shaman
 image: /images/ascendancies/shaman.png
 class: Druid
 tier: B

@@ -1,6 +1,5 @@
 ---
 title: Ritualist
-slug: ritualist
 image: /images/ascendancies/ritualist.png
 class: Huntress
 tier: B

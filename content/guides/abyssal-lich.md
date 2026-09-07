@@ -1,6 +1,5 @@
 ---
 title: Abyssal Lich
-slug: abyssal-lich
 image: /images/ascendancies/abyssal-lich.png
 class: Witch
 tier: B

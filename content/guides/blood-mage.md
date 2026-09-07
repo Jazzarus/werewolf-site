@@ -1,6 +1,5 @@
 ---
 title: Blood Mage
-slug: blood-mage
 image: /images/ascendancies/blood-mage.png
 class: Witch
 tier: B

@@ -1,6 +1,5 @@
 ---
 title: Infernalist
-slug: infernalist
 image: /images/ascendancies/infernalist.png
 class: Witch
 tier: B

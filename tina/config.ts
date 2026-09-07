@@ -26,10 +26,29 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "image",
+            name: "image",
+            label: "Card image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "class",
+            label: "Class",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "tier",
+            label: "Tier",
+            required: true,
+          },
+          {
             type: "object",
             name: "sections",
             label: "Sections",
             list: true,
+            required: true,
             ui: {
               itemProps: (item) => ({
                 label: item?.title || "New section",
@@ -46,6 +65,7 @@ export default defineConfig({
                 type: "rich-text",
                 name: "content",
                 label: "Content",
+                required: true,
               },
             ],
           },

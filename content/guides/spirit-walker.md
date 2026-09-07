@@ -1,6 +1,5 @@
 ---
 title: Spirit Walker
-slug: spirit-walker
 image: /images/ascendancies/spirit-walker.png
 class: Huntress
 tier: B
