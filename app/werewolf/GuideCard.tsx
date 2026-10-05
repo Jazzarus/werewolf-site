@@ -18,11 +18,15 @@ export function GuideCard({ guide }: GuideCardProps) {
           src={guide.image}
           alt=""
           fill
-          sizes="(max-width: 767px) 50vw, (max-width: 1199px) 33vw, 20vw"
+          sizes="72px"
           className={styles.guideImage}
         />
       </div>
       <h3>{guide.title}</h3>
+      <div className={styles.guideMeta}>
+        <span>{guide.class}</span>
+        <span>Tier {guide.tier}</span>
+      </div>
     </Link>
   );
 }

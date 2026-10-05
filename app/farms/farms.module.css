@@ -1,0 +1,58 @@
+.intro {
+  max-width: 48rem;
+  margin: 0 auto clamp(2rem, 4cqi, 3rem);
+  color: var(--color-muted);
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.tierList { display: grid; gap: clamp(1.5rem, 3cqi, 2.5rem); }
+.tierSection { min-width: 0; }
+.tierSection h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0 0 0.65rem;
+  border-bottom: 1px solid #655639;
+}
+.tierSection h2::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, #655639, transparent);
+}
+.farmGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.farmEntry {
+  min-width: 0;
+  padding: clamp(1rem, 2cqi, 1.5rem);
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+  background: linear-gradient(125deg, rgb(182 160 117 / 7%), transparent 70%);
+}
+.farmEntry h3 {
+  margin: 0 0 0.75rem;
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.8cqi, 1.35rem);
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.strategy { min-width: 0; color: var(--color-muted); }
+.strategy :global(p:last-child) { margin-bottom: 0; }
+
+.emptyState {
+  max-width: 48rem;
+  margin: 2rem auto 0;
+  padding: 1.25rem;
+  color: var(--color-muted);
+  text-align: center;
+  background: linear-gradient(90deg, transparent, rgb(182 160 117 / 7%), transparent);
+  border-block: 1px solid #39372e;
+}
+
+@container (max-width: 42rem) {
+  .farmGrid { grid-template-columns: minmax(0, 1fr); }
+}

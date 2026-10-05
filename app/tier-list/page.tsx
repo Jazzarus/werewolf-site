@@ -15,7 +15,7 @@ export default function TierList() {
       </section>
 
       <section className={styles.container}>
-        <h1>Tier List Explanation</h1>
+        <h2>Tier List Explanation</h2>
         <p>
           Ranking explanations will be added here as each guide receives a
           finalized tier placement.

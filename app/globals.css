@@ -1,4 +1,68 @@
+/* Shared visual language. New pages and Markdown inherit these tokens. */
+:root {
+  color-scheme: dark;
+  --color-void: #06080a;
+  --color-ink: #0b0e11;
+  --color-panel: #101214;
+  --color-panel-raised: #191a19;
+  --color-iron: #393930;
+  --color-gold-dark: #65583c;
+  --color-gold: #b6a075;
+  --color-gold-bright: #e4cf9c;
+  --color-ivory: #e5dfd1;
+  --color-muted: #aaa69b;
+  --color-crimson: #651b19;
+  --color-crimson-bright: #97322a;
+  --font-body: Georgia, "Times New Roman", serif;
+  --font-display: var(--font-fontin), Georgia, serif;
+  --content-width: 1440px;
+  --reading-width: 68ch;
+  --edge-space: clamp(0.75rem, 3vw, 2.75rem);
+  --panel-space: clamp(1.25rem, 3vw, 3rem);
+  --panel-shadow: 0 18px 50px rgb(0 0 0 / 28%);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--color-void);
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
 body {
-  background-color: black;
-  color: white;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgb(6 8 10 / 5%) 12rem, rgb(6 8 10 / 72%) 60rem, #06080a 100rem),
+    url("/assets/bg.webp") center top / max(100%, 120rem) auto no-repeat,
+    var(--color-void);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+::selection { background: var(--color-crimson); color: #fff3d1; }
+
+a {
+  color: var(--color-gold-bright);
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+  transition: color 160ms ease;
+}
+a:hover { color: #fff0c8; }
+:focus-visible { outline: 2px solid var(--color-gold-bright); outline-offset: 5px; }
+img, svg, video, iframe { max-width: 100%; }
+img, video { height: auto; }
+button, input, select, textarea { font: inherit; }
+button, summary, a { -webkit-tap-highlight-color: rgb(228 207 156 / 15%); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

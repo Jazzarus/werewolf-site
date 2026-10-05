@@ -16,21 +16,22 @@ export default async function WerewolfPage() {
 
   return (
     <main>
-      <section className={`${styles.container} ${styles.intro}`}>
-        <p>
-          Explore Werewolf guides for every ascendancy, with builds and
-          gameplay information organized in one place.
-        </p>
-      </section>
-
       <section
         className={styles.container}
         aria-labelledby="ascendancy-guides"
       >
         <h1 id="ascendancy-guides">Ascendancy Guides</h1>
+        <p className={styles.intro}>
+          Explore Werewolf guides for every ascendancy, with builds and
+          gameplay information organized in one place.
+        </p>
 
         {guideGroups.map((group) => (
-          <section key={group.name} aria-labelledby={`${group.name}-guides`}>
+          <section
+            className={styles.guideGroup}
+            key={group.name}
+            aria-labelledby={`${group.name}-guides`}
+          >
             <h2 id={`${group.name}-guides`}>{group.name}</h2>
             <div className={styles.guideGrid}>
               {group.guides.map((guide) => (

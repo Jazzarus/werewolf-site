@@ -71,6 +71,38 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "farm",
+        label: "Farm Strategies",
+        path: "content/farms",
+        format: "md",
+        frontmatterFormat: "yaml",
+        ui: {
+          router: () => "/farms",
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Farm name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "tier",
+            label: "Tier",
+            required: true,
+            options: ["S", "A", "B", "C", "D", "F"],
+          },
+          {
+            type: "rich-text",
+            name: "strategy",
+            label: "Strategy and notes",
+            required: true,
+          },
+        ],
+      },
     ],
   },
 });

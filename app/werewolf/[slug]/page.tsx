@@ -37,6 +37,9 @@ export default async function WerewolfGuidePage({
   return (
     <main className={`${styles.container} ${styles.guideContent}`}>
       <h1>{guide.title}</h1>
+      <p className={styles.guideByline}>
+        {guide.class} · Tier {guide.tier}
+      </p>
       {guide.sections.map((section) => (
         <section key={section.title}>
           <h2>{section.title}</h2>
