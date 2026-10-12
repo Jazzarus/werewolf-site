@@ -47,7 +47,7 @@ export const GUIDE_CLASS_ORDER = [
   "Templar",
 ] as const;
 
-export const GUIDE_TIER_ORDER = ["S", "A", "B", "C", "D", "F"] as const;
+export const GUIDE_TIER_ORDER = ["S+", "S", "A", "B", "C", "D", "F"] as const;
 
 export function getGuideSlugs() {
   return fs
