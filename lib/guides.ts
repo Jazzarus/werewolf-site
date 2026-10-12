@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { defaultSchema, type Schema } from "hast-util-sanitize";
 import { remark } from "remark";
 import html from "remark-html";
 
@@ -9,6 +10,15 @@ const guidesDirectory = path.join(process.cwd(), "content", "guides");
 type GuideSectionData = {
   title: string;
   content: string;
+};
+
+type MarkdownNode = {
+  type?: string;
+  url?: string;
+  data?: {
+    hProperties?: Record<string, unknown>;
+  };
+  children?: MarkdownNode[];
 };
 
 export type GuideSection = {
@@ -31,6 +41,18 @@ export type GuideGroup = {
 };
 
 type GuideGroupKey = "class" | "tier";
+
+const guideHtmlSchema: Schema = {
+  ...defaultSchema,
+  attributes: {
+    ...defaultSchema.attributes,
+    a: [
+      ...(defaultSchema.attributes?.a ?? []),
+      ["target", "_blank"],
+      "rel",
+    ],
+  },
+};
 
 export const GUIDE_CLASS_ORDER = [
   "Huntress",
@@ -102,8 +124,30 @@ function getSections(value: unknown, fileName: string): GuideSectionData[] {
   });
 }
 
+function externalLinksOpenInNewTabs() {
+  return (tree: MarkdownNode) => {
+    function addLinkAttributes(node: MarkdownNode) {
+      if (node.type === "link" && /^https?:\/\//i.test(node.url ?? "")) {
+        node.data ??= {};
+        node.data.hProperties = {
+          ...node.data.hProperties,
+          target: "_blank",
+          rel: ["noopener", "noreferrer"],
+        };
+      }
+
+      node.children?.forEach(addLinkAttributes);
+    }
+
+    addLinkAttributes(tree);
+  };
+}
+
 async function renderSection(section: GuideSectionData): Promise<GuideSection> {
-  const processedContent = await remark().use(html).process(section.content);
+  const processedContent = await remark()
+    .use(externalLinksOpenInNewTabs)
+    .use(html, { sanitize: guideHtmlSchema })
+    .process(section.content);
 
   return {
     title: section.title,
