@@ -2,7 +2,7 @@
 title: Witchhunter
 image: /images/ascendancies/witchhunter.png
 class: Mercenary
-tier: B
+tier: A
 sections:
   - title: Intro
     content: This is a placeholder guide for Witchhunter.

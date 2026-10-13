@@ -2,7 +2,7 @@
 title: Deadeye
 image: /images/ascendancies/deadeye.png
 class: Ranger
-tier: B
+tier: C
 sections:
   - title: Intro
     content: This is a placeholder guide for Deadeye.

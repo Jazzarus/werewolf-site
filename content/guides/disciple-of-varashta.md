@@ -2,7 +2,7 @@
 title: Disciple of Varashta
 image: /images/ascendancies/disciple-of-varashta.png
 class: Sorceress
-tier: B
+tier: A
 sections:
   - title: Intro
     content: This is a placeholder guide for Disciple of Varashta.

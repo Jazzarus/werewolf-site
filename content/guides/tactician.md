@@ -2,7 +2,7 @@
 title: Tactician
 image: /images/ascendancies/tactician.png
 class: Mercenary
-tier: B
+tier: S
 sections:
   - title: Intro
     content: This is a placeholder guide for Tactician.

@@ -1,0 +1,941 @@
+{
+  "source": "PoE2DB",
+  "sourceLicense": "CC BY-NC-SA 3.0",
+  "refreshedAt": "2026-10-13T13:11:45.109Z",
+  "checkedNames": [
+    "amanamu",
+    "ancestral call",
+    "arctic howl",
+    "atziri's communion",
+    "avatar of evolution",
+    "barkskin",
+    "berserk",
+    "bhatair's vengeance",
+    "biting frost",
+    "blazing critical",
+    "blood magic",
+    "brutus' brain",
+    "captivating companionship",
+    "charged mark",
+    "clarity",
+    "close combat",
+    "cold penetration",
+    "convergence",
+    "cross slash",
+    "crown of eyes",
+    "crown of eyes is essential",
+    "culling strike",
+    "dangerous blossom",
+    "dangerous blossoms",
+    "dimensional weak spot",
+    "dimensional weakspot",
+    "direstrike",
+    "dousing charm",
+    "echoing cry",
+    "efficiency",
+    "elemental armament",
+    "embrace of the wild",
+    "entwined realities",
+    "eternal mark",
+    "eternal rage",
+    "eternal rage amulet",
+    "execute",
+    "forgotten warden",
+    "from nothing",
+    "garukhan's resolve",
+    "garukhan's resolve:",
+    "grace of the ancestors",
+    "greater rune of ward",
+    "greater rune of willpower",
+    "greater ward rune",
+    "headhunter",
+    "heavy frost",
+    "heavy swing",
+    "herald of ice",
+    "hulking minions",
+    "hyrri's ire",
+    "ice bite",
+    "inevitable critical hits",
+    "ingenuity",
+    "inspiring ally",
+    "insulating hide",
+    "iron slippers",
+    "lavianga's spirits",
+    "legacy of the wanderlust",
+    "legacy of wanderlust",
+    "living lightning",
+    "long fuse",
+    "loyalty",
+    "lucidity",
+    "lunar assault",
+    "lunar blessing",
+    "mageblood",
+    "mageblood or headhunter:",
+    "magnified area",
+    "maji talisman",
+    "mana remnants",
+    "mark of siphoning",
+    "megalomaniac",
+    "mind over matter",
+    "morior invictus",
+    "morrigan's insight",
+    "mystic attunement",
+    "mystical rage",
+    "oisin's oath",
+    "overcharge",
+    "overwhelming strike",
+    "pack encouragement",
+    "pain attunement",
+    "paths not taken",
+    "piercing claw",
+    "piercing claw damage",
+    "pounce",
+    "predator's mark",
+    "primal bounty",
+    "primal rage",
+    "prolonged duration",
+    "rakiata's flow",
+    "raven-touched",
+    "reactive growth",
+    "rigwald's ferocity",
+    "rite of passage",
+    "rite of passage:",
+    "sacred flow",
+    "sacred unity",
+    "sacrifice of flesh",
+    "savage fury",
+    "shred",
+    "sine aequo",
+    "spiny talisman",
+    "spirit vessel",
+    "starkonja's head",
+    "test guide",
+    "the morrigan's guidance",
+    "the shaman",
+    "tireless",
+    "turning of the seasons",
+    "uhtred's chalice",
+    "undying hate",
+    "undying hate timeless jewel",
+    "unfurled finger",
+    "unset ring",
+    "vitality",
+    "vivid stampede",
+    "voices",
+    "voices:",
+    "warm blooded",
+    "wild protector",
+    "wildwood persistence",
+    "wind dancer",
+    "wisdom of the maji",
+    "zarokh's gift",
+    "zealot's oath"
+  ],
+  "entities": [
+    {
+      "name": "Ancestral Call I",
+      "type": "Support gem",
+      "description": "Supports Strikes you use yourself, providing a powerful Ancestral Boost every few seconds. Cannot Support Channelled Skills and does not modify Skills used by Minions.",
+      "image": "/images/game-tooltips/ancestral-call-i.webp",
+      "source": "https://poe2db.tw/us/Ancestral_Call_I"
+    },
+    {
+      "name": "Arctic Howl",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and let out an icy howl that damages enemies and Freezes Primed enemies. If an enemy is Frozen or a Frozen enemy is Hit, this Skill Empowers your attacks with added Cold damage, causes Empowered Slams to create Chilled Ground, and grants your Allies added Cold damage. This Skill's cooldown can be bypassed by expending an Endurance Charge.",
+      "image": "/images/werewolf-skills/arctic-howl.webp",
+      "source": "https://poe2db.tw/us/Arctic_Howl"
+    },
+    {
+      "name": "Atziri's Communion",
+      "type": "Support gem",
+      "description": "Supports Persistent Skills, making them Reserve Life instead of Spirit. Cannot Support Skills which create Minions.",
+      "image": "/images/game-tooltips/atziri-s-communion.webp",
+      "source": "https://poe2db.tw/us/Atziri's_Communion"
+    },
+    {
+      "name": "Avatar of Evolution",
+      "type": "Passive skill",
+      "description": "5% of Physical Damage taken as Fire Damage\n5% of Physical Damage taken as Lightning Damage\n5% of Physical Damage taken as Cold Damage\nAdaptations have a duration of 5 seconds\nDouble Adaptation Effect",
+      "image": "/images/game-tooltips/avatar-of-evolution.webp",
+      "source": "https://poe2db.tw/us/Avatar_of_Evolution"
+    },
+    {
+      "name": "Barkskin",
+      "type": "Skill gem",
+      "description": "While active, taking Hit damage from enemies to your Energy Shield causes you to gain Armour for a short duration. Armour gained from multiple Hits can stack. The total Armour gained from this Skill cannot exceed the Item Armour on your Equipped Armour Items.",
+      "image": "/images/game-tooltips/barkskin.webp",
+      "source": "https://poe2db.tw/us/Barkskin"
+    },
+    {
+      "name": "Berserk",
+      "type": "Skill gem",
+      "description": "While active, strengthens your Rage, but causes you to lose Life while not losing Rage.",
+      "image": "/images/werewolf-skills/berserk.webp",
+      "source": "https://poe2db.tw/us/Berserk"
+    },
+    {
+      "name": "Bhatair's Vengeance",
+      "type": "Support gem",
+      "description": "Supports Attacks and Warcries you use yourself. Freezing an enemy with Supported Skills infuses you and your allies with Cold damage for a short time.",
+      "image": "/images/game-tooltips/bhatair-s-vengeance.webp",
+      "source": "https://poe2db.tw/us/Bhatair's_Vengeance"
+    },
+    {
+      "name": "Biting Frost",
+      "type": "Passive skill",
+      "description": "20% reduced Freeze Duration on Enemies\nEnemies Frozen by you take 20% increased Cold Damage",
+      "image": "/images/game-tooltips/biting-frost.webp",
+      "source": "https://poe2db.tw/us/Biting_Frost"
+    },
+    {
+      "name": "Blazing Critical",
+      "type": "Support gem",
+      "description": "Supports Skills you use yourself which Hit enemies. Critical Hits with Supported Skills imbue all of your Attacks with Fire damage for a duration.",
+      "image": "/images/game-tooltips/blazing-critical.webp",
+      "source": "https://poe2db.tw/us/Blazing_Critical"
+    },
+    {
+      "name": "Blood Magic",
+      "type": "Passive skill",
+      "description": "You have no Mana\r\nSkill Mana Costs Converted to Life Costs",
+      "image": "/images/game-tooltips/blood-magic.webp",
+      "source": "https://poe2db.tw/us/Blood_Magic"
+    },
+    {
+      "name": "Brutus' Brain",
+      "type": "Support gem",
+      "description": "Supports skills which create Minions, causing those Minions to be unable to deal or take Damage. Cannot support skills which create undamageable Minions.",
+      "image": "/images/game-tooltips/brutus-brain.webp",
+      "source": "https://poe2db.tw/us/Brutus'_Brain"
+    },
+    {
+      "name": "Captivating Companionship",
+      "type": "Passive skill",
+      "description": "5% of Damage from Hits is taken from your Damageable Companion's Life before you\n20% increased Armour, Evasion and Energy Shield while your Companion is in your Presence",
+      "image": "/images/game-tooltips/captivating-companionship.webp",
+      "source": "https://poe2db.tw/us/Captivating_Companionship"
+    },
+    {
+      "name": "Charged Mark",
+      "type": "Support gem",
+      "description": "Supports Mark Skills, causing them to Trigger Charged Mark when they are Activated. Charged Mark creates Shocked Ground at the target's location.",
+      "image": "/images/game-tooltips/charged-mark.webp",
+      "source": "https://poe2db.tw/us/Charged_Mark"
+    },
+    {
+      "name": "Clarity",
+      "type": "Skill gem",
+      "description": "Casts an aura that grants mana regeneration to you and your allies.",
+      "image": "/images/game-tooltips/clarity.webp",
+      "source": "https://poe2db.tw/us/Clarity"
+    },
+    {
+      "name": "Close Combat I",
+      "type": "Support gem",
+      "description": "Supports Attacks, causing them to deal more damage to enemies based on how close they are to you.",
+      "image": "/images/game-tooltips/close-combat-i.webp",
+      "source": "https://poe2db.tw/us/Close_Combat_I"
+    },
+    {
+      "name": "Cold Penetration",
+      "type": "Passive skill",
+      "description": "Supports any skill that Hits enemies, making those Hits Penetrate enemy Cold resistance.",
+      "image": "/images/game-tooltips/cold-penetration.webp",
+      "source": "https://poe2db.tw/us/Cold_Penetration"
+    },
+    {
+      "name": "Cross Slash",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and leap backwards as you gouge the ground with both claws. Enemies can be Hit separately by both gouges. Hitting a Marked enemy with both gouges will Activate the Mark and cause an additional shockwave. Ice Fragments will be pulled into the location where the gouges cross and explode. immediately. This skill can be used while using other skills to interrupt them.",
+      "image": "/images/werewolf-skills/cross-slash.webp",
+      "source": "https://poe2db.tw/us/Cross_Slash"
+    },
+    {
+      "name": "Crown of Eyes",
+      "type": "Unique item",
+      "description": "(100—140)% increased Energy Shield\n+(150—200) to Accuracy Rating\n+(10—15) to all Attributes\n-10% to Fire Resistance\nIncreases and Reductions to Spell damage also apply to Attacks",
+      "image": "/images/game-tooltips/crown-of-eyes.webp",
+      "source": "https://poe2db.tw/us/Crown_of_Eyes"
+    },
+    {
+      "name": "Crown of Eyes Vermeil Circlet",
+      "type": "Unique item",
+      "description": "(100—140)% increased Energy Shield\n+(150—200) to Accuracy Rating\n+(10—15) to all Attributes\n-10% to Fire Resistance\nIncreases and Reductions to Spell damage also apply to Attacks",
+      "image": "/images/game-tooltips/crown-of-eyes-vermeil-circlet.webp",
+      "source": "https://poe2db.tw/us/Crown_of_Eyes"
+    },
+    {
+      "name": "Culling Strike",
+      "type": "Support gem",
+      "description": "Culling Strikes kill Normal enemies if their life is at 35% or below. Magic enemies are instead killed at 20%, Rare at 10% and Unique at 5%. These thresholds are checked before the damage of the Hit is applied.",
+      "source": "https://poe2db.tw/us/Culling_Strike"
+    },
+    {
+      "name": "Dangerous Blossom",
+      "type": "Passive skill",
+      "description": "Gain 10% of Damage as Extra Physical Damage",
+      "image": "/images/game-tooltips/dangerous-blossom.webp",
+      "source": "https://poe2db.tw/us/Dangerous_Blossom"
+    },
+    {
+      "name": "Dimensional Weakspot",
+      "type": "Passive skill",
+      "description": "Hits have 15% chance to treat Enemy Monster Elemental Resistance values as inverted",
+      "image": "/images/game-tooltips/dimensional-weakspot.webp",
+      "source": "https://poe2db.tw/us/Dimensional_Weakspot"
+    },
+    {
+      "name": "Direstrike I",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing you to deal increased Attack Damage while on Low Life while the Supported Skill is active.",
+      "image": "/images/game-tooltips/direstrike-i.webp",
+      "source": "https://poe2db.tw/us/Direstrike_I"
+    },
+    {
+      "name": "Dousing Charm",
+      "type": "Charm",
+      "description": "A charm that activates when you become Ignited.",
+      "image": "/images/game-tooltips/dousing-charm.webp",
+      "source": "https://poe2db.tw/us/Dousing_Charm"
+    },
+    {
+      "name": "Echoing Cry",
+      "type": "Support gem",
+      "description": "Supports Warcries. Supported Skills Echo twice, and their area grows larger each time, but are less effective and require you to have travelled a certain distance before use.",
+      "image": "/images/game-tooltips/echoing-cry.webp",
+      "source": "https://poe2db.tw/us/Echoing_Cry"
+    },
+    {
+      "name": "Efficiency",
+      "type": "Support gem",
+      "description": "Efficiency modifiers act as divisors to the stat they modify. For example, 50% increased Reservation Efficiency causes your Reservations to be 67% of their base value, 100% increased Reservation Efficiency causes your Reservations to be 50% of their base value, and so on. Reduced Reservation Efficiency will cause the modified stat to grow larger instead of smaller.",
+      "source": "https://poe2db.tw/us/Efficiency"
+    },
+    {
+      "name": "Elemental Armament I",
+      "type": "Support gem",
+      "description": "Supports Attacks, causing them to deal more Elemental damage.",
+      "image": "/images/game-tooltips/elemental-armament-i.webp",
+      "source": "https://poe2db.tw/us/Elemental_Armament_I"
+    },
+    {
+      "name": "Embrace of the Wild",
+      "type": "Game mechanic",
+      "description": "Protects the Bear Spirit's Allies while they are in its Presence, granting them 2% of maximum Life regenerated per second and causing 8% of the damage they would take to be taken by the Bear Spirit instead.",
+      "source": "https://poe2db.tw/us/Embrace_of_the_Wild"
+    },
+    {
+      "name": "Entwined Realities",
+      "type": "Passive skill",
+      "description": "Non-Keystone Passive Skills in Medium Radius of allocated Keystone Passive Skills can be allocated without being connected to your tree",
+      "image": "/images/game-tooltips/entwined-realities.webp",
+      "source": "https://poe2db.tw/us/Entwined_Realities"
+    },
+    {
+      "name": "Eternal Mark",
+      "type": "Support gem",
+      "description": "Supports Mark Skills, causing them to not be Consumed the first time they are Activated.",
+      "image": "/images/game-tooltips/eternal-mark.webp",
+      "source": "https://poe2db.tw/us/Eternal_Mark"
+    },
+    {
+      "name": "Eternal Rage",
+      "type": "Skill gem",
+      "description": "While active, you constantly regenerate Rage.",
+      "image": "/images/werewolf-skills/eternal-rage.webp",
+      "source": "https://poe2db.tw/us/Eternal_Rage"
+    },
+    {
+      "name": "Execute I",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing it to deal more damage against enemies on Low Life.",
+      "image": "/images/game-tooltips/execute-i.webp",
+      "source": "https://poe2db.tw/us/Execute_I"
+    },
+    {
+      "name": "Forgotten Warden Primal Markings",
+      "type": "Unique item",
+      "description": "+(70—100) to Deflection Rating per 50 missing Energy Shield\n(200—300)% increased Evasion and Energy Shield\n+(20—30) to Dexterity\nCompanions have (30—50)% increased maximum Life\n(10—15)% of Damage from Deflected Hits is taken from Damageable Companion's Life before you\nenable ancient order task [1]",
+      "image": "/images/game-tooltips/forgotten-warden-primal-markings.webp",
+      "source": "https://poe2db.tw/us/Forgotten_Warden"
+    },
+    {
+      "name": "From Nothing",
+      "type": "Unique item",
+      "description": "Passives in Radius of Passive Skill can be Allocatedwithout being connected to your tree",
+      "image": "/images/game-tooltips/from-nothing.webp",
+      "source": "https://poe2db.tw/us/From_Nothing"
+    },
+    {
+      "name": "Garukhan's Resolve",
+      "type": "Support gem",
+      "description": "Supports Attack Skills you use yourself which do not already have some Condition for use. Supported Skills have a maximum Critical Hit chance, but will Bifurcate Critical Hit Chance.",
+      "image": "/images/game-tooltips/garukhan-s-resolve.webp",
+      "source": "https://poe2db.tw/us/Garukhan's_Resolve"
+    },
+    {
+      "name": "Grace of the Ancestors",
+      "type": "Passive skill",
+      "description": "10% increased Attack Speed\nEvery Rage also grants 1% increased Evasion Rating",
+      "image": "/images/game-tooltips/grace-of-the-ancestors.webp",
+      "source": "https://poe2db.tw/us/Grace_of_the_Ancestors"
+    },
+    {
+      "name": "Greater Ward Rune",
+      "type": "Rune",
+      "description": "+25 to maximum Runic Ward. Bonded: 15% increased Global Armour, Evasion and Energy Shield.",
+      "image": "/images/game-tooltips/greater-ward-rune.webp",
+      "source": "https://poe2db.tw/us/Greater_Ward_Rune"
+    },
+    {
+      "name": "Headhunter",
+      "type": "Unique item",
+      "description": "+(40—60) to maximum Life\n+(20—40) to Strength\n+(20—40) to Dexterity\nWhen you kill a Rare monster, you gain its Modifiers for 60 seconds",
+      "image": "/images/game-tooltips/headhunter.webp",
+      "source": "https://poe2db.tw/us/Headhunter"
+    },
+    {
+      "name": "Heavy Frost",
+      "type": "Passive skill",
+      "description": "20% increased Freeze Buildup\nHits ignore non-negative Elemental Resistances of Frozen Enemies",
+      "image": "/images/game-tooltips/heavy-frost.webp",
+      "source": "https://poe2db.tw/us/Heavy_Frost"
+    },
+    {
+      "name": "Heavy Swing",
+      "type": "Support gem",
+      "description": "Supports Melee Attacks, boosting their Physical damage at the cost of Attack Speed.",
+      "image": "/images/game-tooltips/heavy-swing.webp",
+      "source": "https://poe2db.tw/us/Heavy_Swing"
+    },
+    {
+      "name": "Herald of Ice",
+      "type": "Skill gem",
+      "description": "While active, Shattering an enemy with a non-Herald Attack Hit will cause an icy explosion that deals Attack damage to surrounding enemies.",
+      "image": "/images/werewolf-skills/herald-of-ice.webp",
+      "source": "https://poe2db.tw/us/Herald_of_Ice"
+    },
+    {
+      "name": "Hulking Minions",
+      "type": "Support gem",
+      "description": "Supports Skills which summon Persistent Minions. Supported Minions are larger, have more Life, and deal more Damage, but cost significantly more Spirit.",
+      "image": "/images/game-tooltips/hulking-minions.webp",
+      "source": "https://poe2db.tw/us/Hulking_Minions"
+    },
+    {
+      "name": "Hyrri's Ire",
+      "type": "Unique item",
+      "description": "(100—150)% increased Evasion Rating\nGain (10—20)% of Damage as Extra Cold Damage\n+(30—40) to Dexterity\n25% increased Freeze Duration on Enemies\nEvasion Rating is doubled if you have not been Hit Recently",
+      "image": "/images/game-tooltips/hyrri-s-ire.webp",
+      "source": "https://poe2db.tw/us/Hyrri's_Ire"
+    },
+    {
+      "name": "Hyrri's Ire Armoured Vest",
+      "type": "Unique item",
+      "description": "(100—150)% increased Evasion Rating\nGain (10—20)% of Damage as Extra Cold Damage\n+(30—40) to Dexterity\n25% increased Freeze Duration on Enemies\nEvasion Rating is doubled if you have not been Hit Recently",
+      "image": "/images/game-tooltips/hyrri-s-ire-armoured-vest.webp",
+      "source": "https://poe2db.tw/us/Hyrri's_Ire"
+    },
+    {
+      "name": "Ice Bite I",
+      "type": "Support gem",
+      "description": "Supports damaging skills and Warcries you use yourself. Freezing an enemy with supported skills infuses your damage with Cold damage for a short time.",
+      "image": "/images/game-tooltips/ice-bite-i.webp",
+      "source": "https://poe2db.tw/us/Ice_Bite_I"
+    },
+    {
+      "name": "Inevitable Critical Hits",
+      "type": "Ascendancy passive",
+      "description": "Hits which could potentially be a Critical Hit but do not roll a Critical Hit will re-roll Critical Hit chance until they succeed.\r\n\r\nHits have 30% less Critical Damage Bonus for each time Critical Hit chance was re-rolled.",
+      "source": "https://poe2db.tw/us/Inevitable_Critical_Hits"
+    },
+    {
+      "name": "Ingenuity",
+      "type": "Passive skill",
+      "description": "+25 to Intelligence",
+      "image": "/images/game-tooltips/ingenuity.webp",
+      "source": "https://poe2db.tw/us/Ingenuity"
+    },
+    {
+      "name": "Inspiring Ally",
+      "type": "Passive skill",
+      "description": "Increases and Reductions to Companion Damage also apply to you",
+      "image": "/images/game-tooltips/inspiring-ally.webp",
+      "source": "https://poe2db.tw/us/Inspiring_Ally"
+    },
+    {
+      "name": "Insulating Hide",
+      "type": "Passive skill",
+      "description": "20% faster start of Energy Shield Recharge while Shapeshifted\n+20% of Armour also applies to Elemental Damage while Shapeshifted",
+      "image": "/images/game-tooltips/insulating-hide.webp",
+      "source": "https://poe2db.tw/us/Insulating_Hide"
+    },
+    {
+      "name": "Iron Slippers",
+      "type": "Passive skill",
+      "description": "+2 to Armour per 1 Item Energy Shield on Equipped Boots\n12% reduced Slowing Potency of Debuffs on You",
+      "image": "/images/game-tooltips/iron-slippers.webp",
+      "source": "https://poe2db.tw/us/Iron_Slippers"
+    },
+    {
+      "name": "Lavianga's Spirits",
+      "type": "Unique item",
+      "description": "This Flask cannot be Used but applies its Effect constantly\n(70—80)% reduced Amount Recovered",
+      "image": "/images/game-tooltips/lavianga-s-spirits.webp",
+      "source": "https://poe2db.tw/us/Lavianga's_Spirits"
+    },
+    {
+      "name": "Lavianga's Spirits Gargantuan Mana Flask",
+      "type": "Unique item",
+      "description": "This Flask cannot be Used but applies its Effect constantly\n(70—80)% reduced Amount Recovered",
+      "image": "/images/game-tooltips/lavianga-s-spirits-gargantuan-mana-flask.webp",
+      "source": "https://poe2db.tw/us/Lavianga's_Spirits"
+    },
+    {
+      "name": "Legacy of Wanderlust",
+      "type": "Item modifier",
+      "description": "Boots: Your speed is unaffected by Slows. Bonded modifier: 5% increased Movement Speed.",
+      "source": "https://poe2db.tw/us/Aldurs_Legacies",
+      "image": "/images/game-tooltips/legacy-of-wanderlust.webp"
+    },
+    {
+      "name": "Living Lightning",
+      "type": "Support gem",
+      "description": "Supports Skills which cause Damaging Hits. Living Lightning Minions are created when dealing Lightning damage with Supported Skills - bundles of living electricity that target nearby enemies with Chaining Attacks. Enemies will not directly engage these Minions, and can pass through them. Does not modify skills used by Minions.",
+      "image": "/images/game-tooltips/living-lightning.webp",
+      "source": "https://poe2db.tw/us/Living_Lightning"
+    },
+    {
+      "name": "Long Fuse I",
+      "type": "Support gem",
+      "description": "Supports Skills which have a Detonation Time, causing those Skills to have much higher Detonation Time and detonation damage.",
+      "image": "/images/game-tooltips/long-fuse-i.webp",
+      "source": "https://poe2db.tw/us/Long_Fuse_I"
+    },
+    {
+      "name": "Loyalty",
+      "type": "Support gem",
+      "description": "Supports Skills that create Companions which can be damaged. Minions created by Supported Skills take a portion of Hit Damage you would otherwise have taken, but have lowered maximum Life.",
+      "image": "/images/game-tooltips/loyalty.webp",
+      "source": "https://poe2db.tw/us/Loyalty"
+    },
+    {
+      "name": "Lucidity",
+      "type": "Passive skill",
+      "description": "8% of Damage is taken from Mana before Life\n+15 to Intelligence",
+      "image": "/images/game-tooltips/lucidity.webp",
+      "source": "https://poe2db.tw/us/Lucidity"
+    },
+    {
+      "name": "Lunar Assault",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and swipe with your claws, projecting an arc of moonlight and ice forward in a crescent.",
+      "image": "/images/werewolf-skills/lunar-assault.webp",
+      "source": "https://poe2db.tw/us/Lunar_Assault"
+    },
+    {
+      "name": "Lunar Blessing",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and offer your Rage to the moon to receive a blessing, gaining bonus Cold damage for yourself and any Wolf Minions you have from Wolf Pack or Predator's Mark. Spends all Rage to extend the Buff's duration. While the Buff is active, your Werewolf Melee Attacks call down Moonbeams on Hit.",
+      "image": "/images/werewolf-skills/lunar-blessing.webp",
+      "source": "https://poe2db.tw/us/Lunar_Blessing"
+    },
+    {
+      "name": "Mageblood",
+      "type": "Unique item",
+      "description": "All Mage's Legacies have (25—50)% increased effect per duplicate Mage's Legacy you have\nLegacy of Mages Legacy\nLegacy of Mages Legacy\nLegacy of Mages Legacy\nLegacy of Mages Legacy",
+      "image": "/images/game-tooltips/mageblood.webp",
+      "source": "https://poe2db.tw/us/Mageblood"
+    },
+    {
+      "name": "Magnified Area I",
+      "type": "Support gem",
+      "description": "Supports any skill with an area of effect, making it larger.",
+      "image": "/images/game-tooltips/magnified-area-i.webp",
+      "source": "https://poe2db.tw/us/Magnified_Area_I"
+    },
+    {
+      "name": "Maji Talisman",
+      "type": "Talisman base",
+      "description": "Talisman base with +(7–10) to Maximum Rage.",
+      "image": "/images/game-tooltips/maji-talisman.webp",
+      "source": "https://poe2db.tw/us/Maji_Talisman"
+    },
+    {
+      "name": "Mana Remnants",
+      "type": "Skill gem",
+      "description": "Conjure surging arcane energy to restore your Mana. While active, enemies you kill affected by Elemental Ailments have a chance to spawn a Mana Remnant, and Critically Hitting a target with Elemental Ailments spawns a Mana Remnant every few seconds. Picking up a Mana Remnant grants you Mana which can Overflow maximum Mana.",
+      "image": "/images/werewolf-skills/mana-remnants.webp",
+      "source": "https://poe2db.tw/us/Mana_Remnants"
+    },
+    {
+      "name": "Mark of Siphoning",
+      "type": "Support gem",
+      "description": "Supports Mark Skills, causing enemies they Mark to Leech Mana to you when you Hit them with Attacks.",
+      "image": "/images/game-tooltips/mark-of-siphoning.webp",
+      "source": "https://poe2db.tw/us/Mark_of_Siphoning"
+    },
+    {
+      "name": "Megalomaniac",
+      "type": "Unique item",
+      "description": "Allocates Passive Skill\nAllocates Passive Skill",
+      "image": "/images/game-tooltips/megalomaniac.webp",
+      "source": "https://poe2db.tw/us/Megalomaniac"
+    },
+    {
+      "name": "Mind over Matter",
+      "type": "Keystone passive",
+      "description": "All Damage is taken from Mana before Life\n50% less Mana Recovery Rate",
+      "source": "https://poe2db.tw/us/Mind_over_Matter"
+    },
+    {
+      "name": "Morior Invictus",
+      "type": "Unique item",
+      "description": "(300—400)% increased Armour, Evasion and Energy Shield\n[3 Random Socket Modifiers]\nHas 4 Augment Sockets (Hidden)",
+      "image": "/images/game-tooltips/morior-invictus.webp",
+      "source": "https://poe2db.tw/us/Morior_Invictus"
+    },
+    {
+      "name": "Morior Invictus Grand Regalia",
+      "type": "Unique item",
+      "description": "(300—400)% increased Armour, Evasion and Energy Shield\n[3 Random Socket Modifiers]\nHas 4 Augment Sockets (Hidden)",
+      "image": "/images/game-tooltips/morior-invictus-grand-regalia.webp",
+      "source": "https://poe2db.tw/us/Morior_Invictus"
+    },
+    {
+      "name": "Mórrigan's Insight",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing them to deal more damage and trigger Nature's Exchange when consuming Freeze on enemies. Cannot support skills that Consume Freeze.",
+      "image": "/images/game-tooltips/morrigan-s-insight.webp",
+      "source": "https://poe2db.tw/us/M%C3%B3rrigan's_Insight"
+    },
+    {
+      "name": "Mystic Attunement",
+      "type": "Passive skill",
+      "description": "25% increased bonuses gained from Equipped Rings and Amulets",
+      "image": "/images/game-tooltips/mystic-attunement.webp",
+      "source": "https://poe2db.tw/us/Mystic_Attunement"
+    },
+    {
+      "name": "Mystical Rage",
+      "type": "Passive skill",
+      "description": "Every Rage also grants 2% increased Spell Damage",
+      "image": "/images/game-tooltips/mystical-rage.webp",
+      "source": "https://poe2db.tw/us/Mystical_Rage"
+    },
+    {
+      "name": "Oisín's Oath",
+      "type": "Support gem",
+      "description": "Supports Skills which Hit enemies, causing their Mana Leech to recover based on Elemental damage instead of Physical damage.",
+      "image": "/images/game-tooltips/oisin-s-oath.webp",
+      "source": "https://poe2db.tw/us/Ois%C3%ADn's_Oath"
+    },
+    {
+      "name": "Overcharge",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, making its Shocks more effective but reflecting them back to you as well.",
+      "image": "/images/game-tooltips/overcharge.webp",
+      "source": "https://poe2db.tw/us/Overcharge"
+    },
+    {
+      "name": "Overwhelming Strike",
+      "type": "Passive skill",
+      "description": "15% increased Critical Hit Chance for Attacks\n20% increased Critical Damage Bonus for Attack Damage\n20% more Stun Buildup with Critical Hits",
+      "image": "/images/game-tooltips/overwhelming-strike.webp",
+      "source": "https://poe2db.tw/us/Overwhelming_Strike"
+    },
+    {
+      "name": "Pack Encouragement",
+      "type": "Passive skill",
+      "description": "5% increased Attack Damage for each Minion in your Presence, up to a maximum of 80%",
+      "image": "/images/game-tooltips/pack-encouragement.webp",
+      "source": "https://poe2db.tw/us/Pack_Encouragement"
+    },
+    {
+      "name": "Pain Attunement",
+      "type": "Passive skill",
+      "description": "30% less Critical Damage Bonus when on Full Life\n30% more Critical Damage Bonus when on Low Life",
+      "image": "/images/game-tooltips/pain-attunement.webp",
+      "source": "https://poe2db.tw/us/Pain_Attunement"
+    },
+    {
+      "name": "Paths Not Taken",
+      "type": "Ascendancy passive",
+      "description": "You see what is and what might have been. Reveal a suite of Oracle-only passive tree nodes after Ascending as an Oracle.\r\n\r\nOn taking The Unseen Path Ascendancy Notable, gain the ability to allocate these nodes.",
+      "source": "https://poe2db.tw/us/Paths_Not_Taken"
+    },
+    {
+      "name": "Piercing Claw",
+      "type": "Passive skill",
+      "description": "Damage Penetrates 15% of Enemy Elemental Resistances while Shapeshifted",
+      "image": "/images/game-tooltips/piercing-claw.webp",
+      "source": "https://poe2db.tw/us/Piercing_Claw"
+    },
+    {
+      "name": "Pounce",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and leap to a target location, damaging enemies in an area around where you land. Predator's Mark will be Triggered targeting the highest Rarity enemy Hit, or if a Mark gem is socketed into this Skill, that Mark will be Triggered instead. Using this Skill allows any Wolf Minions you have to leap immediately.",
+      "image": "/images/werewolf-skills/pounce.webp",
+      "source": "https://poe2db.tw/us/Pounce"
+    },
+    {
+      "name": "Predator's Mark",
+      "type": "Skill gem",
+      "description": "Mark a target, causing it to take increased damage based on how many of the target's enemies are near to it. If the target dies, the Mark will Activate to Trigger the Summon Wolf skill and Consume the Mark.",
+      "image": "/images/game-tooltips/predator-s-mark.webp",
+      "source": "https://poe2db.tw/us/Predator's_Mark"
+    },
+    {
+      "name": "Primal Bounty",
+      "type": "Passive skill",
+      "description": "Empowers the next Projectile Skill you use, causing it to create additional Projectiles and fly faster.",
+      "image": "/images/game-tooltips/primal-bounty.webp",
+      "source": "https://poe2db.tw/us/Primal_Bounty"
+    },
+    {
+      "name": "Primal Rage",
+      "type": "Passive skill",
+      "description": "+12 to maximum Rage while Shapeshifted",
+      "image": "/images/game-tooltips/primal-rage.webp",
+      "source": "https://poe2db.tw/us/Primal_Rage"
+    },
+    {
+      "name": "Prolonged Duration I",
+      "type": "Support gem",
+      "description": "Supports any skill that has a duration, making that duration longer.",
+      "image": "/images/game-tooltips/prolonged-duration-i.webp",
+      "source": "https://poe2db.tw/us/Prolonged_Duration_I"
+    },
+    {
+      "name": "Rakiata's Flow",
+      "type": "Support gem",
+      "description": "Supports Skills that can cause Damaging Hits, causing those Hits to treat Enemy Elemental Resistances as inverted.",
+      "image": "/images/game-tooltips/rakiata-s-flow.webp",
+      "source": "https://poe2db.tw/us/Rakiata's_Flow"
+    },
+    {
+      "name": "Raven-Touched",
+      "type": "Item mechanic",
+      "description": "Raven-Touched items have been warped by the Raven Trickster, Tangmazu.\r\n\r\nThe influence of the mist allows you to instil the item with a Notable Passive Skill at the Withered Willow.\r\n\r\nItems that are already instillable will not be able to gain an additional instillment if they become Raven-Touched.",
+      "source": "https://poe2db.tw/us/Raven-Touched"
+    },
+    {
+      "name": "Reactive Growth",
+      "type": "Passive skill",
+      "description": "10% less Elemental Damage taken\nAdapt 1 times to the highest Elemental Damage Type of each Hit you take\n10% less Damage taken of each Elemental Damage Type per matching Adaptation\nbase max adaptations [3]",
+      "image": "/images/game-tooltips/reactive-growth.webp",
+      "source": "https://poe2db.tw/us/Reactive_Growth"
+    },
+    {
+      "name": "Rigwald's Ferocity",
+      "type": "Support gem",
+      "description": "Supports Attack skills, granting them Attack Speed at the cost of Damage or Damage at the cost of Attack Speed depending on Weapon Set they are used in. Does not modify skills used by Minions.",
+      "image": "/images/game-tooltips/rigwald-s-ferocity.webp",
+      "source": "https://poe2db.tw/us/Rigwald's_Ferocity"
+    },
+    {
+      "name": "Rite of Passage Golden Charm",
+      "type": "Charm",
+      "description": "Possessed by Spirit Of The [Azmeri Spirit] for (10–20) seconds on use",
+      "image": "/images/game-tooltips/rite-of-passage-golden-charm.webp",
+      "source": "https://poe2db.tw/us/Rite_of_Passage"
+    },
+    {
+      "name": "Sacred Flow",
+      "type": "Passive skill",
+      "description": "+40 to Spirit for each of your empty Charm slots",
+      "image": "/images/game-tooltips/sacred-flow.webp",
+      "source": "https://poe2db.tw/us/Sacred_Flow"
+    },
+    {
+      "name": "Sacred Unity",
+      "type": "Passive skill",
+      "description": "Bear Spirit gains Embrace of the Wild\nVivid Stags leap towards enemies\nCentral Projectile of Owl Feather-Empowered Skills leaves a trail of Soaring Ground\nascendancy bear companion takes % damage before you [8]\nascendancy spirit walker sacred notable taken [1]\nRequires Vivid Stampede, Wild Protector, Primal Bounty",
+      "image": "/images/game-tooltips/sacred-unity.webp",
+      "source": "https://poe2db.tw/us/Sacred_Unity"
+    },
+    {
+      "name": "Sacrifice of Flesh",
+      "type": "Keystone passive",
+      "description": "When taking damage from Hits, prevent 20% of Life Loss, then lose 150% of Life Loss prevented this way over 4 seconds.",
+      "image": "/images/game-tooltips/sacrifice-of-flesh.webp",
+      "source": "https://poe2db.tw/us/Sacrifice_of_Flesh"
+    },
+    {
+      "name": "Savage Fury",
+      "type": "Skill gem",
+      "description": "While active, your Fury builds from Attacking enemies. Using this Skill releases your Fury to send you into a bestial frenzy, gaining damage and Onslaught but constantly losing life and forcing you into animal form. The frenzy ends immediately if you return to human form. You cannot gain Fury while in a frenzy.",
+      "image": "/images/werewolf-skills/savage-fury.webp",
+      "source": "https://poe2db.tw/us/Savage_Fury"
+    },
+    {
+      "name": "Shred",
+      "type": "Skill gem",
+      "description": "Shapeshift into a Werewolf and lash out with a flurry of claw swipes. The first Attack can dash to faraway enemies and the final Attack Strikes twice. Attacking a Frozen enemy will create Ice Fragments, which are Projectiles that land and explode after a short delay.",
+      "image": "/images/werewolf-skills/shred.webp",
+      "source": "https://poe2db.tw/us/Shred"
+    },
+    {
+      "name": "Sine Aequo",
+      "type": "Unique item",
+      "description": "(10—15)% increased Skill Speed\n(150—200)% increased Armour, Evasion and Energy Shield\nImmobilise enemies at 50% buildup instead of 100%\n(30—50)% increased Damage against Immobilised Enemies",
+      "image": "/images/game-tooltips/sine-aequo.webp",
+      "source": "https://poe2db.tw/us/Sine_Aequo"
+    },
+    {
+      "name": "Sine Aequo Grand Manchettes",
+      "type": "Unique item",
+      "description": "(10—15)% increased Skill Speed\n(150—200)% increased Armour, Evasion and Energy Shield\nImmobilise enemies at 50% buildup instead of 100%\n(30—50)% increased Damage against Immobilised Enemies",
+      "image": "/images/game-tooltips/sine-aequo-grand-manchettes.webp",
+      "source": "https://poe2db.tw/us/Sine_Aequo"
+    },
+    {
+      "name": "Spiny Talisman",
+      "type": "Talisman base",
+      "description": "Talisman base with 5% base weapon Critical Hit Chance.",
+      "image": "/images/game-tooltips/spiny-talisman.webp",
+      "source": "https://poe2db.tw/us/Spiny_Talisman"
+    },
+    {
+      "name": "Spirit Vessel",
+      "type": "Skill gem",
+      "description": "Summons a Shapeshifting Spirit Vessel Companion that uses copies of socketed Bear, Werewolf, and Wyvern Skills.",
+      "image": "/images/game-tooltips/spirit-vessel.webp",
+      "source": "https://poe2db.tw/us/Spirit_Vessel"
+    },
+    {
+      "name": "Starkonja's Head Leatherbound Hood",
+      "type": "Unique item",
+      "description": "(100—200)% increased Evasion Rating\n(15—25)% increased Critical Hit Chance\n+(30—40) to Dexterity\n150% increased Global Evasion Rating when on Low Life\n15% of Damage from Hits is taken from your Damageable Companion's Life before you",
+      "image": "/images/game-tooltips/starkonja-s-head-leatherbound-hood.webp",
+      "source": "https://poe2db.tw/us/Starkonja's_Head"
+    },
+    {
+      "name": "The Mórrigan's Guidance",
+      "type": "Passive skill",
+      "description": "Gain 1 Vivid Wisps when Vivid Stampede ends\nStags deal 20% more damage per leap\nStags have 20% more Shock Magnitude per leap",
+      "image": "/images/game-tooltips/the-morrigan-s-guidance.webp",
+      "source": "https://poe2db.tw/us/The_M%C3%B3rrigan's_Guidance"
+    },
+    {
+      "name": "Tireless",
+      "type": "Support gem",
+      "description": "Supports Warcry Skills. Attacks Empowered by Supported Skills have a chance not to lower the Empowerment count of Supported Skills when they are used.",
+      "image": "/images/game-tooltips/tireless.webp",
+      "source": "https://poe2db.tw/us/Tireless"
+    },
+    {
+      "name": "Turning of the Seasons",
+      "type": "Passive skill",
+      "description": "Enemies in your Presence have Exposure\nGain 10% of Damage as Extra Damage of a random Element",
+      "image": "/images/game-tooltips/turning-of-the-seasons.webp",
+      "source": "https://poe2db.tw/us/Turning_of_the_Seasons"
+    },
+    {
+      "name": "Uhtred's Chalice",
+      "type": "Unique item",
+      "description": "(200—300)% increased Amount Recovered\n70% reduced Recovery rate\n(50—60)% reduced Charges\nMana Recovery from Flasks can Overflow maximum Mana during Effect\nLose 5% Life per second while you have no Runic Ward during Effect",
+      "image": "/images/game-tooltips/uhtred-s-chalice.webp",
+      "source": "https://poe2db.tw/us/Uhtred's_Chalice"
+    },
+    {
+      "name": "Uhtred's Chalice Transcendent Mana Flask",
+      "type": "Unique item",
+      "description": "(200—300)% increased Amount Recovered\n70% reduced Recovery rate\n(50—60)% reduced Charges\nMana Recovery from Flasks can Overflow maximum Mana during Effect\nLose 5% Life per second while you have no Runic Ward during Effect",
+      "image": "/images/game-tooltips/uhtred-s-chalice-transcendent-mana-flask.webp",
+      "source": "https://poe2db.tw/us/Uhtred's_Chalice"
+    },
+    {
+      "name": "Undying Hate Timeless Jewel",
+      "type": "Unique item",
+      "description": "Glorifying the defilement of (79—30977) souls in tribute to AmanamuPassives in radius are Conquered by the AbyssalsDesecration makes this item unstable\nHistoric\nlocal unique jewel break timeless jewel calculators [0]",
+      "image": "/images/game-tooltips/undying-hate-timeless-jewel.webp",
+      "source": "https://poe2db.tw/us/Undying_Hate"
+    },
+    {
+      "name": "Unfurled Finger",
+      "type": "Passive skill",
+      "description": "+1 Ring Slot",
+      "image": "/images/game-tooltips/unfurled-finger.webp",
+      "source": "https://poe2db.tw/us/Unfurled_Finger"
+    },
+    {
+      "name": "Unset Ring",
+      "type": "Ring base",
+      "description": "Grants 1 additional Skill Slot.",
+      "image": "/images/game-tooltips/unset-ring.webp",
+      "source": "https://poe2db.tw/us/Unset_Ring"
+    },
+    {
+      "name": "Vitality",
+      "type": "Skill gem",
+      "description": "Casts an aura that grants life regeneration to you and your allies.",
+      "image": "/images/game-tooltips/vitality.webp",
+      "source": "https://poe2db.tw/us/Vitality"
+    },
+    {
+      "name": "Vivid Stampede",
+      "type": "Passive skill",
+      "description": "Call upon Spirits of the Stag, sending them leaping forward. Each Stag releases a damaging shockwave each time it lands, and any Stags that travel the maximum possible distance also leave behind Shocked Ground.",
+      "image": "/images/game-tooltips/vivid-stampede.webp",
+      "source": "https://poe2db.tw/us/Vivid_Stampede"
+    },
+    {
+      "name": "Voices",
+      "type": "Unique item",
+      "description": "Allocates 4 Sinister Jewel sockets",
+      "image": "/images/game-tooltips/voices.webp",
+      "source": "https://poe2db.tw/us/Voices"
+    },
+    {
+      "name": "Warm Blooded",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing Freeze applied to you to last for a shorter duration while the Supported Skill is active.",
+      "image": "/images/game-tooltips/warm-blooded.webp",
+      "source": "https://poe2db.tw/us/Warm_Blooded"
+    },
+    {
+      "name": "Wild Protector",
+      "type": "Passive skill",
+      "description": "Call upon a Bear Spirit Companion to maul your foes. The Bear Spirit leaps at enemies to Maim them, Leeches Life with its slam, and periodically roars to Intimidate enemies. The Bear Spirit does not count toward your Companion limit.",
+      "image": "/images/game-tooltips/wild-protector.webp",
+      "source": "https://poe2db.tw/us/Wild_Protector"
+    },
+    {
+      "name": "Wildwood Persistence",
+      "type": "Passive skill",
+      "description": "10% increased Life Recovery rate per 5% missing Unreserved Life",
+      "image": "/images/game-tooltips/wildwood-persistence.webp",
+      "source": "https://poe2db.tw/us/Wildwood_Persistence"
+    },
+    {
+      "name": "Wind Dancer",
+      "type": "Skill gem",
+      "description": "While active, periodically grants stages of a buff that gives you more Evasion per stage. Being Hit by an Enemy while you have this buff consumes all stages to damage and Knock Back enemies around you.",
+      "image": "/images/game-tooltips/wind-dancer.webp",
+      "source": "https://poe2db.tw/us/Wind_Dancer"
+    },
+    {
+      "name": "Wisdom of the Maji",
+      "type": "Passive skill",
+      "description": "Gain the benefits of Bonded modifiers on Runes and Idols",
+      "image": "/images/game-tooltips/wisdom-of-the-maji.webp",
+      "source": "https://poe2db.tw/us/Wisdom_of_the_Maji"
+    },
+    {
+      "name": "Zarokh's Gift",
+      "type": "Passive skill",
+      "description": "Sinister Jewel Socket",
+      "image": "/images/game-tooltips/zarokh-s-gift.webp",
+      "source": "https://poe2db.tw/us/Zarokh's_Gift"
+    },
+    {
+      "name": "Zealot's Oath",
+      "type": "Passive skill",
+      "description": "Excess Life Recovery from Regeneration is applied to Energy Shield.\r\nEnergy Shield does not Recharge.",
+      "image": "/images/game-tooltips/zealot-s-oath.webp",
+      "source": "https://poe2db.tw/us/Zealot's_Oath"
+    }
+  ]
+}

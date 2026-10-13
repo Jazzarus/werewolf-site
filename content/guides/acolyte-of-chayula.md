@@ -2,7 +2,7 @@
 title: Acolyte of Chayula
 image: /images/ascendancies/acolyte-of-chayula.png
 class: Monk
-tier: B
+tier: Unranked
 sections:
   - title: Intro
     content: This is a placeholder guide for Acolyte of Chayula.

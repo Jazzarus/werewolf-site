@@ -2,7 +2,7 @@
 title: Gemling Legionnaire
 image: /images/ascendancies/gemling-legionnaire.png
 class: Mercenary
-tier: B
+tier: A
 sections:
   - title: Intro
     content: This is a placeholder guide for Gemling Legionnaire.

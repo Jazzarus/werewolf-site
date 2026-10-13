@@ -1,8 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
+import { renderArticleMarkdown } from "@/lib/markdown";
 
 const farmsDirectory = path.join(process.cwd(), "content", "farms");
 
@@ -50,13 +49,11 @@ async function getFarmBySlug(slug: string): Promise<Farm> {
   }
 
   const strategy = getRequiredString(data.strategy, "strategy", fileName);
-  const renderedStrategy = await remark().use(html).process(strategy);
-
   return {
     slug,
     title: getRequiredString(data.title, "title", fileName),
     tier: tier as Farm["tier"],
-    strategyHtml: renderedStrategy.toString(),
+    strategyHtml: await renderArticleMarkdown(strategy, `farm-${slug}`),
   };
 }
 

@@ -2,7 +2,7 @@
 title: Martial Artist
 image: /images/ascendancies/martial-artist.png
 class: Monk
-tier: B
+tier: Unranked
 sections:
   - title: Intro
     content: This is a placeholder guide for Martial Artist.

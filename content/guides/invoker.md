@@ -2,7 +2,7 @@
 title: Invoker
 image: /images/ascendancies/invoker.png
 class: Monk
-tier: B
+tier: Unranked
 sections:
   - title: Intro
     content: This is a placeholder guide for Invoker.

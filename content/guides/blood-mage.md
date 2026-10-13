@@ -2,7 +2,7 @@
 title: Blood Mage
 image: /images/ascendancies/blood-mage.png
 class: Witch
-tier: B
+tier: Unranked
 sections:
   - title: Intro
     content: This is a placeholder guide for Blood Mage.

@@ -2,7 +2,7 @@
 title: Chronomancer
 image: /images/ascendancies/chronomancer.png
 class: Sorceress
-tier: B
+tier: A
 sections:
   - title: Intro
     content: This is a placeholder guide for Chronomancer.

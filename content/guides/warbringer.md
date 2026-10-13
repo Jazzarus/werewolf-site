@@ -2,7 +2,7 @@
 title: Warbringer
 image: /images/ascendancies/warbringer.png
 class: Warrior
-tier: B
+tier: Unranked
 sections:
   - title: Intro
     content: This is a placeholder guide for Warbringer.

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "node scripts/clean-tina-admin.mjs && next build",
+    "build": "node scripts/clean-tina-admin.mjs && node scripts/sync-game-tooltips.mjs && next build",
+    "sync:tooltips": "node scripts/sync-game-tooltips.mjs --refresh",
     "start": "next start",
     "lint": "eslint"
   },

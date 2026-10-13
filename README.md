@@ -55,6 +55,10 @@ sections:
 
 Section content supports Markdown. Raw HTML is sanitized; interactive embeds should be implemented through a dedicated component or structured metadata rather than pasted HTML.
 
+Bold text that exactly matches a Path of Exile 2 skill, passive, or item in the generated PoE2DB catalog gets a non-link tooltip with its short description and icon when available. Unmatched bold text remains ordinary bold text. The build syncs newly encountered names and their icons; `npm run sync:tooltips` refreshes the full local catalog. Tooltip source credits appear in the popup.
+
+Support Gem variants resolve to their Tier I tooltip: an unnumbered name uses Tier I when available, and explicit Tier II or III names also use Tier I.
+
 ## Farm strategy format
 
 Create one Markdown document per strategy in `content/farms/`. TinaCMS manages these documents in its separate Farm Strategies collection. Each entry has a title, one of the S/A/B/C/D/F tiers, and a Markdown strategy field; its filename is the route-independent record ID and does not appear on the public tier list.

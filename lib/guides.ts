@@ -1,24 +1,13 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { defaultSchema, type Schema } from "hast-util-sanitize";
-import { remark } from "remark";
-import html from "remark-html";
+import { renderArticleMarkdown } from "@/lib/markdown";
 
 const guidesDirectory = path.join(process.cwd(), "content", "guides");
 
 type GuideSectionData = {
   title: string;
   content: string;
-};
-
-type MarkdownNode = {
-  type?: string;
-  url?: string;
-  data?: {
-    hProperties?: Record<string, unknown>;
-  };
-  children?: MarkdownNode[];
 };
 
 export type GuideSection = {
@@ -42,18 +31,6 @@ export type GuideGroup = {
 
 type GuideGroupKey = "class" | "tier";
 
-const guideHtmlSchema: Schema = {
-  ...defaultSchema,
-  attributes: {
-    ...defaultSchema.attributes,
-    a: [
-      ...(defaultSchema.attributes?.a ?? []),
-      ["target", "_blank"],
-      "rel",
-    ],
-  },
-};
-
 export const GUIDE_CLASS_ORDER = [
   "Huntress",
   "Mercenary",
@@ -69,7 +46,16 @@ export const GUIDE_CLASS_ORDER = [
   "Templar",
 ] as const;
 
-export const GUIDE_TIER_ORDER = ["S+", "S", "A", "B", "C", "D", "F"] as const;
+export const GUIDE_TIER_ORDER = [
+  "S+",
+  "S",
+  "A",
+  "B",
+  "C",
+  "D",
+  "F",
+  "Unranked",
+] as const;
 
 export function getGuideSlugs() {
   return fs
@@ -124,34 +110,13 @@ function getSections(value: unknown, fileName: string): GuideSectionData[] {
   });
 }
 
-function externalLinksOpenInNewTabs() {
-  return (tree: MarkdownNode) => {
-    function addLinkAttributes(node: MarkdownNode) {
-      if (node.type === "link" && /^https?:\/\//i.test(node.url ?? "")) {
-        node.data ??= {};
-        node.data.hProperties = {
-          ...node.data.hProperties,
-          target: "_blank",
-          rel: ["noopener", "noreferrer"],
-        };
-      }
-
-      node.children?.forEach(addLinkAttributes);
-    }
-
-    addLinkAttributes(tree);
-  };
-}
-
-async function renderSection(section: GuideSectionData): Promise<GuideSection> {
-  const processedContent = await remark()
-    .use(externalLinksOpenInNewTabs)
-    .use(html, { sanitize: guideHtmlSchema })
-    .process(section.content);
-
+async function renderSection(
+  section: GuideSectionData,
+  idPrefix: string,
+): Promise<GuideSection> {
   return {
     title: section.title,
-    contentHtml: processedContent.toString(),
+    contentHtml: await renderArticleMarkdown(section.content, idPrefix),
   };
 }
 
@@ -161,7 +126,9 @@ export async function getGuideBySlug(slug: string): Promise<Guide> {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data } = matter(fileContents);
   const sections = await Promise.all(
-    getSections(data.sections, fileName).map(renderSection),
+    getSections(data.sections, fileName).map((section, index) =>
+      renderSection(section, `${slug}-${index}`),
+    ),
   );
 
   if ("slug" in data) {

@@ -239,6 +239,97 @@
 .content :global(li + li) { margin-top: 0.45rem; }
 .content :global(li::marker) { color: var(--color-gold); }
 .content :global(strong), .content :global(dt) { color: var(--color-ivory); }
+.content :global(.gameTerm) {
+  position: relative;
+  display: inline;
+  color: inherit;
+  text-decoration: underline dotted var(--color-gold-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
+.content :global(.gameTerm:focus-visible) {
+  border-radius: 2px;
+  outline-offset: 3px;
+}
+.content :global(.gameTooltip) {
+  position: absolute;
+  z-index: 30;
+  bottom: calc(100% + 0.65rem);
+  left: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 0.85rem;
+  width: min(25rem, calc(100vw - 2rem));
+  max-height: min(50vh, 18rem);
+  overflow: auto;
+  padding: 0.9rem;
+  background:
+    linear-gradient(145deg, rgb(30 28 23 / 98%), rgb(8 10 12 / 99%));
+  border: 1px solid #766344;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 78%), inset 0 0 0 2px rgb(0 0 0 / 35%);
+  color: var(--color-ivory);
+  text-align: left;
+  white-space: normal;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.35rem);
+  transition: opacity 140ms ease, transform 140ms ease, visibility 140ms;
+}
+.content :global(.gameTooltip img) {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border: 1px solid #62583e;
+  box-shadow: 0 2px 8px #000;
+}
+.content :global(.gameTooltipCopy) {
+  min-width: 0;
+  display: grid;
+  gap: 0.15rem;
+}
+.content :global(.gameTooltipName) {
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.content :global(.gameTooltipType), .content :global(.gameTooltipSource) {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+.content :global(.gameTooltipDescription) {
+  margin-top: 0.25rem;
+  color: #d0ccc2;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.content :global(.gameTerm:hover .gameTooltip),
+.content :global(.gameTerm:focus .gameTooltip) {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.content :global(.gameTerm:hover), .content :global(.gameTerm:focus) { z-index: 31; }
+@media (max-width: 34rem) {
+  .content :global(.gameTooltip) {
+    left: 50%;
+    width: min(21rem, calc(100vw - 1.5rem));
+    transform: translate(-50%, 0.35rem);
+  }
+  .content :global(.gameTerm:hover .gameTooltip),
+  .content :global(.gameTerm:focus .gameTooltip) {
+    transform: translate(-50%, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .content :global(.gameTooltip) { transition: none; }
+}
 .content :global(blockquote) {
   margin: 1.75rem 0;
   padding: 1rem 1.25rem;

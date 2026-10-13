@@ -42,6 +42,7 @@ export default defineConfig({
             name: "tier",
             label: "Tier",
             required: true,
+            options: ["S+", "S", "A", "B", "C", "D", "F", "Unranked"],
           },
           {
             type: "object",

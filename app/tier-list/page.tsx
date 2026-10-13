@@ -35,7 +35,9 @@ async function TierSections() {
 
   return guideGroups.map((group) => (
     <section key={group.name} aria-labelledby={`${group.name}-tier`}>
-      <h2 id={`${group.name}-tier`}>{group.name} Tier</h2>
+      <h2 id={`${group.name}-tier`}>
+        {group.name === "Unranked" ? group.name : `${group.name} Tier`}
+      </h2>
       <div className={styles.guideGrid}>
         {group.guides.map((guide) => (
           <GuideCard guide={guide} key={guide.slug} />
