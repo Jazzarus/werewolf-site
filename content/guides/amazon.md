@@ -2,7 +2,7 @@
 title: Amazon
 image: /images/ascendancies/amazon.png
 class: Huntress
-tier: B
+tier: A
 sections:
   - title: Intro
     content: |

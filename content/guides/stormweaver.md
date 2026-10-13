@@ -2,7 +2,7 @@
 title: Stormweaver
 image: /images/ascendancies/stormweaver.png
 class: Sorceress
-tier: B
+tier: C
 sections:
   - title: Intro
     content: This is a placeholder guide for Stormweaver.
