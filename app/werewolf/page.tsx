@@ -35,7 +35,11 @@ export default async function WerewolfPage() {
             <h2 id={`${group.name}-guides`}>{group.name}</h2>
             <div className={styles.guideGrid}>
               {group.guides.map((guide) => (
-                <GuideCard guide={guide} key={guide.slug} />
+                <GuideCard
+                  guide={guide}
+                  key={guide.slug}
+                  showTier={false}
+                />
               ))}
             </div>
           </section>

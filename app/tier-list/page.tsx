@@ -15,10 +15,21 @@ export default function TierList() {
       </section>
 
       <section className={styles.container}>
-        <h2>Tier List Explanation</h2>
+        <h2>About the Tier List</h2>
         <p>
-          Ranking explanations will be added here as each guide receives a
-          finalized tier placement.
+          This tier list ranks how strong each ascendancy is specifically for
+          Werewolf builds. <strong>Every build featured on this website can
+          clear all content in the game</strong>, including those in the lower
+          tiers. The rankings reflect differences in overall strength, not
+          whether a build is good or bad.
+        </p>
+        <p>
+          Each ascendancy is evaluated using a realistic, semi-budget to
+          moderately invested build, based on the builds showcased in the
+          guides. These aren&apos;t mirror-tier builds with unlimited currency.
+          With further investment, the rankings could change, but this tier
+          list gives you a consistent comparison using builds that regular
+          players can realistically put together.
         </p>
       </section>
     </main>

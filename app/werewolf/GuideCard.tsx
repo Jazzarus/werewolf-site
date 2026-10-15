@@ -5,12 +5,13 @@ import styles from "./werewolf.module.css";
 
 type GuideCardProps = {
   guide: Guide;
+  showTier?: boolean;
 };
 
-export function GuideCard({ guide }: GuideCardProps) {
+export function GuideCard({ guide, showTier = true }: GuideCardProps) {
   return (
     <Link
-      className={styles.guideCard}
+      className={`${styles.guideCard}${showTier ? "" : ` ${styles.guideCardHome}`}`}
       href={`/werewolf/${guide.slug}`}
     >
       <div className={styles.imageContainer}>
@@ -18,14 +19,16 @@ export function GuideCard({ guide }: GuideCardProps) {
           src={guide.image}
           alt=""
           fill
-          sizes="72px"
+          sizes={showTier ? "72px" : "80px"}
           className={styles.guideImage}
         />
       </div>
-      <h3>{guide.title}</h3>
-      <div className={styles.guideMeta}>
-        <span>{guide.class}</span>
-        <span>Tier {guide.tier}</span>
+      <div className={styles.guideText}>
+        <h3>{guide.title}</h3>
+        <div className={styles.guideMeta}>
+          <span>{guide.class}</span>
+          {showTier && <span>Tier {guide.tier}</span>}
+        </div>
       </div>
     </Link>
   );
