@@ -1,18 +1,23 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-13T13:11:45.109Z",
+  "refreshedAt": "2026-10-15T05:29:27.272Z",
   "checkedNames": [
+    "absent amulet",
     "amanamu",
     "ancestral call",
     "arctic howl",
+    "armour break",
+    "armour explosion",
     "atziri's communion",
+    "atziri's impatience",
     "avatar of evolution",
     "barkskin",
     "berserk",
     "bhatair's vengeance",
     "biting frost",
     "blazing critical",
+    "blind i",
     "blood magic",
     "brutus' brain",
     "captivating companionship",
@@ -21,6 +26,7 @@
     "close combat",
     "cold penetration",
     "convergence",
+    "critical strike",
     "cross slash",
     "crown of eyes",
     "crown of eyes is essential",
@@ -40,6 +46,7 @@
     "eternal rage",
     "eternal rage amulet",
     "execute",
+    "for utopia",
     "forgotten warden",
     "from nothing",
     "garukhan's resolve",
@@ -63,6 +70,7 @@
     "lavianga's spirits",
     "legacy of the wanderlust",
     "legacy of wanderlust",
+    "life leech i",
     "living lightning",
     "long fuse",
     "loyalty",
@@ -72,6 +80,7 @@
     "mageblood",
     "mageblood or headhunter:",
     "magnified area",
+    "maim",
     "maji talisman",
     "mana remnants",
     "mark of siphoning",
@@ -80,6 +89,7 @@
     "morior invictus",
     "morrigan's insight",
     "mystic attunement",
+    "mystic harvest",
     "mystical rage",
     "oisin's oath",
     "overcharge",
@@ -91,6 +101,7 @@
     "piercing claw damage",
     "pounce",
     "predator's mark",
+    "predatory instinct",
     "primal bounty",
     "primal rage",
     "prolonged duration",
@@ -108,8 +119,10 @@
     "sine aequo",
     "spiny talisman",
     "spirit vessel",
+    "stalking panther",
     "starkonja's head",
     "test guide",
+    "thawing charm",
     "the morrigan's guidance",
     "the shaman",
     "tireless",
@@ -119,6 +132,7 @@
     "undying hate timeless jewel",
     "unfurled finger",
     "unset ring",
+    "uruk's smelting",
     "vitality",
     "vivid stampede",
     "voices",
@@ -132,6 +146,13 @@
     "zealot's oath"
   ],
   "entities": [
+    {
+      "name": "Absent Amulet",
+      "type": "Amulet base",
+      "description": "An amulet base with no Prefix or Suffix modifier slots.",
+      "image": "/images/game-tooltips/absent-amulet.webp",
+      "source": "https://poe2db.tw/Absent_Amulet"
+    },
     {
       "name": "Ancestral Call I",
       "type": "Support gem",
@@ -147,11 +168,32 @@
       "source": "https://poe2db.tw/us/Arctic_Howl"
     },
     {
+      "name": "Armour Break",
+      "type": "Passive skill",
+      "description": "Some Skills, Items, Support Gems and other effects can Break Armour, which lowers a target's Armour by a specified amount. If this brings the target's Armour value to 0, their Armour is Fully Broken for 12 seconds, or 4 seconds for players. On top of not benefitting from Armour, non-player targets with Fully Broken Armour take 20% increased Physical damage from Hits.\r\n\r\nPlayers Break 3 times Armour against Normal Monsters and 2 times Armour against Magic Monsters.",
+      "image": "/images/game-tooltips/armour-break.webp",
+      "source": "https://poe2db.tw/us/Armour_Break"
+    },
+    {
+      "name": "Armour Explosion",
+      "type": "Support gem",
+      "description": "Supports Attacks and Warcries, causing them to trigger a Fiery explosion when they Fully Break an enemy's Armour.",
+      "image": "/images/game-tooltips/armour-explosion.webp",
+      "source": "https://poe2db.tw/us/Armour_Explosion"
+    },
+    {
       "name": "Atziri's Communion",
       "type": "Support gem",
       "description": "Supports Persistent Skills, making them Reserve Life instead of Spirit. Cannot Support Skills which create Minions.",
       "image": "/images/game-tooltips/atziri-s-communion.webp",
       "source": "https://poe2db.tw/us/Atziri's_Communion"
+    },
+    {
+      "name": "Atziri's Impatience",
+      "type": "Support gem",
+      "description": "Supports Skills you use yourself that have Cooldowns, dramatically increasing the rate at which those Cooldowns Recover, but causing you to lose Life, Mana, and Energy Shield when they are used. Cannot Support Meta Skills or Persistent Skills, or modify the Skills of Minions.",
+      "image": "/images/game-tooltips/atziri-s-impatience.webp",
+      "source": "https://poe2db.tw/us/Atziri's_Impatience"
     },
     {
       "name": "Avatar of Evolution",
@@ -194,6 +236,13 @@
       "description": "Supports Skills you use yourself which Hit enemies. Critical Hits with Supported Skills imbue all of your Attacks with Fire damage for a duration.",
       "image": "/images/game-tooltips/blazing-critical.webp",
       "source": "https://poe2db.tw/us/Blazing_Critical"
+    },
+    {
+      "name": "Blind I",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing them to Blind on Hit.",
+      "image": "/images/game-tooltips/blind-i.webp",
+      "source": "https://poe2db.tw/us/Blind_I"
     },
     {
       "name": "Blood Magic",
@@ -243,6 +292,13 @@
       "description": "Supports any skill that Hits enemies, making those Hits Penetrate enemy Cold resistance.",
       "image": "/images/game-tooltips/cold-penetration.webp",
       "source": "https://poe2db.tw/us/Cold_Penetration"
+    },
+    {
+      "name": "Critical Strike",
+      "type": "Passive skill",
+      "description": "Chance to Hit with Attacks can exceed 100%Gain additional Critical Hit Chance equal to 25% of excess chance to Hit with Attacks",
+      "image": "/images/game-tooltips/critical-strike.webp",
+      "source": "https://poe2db.tw/us/Critical_Strike"
     },
     {
       "name": "Cross Slash",
@@ -352,6 +408,13 @@
       "description": "Supports any skill that Hits enemies, causing it to deal more damage against enemies on Low Life.",
       "image": "/images/game-tooltips/execute-i.webp",
       "source": "https://poe2db.tw/us/Execute_I"
+    },
+    {
+      "name": "For Utopia Stone Charm",
+      "type": "Unique item",
+      "description": "Defend with 200% of Armour during effect",
+      "image": "/images/game-tooltips/for-utopia-stone-charm.webp",
+      "source": "https://poe2db.tw/us/For_Utopia"
     },
     {
       "name": "Forgotten Warden Primal Markings",
@@ -500,6 +563,13 @@
       "image": "/images/game-tooltips/legacy-of-wanderlust.webp"
     },
     {
+      "name": "Life Leech I",
+      "type": "Support gem",
+      "description": "Supports Attacks, causing their Physical damage to Leech Life.",
+      "image": "/images/game-tooltips/life-leech-i.webp",
+      "source": "https://poe2db.tw/us/Life_Leech_I"
+    },
+    {
       "name": "Living Lightning",
       "type": "Support gem",
       "description": "Supports Skills which cause Damaging Hits. Living Lightning Minions are created when dealing Lightning damage with Supported Skills - bundles of living electricity that target nearby enemies with Chaining Attacks. Enemies will not directly engage these Minions, and can pass through them. Does not modify skills used by Minions.",
@@ -554,6 +624,13 @@
       "description": "Supports any skill with an area of effect, making it larger.",
       "image": "/images/game-tooltips/magnified-area-i.webp",
       "source": "https://poe2db.tw/us/Magnified_Area_I"
+    },
+    {
+      "name": "Maim",
+      "type": "Support gem",
+      "description": "Supports Attacks, causing them to Maim enemies.",
+      "image": "/images/game-tooltips/maim.webp",
+      "source": "https://poe2db.tw/us/Maim"
     },
     {
       "name": "Maji Talisman",
@@ -616,6 +693,13 @@
       "description": "25% increased bonuses gained from Equipped Rings and Amulets",
       "image": "/images/game-tooltips/mystic-attunement.webp",
       "source": "https://poe2db.tw/us/Mystic_Attunement"
+    },
+    {
+      "name": "Mystic Harvest",
+      "type": "Passive skill",
+      "description": "Life Leech recovers based on your Elemental damage as well as Physical damage",
+      "image": "/images/game-tooltips/mystic-harvest.webp",
+      "source": "https://poe2db.tw/us/Mystic_Harvest"
     },
     {
       "name": "Mystical Rage",
@@ -685,6 +769,13 @@
       "description": "Mark a target, causing it to take increased damage based on how many of the target's enemies are near to it. If the target dies, the Mark will Activate to Trigger the Summon Wolf skill and Consume the Mark.",
       "image": "/images/game-tooltips/predator-s-mark.webp",
       "source": "https://poe2db.tw/us/Predator's_Mark"
+    },
+    {
+      "name": "Predatory Instinct",
+      "type": "Passive skill",
+      "description": "Reveal Weaknesses against Rare and Unique enemies\n50% more damage against enemies with an Open Weakness",
+      "image": "/images/game-tooltips/predatory-instinct.webp",
+      "source": "https://poe2db.tw/us/Predatory_Instinct"
     },
     {
       "name": "Primal Bounty",
@@ -805,11 +896,25 @@
       "source": "https://poe2db.tw/us/Spirit_Vessel"
     },
     {
+      "name": "Stalking Panther",
+      "type": "Passive skill",
+      "description": "Evasion Rating from Equipped Helmet, Gloves and Boots is doubled\nEvasion Rating from Equipped Body Armour is halved",
+      "image": "/images/game-tooltips/stalking-panther.webp",
+      "source": "https://poe2db.tw/us/Stalking_Panther"
+    },
+    {
       "name": "Starkonja's Head Leatherbound Hood",
       "type": "Unique item",
       "description": "(100—200)% increased Evasion Rating\n(15—25)% increased Critical Hit Chance\n+(30—40) to Dexterity\n150% increased Global Evasion Rating when on Low Life\n15% of Damage from Hits is taken from your Damageable Companion's Life before you",
       "image": "/images/game-tooltips/starkonja-s-head-leatherbound-hood.webp",
       "source": "https://poe2db.tw/us/Starkonja's_Head"
+    },
+    {
+      "name": "Thawing Charm",
+      "type": "Charm",
+      "description": "A charm that activates when you become Frozen and grants immunity to Freeze.",
+      "image": "/images/game-tooltips/thawing-charm.webp",
+      "source": "https://poe2db.tw/us/Thawing_Charm"
     },
     {
       "name": "The Mórrigan's Guidance",
@@ -866,6 +971,13 @@
       "description": "Grants 1 additional Skill Slot.",
       "image": "/images/game-tooltips/unset-ring.webp",
       "source": "https://poe2db.tw/us/Unset_Ring"
+    },
+    {
+      "name": "Uruk's Smelting",
+      "type": "Support gem",
+      "description": "Supports any skill, causing Armour Break it inflicts to be stronger. Fully Breaking Armour with Supported Skills permanently increases the Physical Damage taken by those affected, up to a cap.",
+      "image": "/images/game-tooltips/uruk-s-smelting.webp",
+      "source": "https://poe2db.tw/us/Uruk's_Smelting"
     },
     {
       "name": "Vitality",

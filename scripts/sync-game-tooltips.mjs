@@ -45,7 +45,9 @@ const nonEntityPhrases = new Set([
   "elemental resistance",
 ]);
 const conciseFallbackDescriptions = new Map([
+  ["absent amulet", "An amulet base with no Prefix or Suffix modifier slots."],
   ["dousing charm", "A charm that activates when you become Ignited."],
+  ["thawing charm", "A charm that activates when you become Frozen and grants immunity to Freeze."],
   ["maji talisman", "Talisman base with +(7–10) to Maximum Rage."],
   ["spiny talisman", "Talisman base with 5% base weapon Critical Hit Chance."],
   ["dangerous blossom", "Gain 10% of Damage as Extra Physical Damage."],
@@ -69,6 +71,16 @@ const conciseFallbackDescriptions = new Map([
 ]);
 const fallbackEntities = new Map([
   [
+    "absent amulet",
+    {
+      name: "Absent Amulet",
+      type: "Amulet base",
+      description: "An amulet base with no Prefix or Suffix modifier slots.",
+      image: "/images/game-tooltips/absent-amulet.webp",
+      source: "https://poe2db.tw/Absent_Amulet",
+    },
+  ],
+  [
     "legacy of wanderlust",
     {
       name: "Legacy of Wanderlust",
@@ -90,7 +102,9 @@ const fallbackEntities = new Map([
   ],
 ]);
 const explicitEntityTypes = new Map([
+  ["absent amulet", "Amulet base"],
   ["dousing charm", "Charm"],
+  ["thawing charm", "Charm"],
   ["maji talisman", "Talisman base"],
   ["spiny talisman", "Talisman base"],
   ["rite of passage", "Charm"],
@@ -241,20 +255,32 @@ async function fetchEntry(name, existing) {
   try {
     for (const candidateName of candidateNames) {
       const slug = candidateName.replace(/\s+/g, "_");
-      const url = `https://poe2db.tw/us/${encodeURIComponent(slug)}`;
-      const response = await fetch(url, {
-        headers: { Referer: "https://poe2db.tw/" },
-        signal: AbortSignal.timeout(15000),
-      });
-      if (response.status >= 500 || response.status === 429) {
-        failedLookups.add(normalize(name));
-        return existing ?? null;
-      }
-      if (!response.ok) continue;
-      const html = await response.text();
-      const title = decodeHtml(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? "");
-      if (!isMatchingPage(title, candidateName)) continue;
+      const urls = [
+        `https://poe2db.tw/us/${encodeURIComponent(slug)}`,
+        `https://poe2db.tw/${encodeURIComponent(slug)}`,
+      ];
+      let page;
 
+      for (const url of urls) {
+        const response = await fetch(url, {
+          headers: { Referer: "https://poe2db.tw/" },
+          signal: AbortSignal.timeout(15000),
+        });
+        if (response.status >= 500 || response.status === 429) {
+          failedLookups.add(normalize(name));
+          return existing ?? fallbackEntities.get(normalize(name)) ?? null;
+        }
+        if (!response.ok) continue;
+        const html = await response.text();
+        const title = decodeHtml(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? "");
+        if (!isMatchingPage(title, candidateName)) continue;
+        page = { url, html, title };
+        break;
+      }
+
+      if (!page) continue;
+
+      const { url, html, title } = page;
       const metadata = readMetaTags(html);
       let description =
         metadata.get("og:description") ?? metadata.get("description") ?? "";
@@ -269,44 +295,44 @@ async function fetchEntry(name, existing) {
       }
       if (!description.trim()) continue;
 
-    const imageUrl = metadata.get("og:image");
-    const iconRow = html.match(
-      /<tr[^>]*>\s*<td>Icon<\/td>[\s\S]*?<\/tr>/i,
-    )?.[0];
-    const itemBoxImage = html.match(
-      /<div\b[^>]*class=["'][^"']*itemboximage[^"']*["'][^>]*>[\s\S]*?<img\b[^>]*src=["']([^"']+)["']/i,
-    )?.[1];
-    const iconUrl = iconRow?.match(
-      /(?:src|data-src)=["'](https:\/\/cdn\.poe2db\.tw\/image\/[^"']+)["']/i,
-    )?.[1];
-    const linkedImageUrl = [...html.matchAll(
-      /<a\b[^>]*href=["'](https:\/\/cdn\.poe2db\.tw\/image\/[^"']+)["'][^>]*>([\s\S]{0,250}?)<\/a>/gi,
-    )].map((match) => match[1]).find((url) => !/minimap/i.test(url));
-    const resolvedImageUrl =
-      imageUrl?.startsWith("https://cdn.poe2db.tw/image/")
-        ? imageUrl
-        : itemBoxImage ?? iconUrl ?? linkedImageUrl;
+      const imageUrl = metadata.get("og:image");
+      const iconRow = html.match(
+        /<tr[^>]*>\s*<td>Icon<\/td>[\s\S]*?<\/tr>/i,
+      )?.[0];
+      const itemBoxImage = html.match(
+        /<div\b[^>]*class=["'][^"']*itemboximage[^"']*["'][^>]*>[\s\S]*?<img\b[^>]*src=["']([^"']+)["']/i,
+      )?.[1];
+      const iconUrl = iconRow?.match(
+        /(?:src|data-src)=["'](https:\/\/cdn\.poe2db\.tw\/image\/[^"']+)["']/i,
+      )?.[1];
+      const linkedImageUrl = [...html.matchAll(
+        /<a\b[^>]*href=["'](https:\/\/cdn\.poe2db\.tw\/image\/[^"']+)["'][^>]*>([\s\S]{0,250}?)<\/a>/gi,
+      )].map((match) => match[1]).find((url) => !/minimap/i.test(url));
+      const resolvedImageUrl =
+        imageUrl?.startsWith("https://cdn.poe2db.tw/image/")
+          ? imageUrl
+          : itemBoxImage ?? iconUrl ?? linkedImageUrl;
       const officialName = title.split(/\s+-\s+PoE2DB/i)[0].trim();
       const userIconName = normalize(officialName).replace(/\s+i$/i, "");
       let image = userIcons.get(normalize(name)) ?? userIcons.get(userIconName);
 
-    if (!image && resolvedImageUrl) {
-      const extension = path.extname(new URL(resolvedImageUrl).pathname) || ".webp";
-      const imageName = `${slugify(officialName)}${extension}`;
-      const imagePath = path.join(imageDirectory, imageName);
-      try {
-        const imageResponse = await fetch(resolvedImageUrl, {
-          headers: { Referer: "https://poe2db.tw/" },
-          signal: AbortSignal.timeout(15000),
-        });
-        if (imageResponse.ok && imageResponse.headers.get("content-type")?.startsWith("image/")) {
-          await fs.writeFile(imagePath, new Uint8Array(await imageResponse.arrayBuffer()));
-          image = `/images/game-tooltips/${imageName}`;
+      if (!image && resolvedImageUrl) {
+        const extension = path.extname(new URL(resolvedImageUrl).pathname) || ".webp";
+        const imageName = `${slugify(officialName)}${extension}`;
+        const imagePath = path.join(imageDirectory, imageName);
+        try {
+          const imageResponse = await fetch(resolvedImageUrl, {
+            headers: { Referer: "https://poe2db.tw/" },
+            signal: AbortSignal.timeout(15000),
+          });
+          if (imageResponse.ok && imageResponse.headers.get("content-type")?.startsWith("image/")) {
+            await fs.writeFile(imagePath, new Uint8Array(await imageResponse.arrayBuffer()));
+            image = `/images/game-tooltips/${imageName}`;
+          }
+        } catch {
+          // Keep the text tooltip when the source image is temporarily unavailable.
         }
-      } catch {
-        // Keep the text tooltip when the source image is temporarily unavailable.
       }
-    }
 
       const curatedEntry = fallbackEntities.get(normalize(name));
       if (
@@ -324,10 +350,11 @@ async function fetchEntry(name, existing) {
         source: url,
       };
     }
+
     return fallbackEntities.get(normalize(name)) ?? null;
   } catch {
     failedLookups.add(normalize(name));
-    return existing ?? null;
+    return existing ?? fallbackEntities.get(normalize(name)) ?? null;
   }
 }
 
@@ -402,7 +429,12 @@ if (toFetch.length) {
 }
 
 for (const name of names) {
-  if (!failedLookups.has(normalize(name))) checkedNames.add(normalize(name));
+  if (
+    !failedLookups.has(normalize(name)) ||
+    fallbackEntities.has(normalize(name))
+  ) {
+    checkedNames.add(normalize(name));
+  }
 }
 const entities = [...existingByName.values()]
   .filter((entity) => {
