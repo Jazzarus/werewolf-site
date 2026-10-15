@@ -452,7 +452,8 @@
 }
 .channelIcon { width: 1.2rem; height: 1.2rem; flex-shrink: 0; color: #b8a172; }
 .mediaPlaceholder {
-  min-height: 7.5rem;
+  min-height: 300px;
+  height: 300px;
   display: grid;
   align-content: center;
   justify-items: center;
@@ -464,6 +465,24 @@
   text-align: center;
   background: radial-gradient(ellipse at center, rgb(78 67 45 / 13%), transparent 75%);
 }
+.youtubeMedia { width: 100%; }
+.youtubePlayer {
+  display: block;
+  width: 100%;
+  min-width: 400px;
+  height: 300px;
+  border: 0;
+  background: #080a0d;
+}
+.youtubeFallback {
+  display: none;
+  min-height: 7.5rem;
+  place-items: center;
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  text-align: center;
+}
+.youtubeFallback:hover, .youtubeFallback:focus-visible { color: var(--color-ivory); }
 .mediaPlaceholder::before {
   content: "";
   width: 5rem;
@@ -499,6 +518,9 @@
 @container (max-width: 450px) {
   .twitchPlayer, .twitchLoading { display: none; }
   .twitchFallback { display: grid; }
+  .youtubePlayer { display: none; }
+  .youtubeFallback { display: grid; }
+  .mediaPlaceholder { min-height: 7.5rem; height: auto; }
 }
 .footer {
   margin-top: auto;

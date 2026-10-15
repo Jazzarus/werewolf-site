@@ -6,6 +6,7 @@ import "./globals.css";
 import styles from "./layout.module.css";
 import { SiteNavigation } from "./SiteNavigation";
 import { TwitchPlayer } from "./TwitchPlayer";
+import { YouTubePlayer } from "./YouTubePlayer";
 
 const fontin = localFont({
   src: "../public/fontin.otf",
@@ -72,8 +73,8 @@ export default function RootLayout({
                 </svg>
                 YouTube
               </h2>
-              <div className={styles.mediaPlaceholder}>
-                Latest videos coming soon
+              <div className={styles.youtubeMedia}>
+                <YouTubePlayer />
               </div>
             </section>
 
