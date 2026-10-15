@@ -11,7 +11,7 @@ type GuideCardProps = {
 export function GuideCard({ guide, showTier = true }: GuideCardProps) {
   return (
     <Link
-      className={`${styles.guideCard}${showTier ? "" : ` ${styles.guideCardHome}`}`}
+      className={`${styles.guideCard}${showTier ? ` ${styles.guideCardTier}` : ` ${styles.guideCardHome}`}`}
       href={`/werewolf/${guide.slug}`}
     >
       <div className={styles.imageContainer}>
@@ -22,13 +22,16 @@ export function GuideCard({ guide, showTier = true }: GuideCardProps) {
           sizes={showTier ? "72px" : "80px"}
           className={styles.guideImage}
         />
+        <span className={styles.imageFrame} aria-hidden="true" />
       </div>
       <div className={styles.guideText}>
         <h3>{guide.title}</h3>
-        <div className={styles.guideMeta}>
-          <span>{guide.class}</span>
-          {showTier && <span>Tier {guide.tier}</span>}
-        </div>
+        {showTier && (
+          <div className={styles.guideMeta}>
+            <span>{guide.class}</span>
+            <span>Tier {guide.tier}</span>
+          </div>
+        )}
       </div>
     </Link>
   );

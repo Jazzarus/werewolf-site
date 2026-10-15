@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import styles from "./layout.module.css";
 import { SiteNavigation } from "./SiteNavigation";
+import { TwitchPlayer } from "./TwitchPlayer";
 
 const fontin = localFont({
   src: "../public/fontin.otf",
@@ -76,15 +77,23 @@ export default function RootLayout({
               </div>
             </section>
 
-            <section className={styles.sidebarPanel}>
+            <section className={`${styles.sidebarPanel} ${styles.twitchPanel}`}>
               <h2>
                 <svg className={styles.channelIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M4 2 1 6v15h6v3l3-3h5l7-7V2H4Zm16 11-4 4h-6l-3 3v-3H4V4h16v9ZM16 7h-2v6h2V7Zm-5 0H9v6h2V7Z" />
                 </svg>
                 Twitch
               </h2>
-              <div className={styles.mediaPlaceholder}>
-                Livestream schedule coming soon
+              <div className={styles.twitchMedia}>
+                <TwitchPlayer />
+                <a
+                  className={styles.twitchFallback}
+                  href="https://www.twitch.tv/jazzarus_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Watch Jazzarus on Twitch
+                </a>
               </div>
             </section>
           </aside>

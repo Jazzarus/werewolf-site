@@ -11,6 +11,14 @@ sections:
       The Amazon's biggest advantage is how it turns Accuracy into damage. With the **Critical Strike** ascendancy notable, Accuracy beyond 100% chance to hit gives you additional Critical Hit Chance. Combine that with **Predatory Instinct**, which makes you deal substantially more damage against enemies with an Open Weakness, and you have a strong foundation for scaling your damage.
       
       Defensively, we use the Amazon's **Stalking Panther** and **Mystic Harvest** ascendancy notables to build around Evasion, Deflection, and elemental Life Leech. The result is a build that can deal with difficult endgame content without requiring mirror-tier gear.
+  - title: "Path of Building"
+    content: |
+      - **[Leveling Build](https://poe.ninja/poe2/pob/1bd68)**
+      - **[Budget Endgame Build](https://poe.ninja/poe2/pob/1cf24)**
+      - **[Full Endgame Build](https://poe.ninja/poe2/pob/1d18e)**
+      - **[Late Endgame Build](https://poe.ninja/poe2/pob/1dacf)**
+
+      Start with the leveling version and work your way up from there. The endgame versions provide a progression path as you acquire better gear and invest more into the build.
   - title: "Skill Gems and Support Gems"
     content: |
       The build follows the usual Werewolf rotation, so you don't need to learn a completely different playstyle.

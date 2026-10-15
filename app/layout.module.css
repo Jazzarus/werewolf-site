@@ -431,7 +431,7 @@
 .content :global(summary) { color: var(--color-gold-bright); font-family: var(--font-display); cursor: pointer; }
 .content :global(details[open] summary) { margin-bottom: 1rem; }
 
-.sidebar { min-width: 0; display: grid; align-content: start; gap: 1.75rem; }
+.sidebar { min-width: 0; display: grid; align-content: start; gap: 1.75rem; container-type: inline-size; }
 .sidebarPanel {
   position: relative;
   min-width: 0;
@@ -471,6 +471,35 @@
   background: url("/assets/title-line.webp") center / contain no-repeat;
   opacity: 0.55;
 }
+.twitchPanel .twitchMedia { width: 100%; }
+.twitchLoading {
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  color: #aaa292;
+  font-size: 0.875rem;
+}
+.twitchPlayer {
+  display: block;
+  width: 100%;
+  min-width: 400px;
+  height: 300px;
+  border: 0;
+  background: #080a0d;
+}
+.twitchFallback {
+  display: none;
+  min-height: 7.5rem;
+  place-items: center;
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  text-align: center;
+}
+.twitchFallback:hover, .twitchFallback:focus-visible { color: var(--color-ivory); }
+@container (max-width: 450px) {
+  .twitchPlayer, .twitchLoading { display: none; }
+  .twitchFallback { display: grid; }
+}
 .footer {
   margin-top: auto;
   padding: 0 var(--edge-space) 2rem;
@@ -488,10 +517,15 @@
 .footer p { margin: 0; }
 
 @media (min-width: 75rem) {
-  .pageLayout { grid-template-columns: minmax(0, 1fr) 16rem; align-items: start; }
+  .pageLayout { grid-template-columns: minmax(0, 1fr) 28.25rem; align-items: start; }
+  .sidebar {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+  }
 }
 @media (min-width: 42rem) and (max-width: 74.999rem) {
-  .sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sidebar { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 59.999rem) {
   .banner {
