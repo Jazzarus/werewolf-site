@@ -146,16 +146,26 @@ function withIcon(item) {
 const itemSet = xml.match(/<ItemSet\b[^>]*>([\s\S]*?)<\/ItemSet>/)?.[1] ?? "";
 const slots = [];
 const jewels = [];
+// Path of Building can list one jewel under several sockets (e.g. both
+// sockets of a gloves-socket exports); each jewel is shown once.
+const seenJewels = new Set();
 for (const match of itemSet.matchAll(/<Slot\b[^>]*\/>/g)) {
   const { name, itemId } = readAttributes(match[0]);
   if (!itemId || itemId === "0" || /Swap$/.test(name)) continue;
   const item = withIcon(items.get(itemId));
-  if (/Jewel Socket/.test(name)) jewels.push({ location: name.replace(/ Jewel Socket \d+$/, ""), item });
-  else slots.push({ slot: name, item });
+  if (/Jewel Socket/.test(name)) {
+    if (seenJewels.has(itemId)) continue;
+    seenJewels.add(itemId);
+    jewels.push({ location: name.replace(/ Jewel Socket \d+$/, ""), item });
+  } else {
+    slots.push({ slot: name, item });
+  }
 }
 for (const match of xml.matchAll(/<Socket\b[^>]*nodeId="\d+"[^>]*\/>/g)) {
   const { itemId } = readAttributes(match[0]);
-  if (itemId && itemId !== "0") jewels.push({ location: "Passive Tree", item: withIcon(items.get(itemId)) });
+  if (!itemId || itemId === "0" || seenJewels.has(itemId)) continue;
+  seenJewels.add(itemId);
+  jewels.push({ location: "Passive Tree", item: withIcon(items.get(itemId)) });
 }
 
 const skillSet = xml.match(/<SkillSet\b[^>]*>([\s\S]*?)<\/SkillSet>/)?.[1] ?? "";

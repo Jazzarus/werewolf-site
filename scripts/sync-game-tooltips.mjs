@@ -7,6 +7,7 @@ const guideDirectory = path.join(root, "content", "guides");
 const farmDirectory = path.join(root, "content", "farms");
 const generalGuidePath = path.join(root, "content", "werewolf-general.md");
 const catalogPath = path.join(root, "data", "game-tooltips.json");
+const buildDirectory = path.join(root, "data", "builds");
 const imageDirectory = path.join(root, "public", "images", "game-tooltips");
 const forceRefresh = process.argv.includes("--refresh");
 const userIcons = new Map([
@@ -257,8 +258,11 @@ async function fetchEntry(name, existing) {
     : name;
   // Prefer the Tier I gem ("Biting Frost I") over a passive or item that
   // shares the bare name; the article text keeps the unnumbered name.
+  // Some gems have no numeral on Tier I ("Mark for Death"), so a numbered
+  // name also falls back to the bare name.
+  const bareName = requestedTier ? requestedTier[1] : null;
   const candidateNames = /\s+i$/i.test(lookupName)
-    ? [lookupName]
+    ? [lookupName, ...(bareName ? [bareName] : [])]
     : [`${lookupName} I`, lookupName];
 
   try {
@@ -405,7 +409,21 @@ contentPaths.push(generalGuidePath);
 const sourceTexts = await Promise.all(
   contentPaths.map((file) => fs.readFile(file, "utf8")),
 );
-const names = [...new Set(sourceTexts.flatMap(extractBoldNames))];
+// Gems shown as setup cards come from data/builds/*.json, not from bold text.
+const buildFiles = await fs.readdir(buildDirectory).catch(() => []);
+const buildGemNames = (
+  await Promise.all(
+    buildFiles
+      .filter((file) => file.endsWith(".json"))
+      .map(async (file) => {
+        const build = JSON.parse(await fs.readFile(path.join(buildDirectory, file), "utf8"));
+        return (build.skills ?? []).flatMap((skill) => skill.gems.map((gem) => gem.name));
+      }),
+  )
+).flat();
+const names = [
+  ...new Set([...sourceTexts.flatMap(extractBoldNames), ...buildGemNames]),
+];
 const previous = await fs
   .readFile(catalogPath, "utf8")
   .then((text) => JSON.parse(text))
@@ -423,7 +441,7 @@ const canonicalNames = new Set(
     const normalizedTierOne = normalize(tierOneName(name));
     const normalizedName = normalize(name);
     return /\s+(?:i|ii|iii)$/i.test(name)
-      ? [normalizedTierOne]
+      ? [normalizedTierOne, normalize(name.replace(/\s+(?:i|ii|iii)$/i, ""))]
       : [normalizedName, `${normalizedName} i`];
   }),
 );

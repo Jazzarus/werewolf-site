@@ -4,180 +4,85 @@ image: /images/ascendancies/amazon.png
 class: Huntress
 tier: A
 sections:
-  - title: "Intro"
+  - title: "Introduction"
     content: |
-      The Amazon is a great option if you want a fast, aggressive Werewolf that combines elemental damage with strong critical scaling. You jump around the battlefield, Freeze enemies with **Lunar Assault**, and tear them apart with **Shred** and **Cross Slash**. It's a fun, mobile build with excellent clear and plenty of damage for bosses.
-      
-      The Amazon's biggest advantage is how it turns Accuracy into damage. With the **Critical Strike** ascendancy notable, Accuracy beyond 100% chance to hit gives you additional Critical Hit Chance. Combine that with **Predatory Instinct**, which makes you deal substantially more damage against enemies with an Open Weakness, and you have a strong foundation for scaling your damage.
-      
-      Defensively, we use the Amazon's **Stalking Panther** and **Mystic Harvest** ascendancy notables to build around Evasion, Deflection, and elemental Life Leech. The result is a build that can deal with difficult endgame content without requiring mirror-tier gear.
-  - title: "Path of Building"
+      - [Introduction](#introduction)
+      - [Build Links](#build-links)
+      - [Skill Gems](#skill-gems)
+      - [Gear](#gear)
+      - [Passive Tree](#passive-tree)
+
+      This guide builds on the [general werewolf guide](/werewolf-general/) and only covers what is specific to the **Amazon**. If a skill, support, or mechanic here is unclear, read the general guide first.
+
+      The **Amazon** is a melee werewolf. We transform into the white werewolf, jump around the battlefield, claw our enemies, and shred them to pieces. It is fast, fun, and satisfying. This guide covers the Late Endgame version, which uses expensive pieces like **Rakiata’s Flow** and **Rigwald’s Ferocity** that not many people have. The [Endgame build](https://poe.ninja/poe2/pob/1d18e) before it has none of those expensive items and clears all the content in the game, so use that one if you aren’t there yet.
+
+      The **Amazon** gets its damage from critical hits and its defense from evasion. I sit at almost 70% critical chance and 300% critical bonus, and accuracy turns into extra critical chance. Evasion scales deflection, and I take part of my damage from mana before life. The sections below explain each piece.
+  - title: "Build Links"
     content: |
       - **[Leveling Build](https://poe.ninja/poe2/pob/1bd68)**
-      - **[Budget Endgame Build](https://poe.ninja/poe2/pob/1cf24)**
-      - **[Full Endgame Build](https://poe.ninja/poe2/pob/1d18e)**
-      - **[Late Endgame Build](https://poe.ninja/poe2/pob/1dacf)**
-
-      Start with the leveling version and work your way up from there. The endgame versions provide a progression path as you acquire better gear and invest more into the build.
-  - title: "Skill Gems and Support Gems"
+      - **[Early Mapping Build](https://poe.ninja/poe2/pob/1cf24)**
+      - **[Endgame Build](https://poe.ninja/poe2/pob/1d18e)**
+      - **[Late Endgame Build](https://poe.ninja/poe2/pob/2b668)**
+  - title: "Skill Gems"
     content: |
-      The build follows the usual Werewolf rotation, so you don't need to learn a completely different playstyle.
-      
-      ### **Shred**
-      
-      **Shred** is your main attack against frozen enemies. Prioritize Attack Speed and damage, and use **Long Fuse** to increase the damage of the ice fragments **Shred** leaves on the ground. When you hit a frozen enemy with **Shred**, those fragments drop around the target, and **Cross Slash** can detonate them for additional damage.
-      
-      ### **Lunar Assault**
-      
-      **Ancestral Call** is especially useful for mapping because it helps **Lunar Assault** cover more of the screen. **Rakiata's Flow** is another major damage upgrade: it inverts enemy elemental resistances for the supported skill. If you don't have it yet, use **Cold Penetration** and invest in elemental penetration on the passive tree.
-      
-      ### **Cross Slash** and Marks
-      
-      **Cross Slash** is both your finisher and an important part of the mark setup. It deals heavy damage, detonates your mark, and helps trigger the additional effects you've built into the setup.
-      
-      **Eternal Mark** allows the mark to remain on the enemy after it is detonated. This lets you trigger the mark with **Cross Slash** while continuing to benefit from **Mark of Siphoning**. **Charged Mark** adds another layer by creating Shocked Ground when you detonate the mark.
-      
-      ### **Arctic Howl**
-      
-      **Arctic Howl** helps you build Freeze faster and empowers your attacks. I use **Tireless** and **Echoing Cry** to get more value from the skill, with **Blazing Critical** providing additional damage through critical hits.
-      
-      Keep **Arctic Howl** active when fighting tougher enemies rather than saving it only for emergencies. Its extra damage and Freeze buildup make it a useful part of your boss rotation.
-      
-      ### **Lunar Blessing**
-      
-      **Lunar Blessing** transforms you into the white Werewolf and provides a substantial damage boost. You want to maintain this form as much as possible.
-      
-      **Prolonged Duration** helps keep the transformation active for longer, while **Elemental Armament** improves the damage of your attacks and the moonbeams produced during the transformation. I also use **Life Leech I** to take advantage of the Amazon's elemental leech, and a cooldown support to help **Lunar Blessing** come back quickly.
-      
-      One option is **Atziri's Impatience**, which provides a massive boost to cooldown recovery but causes you to lose 25% of your maximum Life, Mana, and Energy Shield when you use the supported skill. If you use it, be aware of that cost and make sure your Life sustain can handle it. Otherwise, use a more straightforward cooldown-recovery setup.
-      
-      ### **Herald of Ice**
-      
-      **Herald of Ice** is a major part of the build's clear. The idea is to combine its explosions with armour breaking so that kills can trigger further explosions across a pack.
-      
-      The setup uses **Elemental Armament** and **Magnified Area**, alongside **Armour Break**, **Armour Explosion**, and **Uruk's Smelting**. Because the build has sources of added Physical Damage, **Herald of Ice** can contribute to armour breaking as well as its elemental damage. When the pieces come together, freezing and killing one enemy can help set off a chain reaction through the rest of the pack.
-      
-      ### **Wind Dancer** and Mana Sustain
-      
-      **Wind Dancer** is an important defensive skill. I use **Blind I** and **Maim** to hinder enemies when they get close, making it harder for packs to overwhelm you.
-      
-      Mana can be a problem for this build, particularly when you're attacking and moving constantly. **Mana Remnants** are my preferred solution: you're already killing enemies and generating remnants as you clear, so collecting them becomes part of your normal playstyle. With enough sustain, you won't have to stop and think about mana every few seconds.
-      
-      I also use **Clarity** for additional mana regeneration. If you can't fit everything into your Spirit reservation, prioritize solving your mana problems first and adjust **Wind Dancer** or other optional skills to suit your gear.
+      The [gem setups from the general guide](/werewolf-general/#gem-setups) apply, so this section only covers what the **Amazon** changes.
+
+      **Lunar Assault**. **Rigwald’s Ferocity** makes the supported skill hit harder when it is used in the second weapon set, so **Lunar Assault** goes in the second weapon set. **Rakiata’s Flow** and **Rigwald’s Ferocity** are the two expensive lineage supports in this setup.
+
+      **Pounce**. **Pounce** runs **Freezing Mark**, which gives extra damage when you detonate the mark. Its effect lasts a while, so when mapping you only need to **Pounce** and **Cross Slash** once in a while before going back to **Lunar Assault**. **Mark of Siphoning** replaces **Mark for Death II**. **Eternal Mark** keeps the target marked after the detonation, so **Mark of Siphoning** keeps working. **Blazing Critical** is in the last slot. With almost 70% critical chance and 300% critical bonus, we crit all the time, so we always get its extra damage. It also helps us ignite enemies, so we apply every elemental ailment.
+
+      **Cross Slash**. **Close Combat** joins **Heavy Swing**, **Execute III**, and **Culmination II** on **Cross Slash**.
+
+      **Arctic Howl**. **Cooldown Recovery** lets me use **Arctic Howl** as often as I want. **Cold Exposure** adds a bit of cold damage and inflicts exposure when I critically hit, which happens constantly.
+
+      **Lunar Blessing**. **Atziri’s Impatience** replaces **Cooldown Recovery II**. It brings the cooldown back very fast, so I never think about it, and it costs a bit of life every time I use **Lunar Blessing**. I press my life flask right after I transform. If you don’t want to do that, use **Cooldown Recovery II**. You will probably have enough cooldown recovery anyway, or be one second short of having **Lunar Blessing** back, which doesn’t matter much. I use **Atziri’s Impatience** because I always want to be in **Lunar Blessing** and don’t want to worry about it. I also run **Life Leech** on **Lunar Blessing**. **Mystic Harvest** lets the **Amazon** leech from elemental damage, so I’m leeching life without thinking about it.
+
+      **Herald of Ice**. I use the [armour break setup](/werewolf-general/#setup-herald-of-ice) from the general guide, with **Armour Break III**, **Armour Explosion**, and **Uruk’s Smelting**. For armour break to work, **Herald of Ice** has to hit for physical damage. I have gain physical damage on several pieces, so it hits for physical damage, breaks armour, and the explosion chains. When you **Lunar Assault** and freeze everything, the kills create a big chain of explosions.
+
+      **Spirit gems**. Mana is one of the big problems of this build, and **Mana Remnants** solved it for me completely. **Harmonic Remnants** lets you pick up remnants from 35% further away, so you collect them just by fighting and moving around, and you never think about them again. **Khatal’s Rejuvenation** grants cooldown recovery when you pick up remnants. It helps every skill here that has a cooldown, like **Lunar Blessing**, **Pounce**, **Cross Slash**, and **Arctic Howl**. It also covers **Lunar Blessing**’s cooldown, so **Atziri’s Impatience** isn’t strictly needed.
+
+      **Eternal Rage** costs 100 spirit, which makes it hard to run together with **Mana Remnants** and **Wind Dancer**. I solve that with an **Absent Amulet** carrying **Eternal Rage**. I recommend you do the same, because it is a big power spike. It freed up 100 spirit for **Wind Dancer**, **Mana Remnants**, and the **Precision**, **Clarity**, and **Vitality** supports. I run **Precision I** and **Precision II** at the same time on different gems. **Wind Dancer** is my defensive layer. Accuracy is useful for the **Amazon**, as the passive tree section explains.
+
+      Without the amulet, like in my Endgame build with **Defiance of Destiny**, you have to cut something. If you aren’t having mana problems, keep **Wind Dancer** and cut **Mana Remnants**. If you are, cut **Wind Dancer** and keep **Mana Remnants**.
+
+      I used to run **Her Declaration**, and I sold it to afford **Rigwald’s Ferocity**. If you aren’t there yet, it is a good option for spirit. Enemies that enter your presence are intimidated, so they take 10% increased damage and deal 10% reduced damage. It works offensively and defensively.
+
+      ### Late Endgame Gem Setups
+
+      These are the exact setups from the [Late Endgame build](https://poe.ninja/poe2/pob/2b668). Hover any gem to see what it does.
+
+      ::build-gems[amazon-late-endgame]
   - title: "Gear"
     content: |
-      The gear focuses on four things: Attack Speed, elemental damage, critical scaling, and enough Evasion and Deflection to survive difficult content. The exact items can change as you invest more, but the core priorities remain the same.
-      
-      ### Weapon: Talisman
-      
-      Your weapon should provide as much damage as possible through + levels to skills, Attack Speed, and Critical Hit Chance. These are key offensive stats for the build.
-      
-      For damage modifiers, you have flexibility because the build converts and scales damage through several sources. I generally prefer Lightning Damage, but other useful damage rolls can work too. The important thing is to compare the actual result for your build rather than assuming one damage type is always best.
-      
-      For the weapon sockets, I use damage gained as extra damage of all elements and increased Elemental Damage with Attacks. These were strong options for my setup, although you should compare alternatives if you have different gear or passive-tree choices.
-      
-      ### Rings and Belt
-      
-      I use **Ingenuity** to amplify the bonuses on my rings. This makes strong ring modifiers even more valuable, so I build the rings around flat damage and the stats the character needs.
-      
-      Look for useful combinations of added damage, Attack Speed or attack-related modifiers where available, Accuracy, attributes, elemental resistances, and mana sustain. You don't need to copy every modifier on my exact rings; use them to identify which stats your own character is missing.
-      
-      Mana leech is particularly helpful because it works alongside **Mana Remnants** and regeneration. It also gives you more freedom to keep attacking without having to manage your resource constantly.
-      
-      ### Amulet: **Eternal Rage**
-      
-      The **Absent Amulet** setup is important because it helps fit **Eternal Rage** into the build without consuming the 100 Spirit from the gem. This frees up Spirit for other skills and makes it easier to run the offensive and defensive pieces together.
-      
-      You still want the usual useful stats, including Life, attributes, and skill levels where available. An amulet like this can be a meaningful upgrade, but you can use a more conventional option while working toward it. If you don't have the same Spirit setup, you may need to make room by dropping an optional skill or adjusting your mana-sustain setup.
-      
-      ### Body Armour: **Morior Invictus**
-      
-      **Morior Invictus** is the body armour I use with **Stalking Panther**. That ascendancy doubles the Evasion Rating from your helmet, gloves, and boots, but halves the Evasion Rating from your body armour. Because of that trade-off, I don't build this slot around stacking Evasion.
-      
-      Instead, I use **Morior Invictus** for the benefits provided by its sockets. Depending on the Soul Cores you put in, you can gain valuable bonuses such as maximum Mana, Spirit, and elemental resistances. Those bonuses help the build fit more skills while also supporting its defensive setup.
-      
-      You don't need to start with an expensive, fully socketed version. Get the core build working first, then add sockets and improve the Soul Cores as your budget allows.
-      
-      ### Helmet and Boots
-      
-      For the helmet and boots, prioritize Evasion Rating. **Stalking Panther** doubles the Evasion Rating from these slots, making them particularly valuable sources of defense.
-      
-      On the helmet, Critical Hit Chance is an important offensive stat. After that, fill in attributes and resistances as needed.
-      
-      On the boots, look for Evasion, Movement Speed, and resistances. You don't need the highest possible Movement Speed roll to move quickly because Werewolf form already gives you a substantial mobility advantage. Spirit on the boots can also be useful if you're struggling to fit your skills, but it's less important if your amulet already solves that problem.
-      
-      ### Gloves: **Sine Aequo**
-      
-      **Sine Aequo** is one of my favorite items for this build. Its main benefit is that it allows you to Immobilise enemies at 50% buildup instead of 100%. This means you can Immobilise bosses much sooner, giving you a faster route to the damage bonuses you get against Immobilised enemies.
-      
-      The additional damage against Immobilised enemies is useful too, but the reduced buildup requirement is the main reason I use these gloves. Getting the Immobilise effect sooner makes the whole Freeze-focused damage setup feel much better against tougher targets.
-      
-      Once you have a lot of damage and you feel confident that you can build up Freeze to 100% fairly quickly, swapping to rare gloves will provide even more damage.
-      
-      ### Charms and Remaining Gear
-      
-      I use a **Thawing Charm** to protect against Freeze and a **Dousing Charm** to protect against Ignite. For the third slot, I use **For Utopia**, a unique Stone Charm that lets you defend with 200% of your Armour during its effect.
-      
-      The exact combination depends on your gear and the content you're doing. Fix the weaknesses in your character first rather than copying a charm setup that might not fit your version of the build.
+      ::build-gear[amazon-late-endgame]
+
+      **Body armour**. **Morior Invictus**. **Stalking Panther** halves the evasion from body armour, so a full evasion chest would be bad, and I don’t care about the evasion on it. Roll increased armour, evasion and energy shield, maximum mana per socket filled (mana is life for us), elemental resistances per socket filled, and spirit per socket filled. The spirit is why I can fit so many spirit gems. It is expensive, but I first ran the same affixes on a 4-socket version, which is much cheaper. Buy the 5-socket one when you have the budget. My sockets hold chaos resistance twice, damage taken from mana before life, another resistance as needed, and **Ulaman’s Gaze**, which prevents 3% more damage from deflected hits.
+
+      This is the defensive core of the build. We scale deflection from evasion, and I have about 52k evasion while moving. Deflection chance caps at 95%, so almost every hit that gets through evasion is deflected. Deflection prevents 40% of the damage by default, and I scale that to 52% with the tree and **Ulaman’s Gaze**. So when a hit lands, I take about half of it, and 20% of that goes to my mana first. I sustain it by leeching life and mana and regenerating mana with **Mana Remnants**. That is how I stay tanky with only around 1,600 life.
+
+      **Gloves**. **Sine Aequo**. You immobilise enemies at 50% buildup instead of 100%, so you freeze a boss at 50% buildup instead of having to take it all the way to 100%. It also deals more damage against immobilised enemies, but I don’t care about that much. The part I like is the 50% buildup, and it is insane. Once you have a lot of damage, you can swap **Sine Aequo** for rare gloves, which give you more damage. **Cadigan’s Epiphany** gave my gloves a jewel socket, which I crafted myself. I have a video that teaches how. My jewel there has critical damage bonus, area of effect, 6% of damage taken from mana before life, critical hit chance, and increased effect of suffixes. The increased effect of suffixes is why that mana mod is 6% instead of the usual 4%.
+
+      **Weapon**. You have a lot of flexibility with the talisman. The damage can be physical, lightning, fire, or cold, because all our conversions make it work. I prefer lightning, since it scales better with a wide damage range. What you can’t skip is levels of skills, attack speed, and critical hit chance. In the weapon sockets, I use gain 5% of damage as extra damage of all elements, which is non-negotiable, and 30% increased elemental damage with attacks. I tested it in Path of Building, and it gave me more damage than an **Iron Rune** or flat damage. Flat lightning or cold damage also works there.
+
+      **Rings**. Flat damage is the focus. I run several flat damage mods on each ring, along with resistances, attributes, and a source of mana leech. I use **Ingenuity** because it boosts the rings and gives me a lot of damage, but you don’t need it.
+
+      **Amulet**. An **Absent Amulet** with **Eternal Rage**. You lose a prefix and a suffix, and I don’t care, because the remaining modifiers still give a lot. I use maximum mana, levels of skills, and strength for attributes. Never underestimate attributes. I anoint it with **Zarokh’s Gift**, which gives an extra jewel socket. I think it is the best anoint in the game right now. It costs around 8 to 10 divines, and I think it is worth it.
+
+      **Helmet**. Full evasion, which **Stalking Panther** doubles. I roll chaos resistance, intelligence, and critical hit chance. The only mandatory stats are as much evasion as you can get and critical hit chance. If you need attributes or resistances, fix them there too.
+
+      **Boots**. Full evasion again, doubled by **Stalking Panther**. Get movement speed and resistances too. I run 20% movement speed, which is plenty, since you already move fast as a werewolf and don’t need 35% boots. A new alloy lets you craft spirit onto boots. I had spirit on mine before the **Absent Amulet**. If you don’t have **Eternal Rage** on your amulet, put the spirit on your boots. If you do, you don’t need it.
+
+      **Charms**. I don’t want to get frozen, and I don’t like getting ignited, so I run a charm for each. The third is a **Stone Charm**, which makes me defend with 200% of my armour during its effect. My armour is low, 25%, so the charm doubles it to 50%. Not bad.
+
+      **Upgrades**. I’m not maxed. You can get a **Headhunter**, a **Mageblood**, a better amulet, and a better everything. **Voices** gets you more sockets. My gem levels aren’t maxed either, so you can take this build further than I did.
   - title: "Passive Tree"
     content: |
-      The passive tree combines the Amazon's Accuracy and critical-hit scaling with Evasion, Deflection, Freeze buildup, and elemental damage. The goal is to get strong offense without sacrificing the defensive layers that let you stay in melee range.
-      
-      ### Amazon Ascendancy
-      
-      The four main ascendancy choices for this setup are **Stalking Panther**, **Mystic Harvest**, **Predatory Instinct**, and **Critical Strike**.
-      
-      - **Stalking Panther** doubles the Evasion Rating from your helmet, gloves, and boots, while halving the Evasion Rating from your body armour. This is the foundation of the defensive gear choices described above.
-      - **Mystic Harvest** allows Life Leech to recover based on elemental damage as well as Physical Damage. Since so much of this build's damage is elemental, this gives you a strong source of recovery while attacking.
-      - **Predatory Instinct** reveals Open Weaknesses on Rare and Unique enemies and grants 50% more damage against enemies with an Open Weakness. This is a major damage boost, especially against bosses.
-      - **Critical Strike** allows your chance to hit with Attacks to exceed 100% and converts excess chance to hit into additional Critical Hit Chance. This is why Accuracy is such an important offensive stat for the Amazon.
-      
-      These notables work together: **Stalking Panther** supports your Evasion, **Mystic Harvest** improves your sustain, and the other two provide substantial damage.
-      
-      ### Evasion and Deflection
-      
-      Evasion is your first defensive layer, but you don't want to rely on it alone. Some attacks will get through, so the build also invests in Deflection and the amount of damage prevented by Deflected Hits.
-      
-      Look for passive nodes that grant Evasion Rating and nodes that give you Deflection Rating based on your Evasion. The more Evasion you build, the more value you can get from those interactions.
-      
-      Other nodes increase the amount of damage prevented by Deflected Hits. These bonuses add up, making the hits that get through your Evasion less dangerous. In my setup, I also use **Morior Invictus** and its socket bonuses to improve this layer.
-      
-      The combination is what makes the build surprisingly durable even without a huge Life pool: you evade many hits, reduce the damage from Deflected Hits, and recover Life through elemental leech.
-      
-      ### Accuracy and Critical Hit Chance
-      
-      Accuracy is both an offensive and defensive consideration for this build, but its offensive value is especially important. The **Critical Strike** ascendancy notable converts excess chance to hit into additional Critical Hit Chance, so Accuracy beyond the usual 100% threshold is not wasted.
-      
-      Prioritize Accuracy, Critical Hit Chance, Critical Damage Bonus, and Attack Speed as you path through the tree. These stats work together to increase both your damage and the frequency of your critical hits.
-      
-      I also take passive nodes that grant Attack Speed based on Accuracy. This gives the stat another purpose beyond critical scaling. If you have the points and gear to support it, additional Accuracy can be a very efficient way to improve the build.
-      
-      ### Freeze and Damage Against Frozen Enemies
-      
-      Freeze is central to the build's damage rotation, so I invest in Freeze buildup and damage against frozen enemies.
-      
-      **Heavy Frost** is especially valuable for bossing. It increases Freeze buildup, and hits ignore non-negative elemental resistances on frozen enemies. That makes it particularly effective when you switch from **Lunar Assault** to **Shred** after freezing a boss.
-      
-      This is also why I keep the skills in their intended roles: **Lunar Assault** helps get the enemy frozen, while **Shred** takes advantage of the frozen state to deal heavy damage. You don't need to force every skill to do everything.
-      
-      ### **From Nothing** and Jewel Sockets
-      
-      **From Nothing** is useful for reaching strong passive options around the jewel's radius without spending as many points pathing through the tree. In this setup, it helps access the area around **Heavy Frost** and other useful passives.
-      
-      Jewel choices should complement the stats you're already scaling. Look for useful combinations of Critical Hit Chance, Critical Damage Bonus, Life, and other offensive or defensive modifiers. A good jewel can provide a meaningful upgrade, but it isn't necessary to make the build work.
-      
-      ### Additional Damage and Defense
-      
-      Once you have the main Accuracy, critical, Freeze, and defensive interactions in place, fill out the rest of the tree with useful damage and survivability.
-      
-      Elemental Damage, Attack Speed, Critical Damage Bonus, and damage against frozen enemies are all useful offensive choices. On the defensive side, continue improving Evasion and Deflection, and take Life where it fits your pathing.
-      
-      I also value passives that make enemy damage unlucky or your own hit damage lucky. These can provide a useful mix of offense and defense, especially when your damage has a wide range between its minimum and maximum hit.
-      
-      Don't feel that you need to reproduce every small passive or jewel from my exact tree. Prioritize the mechanics that make the build work, then use the remaining points to address the needs of your character.
-  - title: "Final Thoughts"
-    content: |
-      The Amazon Werewolf is built around a simple idea: use Accuracy to scale critical hits, exploit Open Weaknesses for more damage, and combine elemental damage with Freeze to take enemies apart. **Stalking Panther**, **Mystic Harvest**, and the Evasion-to-Deflection setup give you the defensive foundation to keep fighting at close range.
-      
-      The build doesn't need every expensive item to work. Start with the core skill setup, get your Accuracy and defenses in place, and then upgrade your supports and gear as you can afford them. There is room to push the damage and survivability much further, but the main setup is already capable of handling the game's content.
----
+      The **Amazon** ascendancy gives us **Stalking Panther**, **Mystic Harvest**, **Predatory Instinct**, and **Critical Strike**. **Stalking Panther** is the big defensive node, and it is why we stack evasion on the helmet, gloves, and boots. **Mystic Harvest** makes life leech work with elemental damage too. **Predatory Instinct** reveals weaknesses on enemies, and that is big damage. **Critical Strike** lets your chance to hit with attacks exceed 100% and gives you additional critical hit chance equal to 25% of the excess. That turns accuracy into damage, so I scale accuracy in other parts of the tree as well.
+
+      The rest of the tree builds around evasion, deflection, accuracy, and critical stats. I take evasion wherever I can because I like not dying, and I scale deflection rating from evasion. **Falcon Dive** is another way to scale with accuracy. It gives 4% increased attack speed, plus 1% increased attack speed per 400 accuracy rating, up to 20%. Intelligence is my best attribute whenever I can manage it, because of **The Winter Owl**. It gives 3% increased evasion rating per 10 intelligence and accuracy rating equal to your intelligence, so intelligence gives me damage through accuracy and defense through evasion. I also take movement speed and skill speed along the way, and as much critical damage bonus as I can.
+
+      I also like **The Spring Hare** a lot. It gives a 20% chance for enemy hits against you to deal unlucky damage, so they roll lower, and a 20% chance for your hits to deal lucky damage. If you use a lot of lightning damage and have a wide range between your lowest and highest hit, lucky hits are more likely to land the high roll. It is both damage and defense.
+
+      I have a **Megalomaniac** in the tree. You don’t need one, but a good **Megalomaniac** boosts your damage. I have a video that explains how to find one that suits you. If you don’t want to bother, use a rare jewel with critical hit chance for attacks, attack speed, increased elemental damage, and critical damage bonus for attack damage. **Heart of the Well** also works, with modifiers that suit you.
+
+      I socket **From Nothing** at **Chaos Inoculation**, which takes me all the way to **Heavy Frost**. I always want **Heavy Frost**. **From Nothing** is huge for us, since the nodes around it add freeze buildup, damage against frozen enemies, and extra damage.

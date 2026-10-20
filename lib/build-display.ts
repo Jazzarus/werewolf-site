@@ -76,12 +76,24 @@ function slugify(value: string) {
 }
 
 function gemSetupMarkdown(build: BuildData) {
+  // Every other gem in the group is listed under the skill: its supports, and
+  // a mark or similar skill gem linked to it. A group that repeats an earlier
+  // one (the same skill from an item and from a gem) is shown once.
+  const seen = new Set<string>();
   const groups = build.skills
     .map((skill) => {
       const main = skill.gems.find((gem) => !gem.support);
-      return main ? { main, supports: skill.gems.filter((gem) => gem.support) } : null;
+      return main ? { main, supports: skill.gems.filter((gem) => gem !== main) } : null;
     })
-    .filter((group): group is NonNullable<typeof group> => Boolean(group));
+    .filter((group): group is NonNullable<typeof group> => Boolean(group))
+    // A skill on its own (an amulet's granted Eternal Rage) has no setup to show.
+    .filter(({ supports }) => supports.length > 0)
+    .filter(({ main, supports }) => {
+      const key = [main, ...supports].map((gem) => gem.name).join("|");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
 
   const rank = (name: string) => {
     const index = skillOrder.indexOf(name.toLowerCase());
