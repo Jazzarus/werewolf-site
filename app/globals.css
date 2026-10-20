@@ -13,6 +13,12 @@
   --color-muted: #aaa69b;
   --color-crimson: #651b19;
   --color-crimson-bright: #97322a;
+  /* In-game name colours (brightened slightly for reading on dark panels). */
+  --color-gem: #2fb5ac;
+  --color-unique: #cf8346;
+  /* Base items and mechanics: a cool steel so they stand apart from plain bold text. */
+  --color-item: #a9c0d8;
+  --color-magic: #9d9dff;
   --font-body: Georgia, "Times New Roman", serif;
   --font-display: var(--font-fontin), Georgia, serif;
   --content-width: 1440px;

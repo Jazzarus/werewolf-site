@@ -57,7 +57,32 @@ Section content supports Markdown. Raw HTML is sanitized; interactive embeds sho
 
 Bold text that exactly matches a Path of Exile 2 skill, passive, or item in the generated PoE2DB catalog gets a non-link tooltip with its short description and icon when available. Unmatched bold text remains ordinary bold text. The build syncs newly encountered names and their icons; `npm run sync:tooltips` refreshes the full local catalog. Tooltip source credits appear in the popup.
 
-Support Gem variants resolve to their Tier I tooltip: an unnumbered name uses Tier I when available, and explicit Tier II or III names also use Tier I.
+Support Gem variants resolve to their Tier I tooltip: an unnumbered name ("Biting Frost") uses Tier I ("Biting Frost I") whenever it exists, even if a passive or item has the bare name, and explicit Tier II or III names also use Tier I. Keep the article text unnumbered. The sync script looks up the Tier I page first for the same reason. Curated text in `descriptionOverrides` in `scripts/sync-game-tooltips.mjs` always replaces the PoE2DB summary (used for the Absent Amulet and Unset Ring).
+
+Matched names are coloured by type, like in game (gems teal, uniques orange, passives gold), and the hover card uses the matching in-game header art from `public/assets`.
+
+A paragraph made only of three or more skill names separated by `>` renders as a numbered skill bar, for example `**Pounce** > CS > **Lunar Assault** > **Shred**`. Every step must match a catalog entry; `CS`, `LA`, `AH`, and `LB` are accepted short forms. Any other paragraph containing `>` stays ordinary text.
+
+Headings get link anchors automatically from their text, or from an explicit suffix such as `## Leveling as a Werewolf {#leveling}`. A list made only of in-page links (`- [Leveling](#leveling)`) renders as a numbered "Contents" box; the general guide uses one at the top.
+
+A gem setup is a list whose items are a bold skill followed by its bold support gems; it renders as a card with icons and hover tooltips, and several setups sit side by side in up to three columns. A plain-text line with its own nested list labels a variant group, and the card shows shared supports first:
+
+```md
+- **Lunar Assault** {#setup-lunar-assault}
+  - **Ice Bite II**
+  - Without lineage supports
+    - **Cold Penetration**
+  - With lineage supports
+    - **Rakiata's Flow**
+```
+
+Only gem entries are used inside setup cards, so a passive with the same name never appears there; a gem missing from the catalog shows as an empty socket until the next sync. Other pages can link straight to a card, for example `[Lunar Assault setup](/werewolf-general/#setup-lunar-assault)`.
+
+A list whose items are only Path of Building links (poe.ninja `pob`, pobb.in) renders as gold buttons.
+
+A guide whose sections all still say "Coming soon." or "This is a placeholder guide for …" is shown dimmed with "Guide coming soon" on its card. It switches back automatically once any section has real content.
+
+The sidebar YouTube panel only appears on pages listed in `app/YouTubePlayer.tsx`; other pages lead with the Twitch stream.
 
 ## Farm strategy format
 

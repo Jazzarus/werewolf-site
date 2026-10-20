@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import styles from "./layout.module.css";
 
 const navigationLinks = [
-  { href: "/werewolf", label: "Home" },
+  // Guide pages live under /werewolf/<slug>, so Home only matches exactly.
+  { href: "/werewolf", label: "Home", exact: true },
   { href: "/werewolf-general", label: "Werewolf" },
   { href: "/tier-list", label: "Tier List" },
   { href: "/farms", label: "Farms" },
@@ -16,8 +17,10 @@ const navigationLinks = [
   { href: "/jazzarus", label: "Jazzarus" },
 ] as const;
 
-function isCurrentRoute(pathname: string, href: string) {
-  return pathname === href || pathname.startsWith(`${href}/`);
+function isCurrentRoute(pathname: string, href: string, exact = false) {
+  const path = pathname.replace(/\/+$/, "") || "/";
+  if (exact) return path === href;
+  return path === href || path.startsWith(`${href}/`);
 }
 
 export function SiteNavigation() {
@@ -25,7 +28,11 @@ export function SiteNavigation() {
 
   function renderLinks(closeMenu = false) {
     return navigationLinks.map((link) => {
-      const isCurrent = isCurrentRoute(pathname, link.href);
+      const isCurrent = isCurrentRoute(
+        pathname,
+        link.href,
+        "exact" in link && link.exact,
+      );
 
       return (
         <li key={link.href}>

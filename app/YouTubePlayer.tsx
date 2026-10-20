@@ -18,38 +18,44 @@ const pageVideos: Record<string, { id: string; title: string }> = {
   },
 };
 
-export function YouTubePlayer() {
+/**
+ * The YouTube panel only appears on pages that have a video, so pages
+ * without one lead with the Twitch stream instead of an empty box.
+ */
+export function YouTubePanel() {
   const pathname = usePathname();
   const pagePath = pathname.replace(/\/+$/, "") || "/";
   const video = pageVideos[pagePath];
 
-  if (!video) {
-    return (
-      <div className={`${styles.mediaPlaceholder} ${styles.youtubePlaceholder}`}>
-        A video for this page is coming soon
-      </div>
-    );
-  }
+  if (!video) return null;
 
   return (
-    <>
-      <iframe
-        className={styles.youtubePlayer}
-        src={`https://www.youtube-nocookie.com/embed/${video.id}`}
-        title={video.title}
-        width="400"
-        height="300"
-        allow="encrypted-media; picture-in-picture; web-share"
-        allowFullScreen
-      />
-      <a
-        className={styles.youtubeFallback}
-        href={`https://www.youtube.com/watch?v=${video.id}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Watch this video on YouTube
-      </a>
-    </>
+    <section className={styles.sidebarPanel}>
+      <h2>
+        <svg className={styles.channelIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 7s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C16.2 3.7 12 3.7 12 3.7s-4.2 0-7.1.2c-.4.1-1.3.1-2.1.9C2.2 5.5 2 7 2 7s-.2 1.8-.2 3.6v1.7c0 1.8.2 3.6.2 3.6s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9 1.8.2 6.8.2 6.8.2s4.2 0 7.1-.2c.4-.1 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.8.2-3.6v-1.7C22.2 8.8 22 7 22 7ZM10 14.9V8.7l5.5 3.1-5.5 3.1Z" />
+        </svg>
+        YouTube
+      </h2>
+      <div className={styles.youtubeMedia}>
+        <iframe
+          className={styles.youtubePlayer}
+          src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+          title={video.title}
+          width="400"
+          height="300"
+          allow="encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+        />
+        <a
+          className={styles.youtubeFallback}
+          href={`https://www.youtube.com/watch?v=${video.id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch this video on YouTube
+        </a>
+      </div>
+    </section>
   );
 }

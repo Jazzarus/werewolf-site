@@ -7,10 +7,15 @@
   margin-top: 0;
 }
 
-.article h3 {
+/* Only skill headings with an icon become a row; mixed text headings wrap normally. */
+.article h3:has(> img) {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.article h3 {
+  overflow-wrap: normal;
 }
 
 .article h3 img {
@@ -23,7 +28,7 @@
 }
 
 @media (max-width: 29.999rem) {
-  .article h3 {
+  .article h3:has(> img) {
     gap: 0.6rem;
   }
 

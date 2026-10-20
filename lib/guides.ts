@@ -21,6 +21,8 @@ export type Guide = {
   image: string;
   class: string;
   tier: string;
+  /** True while every section still holds placeholder copy. */
+  isPlaceholder: boolean;
   sections: GuideSection[];
 };
 
@@ -56,6 +58,20 @@ export const GUIDE_TIER_ORDER = [
   "F",
   "Unranked",
 ] as const;
+
+const placeholderContent =
+  /^(coming soon\.?|this is a placeholder guide for [^.]+\.?)$/i;
+
+function isPlaceholderGuide(sections: GuideSectionData[]) {
+  return sections.every((section) =>
+    placeholderContent.test(section.content.trim()),
+  );
+}
+
+/** "Tier A", or just "Unranked". */
+export function formatTier(tier: string) {
+  return tier === "Unranked" ? tier : `Tier ${tier}`;
+}
 
 export function getGuideSlugs() {
   return fs
@@ -125,8 +141,9 @@ export async function getGuideBySlug(slug: string): Promise<Guide> {
   const fileName = path.relative(process.cwd(), fullPath);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data } = matter(fileContents);
+  const sectionData = getSections(data.sections, fileName);
   const sections = await Promise.all(
-    getSections(data.sections, fileName).map((section, index) =>
+    sectionData.map((section, index) =>
       renderSection(section, `${slug}-${index}`),
     ),
   );
@@ -155,6 +172,7 @@ export async function getGuideBySlug(slug: string): Promise<Guide> {
     image,
     class: getRequiredString(data.class, "class", fileName),
     tier: getRequiredString(data.tier, "tier", fileName),
+    isPlaceholder: isPlaceholderGuide(sectionData),
     sections,
   };
 }

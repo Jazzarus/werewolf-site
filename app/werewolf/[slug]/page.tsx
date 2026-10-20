@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getGuideBySlug, getGuideSlugs } from "@/lib/guides";
+import Image from "next/image";
+import { formatTier, getGuideBySlug, getGuideSlugs } from "@/lib/guides";
 import styles from "../werewolf.module.css";
 
 type WerewolfGuidePageProps = {
@@ -36,10 +37,19 @@ export default async function WerewolfGuidePage({
 
   return (
     <main className={`${styles.container} ${styles.guideContent}`}>
-      <h1>{guide.title}</h1>
-      <p className={styles.guideByline}>
-        {guide.class} · Tier {guide.tier}
-      </p>
+      <header className={styles.guideHeader}>
+        <div className={styles.guidePortrait}>
+          <Image src={guide.image} alt="" fill sizes="84px" preload />
+          <span className={styles.imageFrame} aria-hidden="true" />
+        </div>
+        <h1>{guide.title}</h1>
+        <p className={styles.guideByline}>
+          <span>{guide.class}</span>
+          <span className={styles.tierBadge} data-tier={guide.tier}>
+            {formatTier(guide.tier)}
+          </span>
+        </p>
+      </header>
       {guide.sections.map((section) => (
         <section key={section.title}>
           <h2>{section.title}</h2>

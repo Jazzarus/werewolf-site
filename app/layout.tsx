@@ -6,7 +6,8 @@ import "./globals.css";
 import styles from "./layout.module.css";
 import { SiteNavigation } from "./SiteNavigation";
 import { TwitchPlayer } from "./TwitchPlayer";
-import { YouTubePlayer } from "./YouTubePlayer";
+import { BackToTop } from "./BackToTop";
+import { YouTubePanel } from "./YouTubePlayer";
 
 const fontin = localFont({
   src: "../public/fontin.otf",
@@ -36,7 +37,7 @@ export default function RootLayout({
       className={`${fontin.variable} ${styles.html}`}
     >
       <body className={styles.body}>
-        <header className={styles.siteHeader}>
+        <header className={styles.siteHeader} id="top" tabIndex={-1}>
           <div className={styles.banner}>
             <Image
               className={styles.bannerArt}
@@ -66,17 +67,7 @@ export default function RootLayout({
           <div className={styles.content}>{children}</div>
 
           <aside className={styles.sidebar} aria-label="Creator channels">
-            <section className={styles.sidebarPanel}>
-              <h2>
-                <svg className={styles.channelIcon} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M22 7s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C16.2 3.7 12 3.7 12 3.7s-4.2 0-7.1.2c-.4.1-1.3.1-2.1.9C2.2 5.5 2 7 2 7s-.2 1.8-.2 3.6v1.7c0 1.8.2 3.6.2 3.6s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9 1.8.2 6.8.2 6.8.2s4.2 0 7.1-.2c.4-.1 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.8.2-3.6v-1.7C22.2 8.8 22 7 22 7ZM10 14.9V8.7l5.5 3.1-5.5 3.1Z" />
-                </svg>
-                YouTube
-              </h2>
-              <div className={styles.youtubeMedia}>
-                <YouTubePlayer />
-              </div>
-            </section>
+            <YouTubePanel />
 
             <section className={`${styles.sidebarPanel} ${styles.twitchPanel}`}>
               <h2>
@@ -104,6 +95,8 @@ export default function RootLayout({
           <div className={styles.footerDivider} aria-hidden="true" />
           <p>Unofficial Path of Exile 2 community resource.</p>
         </footer>
+
+        <BackToTop />
       </body>
     </html>
   );

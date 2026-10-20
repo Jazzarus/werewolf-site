@@ -48,7 +48,7 @@
 }
 .bannerArt {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: 0;
   left: 50%;
   width: min(100%, clamp(62rem, 60vw, 100rem));
@@ -57,22 +57,33 @@
   object-fit: cover;
   object-position: center top;
   transform: translateX(-50%);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 12%, #fff 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #fff 12%, #fff 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 18%, #fff 82%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #fff 18%, #fff 82%, transparent);
+}
+/* A blurred, dimmed copy of the art fills wide screens so the edges melt away. */
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -3rem;
+  background: url("/assets/white-wolf-art.webp") center top / cover no-repeat;
+  filter: blur(36px) brightness(0.32) saturate(0.85);
+  pointer-events: none;
 }
 .banner::after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   inset: 0;
   background: linear-gradient(180deg, rgb(6 8 10 / 5%), transparent 38%, rgb(8 11 14 / 18%) 72%, #080b0e 100%);
   pointer-events: none;
 }
 .brand {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 1.25rem;
-  left: var(--edge-space);
+  /* Line the logo up with the content column instead of the screen edge. */
+  left: max(var(--edge-space), calc((100% - var(--content-width)) / 2));
   display: inline-flex;
   align-items: center;
   max-width: 100%;
@@ -158,6 +169,10 @@
   gap: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 .content { min-width: 0; container-type: inline-size; }
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /* Element styles cover new pages and rendered Markdown without per-page classes. */
 .content > :global(main) {
@@ -172,6 +187,8 @@
   border: 1px solid #454136;
   box-shadow: var(--panel-shadow), inset 0 0 0 5px rgb(0 0 0 / 20%);
   overflow-wrap: anywhere;
+  /* Opacity only: a transform here would break the docked mobile tooltips. */
+  animation: pageIn 320ms ease-out backwards;
 }
 .content > :global(main)::before {
   content: "";
@@ -239,96 +256,573 @@
 .content :global(li + li) { margin-top: 0.45rem; }
 .content :global(li::marker) { color: var(--color-gold); }
 .content :global(strong), .content :global(dt) { color: var(--color-ivory); }
+/* Game terms: coloured like in-game names, with a PoE2-style hover card. */
 .content :global(.gameTerm) {
+  --term-color: var(--color-item);
   position: relative;
   display: inline;
-  color: inherit;
-  text-decoration: underline dotted var(--color-gold-dark);
+  color: var(--term-color);
+  text-decoration: underline solid transparent;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.22em;
   cursor: help;
+  transition: text-decoration-color 140ms ease;
+}
+.content :global(.gameTerm strong) { color: inherit; }
+.content :global(.gameTerm:hover), .content :global(.gameTerm:focus-visible) {
+  text-decoration-color: color-mix(in srgb, var(--term-color) 55%, transparent);
 }
 .content :global(.gameTerm:focus-visible) {
   border-radius: 2px;
   outline-offset: 3px;
 }
+.content :global(.gameTerm-gem) { --term-color: var(--color-gem); }
+.content :global(.gameTerm-unique) { --term-color: var(--color-unique); }
+.content :global(.gameTerm-passive),
+.content :global(.gameTerm-keystone),
+.content :global(.gameTerm-ascendancy) { --term-color: var(--color-gold-bright); }
+.content :global(.gameTerm-item), .content :global(.gameTerm-mechanic) { --term-color: var(--color-item); }
+
 .content :global(.gameTooltip) {
+  /* Header art per tooltip type; caps keep their native proportions. */
+  --tooltip-header-height: 2.6rem;
+  --tooltip-cap-width: 2.22rem;
+  --tooltip-header-left: url("/assets/itemsheaderwhiteleft.png");
+  --tooltip-header-middle: url("/assets/itemsheaderwhitemiddle.png");
+  --tooltip-header-right: url("/assets/itemsheaderwhiteright.png");
+  --tooltip-separator: url("/assets/itemsseparatorwhite.png");
+  --tooltip-name-color: #e6e1d4;
+  --tooltip-line-color: var(--color-magic);
   position: absolute;
   z-index: 30;
-  bottom: calc(100% + 0.65rem);
+  bottom: calc(100% + 0.6rem);
   left: 0;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: start;
-  gap: 0.85rem;
-  width: min(25rem, calc(100vw - 2rem));
-  max-height: min(50vh, 18rem);
-  overflow: auto;
-  padding: 0.9rem;
-  background:
-    linear-gradient(145deg, rgb(30 28 23 / 98%), rgb(8 10 12 / 99%));
-  border: 1px solid #766344;
-  box-shadow: 0 12px 32px rgb(0 0 0 / 78%), inset 0 0 0 2px rgb(0 0 0 / 35%);
+  display: none;
+  flex-direction: column;
+  width: min(24rem, calc(100vw - 2rem));
+  background: #050607;
+  border: 1px solid #2e2c26;
+  box-shadow: 0 14px 34px rgb(0 0 0 / 85%), 0 0 0 1px #000;
   color: var(--color-ivory);
-  text-align: left;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-align: center;
   white-space: normal;
-  visibility: hidden;
-  opacity: 0;
+  cursor: auto;
   pointer-events: none;
-  transform: translateY(0.35rem);
-  transition: opacity 140ms ease, transform 140ms ease, visibility 140ms;
 }
-.content :global(.gameTooltip img) {
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border: 1px solid #62583e;
-  box-shadow: 0 2px 8px #000;
+.content :global(.gameTooltip-gem) {
+  --tooltip-header-left: url("/assets/itemsheadergemleft.png");
+  --tooltip-header-middle: url("/assets/itemsheadergemmiddle.png");
+  --tooltip-header-right: url("/assets/itemsheadergemright.png");
+  --tooltip-separator: url("/assets/itemsseparatorgem.png");
+  --tooltip-name-color: var(--color-gem);
+  --tooltip-line-color: #c9c5b9;
 }
-.content :global(.gameTooltipCopy) {
-  min-width: 0;
-  display: grid;
-  gap: 0.15rem;
+.content :global(.gameTooltip-unique) {
+  --tooltip-header-height: 3rem;
+  --tooltip-cap-width: 2.42rem;
+  --tooltip-header-left: url("/assets/itemsheaderuniqueleft.png");
+  --tooltip-header-middle: url("/assets/itemsheaderuniquemiddle.png");
+  --tooltip-header-right: url("/assets/itemsheaderuniqueright.png");
+  --tooltip-separator: url("/assets/itemsseparatorunique.png");
+  --tooltip-name-color: var(--color-unique);
+}
+.content :global(.gameTooltip-passive),
+.content :global(.gameTooltip-keystone),
+.content :global(.gameTooltip-ascendancy) {
+  --tooltip-header-height: 3rem;
+  --tooltip-cap-width: 2.42rem;
+  --tooltip-header-left: url("/assets/notablepassiveheaderleft.png");
+  --tooltip-header-middle: url("/assets/notablepassiveheadermiddle.png");
+  --tooltip-header-right: url("/assets/notablepassiveheaderright.png");
+  --tooltip-separator: url("/assets/itemsseparatorrare.png");
+  --tooltip-name-color: var(--color-gold-bright);
+}
+.content :global(.gameTooltip-keystone) {
+  --tooltip-header-left: url("/assets/keystonepassiveheaderleft.png");
+  --tooltip-header-middle: url("/assets/keystonepassiveheadermiddle.png");
+  --tooltip-header-right: url("/assets/keystonepassiveheaderright.png");
+}
+.content :global(.gameTooltip-ascendancy) {
+  --tooltip-header-left: url("/assets/ascendancypassiveheaderleft.png");
+  --tooltip-header-middle: url("/assets/ascendancypassiveheadermiddle.png");
+  --tooltip-header-right: url("/assets/ascendancypassiveheaderright.png");
+}
+.content :global(.gameTooltip-mechanic) { --tooltip-line-color: #c9c5b9; }
+/* Gem and mechanic text is prose, so it uses the reading face; stat lines stay in Fontin. */
+.content :global(.gameTooltip-gem .gameTooltipLine),
+.content :global(.gameTooltip-mechanic .gameTooltipLine) {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.content :global(.gameTooltipHeader) {
+  height: var(--tooltip-header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--tooltip-cap-width);
+  background:
+    var(--tooltip-header-left) left center / auto 100% no-repeat,
+    var(--tooltip-header-right) right center / auto 100% no-repeat,
+    var(--tooltip-header-middle) center / auto 100% repeat-x;
+  background-clip: border-box, border-box, content-box;
 }
 .content :global(.gameTooltipName) {
-  color: var(--color-gold-bright);
-  font-family: var(--font-display);
-  font-size: 1rem;
+  overflow: hidden;
+  color: var(--tooltip-name-color);
+  font-size: 1.05rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px #000, 0 0 10px rgb(0 0 0 / 80%);
+}
+.content :global(.gameTooltipBody) {
+  max-height: min(55vh, 17rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.7rem 1rem 0.75rem;
+  overscroll-behavior: contain;
+}
+.content :global(.gameTooltipIcon) {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  margin-bottom: 0.15rem;
+  background: #0b0c0d;
+  box-shadow: 0 0 0 1px #000, 0 4px 10px rgb(0 0 0 / 70%);
+}
+.content :global(.gameTooltipIcon)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/skillpanelskilliconframe.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.content :global(.gameTooltipIcon img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content :global(.gameTooltipType) {
+  color: #8e897d;
+  font-size: 0.78rem;
   line-height: 1.3;
 }
-.content :global(.gameTooltipType), .content :global(.gameTooltipSource) {
-  color: var(--color-muted);
-  font-size: 0.72rem;
-  line-height: 1.35;
+.content :global(.gameTooltipSeparator) {
+  width: 85%;
+  height: 0.5rem;
+  flex-shrink: 0;
+  background: var(--tooltip-separator) center / 100% 100% no-repeat;
 }
 .content :global(.gameTooltipDescription) {
-  margin-top: 0.25rem;
-  color: #d0ccc2;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  display: grid;
+  gap: 0.2rem;
+}
+.content :global(.gameTooltipLine) {
+  display: block;
+  color: var(--tooltip-line-color);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+.content :global(.gameTooltipSource) {
+  color: #6f6a5e;
+  font-size: 0.68rem;
+  line-height: 1.3;
 }
 .content :global(.gameTerm:hover .gameTooltip),
 .content :global(.gameTerm:focus .gameTooltip) {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+  display: flex;
   pointer-events: auto;
+  animation: gameTooltipIn 140ms ease-out;
 }
 .content :global(.gameTerm:hover), .content :global(.gameTerm:focus) { z-index: 31; }
-@media (max-width: 34rem) {
+@keyframes gameTooltipIn {
+  from { opacity: 0; translate: 0 0.35rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+/* Small screens: the tooltip docks to the bottom of the viewport. */
+@media (max-width: 47.999rem) {
   .content :global(.gameTooltip) {
-    left: 50%;
-    width: min(21rem, calc(100vw - 1.5rem));
-    transform: translate(-50%, 0.35rem);
-  }
-  .content :global(.gameTerm:hover .gameTooltip),
-  .content :global(.gameTerm:focus .gameTooltip) {
-    transform: translate(-50%, 0);
+    position: fixed;
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    left: 0.75rem;
+    width: auto;
+    max-width: 26rem;
+    margin-inline: auto;
   }
 }
+
+/* Skill rotation: "A > B > C" lines render as a numbered skill bar. */
+.content :global(ol.skillRotation) {
+  counter-reset: rotation-step;
+  max-width: var(--reading-width);
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 0.75rem 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 0.85rem;
+  list-style: none;
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+}
+.content :global(li.skillRotationStep) {
+  counter-increment: rotation-step;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.content :global(li.skillRotationStep + li.skillRotationStep)::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 1.4rem 0.4rem 0 0.2rem;
+  flex-shrink: 0;
+  border-top: 2px solid var(--color-gold);
+  border-right: 2px solid var(--color-gold);
+  rotate: 45deg;
+  opacity: 0.75;
+}
+.content :global(.skillRotationStep .gameTerm) {
+  width: 4.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+}
+.content :global(.skillRotationIcon) {
+  position: relative;
+  width: 3.25rem;
+  height: 3.25rem;
+  background: #0b0c0d;
+  box-shadow: 0 0 0 1px #000, 0 5px 12px rgb(0 0 0 / 70%);
+  transition: filter 160ms ease, box-shadow 160ms ease;
+}
+.content :global(.skillRotationIcon img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content :global(.skillRotationIcon)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/skillpanelskilliconframe.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.content :global(.skillRotationIcon)::before {
+  content: counter(rotation-step);
+  position: absolute;
+  z-index: 1;
+  top: -0.5rem;
+  left: -0.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 35% 30%, #97322a, #4a1311);
+  border: 1px solid #8a7247;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px #000;
+  color: #f2e2b8;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.content :global(.skillRotationName) {
+  color: var(--term-color);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow: 0 1px 2px #000;
+}
+.content :global(.skillRotationStep .gameTerm:hover .skillRotationIcon),
+.content :global(.skillRotationStep .gameTerm:focus-visible .skillRotationIcon) {
+  filter: brightness(1.2);
+  box-shadow: 0 0 0 1px #000, 0 0 14px rgb(45 179 170 / 40%);
+}
+@container (max-width: 30rem) {
+  .content :global(.skillRotationStep .gameTerm) { width: 3.9rem; }
+  .content :global(.skillRotationIcon) { width: 2.75rem; height: 2.75rem; }
+  .content :global(li.skillRotationStep + li.skillRotationStep)::before { margin: 1.15rem 0.3rem 0 0.1rem; }
+}
+
+/* Contents box: a list of "#section" links at the start of an article. */
+.content :global(nav.tableOfContents) {
+  max-width: var(--reading-width);
+  margin: 0 auto 2.5rem;
+  padding: 1rem 1.25rem 1.1rem;
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+  text-align: center;
+}
+.content :global(.tableOfContentsTitle) {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.55rem;
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+}
+.content :global(.tableOfContentsTitle)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 11rem;
+  height: 0.45rem;
+  translate: -50% 0;
+  background: url("/assets/title-line.webp") center / contain no-repeat;
+}
+.content :global(nav.tableOfContents ol) {
+  counter-reset: toc;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 1rem;
+  list-style: none;
+  text-align: left;
+}
+.content :global(nav.tableOfContents li) {
+  counter-increment: toc;
+  margin: 0;
+}
+.content :global(nav.tableOfContents a) {
+  position: relative;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.5rem;
+  color: #d9c79c;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  overflow-wrap: normal;
+  text-decoration: none;
+  text-shadow: 0 1px 2px #000;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+.content :global(nav.tableOfContents a)::before {
+  content: counter(toc, upper-roman);
+  min-width: 1.9rem;
+  color: var(--color-crimson-bright);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-align: right;
+  filter: brightness(1.35);
+}
+.content :global(nav.tableOfContents a:hover),
+.content :global(nav.tableOfContents a:focus-visible) {
+  color: #f2dfac;
+  background: linear-gradient(90deg, rgb(182 160 117 / 12%), transparent);
+  text-shadow: 0 0 12px rgb(221 181 96 / 26%), 0 1px 2px #000;
+}
+@container (max-width: 34rem) {
+  .content :global(nav.tableOfContents) { padding-inline: 0.5rem; }
+  .content :global(nav.tableOfContents ol) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.25rem 0.5rem; }
+  .content :global(nav.tableOfContents a) { gap: 0.45rem; padding-inline: 0.25rem; font-size: 0.98rem; }
+  .content :global(nav.tableOfContents a)::before { min-width: 1.5rem; }
+}
+/* Jumped-to headings clear the top of the screen. */
+.content :global(h2[id]), .content :global(h3[id]) { scroll-margin-top: 1.25rem; }
+
+/* Gem setup cards: a skill, its supports and optional variant groups.
+   The card grid widens past the reading column when the panel has room. */
+.content :global(ul.gemSetups) {
+  --setups-width: min(100cqi - 2 * var(--panel-space), 62rem);
+  width: var(--setups-width);
+  max-width: none;
+  margin: 1.75rem calc((100% - var(--setups-width)) / 2) 0;
+  padding: 0;
+  /* Row-major grid so the cards read left to right, then down. */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+.content :global(li.gemSetup) {
+  min-width: 0;
+  margin: 0;
+  padding: 0.85rem 0.9rem 0.9rem;
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+  scroll-margin-top: 1.25rem;
+}
+.content :global(.gemSetup ul), .content :global(.gemSetup li) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content :global(.gemSetup li + li) { margin-top: 0; }
+.content :global(.gemSetupSkill) {
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, transparent, #6d5d3f 20%, #6d5d3f 80%, transparent) 1;
+}
+.content :global(.gemSetupSkill .gameTerm), .content :global(.gemSetup .gemUnmatched) {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.content :global(.gemSetupSkill strong) {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px #000;
+}
+.content :global(.gemIcon) {
+  position: relative;
+  flex-shrink: 0;
+  display: block;
+}
+.content :global(.gemIcon img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.content :global(.gemIconSkill) {
+  width: 2.75rem;
+  height: 2.75rem;
+  background: #0b0c0d;
+  box-shadow: 0 0 0 1px #000, 0 4px 10px rgb(0 0 0 / 70%);
+}
+.content :global(.gemIconSkill img) { object-fit: cover; }
+.content :global(.gemIconSkill)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/skillpanelskilliconframe.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.content :global(.gemIconSupport) {
+  width: 1.9rem;
+  height: 1.9rem;
+  filter: drop-shadow(0 2px 3px rgb(0 0 0 / 80%));
+}
+/* An empty socket for gems that are not in the tooltip catalog yet. */
+.content :global(.gemIcon:empty) {
+  border: 1px dashed #4b4535;
+  border-radius: 50%;
+  background: radial-gradient(circle, #15140f, #08090a);
+  box-shadow: none;
+  filter: none;
+}
+.content :global(.gemIconSkill:empty)::after { display: none; }
+.content :global(li.gemSetupSupport) {
+  padding: 0.28rem 0.2rem;
+  border-bottom: 1px solid rgb(182 160 117 / 9%);
+}
+.content :global(li.gemSetupSupport:last-child) { border-bottom: 0; }
+.content :global(.gemSetupSupport .gameTerm),
+.content :global(.gemSetupSupport .gemUnmatched) {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.15rem;
+}
+.content :global(.gemSetupSupport strong) {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.content :global(.gemSetup .gemUnmatched strong) { color: var(--color-ivory); }
+.content :global(.gemSetupVariantLabel) {
+  margin: 0.7rem 0 0.25rem;
+  padding: 0.55rem 0.25rem 0;
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg, transparent, #4f4532 20%, #4f4532 80%, transparent) 1;
+  color: #b49f74;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-align: center;
+  text-wrap: balance;
+}
+.content :global(.gemSetupVariantLabel strong) { font-weight: 400; }
+/* Hover cards in the setup grid open centred on the gem so they stay on screen. */
+@media (min-width: 48rem) {
+  .content :global(.gemSetup .gameTooltip) {
+    left: 50%;
+    translate: -50% 0;
+  }
+  .content :global(.gemSetup .gameTerm:hover .gameTooltip),
+  .content :global(.gemSetup .gameTerm:focus .gameTooltip) {
+    animation-name: gemSetupTooltipIn;
+  }
+}
+@keyframes gemSetupTooltipIn {
+  from { opacity: 0; translate: -50% 0.35rem; }
+  to { opacity: 1; translate: -50% 0; }
+}
+
+/* Path of Building link lists render as game buttons. */
+.content :global(ul.buildLinks) {
+  max-width: var(--reading-width);
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.75rem;
+  list-style: none;
+}
+.content :global(ul.buildLinks li) { margin: 0; }
+.content :global(ul.buildLinks strong) { display: block; font-weight: 400; }
+.content :global(ul.buildLinks a) {
+  min-height: 3.4rem;
+  padding: 0.55rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid transparent;
+  border-width: 0 1.45rem;
+  border-image: url("/assets/goldbutton.png") 0 92 fill / 0 1.45rem / 0 stretch;
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 2px #000;
+  transition: filter 160ms ease, color 160ms ease;
+}
+.content :global(ul.buildLinks a strong), .content :global(ul.buildLinks strong a) {
+  color: inherit;
+  font-weight: 400;
+}
+.content :global(ul.buildLinks a:hover), .content :global(ul.buildLinks a:focus-visible) {
+  color: #fff0c8;
+  filter: brightness(1.18) drop-shadow(0 0 8px rgb(221 181 96 / 25%));
+}
 @media (prefers-reduced-motion: reduce) {
-  .content :global(.gameTooltip) { transition: none; }
+  .content :global(.gameTerm:hover .gameTooltip),
+  .content :global(.gameTerm:focus .gameTooltip) { animation: none; }
 }
 .content :global(blockquote) {
   margin: 1.75rem 0;
@@ -619,4 +1113,69 @@
 @media (max-width: 21rem) {
   .brandMark { width: 3.5rem; }
   .mobileMenu ul { grid-template-columns: 1fr; }
+}
+
+/* Back-to-top: a ring-framed button in the corner, shown after scrolling down. */
+.siteHeader:focus { outline: none; }
+.backToTop {
+  position: fixed;
+  z-index: 25;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  width: 3.25rem;
+  height: 3.25rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: radial-gradient(circle at 50% 38%, #221e16, #08090b 68%);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 75%), 0 0 0 1px rgb(0 0 0 / 60%);
+  color: var(--color-gold-bright);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 0.6rem;
+  transition: opacity 200ms ease, translate 200ms ease, visibility 200ms, filter 160ms ease;
+}
+.backToTop::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: url("/assets/PSSkillFrame.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+.backToTop::after {
+  content: "";
+  position: absolute;
+  inset: -0.45rem;
+  background: url("/assets/PSSkillFrameActive.png") center / 100% 100% no-repeat;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+.backToTop svg {
+  position: relative;
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 1px 1px #000);
+  translate: 0 -1px;
+}
+.backToTopVisible { opacity: 1; visibility: visible; translate: 0 0; }
+.backToTop:hover, .backToTop:focus-visible { color: #fff0c8; filter: brightness(1.1); }
+.backToTop:hover::after, .backToTop:focus-visible::after { opacity: 1; }
+.backToTop:focus-visible { outline: 2px solid var(--color-gold-bright); outline-offset: 6px; }
+@media (min-width: 60rem) {
+  .backToTop {
+    right: max(1.5rem, env(safe-area-inset-right));
+    bottom: max(1.5rem, env(safe-area-inset-bottom));
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }

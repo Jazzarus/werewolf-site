@@ -76,7 +76,27 @@
   box-shadow: inset 0 0 12px rgb(0 0 0 / 50%);
   pointer-events: none;
 }
-.guideImage { object-fit: cover; }
+.guideImage {
+  object-fit: cover;
+  transition: filter 180ms ease;
+}
+.guideCard:hover .guideImage, .guideCard:focus-visible .guideImage {
+  filter: brightness(1.15) saturate(1.1);
+}
+
+/* Guides that are still placeholder copy stay visible but recede. */
+.guideCardPlaceholder .guideImage { filter: grayscale(0.7) brightness(0.72); }
+.guideCardPlaceholder:hover .guideImage,
+.guideCardPlaceholder:focus-visible .guideImage { filter: grayscale(0.3) brightness(0.95); }
+.guideGrid .guideCardPlaceholder h3 { color: #bcae8a; }
+.comingSoon {
+  color: #8d8472;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+}
+.guideCardTier .comingSoon { margin-top: 0.1rem; }
 .imageFrame {
   position: absolute;
   z-index: 2;
@@ -136,33 +156,39 @@
 .guideGrid .guideCardTier h3 {
   align-self: flex-start;
   padding-bottom: 0;
-  font-size: clamp(0.75rem, 1.6cqi, 1.0625rem);
-  letter-spacing: -0.015em;
-  white-space: nowrap;
+  font-size: clamp(0.95rem, 1.6cqi, 1.125rem);
+  letter-spacing: 0;
+  overflow-wrap: normal;
+  text-wrap: balance;
 }
 .guideCardHome .guideText {
-  display: grid;
-  grid-template-rows: 1fr;
-  align-content: center;
-  justify-items: start;
-  gap: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
   align-self: stretch;
 }
 .guideGrid .guideCardHome h3 {
-  align-self: center;
-  width: 100%;
+  align-self: stretch;
   margin: 0;
   padding: 0;
-  font-size: clamp(0.75rem, 1.4cqi, 1.3rem);
-  letter-spacing: -0.015em;
-  line-height: 1.15;
+  font-size: clamp(1rem, 1.75cqi, 1.3rem);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
   overflow-wrap: normal;
   text-align: left;
-  white-space: nowrap;
+  text-wrap: balance;
 }
 .guideContent > section { max-width: var(--reading-width); margin-inline: auto; }
 .guideContent .guideByline {
-  margin: -0.25rem auto 2.5rem;
+  max-width: none;
+  margin: -0.25rem auto 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.85rem;
   color: var(--color-gold);
   font-family: var(--font-display);
   font-size: 0.9375rem;
@@ -173,15 +199,15 @@
 /* Follow available content space, including the sidebar. */
 @container (max-width: 54rem) {
   .guideGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .guideGrid .guideCardHome h3 { font-size: clamp(0.8125rem, 2.1cqi, 1rem); }
-  .guideGrid .guideCardTier h3 { font-size: clamp(0.8125rem, 2.1cqi, 1.0625rem); }
+  .guideGrid .guideCardHome h3 { font-size: clamp(1rem, 2.4cqi, 1.2rem); }
+  .guideGrid .guideCardTier h3 { font-size: clamp(0.95rem, 2.2cqi, 1.125rem); }
 }
 @container (max-width: 35rem) {
   .guideGrid { grid-template-columns: minmax(0, 1fr); }
   .guideCard { min-height: 7rem; }
   .guideCardHome { min-height: 8rem; }
-  .guideGrid .guideCardHome h3 { font-size: 1rem; }
-  .guideGrid .guideCardTier h3 { font-size: 1.0625rem; }
+  .guideGrid .guideCardHome h3 { font-size: 1.125rem; }
+  .guideGrid .guideCardTier h3 { font-size: 1.125rem; }
 }
 
 @container (max-width: 20rem) {
@@ -210,4 +236,150 @@
     font-size: 0.8125rem;
     text-align: left;
   }
+}
+
+/* Guide page header: the small portrait sits above the title at its card size. */
+.guideHeader { display: grid; justify-items: center; }
+.guideHeader h1 { margin-bottom: 1.25rem; padding-top: 0.6rem; }
+.guidePortrait {
+  position: relative;
+  width: 5.25rem;
+  aspect-ratio: 1;
+  margin-top: 0.75rem;
+  background: #0b0c0c;
+  animation: portraitIn 420ms ease-out both;
+}
+.guidePortrait img { object-fit: cover; }
+@keyframes portraitIn {
+  from { opacity: 0; translate: 0 0.4rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Tier colours: crimson at the top, gold, bronze, then cold steel. */
+.tierBadge {
+  --tier-from: #4a4740;
+  --tier-to: #26251f;
+  --tier-edge: #6c675a;
+  padding: 0.2rem 0.8rem 0.15rem;
+  background: linear-gradient(180deg, var(--tier-from), var(--tier-to));
+  border: 1px solid var(--tier-edge);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%), 0 2px 6px rgb(0 0 0 / 50%);
+  color: #f3e6c4;
+  text-shadow: 0 1px 2px #000;
+}
+.tierBadge[data-tier="S+"], .tierBadge[data-tier="S"] {
+  --tier-from: #8f2e26;
+  --tier-to: #4a1311;
+  --tier-edge: #a8834c;
+}
+.tierBadge[data-tier="A"] { --tier-from: #8a6a2c; --tier-to: #4b3814; --tier-edge: #c4a465; }
+.tierBadge[data-tier="B"] { --tier-from: #6f4f31; --tier-to: #3a2716; --tier-edge: #9b7a52; }
+.tierBadge[data-tier="Unranked"] {
+  --tier-from: #22231f;
+  --tier-to: #161613;
+  --tier-edge: #45423a;
+  color: #a9a291;
+}
+
+.tierRow {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  column-gap: clamp(0.85rem, 2cqi, 1.5rem);
+  align-items: start;
+}
+.tierRow + .tierRow { margin-top: clamp(1.75rem, 3.5cqi, 2.5rem); }
+.tierRow .tierHeading {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.tierPennant {
+  --pennant-filter: none;
+  position: relative;
+  isolation: isolate;
+  width: 4.5rem;
+  aspect-ratio: 456 / 826;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  padding-top: 44%;
+  color: #f8ebc8;
+  font-size: 1.85rem;
+  letter-spacing: 0;
+  line-height: 1;
+  text-shadow: 0 2px 3px #000, 0 0 12px rgb(0 0 0 / 70%);
+}
+.tierPennant::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  /* Lower tiers recolour the crimson banner: the tint keeps its shading, the mask keeps its shape. */
+  background:
+    var(--pennant-tint, linear-gradient(transparent, transparent)),
+    url("/assets/specials-banner.webp") center / 100% 100% no-repeat;
+  background-blend-mode: color, normal;
+  -webkit-mask: url("/assets/specials-banner.webp") center / 100% 100% no-repeat;
+  mask: url("/assets/specials-banner.webp") center / 100% 100% no-repeat;
+  filter: var(--pennant-filter);
+}
+.tierRow[data-tier="S+"] .tierPennant { font-size: 1.65rem; }
+.tierRow[data-tier="S+"] .tierPennant::before { filter: brightness(1.15); }
+.tierRow[data-tier="S+"] .tierPennant {
+  filter: drop-shadow(0 0 10px rgb(200 64 44 / 50%));
+}
+.tierRow[data-tier="A"] .tierPennant {
+  --pennant-tint: linear-gradient(#d4a845, #d4a845);
+  --pennant-filter: brightness(1.7) contrast(1.05);
+}
+.tierRow[data-tier="B"] .tierPennant {
+  --pennant-tint: linear-gradient(#a8703f, #a8703f);
+  --pennant-filter: brightness(1.45);
+}
+.tierRow[data-tier="C"] .tierPennant {
+  --pennant-tint: linear-gradient(#6f8796, #6f8796);
+  --pennant-filter: brightness(1.45) saturate(0.7);
+}
+.tierRow[data-tier="D"] .tierPennant,
+.tierRow[data-tier="F"] .tierPennant {
+  --pennant-tint: linear-gradient(#77736b, #77736b);
+  --pennant-filter: brightness(1.2) saturate(0.2);
+}
+.tierHeadingText {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.tierRow[data-tier="Unranked"] { grid-template-columns: minmax(0, 1fr); }
+.tierRow[data-tier="Unranked"] .tierHeading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #b9ab88;
+}
+.tierRow[data-tier="Unranked"] .tierHeading::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, #4d4532, transparent);
+}
+/* The very top tier gets a faint ember glow on its cards. */
+.tierRow[data-tier="S+"] .guideCard {
+  box-shadow: 0 0 18px rgb(176 52 38 / 22%);
+  filter: drop-shadow(0 0 1px rgb(214 163 92 / 45%));
+}
+.tierRow[data-tier="S+"] .guideCard:hover,
+.tierRow[data-tier="S+"] .guideCard:focus-visible { filter: brightness(1.2) drop-shadow(0 0 1px rgb(214 163 92 / 60%)); }
+
+@container (max-width: 35rem) {
+  .tierRow { grid-template-columns: 3.25rem minmax(0, 1fr); }
+  .tierPennant { width: 3.25rem; font-size: 1.4rem; }
+  .tierRow[data-tier="S+"] .tierPennant { font-size: 1.2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guidePortrait { animation: none; }
 }

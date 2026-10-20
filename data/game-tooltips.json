@@ -1,14 +1,17 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-15T06:33:15.191Z",
+  "refreshedAt": "2026-10-20T11:23:23.654Z",
   "checkedNames": [
     "absent amulet",
     "amanamu",
     "ancestral call",
+    "ancestral call ii",
     "arctic howl",
     "armour break",
+    "armour break iii",
     "armour explosion",
+    "atalui's bloodletting",
     "atziri's communion",
     "atziri's impatience",
     "avatar of evolution",
@@ -16,6 +19,7 @@
     "berserk",
     "bhatair's vengeance",
     "biting frost",
+    "biting frost ii",
     "blazing critical",
     "blind i",
     "blood magic",
@@ -24,15 +28,25 @@
     "charged mark",
     "clarity",
     "close combat",
+    "close combat ii",
+    "cold mastery",
     "cold penetration",
     "convergence",
+    "cooldown recovery",
+    "cooldown recovery ii",
+    "crescendo",
+    "crescendo ii",
     "critical strike",
     "cross slash",
     "crown of eyes",
     "crown of eyes is essential",
     "culling strike",
+    "culling strike ii",
+    "culmination",
+    "culmination ii",
     "dangerous blossom",
     "dangerous blossoms",
+    "deep freeze",
     "dimensional weak spot",
     "dimensional weakspot",
     "direstrike",
@@ -40,14 +54,18 @@
     "echoing cry",
     "efficiency",
     "elemental armament",
+    "elemental armament ii",
+    "elemental focus",
     "embrace of the wild",
     "entwined realities",
     "eternal mark",
     "eternal rage",
     "eternal rage amulet",
     "execute",
+    "execute iii",
     "for utopia",
     "forgotten warden",
+    "freeze",
     "from nothing",
     "garukhan's resolve",
     "garukhan's resolve:",
@@ -62,6 +80,7 @@
     "hulking minions",
     "hyrri's ire",
     "ice bite",
+    "ice bite ii",
     "inevitable critical hits",
     "ingenuity",
     "inspiring ally",
@@ -72,7 +91,9 @@
     "legacy of wanderlust",
     "life leech i",
     "living lightning",
+    "living lightning ii",
     "long fuse",
+    "long fuse ii",
     "loyalty",
     "lucidity",
     "lunar assault",
@@ -80,10 +101,14 @@
     "mageblood",
     "mageblood or headhunter:",
     "magnified area",
+    "magnified area ii",
     "maim",
     "maji talisman",
     "mana remnants",
+    "mark for death",
+    "mark for death ii",
     "mark of siphoning",
+    "material solidification",
     "megalomaniac",
     "mind over matter",
     "morior invictus",
@@ -96,6 +121,7 @@
     "overwhelming strike",
     "pack encouragement",
     "pain attunement",
+    "paquate's pact",
     "paths not taken",
     "piercing claw",
     "piercing claw damage",
@@ -105,7 +131,10 @@
     "primal bounty",
     "primal rage",
     "prolonged duration",
+    "prolonged duration ii",
     "rakiata's flow",
+    "rapid attacks",
+    "rapid attacks ii",
     "raven-touched",
     "reactive growth",
     "rigwald's ferocity",
@@ -137,6 +166,8 @@
     "vivid stampede",
     "voices",
     "voices:",
+    "vorana's siege",
+    "vruun's aftermath",
     "warm blooded",
     "wild protector",
     "wildwood persistence",
@@ -149,7 +180,7 @@
     {
       "name": "Absent Amulet",
       "type": "Amulet base",
-      "description": "An amulet base with no Prefix or Suffix modifier slots.",
+      "description": "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed",
       "image": "/images/game-tooltips/absent-amulet.webp",
       "source": "https://poe2db.tw/Absent_Amulet"
     },
@@ -175,11 +206,25 @@
       "source": "https://poe2db.tw/us/Armour_Break"
     },
     {
+      "name": "Armour Break I",
+      "type": "Support gem",
+      "description": "Supports Skills that Hit Enemies, causing those Hits to Break Armour based on a portion of Physical Damage dealt.",
+      "image": "/images/game-tooltips/armour-break-i.webp",
+      "source": "https://poe2db.tw/us/Armour_Break_I"
+    },
+    {
       "name": "Armour Explosion",
       "type": "Support gem",
       "description": "Supports Attacks and Warcries, causing them to trigger a Fiery explosion when they Fully Break an enemy's Armour.",
       "image": "/images/game-tooltips/armour-explosion.webp",
       "source": "https://poe2db.tw/us/Armour_Explosion"
+    },
+    {
+      "name": "Atalui's Bloodletting",
+      "type": "Support gem",
+      "description": "Supports any Skill, turning a portion of its Mana cost into a Life cost. Does not support Skills which reserve Spirit. Supported Skills Gain a portion of their Life cost as extra Physical Damage.",
+      "image": "/images/game-tooltips/atalui-s-bloodletting.webp",
+      "source": "https://poe2db.tw/us/Atalui's_Bloodletting"
     },
     {
       "name": "Atziri's Communion",
@@ -229,6 +274,13 @@
       "description": "20% reduced Freeze Duration on Enemies\nEnemies Frozen by you take 20% increased Cold Damage",
       "image": "/images/game-tooltips/biting-frost.webp",
       "source": "https://poe2db.tw/us/Biting_Frost"
+    },
+    {
+      "name": "Biting Frost I",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing them to deal more damage to Frozen enemies but consume their Freeze. Cannot support skills that Consume Freeze.",
+      "image": "/images/game-tooltips/biting-frost-i.webp",
+      "source": "https://poe2db.tw/us/Biting_Frost_I"
     },
     {
       "name": "Blazing Critical",
@@ -287,11 +339,32 @@
       "source": "https://poe2db.tw/us/Close_Combat_I"
     },
     {
+      "name": "Cold Mastery",
+      "type": "Support gem",
+      "description": "Supports Cold skills, granting them an additional level. Does not support skills which do not have levels.",
+      "image": "/images/game-tooltips/cold-mastery.webp",
+      "source": "https://poe2db.tw/us/Cold_Mastery"
+    },
+    {
       "name": "Cold Penetration",
-      "type": "Passive skill",
+      "type": "Support gem",
       "description": "Supports any skill that Hits enemies, making those Hits Penetrate enemy Cold resistance.",
       "image": "/images/game-tooltips/cold-penetration.webp",
       "source": "https://poe2db.tw/us/Cold_Penetration"
+    },
+    {
+      "name": "Cooldown Recovery I",
+      "type": "Support gem",
+      "description": "Supports skills with Cooldowns, increasing the rate at which those Cooldowns Recover. Cannot modify the skills of minions.",
+      "image": "/images/game-tooltips/cooldown-recovery-i.webp",
+      "source": "https://poe2db.tw/us/Cooldown_Recovery_I"
+    },
+    {
+      "name": "Crescendo I",
+      "type": "Support gem",
+      "description": "Supports Strikes that perform a Final Strike at the end of a combination of attacks, allowing you to use the Final Strike twice in succession.",
+      "image": "/images/game-tooltips/crescendo-i.webp",
+      "source": "https://poe2db.tw/us/Crescendo_I"
     },
     {
       "name": "Critical Strike",
@@ -322,10 +395,18 @@
       "source": "https://poe2db.tw/us/Crown_of_Eyes"
     },
     {
-      "name": "Culling Strike",
+      "name": "Culling Strike I",
       "type": "Support gem",
-      "description": "Culling Strikes kill Normal enemies if their life is at 35% or below. Magic enemies are instead killed at 20%, Rare at 10% and Unique at 5%. These thresholds are checked before the damage of the Hit is applied.",
-      "source": "https://poe2db.tw/us/Culling_Strike"
+      "description": "Supports Attack Skills, causing them to Cull Rare and Unique Enemies on Hit.",
+      "image": "/images/game-tooltips/culling-strike-i.webp",
+      "source": "https://poe2db.tw/us/Culling_Strike_I"
+    },
+    {
+      "name": "Culmination I",
+      "type": "Support gem",
+      "description": "Supports Melee Attack Skills. Supported Skills gain Combo when you successfully Strike Enemies with other Melee Attacks. Supported Skills reset their Combo on use, dealing more Damage the higher Combo you had on use. Cannot support skills which already gain Combo. Cannot modify the Skills of Minions.",
+      "image": "/images/game-tooltips/culmination-i.webp",
+      "source": "https://poe2db.tw/us/Culmination_I"
     },
     {
       "name": "Dangerous Blossom",
@@ -333,6 +414,13 @@
       "description": "Gain 10% of Damage as Extra Physical Damage",
       "image": "/images/game-tooltips/dangerous-blossom.webp",
       "source": "https://poe2db.tw/us/Dangerous_Blossom"
+    },
+    {
+      "name": "Deep Freeze",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing Freeze it inflicts to last longer.",
+      "image": "/images/game-tooltips/deep-freeze.webp",
+      "source": "https://poe2db.tw/us/Deep_Freeze"
     },
     {
       "name": "Dimensional Weakspot",
@@ -363,10 +451,11 @@
       "source": "https://poe2db.tw/us/Echoing_Cry"
     },
     {
-      "name": "Efficiency",
+      "name": "Efficiency I",
       "type": "Support gem",
-      "description": "Efficiency modifiers act as divisors to the stat they modify. For example, 50% increased Reservation Efficiency causes your Reservations to be 67% of their base value, 100% increased Reservation Efficiency causes your Reservations to be 50% of their base value, and so on. Reduced Reservation Efficiency will cause the modified stat to grow larger instead of smaller.",
-      "source": "https://poe2db.tw/us/Efficiency"
+      "description": "Supports any skill, making it cost less to use. Cannot support skills which reserve Spirit.",
+      "image": "/images/game-tooltips/efficiency-i.webp",
+      "source": "https://poe2db.tw/us/Efficiency_I"
     },
     {
       "name": "Elemental Armament I",
@@ -374,6 +463,13 @@
       "description": "Supports Attacks, causing them to deal more Elemental damage.",
       "image": "/images/game-tooltips/elemental-armament-i.webp",
       "source": "https://poe2db.tw/us/Elemental_Armament_I"
+    },
+    {
+      "name": "Elemental Focus",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, causing it to deal more Elemental Damage but be unable to inflict Elemental Ailments.",
+      "image": "/images/game-tooltips/elemental-focus.webp",
+      "source": "https://poe2db.tw/us/Elemental_Focus"
     },
     {
       "name": "Embrace of the Wild",
@@ -422,6 +518,13 @@
       "description": "+(70—100) to Deflection Rating per 50 missing Energy Shield\n(200—300)% increased Evasion and Energy Shield\n+(20—30) to Dexterity\nCompanions have (30—50)% increased maximum Life\n(10—15)% of Damage from Deflected Hits is taken from Damageable Companion's Life before you\nenable ancient order task [1]",
       "image": "/images/game-tooltips/forgotten-warden-primal-markings.webp",
       "source": "https://poe2db.tw/us/Forgotten_Warden"
+    },
+    {
+      "name": "Freeze",
+      "type": "Support gem",
+      "description": "Supports any skill that Hits enemies, making it more effective at Freezing enemies.",
+      "image": "/images/game-tooltips/freeze.webp",
+      "source": "https://poe2db.tw/us/Freeze"
     },
     {
       "name": "From Nothing",
@@ -654,6 +757,13 @@
       "source": "https://poe2db.tw/us/Mark_of_Siphoning"
     },
     {
+      "name": "Material Solidification",
+      "type": "Passive skill",
+      "description": "Gain 8% of Damage as Extra Physical Damage\n15% increased effect of Fully Broken Armour",
+      "image": "/images/game-tooltips/material-solidification.webp",
+      "source": "https://poe2db.tw/us/Material_Solidification"
+    },
+    {
       "name": "Megalomaniac",
       "type": "Unique item",
       "description": "Allocates Passive Skill\nAllocates Passive Skill",
@@ -744,6 +854,13 @@
       "source": "https://poe2db.tw/us/Pain_Attunement"
     },
     {
+      "name": "Paquate's Pact",
+      "type": "Support gem",
+      "description": "Supports Warcries, Triggering Twisted Pact to inflict Corrupted Blood on enemies in their area of effect., at the cost of your Life.",
+      "image": "/images/game-tooltips/paquate-s-pact.webp",
+      "source": "https://poe2db.tw/us/Paquate's_Pact"
+    },
+    {
       "name": "Paths Not Taken",
       "type": "Ascendancy passive",
       "description": "You see what is and what might have been. Reveal a suite of Oracle-only passive tree nodes after Ascending as an Oracle.\r\n\r\nOn taking The Unseen Path Ascendancy Notable, gain the ability to allocate these nodes.",
@@ -804,6 +921,13 @@
       "description": "Supports Skills that can cause Damaging Hits, causing those Hits to treat Enemy Elemental Resistances as inverted.",
       "image": "/images/game-tooltips/rakiata-s-flow.webp",
       "source": "https://poe2db.tw/us/Rakiata's_Flow"
+    },
+    {
+      "name": "Rapid Attacks I",
+      "type": "Support gem",
+      "description": "Supports Attacks, causing them to Attack faster.",
+      "image": "/images/game-tooltips/rapid-attacks-i.webp",
+      "source": "https://poe2db.tw/us/Rapid_Attacks_I"
     },
     {
       "name": "Raven-Touched",
@@ -968,7 +1092,7 @@
     {
       "name": "Unset Ring",
       "type": "Ring base",
-      "description": "Grants 1 additional Skill Slot.",
+      "description": "Grants 1 additional Skill Slot",
       "image": "/images/game-tooltips/unset-ring.webp",
       "source": "https://poe2db.tw/us/Unset_Ring"
     },
@@ -999,6 +1123,20 @@
       "description": "Allocates 4 Sinister Jewel sockets",
       "image": "/images/game-tooltips/voices.webp",
       "source": "https://poe2db.tw/us/Voices"
+    },
+    {
+      "name": "Vorana's Siege",
+      "type": "Support gem",
+      "description": "Supports skills which Hit targets and have an area of effect, increasing the affected area and causing it to Hit Isolated targets harder.",
+      "image": "/images/game-tooltips/vorana-s-siege.webp",
+      "source": "https://poe2db.tw/us/Vorana's_Siege"
+    },
+    {
+      "name": "Vruun's Aftermath",
+      "type": "Support gem",
+      "description": "Supports Warcries, causing them to destroy Ice Crystals and Ice Fragments. Supported Skills empower additional Attacks if they destroy enough Ice Crystals and Ice Fragments.",
+      "image": "/images/game-tooltips/vruun-s-aftermath.webp",
+      "source": "https://poe2db.tw/us/Vruun's_Aftermath"
     },
     {
       "name": "Warm Blooded",

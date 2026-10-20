@@ -44,16 +44,36 @@ async function TierSections() {
     GUIDE_TIER_ORDER,
   );
 
-  return guideGroups.map((group) => (
-    <section key={group.name} aria-labelledby={`${group.name}-tier`}>
-      <h2 id={`${group.name}-tier`}>
-        {group.name === "Unranked" ? group.name : `${group.name} Tier`}
-      </h2>
-      <div className={styles.guideGrid}>
-        {group.guides.map((guide) => (
-          <GuideCard guide={guide} key={guide.slug} />
-        ))}
-      </div>
-    </section>
-  ));
+  return guideGroups.map((group) => {
+    const isRanked = group.name !== "Unranked";
+
+    return (
+      <section
+        className={styles.tierRow}
+        data-tier={group.name}
+        key={group.name}
+        aria-labelledby={`${group.name}-tier`}
+      >
+        <h2 className={styles.tierHeading} id={`${group.name}-tier`}>
+          {isRanked ? (
+            <>
+              <span className={styles.tierPennant} aria-hidden="true">
+                {group.name}
+              </span>
+              <span className={styles.tierHeadingText}>
+                {group.name} Tier
+              </span>
+            </>
+          ) : (
+            group.name
+          )}
+        </h2>
+        <div className={styles.guideGrid}>
+          {group.guides.map((guide) => (
+            <GuideCard guide={guide} key={guide.slug} />
+          ))}
+        </div>
+      </section>
+    );
+  });
 }

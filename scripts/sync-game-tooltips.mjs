@@ -45,7 +45,7 @@ const nonEntityPhrases = new Set([
   "elemental resistance",
 ]);
 const conciseFallbackDescriptions = new Map([
-  ["absent amulet", "An amulet base with no Prefix or Suffix modifier slots."],
+  ["absent amulet", "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed"],
   ["dousing charm", "A charm that activates when you become Ignited."],
   ["thawing charm", "A charm that activates when you become Frozen and grants immunity to Freeze."],
   ["maji talisman", "Talisman base with +(7–10) to Maximum Rage."],
@@ -75,7 +75,8 @@ const fallbackEntities = new Map([
     {
       name: "Absent Amulet",
       type: "Amulet base",
-      description: "An amulet base with no Prefix or Suffix modifier slots.",
+      description:
+        "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed",
       image: "/images/game-tooltips/absent-amulet.webp",
       source: "https://poe2db.tw/Absent_Amulet",
     },
@@ -100,6 +101,11 @@ const fallbackEntities = new Map([
       source: "https://poe2db.tw/us/Undying_Hate",
     },
   ],
+]);
+// Hand-written text that always replaces PoE2DB's page summary for these bases.
+const descriptionOverrides = new Map([
+  ["absent amulet", "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed"],
+  ["unset ring", "Grants 1 additional Skill Slot"],
 ]);
 const explicitEntityTypes = new Map([
   ["absent amulet", "Amulet base"],
@@ -249,8 +255,11 @@ async function fetchEntry(name, existing) {
   const lookupName = requestedTier && /^(ii|iii)$/i.test(requestedTier[2])
     ? `${requestedTier[1]} I`
     : name;
-  const candidateNames = [lookupName];
-  if (!/\s+i$/i.test(lookupName)) candidateNames.push(`${lookupName} I`);
+  // Prefer the Tier I gem ("Biting Frost I") over a passive or item that
+  // shares the bare name; the article text keeps the unnumbered name.
+  const candidateNames = /\s+i$/i.test(lookupName)
+    ? [lookupName]
+    : [`${lookupName} I`, lookupName];
 
   try {
     for (const candidateName of candidateNames) {
@@ -345,7 +354,11 @@ async function fetchEntry(name, existing) {
       return {
         name: officialName,
         type: getPageType(html, description, candidateName),
-        description: description.trim(),
+        description: (
+          descriptionOverrides.get(normalize(officialName)) ??
+          descriptionOverrides.get(normalize(name)) ??
+          description
+        ).trim(),
         ...(image ? { image } : {}),
         source: url,
       };
