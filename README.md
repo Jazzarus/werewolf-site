@@ -65,7 +65,7 @@ A paragraph made only of three or more skill names separated by `>` renders as a
 
 Headings get link anchors automatically from their text, or from an explicit suffix such as `## Leveling as a Werewolf {#leveling}`. A list made only of in-page links (`- [Leveling](#leveling)`) renders as a numbered "Contents" box; the general guide uses one at the top.
 
-A gem setup is a list whose items are a bold skill followed by its bold support gems; it renders as a card with icons and hover tooltips, and several setups sit side by side in up to three columns. A plain-text line with its own nested list labels a variant group, and the card shows shared supports first:
+A gem setup is a list whose items are a bold skill followed by its bold support gems; it renders as a card with icons and hover tooltips, and the setups sit in one row that slides sideways with arrows (up to three cards in view; `app/GemSliders.tsx` drives the arrows and keeps the hover cards on screen). A plain-text line with its own nested list labels a variant group, and the card shows shared supports first:
 
 ```md
 - **Lunar Assault** {#setup-lunar-assault}
@@ -83,6 +83,15 @@ A list whose items are only Path of Building links (poe.ninja `pob`, pobb.in) re
 A guide whose sections all still say "Coming soon." or "This is a placeholder guide for …" is shown dimmed with "Guide coming soon" on its card. It switches back automatically once any section has real content.
 
 The sidebar YouTube panel only appears on pages listed in `app/YouTubePlayer.tsx`; other pages lead with the Twitch stream.
+
+### Build boxes
+
+A guide can show its flagship build straight from Path of Building data:
+
+- `::build-gear[oracle-full-endgame]` on its own line renders the equipment panel. Every item, jewel and charm opens its full in-game style card (rolled mods, runes, corruption) on hover or tap.
+- `::build-gems[oracle-full-endgame]` renders that build's gem setups as setup cards, using the gem tooltips from the catalog.
+
+The data lives in `data/builds/<slug>.json`. To refresh it after you change the build on poe.ninja, run `node scripts/import-build.mjs oracle-full-endgame https://poe.ninja/poe2/pob/25481`. Item icons are not part of a Path of Building export: they sit in `public/images/build-items/` and are kept for items whose name and base did not change, and the script lists any item that still needs one. The `title` field in the JSON sets the box heading.
 
 ## Farm strategy format
 

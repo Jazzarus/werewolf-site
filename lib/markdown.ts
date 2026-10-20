@@ -3,6 +3,7 @@ import path from "node:path";
 import { defaultSchema, type Schema } from "hast-util-sanitize";
 import { remark } from "remark";
 import html from "remark-html";
+import { buildGearClassNames, expandBuildGems, makeBuildGear } from "./build-display";
 
 type TooltipRecord = {
   name: string;
@@ -512,63 +513,91 @@ function markSupportList(list: MarkdownNode) {
   }
 }
 
+/** The row of setup cards, with arrows to slide it; scripts/GemSliders.tsx drives them. */
+function makeGemSlider(list: MarkdownNode): MarkdownNode {
+  const arrow = (direction: "prev" | "next"): MarkdownNode => ({
+    type: "gemSliderArrow",
+    data: {
+      hName: "button",
+      hProperties: {
+        type: "button",
+        className: ["gemSliderArrow", direction === "prev" ? "gemSliderPrev" : "gemSliderNext"],
+        ariaLabel: direction === "prev" ? "Previous setups" : "Next setups",
+      },
+    },
+    children: [],
+  });
+  return {
+    type: "gemSlider",
+    data: { hName: "div", hProperties: { className: ["gemSlider"] } },
+    children: [arrow("prev"), list, arrow("next")],
+  };
+}
+
 function gemSetups() {
   return (tree: MarkdownNode) => {
     function visit(node: MarkdownNode) {
-      if (node.type === "list" && node.children?.length && node.children.every(isSetupItem)) {
-        setClass(node, "gemSetups");
-        for (const item of node.children) {
-          const [header, list] = item.children as [MarkdownNode, MarkdownNode];
-          const headerChildren = header.children ?? [];
-          const last = headerChildren.at(-1);
-          let id: string | undefined;
-          if (last?.type === "text" && last.value && explicitAnchor.test(last.value)) {
-            id = last.value.match(explicitAnchor)?.[1];
-            last.value = last.value.replace(explicitAnchor, "");
-          }
-          setClass(item, "gemSetup", id ? { id } : {});
-          setClass(header, "gemSetupSkill", {}, "div");
-          const [skill] = headerChildren;
-          skill.data = { ...skill.data, gameIcon: "skill" };
-
-          const groups: MarkdownNode[] = [];
-          let shared: MarkdownNode | null = null;
-          for (const child of list.children ?? []) {
-            if (isSupportItem(child)) {
-              if (!shared) {
-                shared = { type: "list", children: [] };
-                groups.push(shared);
-              }
-              shared.children?.push(child);
-            } else {
-              shared = null;
-              const [label, variantList] = child.children as [MarkdownNode, MarkdownNode];
-              setClass(child, "gemSetupVariant");
-              setClass(label, "gemSetupVariantLabel", {}, "div");
-              markSupportList(variantList);
-              groups.push(child);
-            }
-          }
-          for (const group of groups) if (group.type === "list") markSupportList(group);
-
-          // Supports first, then the labelled variants, all inside one list.
-          const supportLists = groups.filter((group) => group.type === "list");
-          const variants = groups.filter((group) => group.type !== "list");
-          const body: MarkdownNode = { type: "list", children: [] };
-          setClass(body, "gemSetupBody");
-          for (const supportList of supportLists) {
-            body.children?.push({
-              type: "listItem",
-              data: { hProperties: { className: ["gemSetupGroup"] } },
-              children: [supportList],
-            });
-          }
-          body.children?.push(...variants);
-          item.children = [header, body];
+      node.children?.forEach((child, index) => {
+        if (child.type === "list" && child.children?.length && child.children.every(isSetupItem)) {
+          markSetupList(child);
+          (node.children as MarkdownNode[])[index] = makeGemSlider(child);
+        } else {
+          visit(child);
         }
-        return;
+      });
+    }
+
+    function markSetupList(list: MarkdownNode) {
+      setClass(list, "gemSetups");
+      for (const item of list.children ?? []) {
+        const [header, itemBody] = item.children as [MarkdownNode, MarkdownNode];
+        const headerChildren = header.children ?? [];
+        const last = headerChildren.at(-1);
+        let id: string | undefined;
+        if (last?.type === "text" && last.value && explicitAnchor.test(last.value)) {
+          id = last.value.match(explicitAnchor)?.[1];
+          last.value = last.value.replace(explicitAnchor, "");
+        }
+        setClass(item, "gemSetup", id ? { id } : {});
+        setClass(header, "gemSetupSkill", {}, "div");
+        const [skill] = headerChildren;
+        skill.data = { ...skill.data, gameIcon: "skill" };
+
+        const groups: MarkdownNode[] = [];
+        let shared: MarkdownNode | null = null;
+        for (const child of itemBody.children ?? []) {
+          if (isSupportItem(child)) {
+            if (!shared) {
+              shared = { type: "list", children: [] };
+              groups.push(shared);
+            }
+            shared.children?.push(child);
+          } else {
+            shared = null;
+            const [label, variantList] = child.children as [MarkdownNode, MarkdownNode];
+            setClass(child, "gemSetupVariant");
+            setClass(label, "gemSetupVariantLabel", {}, "div");
+            markSupportList(variantList);
+            groups.push(child);
+          }
+        }
+        for (const group of groups) if (group.type === "list") markSupportList(group);
+
+        // Supports first, then the labelled variants, all inside one list.
+        const supportLists = groups.filter((group) => group.type === "list");
+        const variants = groups.filter((group) => group.type !== "list");
+        const body: MarkdownNode = { type: "list", children: [] };
+        setClass(body, "gemSetupBody");
+        for (const supportList of supportLists) {
+          body.children?.push({
+            type: "listItem",
+            data: { hProperties: { className: ["gemSetupGroup"] } },
+            children: [supportList],
+          });
+        }
+        body.children?.push(...variants);
+        item.children = [header, body];
       }
-      node.children?.forEach(visit);
     }
 
     visit(tree);
@@ -597,6 +626,23 @@ function isBuildLinkItem(item: MarkdownNode) {
       ? content.children[0]
       : content;
   return link.type === "link" && buildLinkPattern.test(link.url ?? "");
+}
+
+/** A "::build-gear[slug]" paragraph becomes that build's equipment box. */
+function buildGear(idPrefix: string) {
+  return (tree: MarkdownNode) => {
+    tree.children?.forEach((node) => {
+      if (node.type !== "paragraph") return;
+      const slug = getText(node).trim().match(/^::build-gear\[([a-z0-9-]+)\]$/)?.[1];
+      if (!slug) return;
+      const gear = makeBuildGear(slug, idPrefix);
+      node.data = {
+        hName: "div",
+        hProperties: gear.properties,
+        hChildren: gear.children,
+      };
+    });
+  };
 }
 
 /** A list made only of Path of Building links renders as game buttons. */
@@ -672,22 +718,28 @@ function withClassNames(tagName: string, classNames: string[]) {
 
 const articleHtmlSchema: Schema = {
   ...defaultSchema,
-  tagNames: [...(defaultSchema.tagNames ?? []), "nav"],
+  tagNames: [...(defaultSchema.tagNames ?? []), "nav", "button"],
   attributes: {
     ...defaultSchema.attributes,
     a: [
-      ...(defaultSchema.attributes?.a ?? []),
+      ...withClassNames("a", ["buildGearSource"]),
       ["target", "_blank"],
       "rel",
     ],
     span: [
-      ...withClassNames("span", gameClassNames),
+      ...withClassNames("span", [...gameClassNames, ...buildGearClassNames]),
       "id",
       "tabIndex",
       "ariaDescribedBy",
+      "ariaLabel",
       ["role", "tooltip"],
     ],
     nav: [["className", "tableOfContents"], "ariaLabel"],
+    button: [
+      ["type", "button"],
+      ["className", "gemSliderArrow", "gemSliderPrev", "gemSliderNext"],
+      "ariaLabel",
+    ],
     ol: withClassNames("ol", ["skillRotation"]),
     ul: withClassNames("ul", ["buildLinks", "gemSetups", "gemSetupBody", "gemSetupSupports"]),
     li: withClassNames("li", [
@@ -697,12 +749,18 @@ const articleHtmlSchema: Schema = {
       "gemSetupVariant",
       "gemSetupSupport",
     ]),
-    div: withClassNames("div", ["gemSetupSkill", "gemSetupVariantLabel"]),
+    div: withClassNames("div", [
+      "gemSlider",
+      "gemSetupSkill",
+      "gemSetupVariantLabel",
+      ...buildGearClassNames,
+    ]),
     img: [
       ...(defaultSchema.attributes?.img ?? []),
       ["width", 64],
       ["height", 64],
       ["loading", "lazy"],
+      ["className", "buildSlotIcon"],
     ],
   },
 };
@@ -716,9 +774,10 @@ export async function renderArticleMarkdown(
     .use(headingAnchors)
     .use(buildLinkButtons)
     .use(gemSetups)
+    .use(() => buildGear(idPrefix))
     .use(() => gameEntityTooltips(idPrefix))
     .use(html, { sanitize: articleHtmlSchema })
-    .process(markdown);
+    .process(expandBuildGems(markdown));
 
   return result.toString();
 }

@@ -1,0 +1,1035 @@
+{
+  "source": "https://poe.ninja/poe2/pob/25481",
+  "title": "Full Endgame",
+  "character": {
+    "className": "Druid",
+    "ascendancy": "Oracle",
+    "level": 95
+  },
+  "slots": [
+    {
+      "slot": "Charm 1",
+      "item": {
+        "name": "Nascent Hope",
+        "base": "Thawing Charm",
+        "rarity": "unique",
+        "properties": [
+          [
+            "Quality",
+            "3"
+          ]
+        ],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you become Frozen"
+        ],
+        "explicits": [
+          {
+            "text": "24% Chance to gain a Charge when you kill an enemy"
+          },
+          {
+            "text": "Energy Shield Recharge starts on use"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/thawinguniquecharm.webp"
+      }
+    },
+    {
+      "slot": "Charm 2",
+      "item": {
+        "name": "For Utopia",
+        "base": "Stone Charm",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you become Stunned"
+        ],
+        "explicits": [
+          {
+            "text": "Defend with 200% of Armour during effect"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/stoneuniquecharm.webp"
+      }
+    },
+    {
+      "slot": "Charm 3",
+      "item": {
+        "name": "Beira's Anguish",
+        "base": "Dousing Charm",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you become Ignited"
+        ],
+        "explicits": [
+          {
+            "text": "25% Chance to gain a Charge when you kill an enemy"
+          },
+          {
+            "text": "Creates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500% of your maximum Life"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/dousinguniquecharm.webp"
+      }
+    },
+    {
+      "slot": "Belt",
+      "item": {
+        "name": "Behemoth Lock",
+        "base": "Double Belt",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Has 3 Charm Slots",
+          "20% increased Charm Charges gained"
+        ],
+        "explicits": [
+          {
+            "text": "+337 to Armour"
+          },
+          {
+            "text": "+128 to maximum Life"
+          },
+          {
+            "text": "+35 to Strength"
+          },
+          {
+            "text": "+23% to Chaos Resistance"
+          },
+          {
+            "text": "27 Life Regeneration per second"
+          },
+          {
+            "text": "101 to 170 Physical Thorns damage"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/belt08.webp"
+      }
+    },
+    {
+      "slot": "Flask 1",
+      "item": {
+        "name": "Concentrated Ultimate Life Flask of the Verdant",
+        "base": "Concentrated Ultimate Life Flask of the Verdant",
+        "rarity": "magic",
+        "properties": [
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Gains 0.20 Charges per Second"
+          },
+          {
+            "text": "69% increased Amount Recovered"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/flasklife09.webp"
+      }
+    },
+    {
+      "slot": "Weapon 1",
+      "item": {
+        "name": "Gloom Remnant",
+        "base": "Spiny Talisman",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Quality",
+            "30"
+          ]
+        ],
+        "runes": [
+          "Saqawal's Rune of the Sky",
+          "Perfect Iron Rune",
+          "Perfect Iron Rune"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "40% increased Physical Damage",
+          "Bonded: 40% increased effect of Fully Broken Armour",
+          "Bonded: 8% chance to gain an additional random Charge when you gain a Charge",
+          "Gain 5% of Damage as Extra Damage of all Elements"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "+5 to Level of all Melee Skills",
+            "kind": "fractured"
+          },
+          {
+            "text": "Adds 50 to 90 Physical Damage"
+          },
+          {
+            "text": "Adds 62 to 86 Fire Damage"
+          },
+          {
+            "text": "Leeches 8.21% of Physical Damage as Mana"
+          },
+          {
+            "text": "123% increased Physical Damage",
+            "kind": "desecrated"
+          },
+          {
+            "text": "+3.42% to Critical Hit Chance"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/nettletalisman.webp"
+      }
+    },
+    {
+      "slot": "Amulet",
+      "item": {
+        "name": "Oblivion Choker",
+        "base": "Gold Amulet",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [
+          "Allocates Zarokh's Gift"
+        ],
+        "runeMods": [],
+        "implicits": [
+          "13% increased Rarity of Items found"
+        ],
+        "explicits": [
+          {
+            "text": "+49 to Spirit",
+            "kind": "fractured"
+          },
+          {
+            "text": "57% increased maximum Energy Shield"
+          },
+          {
+            "text": "+3 to Level of all Melee Skills"
+          },
+          {
+            "text": "+13% to all Elemental Resistances"
+          },
+          {
+            "text": "+36% to Fire Resistance"
+          },
+          {
+            "text": "51% increased Energy Shield from Equipped Body Armour",
+            "kind": "desecrated"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/goldamulet.webp"
+      }
+    },
+    {
+      "slot": "Helmet",
+      "item": {
+        "name": "Dire Visage",
+        "base": "Imperial Greathelm",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Armour",
+            "1885"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Perfect Iron Rune",
+          "Perfect Iron Rune"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "40% increased Armour, Evasion and Energy Shield",
+          "Bonded: +40 to maximum Life",
+          "Bonded: +40 to maximum Mana"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "+210 to Armour"
+          },
+          {
+            "text": "129% increased Armour"
+          },
+          {
+            "text": "+39 to maximum Life"
+          },
+          {
+            "text": "+34 to Intelligence"
+          },
+          {
+            "text": "+42% to Cold Resistance"
+          },
+          {
+            "text": "15.2 Life Regeneration per second",
+            "kind": "desecrated"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/helmetstr07.webp"
+      }
+    },
+    {
+      "slot": "Body Armour",
+      "item": {
+        "name": "Morior Invictus",
+        "base": "Grand Regalia",
+        "rarity": "unique",
+        "properties": [
+          [
+            "Armour",
+            "994"
+          ],
+          [
+            "Evasion",
+            "901"
+          ],
+          [
+            "Energy Shield",
+            "273"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Perfect Rebirth Rune",
+          "Perfect Rebirth Rune",
+          "Perfect Robust Rune",
+          "Greater Storm Rune",
+          "Tecrod's Gaze"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "Bonded: +60 to maximum Life",
+          "Bonded: +60 to maximum Mana",
+          "+15 to Strength",
+          "+18% to Lightning Resistance",
+          "Regenerate 1% of maximum Life per second",
+          "Regenerate 1.5% of maximum Life per second"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "355% increased Armour, Evasion and Energy Shield"
+          },
+          {
+            "text": "10.8 Life Regeneration per second per Socket filled"
+          },
+          {
+            "text": "+9% to all Elemental Resistances per Socket filled"
+          },
+          {
+            "text": "+13 to Spirit per Socket filled"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/moriorinvictus-m.webp"
+      }
+    },
+    {
+      "slot": "Gloves",
+      "item": {
+        "name": "Sine Aequo",
+        "base": "Grand Manchettes",
+        "rarity": "unique",
+        "properties": [
+          [
+            "Armour",
+            "220"
+          ],
+          [
+            "Evasion",
+            "198"
+          ],
+          [
+            "Energy Shield",
+            "62"
+          ],
+          [
+            "Quality",
+            "24"
+          ]
+        ],
+        "runes": [
+          "Cadigan's Epiphany"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "Destroys all Augment Sockets on the item to create a Jewel Socket"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "14% increased Skill Speed"
+          },
+          {
+            "text": "196% increased Armour, Evasion and Energy Shield"
+          },
+          {
+            "text": "Immobilise enemies at 50% buildup instead of 100%"
+          },
+          {
+            "text": "49% increased Damage against Immobilised Enemies"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/sineaequo.webp"
+      }
+    },
+    {
+      "slot": "Boots",
+      "item": {
+        "name": "Pain Spark",
+        "base": "Sekhema Sandals",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Energy Shield",
+            "337"
+          ],
+          [
+            "Quality",
+            "28"
+          ]
+        ],
+        "runes": [
+          "Legacy of Wanderlust"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "Bonded: 5% increased Movement Speed",
+          "Your speed is unaffected by Slows"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "+50 to maximum Energy Shield"
+          },
+          {
+            "text": "98% increased Energy Shield"
+          },
+          {
+            "text": "+40% to Fire Resistance"
+          },
+          {
+            "text": "+27% to Chaos Resistance"
+          },
+          {
+            "text": "14 Life Regeneration per second"
+          },
+          {
+            "text": "30% increased Movement Speed",
+            "kind": "desecrated"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/bootsint06.webp"
+      }
+    },
+    {
+      "slot": "Ring 1",
+      "item": {
+        "name": "Dusk Band",
+        "base": "Sapphire Ring",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "+28% to Cold Resistance"
+        ],
+        "explicits": [
+          {
+            "text": "Adds 19 to 32 Fire damage to Attacks"
+          },
+          {
+            "text": "Adds 1 to 67 Lightning damage to Attacks"
+          },
+          {
+            "text": "+16% to all Elemental Resistances"
+          },
+          {
+            "text": "+43% to Lightning Resistance"
+          },
+          {
+            "text": "3.1 Life Regeneration per second"
+          },
+          {
+            "text": "Adds 18 to 33 Physical Damage to Attacks",
+            "kind": "desecrated"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/sapphirering.webp"
+      }
+    },
+    {
+      "slot": "Ring 2",
+      "item": {
+        "name": "Behemoth Nail",
+        "base": "Pearl Ring",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "8% increased Cast Speed"
+        ],
+        "explicits": [
+          {
+            "text": "Adds 21 to 31 Physical Damage to Attacks"
+          },
+          {
+            "text": "Adds 34 to 48 Fire damage to Attacks"
+          },
+          {
+            "text": "+67 to maximum Life"
+          },
+          {
+            "text": "+13 to all Attributes"
+          },
+          {
+            "text": "+16% to Chaos Resistance"
+          },
+          {
+            "text": "14.5 Life Regeneration per second"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/pearlring.webp"
+      }
+    }
+  ],
+  "jewels": [
+    {
+      "location": "Gloves",
+      "item": {
+        "name": "Gale Ornament",
+        "base": "Ruby",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "5% increased Life Regeneration rate"
+          },
+          {
+            "text": "18% increased Attack Damage"
+          },
+          {
+            "text": "+3 to Maximum Rage"
+          },
+          {
+            "text": "15% increased Armour",
+            "kind": "desecrated"
+          },
+          {
+            "text": "7% increased Attack Damage",
+            "kind": "desecrated"
+          },
+          {
+            "text": "51% increased Effect of Prefixes"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/rubyjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Dusk Creed",
+        "base": "Emerald",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "22% increased Critical Hit Chance for Attacks"
+          },
+          {
+            "text": "4% increased Attack Speed"
+          },
+          {
+            "text": "8% increased Elemental Damage"
+          },
+          {
+            "text": "30% increased Critical Damage Bonus for Attack Damage",
+            "kind": "desecrated"
+          },
+          {
+            "text": "41% increased Effect of Suffixes"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/emeraldjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Megalomaniac",
+        "base": "Diamond",
+        "rarity": "relic",
+        "properties": [],
+        "runes": [],
+        "enchants": [
+          "Allocates Heavy Frost",
+          "Allocates Unforgiving"
+        ],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [],
+        "corrupted": true,
+        "icon": "/images/build-items/deliriumjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Glyph Glisten",
+        "base": "Ruby",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "8% increased Life Regeneration rate"
+          },
+          {
+            "text": "23% increased Damage while Shapeshifted"
+          },
+          {
+            "text": "+3 to Maximum Rage"
+          },
+          {
+            "text": "15% increased Evasion Rating",
+            "kind": "desecrated"
+          },
+          {
+            "text": "11% increased Attack Damage",
+            "kind": "desecrated"
+          },
+          {
+            "text": "59% increased Effect of Prefixes"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/rubyjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Entropy Joy",
+        "base": "Ruby",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "8% increased Life Regeneration rate"
+          },
+          {
+            "text": "12% increased Melee Damage"
+          },
+          {
+            "text": "+3 to Maximum Rage"
+          },
+          {
+            "text": "12% increased Attack Damage",
+            "kind": "desecrated"
+          },
+          {
+            "text": "50% increased Effect of Prefixes"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/rubyjewel.webp"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "gems": [
+        {
+          "name": "Shred",
+          "level": 20,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Rapid Attacks II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Close Combat II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Crescendo II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Long Fuse II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Eternal Rage",
+          "level": 18,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Vitality I",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Herald of Ice",
+          "level": 14,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Magnified Area II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Armour Break III",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Armour Explosion",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Uruk's Smelting",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Savage Fury",
+          "level": 12,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Prolonged Duration II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Berserk",
+          "level": 20,
+          "quality": 23,
+          "support": false
+        },
+        {
+          "name": "Dialla's Desire",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Uhtred's Augury",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Vitality II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Lunar Blessing",
+          "level": 20,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Cooldown Recovery II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Cold Mastery",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Efficiency II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Vorana's Siege",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Arctic Howl",
+          "level": 19,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Echoing Cry",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Tireless",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Living Lightning II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Blazing Critical",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Cold Mastery",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Lunar Assault",
+          "level": 20,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Ice Bite II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Ancestral Call II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Rigwald's Ferocity",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Rakiata's Flow",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Cross Slash",
+          "level": 19,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Heavy Swing",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Execute III",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Culmination II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Morrigan's Insight",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Pounce",
+          "level": 19,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Brutus' Brain",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Eternal Mark",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Mark of Siphoning II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Charged Mark",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Culling Strike II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    }
+  ]
+}

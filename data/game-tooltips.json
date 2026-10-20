@@ -1,12 +1,16 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-20T11:23:23.654Z",
+  "refreshedAt": "2026-10-20T13:20:30.560Z",
   "checkedNames": [
     "absent amulet",
     "amanamu",
+    "amulet",
+    "ancestral bond",
     "ancestral call",
     "ancestral call ii",
+    "anger management",
+    "arcane surge",
     "arctic howl",
     "armour break",
     "armour break iii",
@@ -16,6 +20,7 @@
     "atziri's impatience",
     "avatar of evolution",
     "barkskin",
+    "belt",
     "berserk",
     "bhatair's vengeance",
     "biting frost",
@@ -23,9 +28,13 @@
     "blazing critical",
     "blind i",
     "blood magic",
+    "body armour",
+    "boots",
     "brutus' brain",
+    "caddigan's epiphany",
     "captivating companionship",
     "charged mark",
+    "charms",
     "clarity",
     "close combat",
     "close combat ii",
@@ -50,11 +59,14 @@
     "dimensional weak spot",
     "dimensional weakspot",
     "direstrike",
+    "direstrike i",
+    "direstrike ii",
     "dousing charm",
     "echoing cry",
     "efficiency",
     "elemental armament",
     "elemental armament ii",
+    "elemental equilibrium",
     "elemental focus",
     "embrace of the wild",
     "entwined realities",
@@ -69,6 +81,7 @@
     "from nothing",
     "garukhan's resolve",
     "garukhan's resolve:",
+    "gloves",
     "grace of the ancestors",
     "greater rune of ward",
     "greater rune of willpower",
@@ -76,6 +89,8 @@
     "headhunter",
     "heavy frost",
     "heavy swing",
+    "helmet",
+    "her declaration",
     "herald of ice",
     "hulking minions",
     "hyrri's ire",
@@ -85,6 +100,7 @@
     "ingenuity",
     "inspiring ally",
     "insulating hide",
+    "iron rune",
     "iron slippers",
     "lavianga's spirits",
     "legacy of the wanderlust",
@@ -94,12 +110,14 @@
     "living lightning ii",
     "long fuse",
     "long fuse ii",
+    "low life",
     "loyalty",
     "lucidity",
     "lunar assault",
     "lunar blessing",
     "mageblood",
     "mageblood or headhunter:",
+    "magi talisman",
     "magnified area",
     "magnified area ii",
     "maim",
@@ -111,13 +129,16 @@
     "material solidification",
     "megalomaniac",
     "mind over matter",
+    "more upgrades",
     "morior invictus",
     "morrigan's insight",
     "mystic attunement",
     "mystic harvest",
     "mystical rage",
     "oisin's oath",
+    "oracle",
     "overcharge",
+    "overwhelming presence",
     "overwhelming strike",
     "pack encouragement",
     "pain attunement",
@@ -138,22 +159,32 @@
     "raven-touched",
     "reactive growth",
     "rigwald's ferocity",
+    "rings",
     "rite of passage",
     "rite of passage:",
+    "ruinic helm",
     "sacred flow",
     "sacred unity",
     "sacrifice of flesh",
+    "sanguimantic rituals",
     "savage fury",
+    "seraph's heart",
+    "shaman",
     "shred",
     "sine aequo",
     "spiny talisman",
+    "spirit gems",
     "spirit vessel",
     "stalking panther",
     "starkonja's head",
+    "tecrod's gaze",
+    "temporal chains",
     "test guide",
     "thawing charm",
+    "the lesser harm",
     "the morrigan's guidance",
     "the shaman",
+    "the unseen path",
     "tireless",
     "turning of the seasons",
     "uhtred's chalice",
@@ -162,13 +193,17 @@
     "unfurled finger",
     "unset ring",
     "uruk's smelting",
+    "vengeful fury",
     "vitality",
+    "vitality i",
+    "vitality ii",
     "vivid stampede",
     "voices",
     "voices:",
     "vorana's siege",
     "vruun's aftermath",
     "warm blooded",
+    "weapon",
     "wild protector",
     "wildwood persistence",
     "wind dancer",
@@ -185,11 +220,25 @@
       "source": "https://poe2db.tw/Absent_Amulet"
     },
     {
+      "name": "Ancestral Bond",
+      "type": "Passive skill",
+      "description": "Your Totem Limit is doubled\nNo cost or Charge requirement for placing Totems\nTotems reserve 75 Spirit each",
+      "image": "/images/game-tooltips/ancestral-bond.webp",
+      "source": "https://poe2db.tw/us/Ancestral_Bond"
+    },
+    {
       "name": "Ancestral Call I",
       "type": "Support gem",
       "description": "Supports Strikes you use yourself, providing a powerful Ancestral Boost every few seconds. Cannot Support Channelled Skills and does not modify Skills used by Minions.",
       "image": "/images/game-tooltips/ancestral-call-i.webp",
       "source": "https://poe2db.tw/us/Ancestral_Call_I"
+    },
+    {
+      "name": "Anger Management",
+      "type": "Ascendancy passive",
+      "description": "+15 to Maximum Rage\n200% faster start of inherent Rage loss\nRequires The Unseen Path",
+      "image": "/images/game-tooltips/anger-management.webp",
+      "source": "https://poe2db.tw/us/Anger_Management"
     },
     {
       "name": "Arctic Howl",
@@ -323,6 +372,12 @@
       "description": "Supports Mark Skills, causing them to Trigger Charged Mark when they are Activated. Charged Mark creates Shocked Ground at the target's location.",
       "image": "/images/game-tooltips/charged-mark.webp",
       "source": "https://poe2db.tw/us/Charged_Mark"
+    },
+    {
+      "name": "Charms",
+      "type": "Game mechanic",
+      "description": "Charms are protective trinkets you can equip that automatically trigger a defensive effect when a specific condition is met. Similar to Flasks, Charms require charges to trigger. Charm charges can be regained by killing monsters, granting charges equal to half of the monster's Power. Checkpoints and Wells completely recharge Charms when activated.\r\n\r\nThe maximum number of Charm slots is capped at 3.",
+      "source": "https://poe2db.tw/us/Charms"
     },
     {
       "name": "Clarity",
@@ -465,6 +520,13 @@
       "source": "https://poe2db.tw/us/Elemental_Armament_I"
     },
     {
+      "name": "Elemental Equilibrium",
+      "type": "Keystone passive",
+      "description": "Create Lightning Infusion Remnants instead of Fire\nCreate Cold Infusion Remnants instead of Lightning\nCreate Fire Infusion Remnants instead of Cold",
+      "image": "/images/game-tooltips/elemental-equilibrium.webp",
+      "source": "https://poe2db.tw/us/Elemental_Equilibrium"
+    },
+    {
       "name": "Elemental Focus",
       "type": "Support gem",
       "description": "Supports any skill that Hits enemies, causing it to deal more Elemental Damage but be unable to inflict Elemental Ailments.",
@@ -576,6 +638,13 @@
       "source": "https://poe2db.tw/us/Heavy_Swing"
     },
     {
+      "name": "Her Declaration",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing enemies that enter your Presence to become Intimidated while the Skill is active.",
+      "image": "/images/game-tooltips/her-declaration.webp",
+      "source": "https://poe2db.tw/us/Her_Declaration"
+    },
+    {
       "name": "Herald of Ice",
       "type": "Skill gem",
       "description": "While active, Shattering an enemy with a non-Herald Attack Hit will cause an icy explosion that deals Attack damage to surrounding enemies.",
@@ -636,6 +705,13 @@
       "description": "20% faster start of Energy Shield Recharge while Shapeshifted\n+20% of Armour also applies to Elemental Damage while Shapeshifted",
       "image": "/images/game-tooltips/insulating-hide.webp",
       "source": "https://poe2db.tw/us/Insulating_Hide"
+    },
+    {
+      "name": "Iron Rune",
+      "type": "Rune",
+      "description": "Martial Weapon: 16% increased Physical Damage\nWand or Staff: 25% increased Spell Damage\nArmour: 16% increased Armour, Evasion and Energy Shield",
+      "image": "/images/game-tooltips/iron-rune.webp",
+      "source": "https://poe2db.tw/us/Iron_Rune"
     },
     {
       "name": "Iron Slippers",
@@ -826,11 +902,24 @@
       "source": "https://poe2db.tw/us/Ois%C3%ADn's_Oath"
     },
     {
+      "name": "Oracle",
+      "type": "Ascendancy class",
+      "description": "Druid ascendancy\n12% increased Critical Hit Chance\nHits against you have 12% reduced Critical Damage Bonus\nNon-Keystone Passive Skills in Medium Radius of allocated Keystone Passive Skills can be allocated without being connected to your tree",
+      "source": "https://poe2db.tw/us/Oracle"
+    },
+    {
       "name": "Overcharge",
       "type": "Support gem",
       "description": "Supports any skill that Hits enemies, making its Shocks more effective but reflecting them back to you as well.",
       "image": "/images/game-tooltips/overcharge.webp",
       "source": "https://poe2db.tw/us/Overcharge"
+    },
+    {
+      "name": "Overwhelming Presence",
+      "type": "Skill gem",
+      "description": "While active, emits an Aura that makes enemies in your Presence easier to Stun and inflict Elemental Ailments upon.",
+      "image": "/images/game-tooltips/overwhelming-presence.webp",
+      "source": "https://poe2db.tw/us/Overwhelming_Presence"
     },
     {
       "name": "Overwhelming Strike",
@@ -859,12 +948,6 @@
       "description": "Supports Warcries, Triggering Twisted Pact to inflict Corrupted Blood on enemies in their area of effect., at the cost of your Life.",
       "image": "/images/game-tooltips/paquate-s-pact.webp",
       "source": "https://poe2db.tw/us/Paquate's_Pact"
-    },
-    {
-      "name": "Paths Not Taken",
-      "type": "Ascendancy passive",
-      "description": "You see what is and what might have been. Reveal a suite of Oracle-only passive tree nodes after Ascending as an Oracle.\r\n\r\nOn taking The Unseen Path Ascendancy Notable, gain the ability to allocate these nodes.",
-      "source": "https://poe2db.tw/us/Paths_Not_Taken"
     },
     {
       "name": "Piercing Claw",
@@ -950,11 +1033,25 @@
       "source": "https://poe2db.tw/us/Rigwald's_Ferocity"
     },
     {
+      "name": "Rite of Passage",
+      "type": "Unique item",
+      "description": "Used when you kill a Rare or Unique enemy\nPossessed by Spirit Of The Owl for (10–20) seconds on use",
+      "image": "/images/game-tooltips/rite-of-passage.webp",
+      "source": "https://poe2db.tw/us/Rite_of_Passage"
+    },
+    {
       "name": "Rite of Passage Golden Charm",
       "type": "Charm",
       "description": "Possessed by Spirit Of The [Azmeri Spirit] for (10–20) seconds on use",
       "image": "/images/game-tooltips/rite-of-passage-golden-charm.webp",
       "source": "https://poe2db.tw/us/Rite_of_Passage"
+    },
+    {
+      "name": "Ruinic Helm",
+      "type": "Passive skill",
+      "description": "+1 to Maximum Energy Shield per 8 Item Armour on Equipped Helmet",
+      "image": "/images/game-tooltips/ruinic-helm.webp",
+      "source": "https://poe2db.tw/us/Ruinic_Helm"
     },
     {
       "name": "Sacred Flow",
@@ -978,11 +1075,31 @@
       "source": "https://poe2db.tw/us/Sacrifice_of_Flesh"
     },
     {
+      "name": "Sanguimantic Rituals",
+      "type": "Passive skill",
+      "description": "Regenerate 1% of maximum Life per second\nArcane Surge grants more Life Regeneration Rate instead of Mana Regeneration Rate",
+      "image": "/images/game-tooltips/sanguimantic-rituals.webp",
+      "source": "https://poe2db.tw/us/Sanguimantic_Rituals"
+    },
+    {
       "name": "Savage Fury",
       "type": "Skill gem",
       "description": "While active, your Fury builds from Attacking enemies. Using this Skill releases your Fury to send you into a bestial frenzy, gaining damage and Onslaught but constantly losing life and forcing you into animal form. The frenzy ends immediately if you return to human form. You cannot gain Fury while in a frenzy.",
       "image": "/images/werewolf-skills/savage-fury.webp",
       "source": "https://poe2db.tw/us/Savage_Fury"
+    },
+    {
+      "name": "Seraph's Heart",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, providing a chance for enemies to calculate their Hits as though your Resistances were 90% while the skill is active.",
+      "image": "/images/game-tooltips/seraph-s-heart.webp",
+      "source": "https://poe2db.tw/us/Seraph's_Heart"
+    },
+    {
+      "name": "Shaman",
+      "type": "Ascendancy class",
+      "description": "Druid ascendancy\n+3 to Maximum Rage\n10% less Elemental Damage taken\nEvery 2 Rage also grants 1% more Spell damage",
+      "source": "https://poe2db.tw/us/Shaman"
     },
     {
       "name": "Shred",
@@ -1034,6 +1151,20 @@
       "source": "https://poe2db.tw/us/Starkonja's_Head"
     },
     {
+      "name": "Tecrod's Gaze",
+      "type": "Unique item",
+      "description": "Body Armours: Regenerate 1.5% of maximum Life per second\nGloves: 25% increased Life Cost Efficiency\nBoots: 10% increased Movement Speed when on Low Life",
+      "image": "/images/game-tooltips/tecrod-s-gaze.webp",
+      "source": "https://poe2db.tw/us/Tecrod's_Gaze"
+    },
+    {
+      "name": "Temporal Chains",
+      "type": "Skill gem",
+      "description": "Curse all enemies in an area, Slowing them and making other effects on them expire more slowly.",
+      "image": "/images/game-tooltips/temporal-chains.webp",
+      "source": "https://poe2db.tw/us/Temporal_Chains"
+    },
+    {
       "name": "Thawing Charm",
       "type": "Charm",
       "description": "A charm that activates when you become Frozen and grants immunity to Freeze.",
@@ -1041,11 +1172,25 @@
       "source": "https://poe2db.tw/us/Thawing_Charm"
     },
     {
+      "name": "The Lesser Harm",
+      "type": "Ascendancy passive",
+      "description": "Enemy Critical Hit Chance against you is Unlucky\nDamage of Enemies Hitting you is Unlucky",
+      "image": "/images/game-tooltips/the-lesser-harm.webp",
+      "source": "https://poe2db.tw/us/The_Lesser_Harm"
+    },
+    {
       "name": "The Mórrigan's Guidance",
       "type": "Passive skill",
       "description": "Gain 1 Vivid Wisps when Vivid Stampede ends\nStags deal 20% more damage per leap\nStags have 20% more Shock Magnitude per leap",
       "image": "/images/game-tooltips/the-morrigan-s-guidance.webp",
       "source": "https://poe2db.tw/us/The_M%C3%B3rrigan's_Guidance"
+    },
+    {
+      "name": "The Unseen Path",
+      "type": "Ascendancy passive",
+      "description": "Walk the Paths Not Taken",
+      "image": "/images/game-tooltips/the-unseen-path.webp",
+      "source": "https://poe2db.tw/us/The_Unseen_Path"
     },
     {
       "name": "Tireless",
@@ -1104,11 +1249,25 @@
       "source": "https://poe2db.tw/us/Uruk's_Smelting"
     },
     {
+      "name": "Vengeful Fury",
+      "type": "Passive skill",
+      "description": "Every Rage also grants 1% increased Armour\nGain 5 Rage when Hit by an Enemy",
+      "image": "/images/game-tooltips/vengeful-fury.webp",
+      "source": "https://poe2db.tw/us/Vengeful_Fury"
+    },
+    {
       "name": "Vitality",
-      "type": "Skill gem",
-      "description": "Casts an aura that grants life regeneration to you and your allies.",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing you to gain Life Regeneration while the Skill is active.",
       "image": "/images/game-tooltips/vitality.webp",
       "source": "https://poe2db.tw/us/Vitality"
+    },
+    {
+      "name": "Vitality I",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing you to gain Life Regeneration while the Skill is active.",
+      "image": "/images/game-tooltips/vitality-i.webp",
+      "source": "https://poe2db.tw/us/Vitality_I"
     },
     {
       "name": "Vivid Stampede",

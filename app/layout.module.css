@@ -646,18 +646,94 @@
 .content :global(h2[id]), .content :global(h3[id]) { scroll-margin-top: 1.25rem; }
 
 /* Gem setup cards: a skill, its supports and optional variant groups.
-   The card grid widens past the reading column when the panel has room. */
+   They sit in one row that slides sideways with arrows (app/GemSliders.tsx),
+   and the row widens past the reading column when the panel has room. */
+.content :global(.gemSlider) {
+  /* The arrows sit in the panel's side padding, so the cards keep their width. */
+  --bleed: max(0rem, min(1.75rem, var(--panel-space) - 1rem));
+  --slider-width: min(100cqi - 2 * (var(--panel-space) - var(--bleed)), 66rem);
+  --arrow-size: 2.25rem;
+  --arrow-space: 2.5rem;
+  position: relative;
+  container-type: inline-size;
+  width: var(--slider-width);
+  margin: 1.75rem calc((100% - var(--slider-width)) / 2) 0;
+  padding-inline: var(--arrow-space);
+}
+/* Everything fits: no arrows, no gutters. */
+.content :global(.gemSlider[data-fits="true"]) { padding-inline: 0; }
+.content :global(.gemSlider[data-fits="true"] .gemSliderArrow) { display: none; }
 .content :global(ul.gemSetups) {
-  --setups-width: min(100cqi - 2 * var(--panel-space), 62rem);
-  width: var(--setups-width);
-  max-width: none;
-  margin: 1.75rem calc((100% - var(--setups-width)) / 2) 0;
-  padding: 0;
-  /* Row-major grid so the cards read left to right, then down. */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  --cards: 1;
+  display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.content :global(ul.gemSetups)::-webkit-scrollbar { display: none; }
+@container (min-width: 31rem) {
+  .content :global(ul.gemSetups) { --cards: 2; }
+}
+@container (min-width: 46rem) {
+  .content :global(ul.gemSetups) { --cards: 3; }
+}
+.content :global(ul.gemSetups > li.gemSetup) {
+  flex: 0 0 calc((100% - (var(--cards) - 1) * 1rem) / var(--cards));
+  scroll-snap-align: start;
+}
+/* Arrows: ring-framed like the back-to-top button, level with the first gems. */
+.content :global(.gemSliderArrow) {
+  position: absolute;
+  top: min(50%, 9rem);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  min-height: 0;
+  padding: 0;
+  background: radial-gradient(circle at 50% 38%, #221e16, #08090b 68%);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 70%), 0 0 0 1px rgb(0 0 0 / 60%);
+  color: var(--color-gold-bright);
+  cursor: pointer;
+  translate: 0 -50%;
+  transition: filter 160ms ease, opacity 160ms ease, color 160ms ease;
+}
+.content :global(.gemSliderPrev) { left: 0; }
+.content :global(.gemSliderNext) { right: 0; }
+.content :global(.gemSliderArrow)::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: url("/assets/PSSkillFrame.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.content :global(.gemSliderArrow)::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border: solid currentColor;
+  border-width: 2px 2px 0 0;
+  filter: drop-shadow(0 1px 1px #000);
+}
+.content :global(.gemSliderPrev)::after { rotate: -135deg; translate: 0.14rem 0; }
+.content :global(.gemSliderNext)::after { rotate: 45deg; translate: -0.14rem 0; }
+.content :global(.gemSliderArrow:not(:disabled):hover),
+.content :global(.gemSliderArrow:not(:disabled):focus-visible) {
+  color: #fff0c8;
+  filter: brightness(1.2);
+}
+.content :global(.gemSliderArrow:disabled) { cursor: default; opacity: 0.28; }
+.content :global(.gemSliderArrow:focus-visible) { outline-offset: 4px; }
+@media (max-width: 47.999rem) {
+  .content :global(.gemSlider) { --arrow-size: 2rem; --arrow-space: 2.4rem; }
 }
 .content :global(li.gemSetup) {
   min-width: 0;
@@ -765,20 +841,195 @@
   text-wrap: balance;
 }
 .content :global(.gemSetupVariantLabel strong) { font-weight: 400; }
-/* Hover cards in the setup grid open centred on the gem so they stay on screen. */
+/* A scrolling row would clip hover cards, so on wide screens the ones in the
+   setup row sit on the viewport; app/GemSliders.tsx places them over the gem. */
 @media (min-width: 48rem) {
-  .content :global(.gemSetup .gameTooltip) {
-    left: 50%;
-    translate: -50% 0;
-  }
-  .content :global(.gemSetup .gameTerm:hover .gameTooltip),
-  .content :global(.gemSetup .gameTerm:focus .gameTooltip) {
-    animation-name: gemSetupTooltipIn;
+  .content :global(.gemSlider .gameTooltip) {
+    position: fixed;
+    top: var(--tip-top, auto);
+    right: auto;
+    bottom: auto;
+    left: var(--tip-left, auto);
   }
 }
-@keyframes gemSetupTooltipIn {
-  from { opacity: 0; translate: -50% 0.35rem; }
-  to { opacity: 1; translate: -50% 0; }
+
+/* Build gear box: a guide's flagship build laid out like the in-game
+   equipment panel. Every item opens a full item card on hover or tap. */
+.content :global(.buildGear) {
+  container-type: inline-size;
+  max-width: min(100%, 36rem);
+  margin: 1.5rem auto 2rem;
+  padding: 0.85rem 0.9rem 1rem;
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+}
+.content :global(.buildGearHeader) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.75rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, transparent, #6d5d3f 20%, #6d5d3f 80%, transparent) 1;
+  font-family: var(--font-display);
+}
+.content :global(.buildGearTitle) {
+  color: var(--color-gold-bright);
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 2px #000;
+}
+.content :global(.buildGearMeta) { color: #8e897d; font-size: 0.85rem; }
+.content :global(.buildGearSource) {
+  margin-left: auto;
+  color: var(--color-gold);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+.content :global(.buildGearSource:hover) { color: var(--color-gold-bright); }
+.content :global(.buildGearGrid) {
+  --cell: clamp(1.75rem, (100cqi - 2.6rem) / 8, 3.5rem);
+  display: grid;
+  grid-template-columns: repeat(8, var(--cell));
+  grid-auto-rows: var(--cell);
+  gap: 0.3rem;
+  justify-content: center;
+}
+.content :global(.buildSlot) {
+  --slot-color: #3a3c3a;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  background: radial-gradient(ellipse at center, #262b2c 0%, #15181a 75%);
+  border: 1px solid color-mix(in srgb, var(--slot-color) 70%, #000);
+  box-shadow: inset 0 0 0.9rem rgb(0 0 0 / 75%);
+  text-decoration: none;
+  transition: border-color 140ms ease, background-color 140ms ease;
+}
+.content :global(.buildSlot.gameTerm) { cursor: help; }
+.content :global(.buildSlot.gameTerm-unique) { --slot-color: #a8653a; }
+.content :global(.buildSlot.gameTerm-relic) { --slot-color: #6aa58c; }
+.content :global(.buildSlot.gameTerm-rare) { --slot-color: #a99540; }
+.content :global(.buildSlot.gameTerm-magic) { --slot-color: #5a64b8; }
+.content :global(.buildSlot.gameTerm:hover),
+.content :global(.buildSlot.gameTerm:focus-visible) {
+  border-color: var(--slot-color);
+  background: radial-gradient(ellipse at center, #343b3c 0%, #1b1f21 80%);
+}
+.content :global(.buildSlot.gameTerm:focus-visible) { outline-offset: 2px; }
+.content :global(.buildSlotEmpty) { opacity: 0.45; }
+.content :global(.buildSlotIcon) {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 4px rgb(0 0 0 / 70%));
+}
+.content :global(.buildSlot-weapon) { grid-area: 1 / 1 / 5 / 3; }
+.content :global(.buildSlot-helmet) { grid-area: 1 / 4 / 3 / 6; }
+.content :global(.buildSlot-offhand) { grid-area: 1 / 7 / 5 / 9; }
+.content :global(.buildSlot-body) { grid-area: 3 / 4 / 6 / 6; }
+.content :global(.buildSlot-amulet) { grid-area: 3 / 6 / 4 / 7; }
+.content :global(.buildSlot-ring1) { grid-area: 4 / 3 / 5 / 4; }
+.content :global(.buildSlot-ring2) { grid-area: 4 / 6 / 5 / 7; }
+.content :global(.buildSlot-gloves) { grid-area: 5 / 2 / 7 / 4; }
+.content :global(.buildSlot-belt) { grid-area: 6 / 4 / 7 / 6; }
+.content :global(.buildSlot-boots) { grid-area: 5 / 6 / 7 / 8; }
+.content :global(.buildSlot-flask1) { grid-area: 7 / 2 / 9 / 3; }
+.content :global(.buildSlot-flask2) { grid-area: 7 / 3 / 9 / 4; }
+.content :global(.buildSlot-charm1) { grid-area: 7 / 4 / 8 / 5; }
+.content :global(.buildSlot-charm2) { grid-area: 7 / 5 / 8 / 6; }
+.content :global(.buildSlot-charm3) { grid-area: 7 / 6 / 8 / 7; }
+.content :global(.buildGearJewels) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg, transparent, #4a4130 20%, #4a4130 80%, transparent) 1;
+}
+.content :global(.buildGearJewelsLabel) {
+  color: #8e897d;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.content :global(.buildGearJewelList) { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.content :global(.buildSlot-jewel) {
+  width: clamp(2.1rem, 9cqi, 3rem);
+  aspect-ratio: 1;
+}
+
+/* Item cards: rarity header, properties, then mods grouped like in-game. */
+.content :global(.gameTooltip-item) {
+  --tooltip-header-height: 3.35rem;
+  width: min(23rem, calc(100vw - 2rem));
+}
+.content :global(.gameTooltip-rare) {
+  --tooltip-header-left: url("/assets/itemsheaderrareleft.png");
+  --tooltip-header-middle: url("/assets/itemsheaderraremiddle.png");
+  --tooltip-header-right: url("/assets/itemsheaderrareright.png");
+  --tooltip-separator: url("/assets/itemsseparatorrare.png");
+  --tooltip-name-color: #f0dc7a;
+}
+.content :global(.gameTooltip-unique.gameTooltip-item),
+.content :global(.gameTooltip-relic) {
+  --tooltip-header-height: 3.35rem;
+  --tooltip-header-left: url("/assets/itemsheaderuniqueleft.png");
+  --tooltip-header-middle: url("/assets/itemsheaderuniquemiddle.png");
+  --tooltip-header-right: url("/assets/itemsheaderuniqueright.png");
+  --tooltip-separator: url("/assets/itemsseparatorunique.png");
+  --tooltip-name-color: var(--color-unique);
+}
+.content :global(.gameTooltip-relic) { --tooltip-name-color: #82c3a4; }
+.content :global(.gameTooltip-magic) { --tooltip-name-color: var(--color-magic); }
+.content :global(.gameTooltip-item .gameTooltipHeader) {
+  flex-direction: column;
+  gap: 0.05rem;
+}
+.content :global(.gameTooltip-item .gameTooltipName) { max-width: 100%; }
+.content :global(.gameTooltipBase) {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--tooltip-name-color);
+  font-size: 0.92rem;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px #000;
+}
+.content :global(.gameTooltip-item .gameTooltipBody) { max-height: min(70vh, 32rem); gap: 0.4rem; }
+.content :global(.gameTooltipProperty) {
+  display: block;
+  color: #8e897d;
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+.content :global(.gameTooltipValue) { color: var(--color-ivory); }
+.content :global(.gameTooltipLine-enchant),
+.content :global(.gameTooltipLine-rune) { color: #b8daf2; }
+.content :global(.gameTooltipLine-fractured) { color: #b9a46c; }
+.content :global(.gameTooltipLine-desecrated) { color: #c39ad9; }
+.content :global(.gameTooltipLine-corrupted) { color: #e0473a; }
+.content :global(.gameTooltipSockets) {
+  display: block;
+  color: #8e897d;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+/* Wide screens: cards open beside the slot, like in-game item hovers. */
+@media (min-width: 48rem) {
+  .content :global(.buildSlotStart .gameTooltip) { left: calc(100% + 0.5rem); }
+  .content :global(.buildSlotEnd .gameTooltip) { left: auto; right: calc(100% + 0.5rem); }
+  .content :global(.buildSlotTop .gameTooltip) { top: 0; bottom: auto; }
+  .content :global(.buildSlotBottom .gameTooltip) { top: auto; bottom: 0; }
 }
 
 /* Path of Building link lists render as game buttons. */

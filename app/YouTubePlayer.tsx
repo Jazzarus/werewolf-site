@@ -12,6 +12,10 @@ const pageVideos: Record<string, { id: string; title: string }> = {
     id: "GM2jWHo7kOY",
     title: "Gemling Legionnaire Werewolf guide video",
   },
+  "/werewolf/oracle": {
+    id: "Q45scQzBaxg",
+    title: "Oracle Werewolf guide video",
+  },
   "/werewolf/shaman": {
     id: "u4uEKqXzATU",
     title: "Shaman Werewolf guide video",

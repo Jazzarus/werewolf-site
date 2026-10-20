@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { formatTier, getGuideBySlug, getGuideSlugs } from "@/lib/guides";
+import { Fragment } from "react";
+import { formatTier, getGuideBySlug, getGuideSlugs, getSectionId } from "@/lib/guides";
 import styles from "../werewolf.module.css";
 
 type WerewolfGuidePageProps = {
@@ -50,12 +51,26 @@ export default async function WerewolfGuidePage({
           </span>
         </p>
       </header>
-      {guide.sections.map((section) => (
-        <section key={section.title}>
-          <h2>{section.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: section.contentHtml }} />
-        </section>
-      ))}
+      {guide.sections.map((section, index) => {
+        // A guide can open with a contents list; it sits above the first heading.
+        const contents =
+          index === 0
+            ? section.contentHtml.match(/^\s*<nav class="tableOfContents"[\s\S]*?<\/nav>/)?.[0]
+            : undefined;
+        const contentHtml = contents
+          ? section.contentHtml.replace(contents, "")
+          : section.contentHtml;
+
+        return (
+          <Fragment key={section.title}>
+            {contents && <div dangerouslySetInnerHTML={{ __html: contents }} />}
+            <section>
+              <h2 id={getSectionId(section.title)}>{section.title}</h2>
+              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            </section>
+          </Fragment>
+        );
+      })}
     </main>
   );
 }

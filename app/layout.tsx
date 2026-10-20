@@ -7,6 +7,7 @@ import styles from "./layout.module.css";
 import { SiteNavigation } from "./SiteNavigation";
 import { TwitchPlayer } from "./TwitchPlayer";
 import { BackToTop } from "./BackToTop";
+import { GemSliders } from "./GemSliders";
 import { YouTubePanel } from "./YouTubePlayer";
 
 const fontin = localFont({
@@ -97,6 +98,7 @@ export default function RootLayout({
         </footer>
 
         <BackToTop />
+        <GemSliders />
       </body>
     </html>
   );

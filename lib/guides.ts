@@ -68,6 +68,21 @@ function isPlaceholderGuide(sections: GuideSectionData[]) {
   );
 }
 
+/**
+ * The id a section heading gets, so a guide's contents list can link to it
+ * with "#section-title" (the sanitizer prefixes ids with "user-content-").
+ */
+export function getSectionId(title: string) {
+  const slug = title
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[’'`]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return `user-content-${slug}`;
+}
+
 /** "Tier A", or just "Unranked". */
 export function formatTier(tier: string) {
   return tier === "Unranked" ? tier : `Tier ${tier}`;
