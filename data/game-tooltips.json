@@ -1,17 +1,22 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-20T21:22:59.078Z",
+  "refreshedAt": "2026-10-21T20:23:34.423Z",
   "checkedNames": [
     "absent amulet",
+    "advanced thaumaturgy",
+    "all natural",
+    "alpha talisman",
     "amanamu",
     "amazon",
     "amulet",
     "ancestral bond",
     "ancestral call",
     "ancestral call ii",
+    "ancient aegis",
     "anger management",
     "arcane surge",
+    "arcane surge on critical hit",
     "arctic howl",
     "armour break",
     "armour break iii",
@@ -20,9 +25,14 @@
     "atziri's communion",
     "atziri's impatience",
     "avatar of evolution",
+    "backup plan",
+    "barbaric strength",
     "barkskin",
+    "barrier of venarius",
+    "battle trance",
     "belt",
     "berserk",
+    "bestial rage",
     "bhatair's vengeance",
     "biting frost",
     "biting frost ii",
@@ -30,39 +40,55 @@
     "blind i",
     "blind ii",
     "blood magic",
+    "blood of the wolf",
     "body armour",
+    "bolstering presence",
     "boots",
     "brutus' brain",
     "caddigan's epiphany",
     "cadigan's epiphany",
+    "calculated hunter",
     "captivating companionship",
+    "carrion finger",
+    "carrion hunger",
     "chaos inoculation",
     "charged mark",
     "charms",
     "clarity",
     "clarity i",
+    "clarity ii",
     "close combat",
     "close combat ii",
+    "cold attunement",
     "cold exposure",
     "cold mastery",
     "cold penetration",
+    "constricting command",
     "convergence",
     "cooldown recovery",
     "cooldown recovery ii",
+    "cower before the first ones",
     "crescendo",
     "crescendo ii",
     "critical strike",
     "cross slash",
     "crown of eyes",
     "crown of eyes is essential",
+    "cruel fate",
     "culling strike",
     "culling strike ii",
     "culmination",
     "culmination ii",
     "dangerous blossom",
     "dangerous blossoms",
+    "darkness enthroned",
+    "deadly swarm",
+    "deafening cries",
     "deep freeze",
     "defiance of destiny",
+    "deliberation",
+    "desensitisation",
+    "devoted protector",
     "dialla's desire",
     "dimensional weak spot",
     "dimensional weakspot",
@@ -70,14 +96,18 @@
     "direstrike i",
     "direstrike ii",
     "dousing charm",
+    "dread knot",
     "echoing cry",
     "efficiency",
     "efficiency ii",
+    "electrified claw",
     "elemental armament",
     "elemental armament ii",
     "elemental equilibrium",
     "elemental focus",
     "embrace of the wild",
+    "enhanced barrier",
+    "entropy joy",
     "entwined realities",
     "eternal mark",
     "eternal rage",
@@ -85,19 +115,34 @@
     "execute",
     "execute ii",
     "execute iii",
+    "explosive empowerment",
     "falcon dive",
+    "favourable odds",
+    "fenumus' rune of agony",
+    "flasks and charms",
     "for utopia",
     "forgotten warden",
+    "forsaken bangle",
+    "fox idol",
+    "frantic fighter",
     "freeze",
     "freezing mark",
     "from nothing",
+    "frozen claw",
+    "gale ornament",
     "garukhan's resolve",
     "garukhan's resolve:",
+    "gem enthusiast",
+    "gem studded",
+    "gemling legionnaire",
+    "general's bindings",
     "gloves",
     "grace of the ancestors",
+    "greater desert rune",
     "greater rune of ward",
     "greater rune of willpower",
     "greater ward rune",
+    "guttural roar",
     "harmonic remnants",
     "harmonic remnants i",
     "harmonic remnants ii",
@@ -108,18 +153,27 @@
     "helmet",
     "her declaration",
     "herald of ice",
+    "hide of the bear",
+    "holy descent",
+    "howling beast",
     "hulking minions",
     "hyrri's ire",
     "ice bite",
     "ice bite ii",
+    "ignore pain",
+    "in the thick of it",
     "inevitable critical hits",
     "ingenuity",
     "inspiring ally",
     "insulating hide",
+    "integrated efficiency",
     "iron rune",
     "iron slippers",
     "khatal's rejuvenation",
+    "lasting incantations",
     "lavianga's spirits",
+    "lay siege",
+    "leather bound gauntlets",
     "legacy of the wanderlust",
     "legacy of wanderlust",
     "life leech",
@@ -149,6 +203,7 @@
     "material solidification",
     "megalomaniac",
     "mind over matter",
+    "molten claw",
     "more upgrades",
     "morior invictus",
     "morrigan's insight",
@@ -157,13 +212,21 @@
     "mystical rage",
     "oisin's oath",
     "oracle",
+    "other spirit gems",
     "overcharge",
     "overwhelming presence",
     "overwhelming strike",
     "pack encouragement",
     "pain attunement",
+    "pain spark",
     "paquate's pact",
+    "path of the renegade",
     "paths not taken",
+    "patient barrier",
+    "perfect iron rune",
+    "perfect rebirth rune",
+    "perfect robust rune",
+    "personal touch",
     "piercing claw",
     "piercing claw damage",
     "pounce",
@@ -172,57 +235,85 @@
     "precision ii",
     "predator's mark",
     "predatory instinct",
+    "presence present",
     "primal bounty",
     "primal rage",
+    "prism guard",
+    "profanity ii",
     "prolonged duration",
     "prolonged duration ii",
+    "pure chaos",
+    "rage iii",
     "rakiata's flow",
     "rapid attacks",
     "rapid attacks ii",
     "raven-touched",
+    "raven-touched shard",
     "reactive growth",
+    "relentless vindicator",
+    "resilient soul",
     "rigwald's ferocity",
     "rings",
     "rite of passage",
     "rite of passage:",
     "ruinic helm",
+    "rune of the blossom",
     "sacred flow",
     "sacred unity",
     "sacrifice of flesh",
     "sanguimantic rituals",
+    "saqawal's rune of the sky",
     "savage fury",
+    "second wind",
+    "sekhema sandals",
     "seraph's heart",
     "shaman",
+    "sharpened claw",
     "shred",
     "sine aequo",
+    "soul core of tacati",
     "spiny talisman",
     "spirit gems",
+    "spirit of the bear",
+    "spirit of the wolf",
+    "spirit of the wyvern",
     "spirit vessel",
     "stalking panther",
     "starkonja's head",
     "stone charm",
+    "swift claw",
+    "tactical retreat",
     "tecrod's gaze",
     "temporal chains",
     "test guide",
     "thawing charm",
+    "the greatwolf's rune of willpower",
     "the lesser harm",
     "the morrigan's guidance",
     "the shaman",
     "the spring hare",
     "the unseen path",
     "the winter owl",
+    "thrill of battle",
+    "time-lost ruby",
     "tireless",
+    "touch the arcane",
     "turning of the seasons",
+    "tzamoto's soul core of ferocity",
     "uhtred's augury",
     "uhtred's chalice",
+    "uhtred's constellation",
+    "uhtred's omen",
     "ulaman's gaze",
     "undying hate",
     "undying hate timeless jewel",
+    "unforgiving",
     "unfurled finger",
     "unset ring",
     "upgrades",
     "uruk's smelting",
     "vengeful fury",
+    "virtuous barrier",
     "vitality",
     "vitality i",
     "vitality ii",
@@ -231,6 +322,7 @@
     "voices:",
     "vorana's siege",
     "vruun's aftermath",
+    "vulgar methods",
     "warm blooded",
     "weapon",
     "wild protector",
@@ -247,6 +339,27 @@
       "description": "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed",
       "image": "/images/game-tooltips/absent-amulet.webp",
       "source": "https://poe2db.tw/Absent_Amulet"
+    },
+    {
+      "name": "Advanced Thaumaturgy",
+      "type": "Passive skill",
+      "description": "Gem Quality grants Socketed Skills an additional effect",
+      "image": "/images/game-tooltips/advanced-thaumaturgy.webp",
+      "source": "https://poe2db.tw/us/Advanced_Thaumaturgy"
+    },
+    {
+      "name": "All Natural",
+      "type": "Passive skill",
+      "description": "+5% to all Elemental Resistances\n30% increased Elemental Damage",
+      "image": "/images/game-tooltips/all-natural.webp",
+      "source": "https://poe2db.tw/us/All_Natural"
+    },
+    {
+      "name": "Alpha Talisman",
+      "type": "Talisman base",
+      "description": "Talisman base with +(14–18)% to Block chance.",
+      "image": "/images/game-tooltips/alpha-talisman.webp",
+      "source": "https://poe2db.tw/us/Alpha_Talisman"
     },
     {
       "name": "Amazon",
@@ -269,11 +382,25 @@
       "source": "https://poe2db.tw/us/Ancestral_Call_I"
     },
     {
+      "name": "Ancient Aegis",
+      "type": "Passive skill",
+      "description": "60% increased Armour from Equipped Body Armour\n60% increased Energy Shield from Equipped Body Armour",
+      "image": "/images/game-tooltips/ancient-aegis.webp",
+      "source": "https://poe2db.tw/us/Ancient_Aegis"
+    },
+    {
       "name": "Anger Management",
       "type": "Ascendancy passive",
       "description": "+15 to Maximum Rage\n200% faster start of inherent Rage loss\nRequires The Unseen Path",
       "image": "/images/game-tooltips/anger-management.webp",
       "source": "https://poe2db.tw/us/Anger_Management"
+    },
+    {
+      "name": "Arcane Surge on Critical Hit",
+      "type": "Passive skill",
+      "description": "5% chance to Gain Arcane Surge when you deal a Critical Hit",
+      "image": "/images/game-tooltips/arcane-surge-on-critical-hit.webp",
+      "source": "https://poe2db.tw/us/Arcane_Surge_on_Critical_Hit"
     },
     {
       "name": "Arctic Howl",
@@ -332,6 +459,20 @@
       "source": "https://poe2db.tw/us/Avatar_of_Evolution"
     },
     {
+      "name": "Backup Plan",
+      "type": "Passive skill",
+      "description": "20% increased Armour and Evasion Rating\n40% increased Evasion Rating if you have been Hit Recently\n40% increased Armour if you haven't been Hit Recently",
+      "image": "/images/game-tooltips/backup-plan.webp",
+      "source": "https://poe2db.tw/us/Backup_Plan"
+    },
+    {
+      "name": "Barbaric Strength",
+      "type": "Passive skill",
+      "description": "45% increased Critical Damage Bonus\n10% increased Mana Cost of Skills\n+10 to Strength",
+      "image": "/images/game-tooltips/barbaric-strength.webp",
+      "source": "https://poe2db.tw/us/Barbaric_Strength"
+    },
+    {
       "name": "Barkskin",
       "type": "Skill gem",
       "description": "While active, taking Hit damage from enemies to your Energy Shield causes you to gain Armour for a short duration. Armour gained from multiple Hits can stack. The total Armour gained from this Skill cannot exceed the Item Armour on your Equipped Armour Items.",
@@ -339,11 +480,32 @@
       "source": "https://poe2db.tw/us/Barkskin"
     },
     {
+      "name": "Barrier of Venarius",
+      "type": "Passive skill",
+      "description": "20% increased maximum Energy Shield\n25% reduced Armour Break taken\nDefend with 120% of Armour while not on Low Energy Shield",
+      "image": "/images/game-tooltips/barrier-of-venarius.webp",
+      "source": "https://poe2db.tw/us/Barrier_of_Venarius"
+    },
+    {
+      "name": "Battle Trance",
+      "type": "Passive skill",
+      "description": "+8 to Maximum Rage",
+      "image": "/images/game-tooltips/battle-trance.webp",
+      "source": "https://poe2db.tw/us/Battle_Trance"
+    },
+    {
       "name": "Berserk",
       "type": "Skill gem",
       "description": "While active, strengthens your Rage, but causes you to lose Life while not losing Rage.",
       "image": "/images/werewolf-skills/berserk.webp",
       "source": "https://poe2db.tw/us/Berserk"
+    },
+    {
+      "name": "Bestial Rage",
+      "type": "Passive skill",
+      "description": "Gain 1 Rage on Melee Hit\nEvery 10 Rage also grants 12% increased Physical Damage",
+      "image": "/images/game-tooltips/bestial-rage.webp",
+      "source": "https://poe2db.tw/us/Bestial_Rage"
     },
     {
       "name": "Bhatair's Vengeance",
@@ -388,6 +550,20 @@
       "source": "https://poe2db.tw/us/Blood_Magic"
     },
     {
+      "name": "Blood of the Wolf",
+      "type": "Passive skill",
+      "description": "15% increased amount of Life Leeched while Shapeshifted\n15% increased Life Regeneration rate while Shapeshifted\n+1% to Maximum Cold Resistance while Shapeshifted",
+      "image": "/images/game-tooltips/blood-of-the-wolf.webp",
+      "source": "https://poe2db.tw/us/Blood_of_the_Wolf"
+    },
+    {
+      "name": "Bolstering Presence",
+      "type": "Passive skill",
+      "description": "Aura Skills have 12% increased Magnitudes\nDruid: 10% increased Critical Damage Bonus\nDruid: 10% increased Damage\nDruid: 10% increased Area Damage",
+      "image": "/images/game-tooltips/bolstering-presence.webp",
+      "source": "https://poe2db.tw/us/Bolstering_Presence"
+    },
+    {
       "name": "Brutus' Brain",
       "type": "Support gem",
       "description": "Supports skills which create Minions, causing those Minions to be unable to deal or take Damage. Cannot support skills which create undamageable Minions.",
@@ -400,6 +576,13 @@
       "description": "Place into an empty Augment Socket in a pair of Gloves to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
       "image": "/images/game-tooltips/cadigan-s-epiphany.webp",
       "source": "https://poe2db.tw/us/Cadigan's_Epiphany"
+    },
+    {
+      "name": "Calculated Hunter",
+      "type": "Passive skill",
+      "description": "5% reduced Skill Speed\n50% increased Critical Hit Chance\nRequires The Unseen Path",
+      "image": "/images/game-tooltips/calculated-hunter.webp",
+      "source": "https://poe2db.tw/us/Calculated_Hunter"
     },
     {
       "name": "Captivating Companionship",
@@ -450,6 +633,13 @@
       "source": "https://poe2db.tw/us/Close_Combat_I"
     },
     {
+      "name": "Cold Attunement",
+      "type": "Support gem",
+      "description": "Supports any skill that deals damage, causing them to Gain Cold Damage but deal less Fire and Lightning Damage.",
+      "image": "/images/game-tooltips/cold-attunement.webp",
+      "source": "https://poe2db.tw/us/Cold_Attunement"
+    },
+    {
       "name": "Cold Exposure",
       "type": "Support gem",
       "description": "Supports any skill that Hits enemies, causing it to inflict Exposure when it inflicts Freeze.",
@@ -471,11 +661,25 @@
       "source": "https://poe2db.tw/us/Cold_Penetration"
     },
     {
+      "name": "Constricting Command Viper Cap",
+      "type": "Unique item",
+      "description": "+(80—120) to maximum Life\n+(10—15) to all Attributes\n(8—12) Life Regeneration per second\nRequire (2—4) fewer enemies to be Surrounded",
+      "image": "/images/game-tooltips/constricting-command-viper-cap.webp",
+      "source": "https://poe2db.tw/us/Constricting_Command"
+    },
+    {
       "name": "Cooldown Recovery I",
       "type": "Support gem",
       "description": "Supports skills with Cooldowns, increasing the rate at which those Cooldowns Recover. Cannot modify the skills of minions.",
       "image": "/images/game-tooltips/cooldown-recovery-i.webp",
       "source": "https://poe2db.tw/us/Cooldown_Recovery_I"
+    },
+    {
+      "name": "Cower Before the First Ones",
+      "type": "Passive skill",
+      "description": "30% increased Fire Damage\n30% increased Cold Damage\n30% increased Lightning Damage\n30% increased Chaos Damage\n30% increased Physical Damage\nRequires The Unseen Path",
+      "image": "/images/game-tooltips/cower-before-the-first-ones.webp",
+      "source": "https://poe2db.tw/us/Cower_Before_the_First_Ones"
     },
     {
       "name": "Crescendo I",
@@ -534,6 +738,20 @@
       "source": "https://poe2db.tw/us/Dangerous_Blossom"
     },
     {
+      "name": "Darkness Enthroned Fine Belt",
+      "type": "Unique item",
+      "description": "(50—100)% increased effect of Socketed Augment Items\nThis item gains bonuses from Socketed Items as though it was a Shield\nHas 2 Augment Sockets (Hidden)",
+      "image": "/images/game-tooltips/darkness-enthroned-fine-belt.webp",
+      "source": "https://poe2db.tw/us/Darkness_Enthroned"
+    },
+    {
+      "name": "Deafening Cries",
+      "type": "Passive skill",
+      "description": "25% increased Warcry Cooldown Recovery Rate\n8% increased Damage for each time you've Warcried Recently",
+      "image": "/images/game-tooltips/deafening-cries.webp",
+      "source": "https://poe2db.tw/us/Deafening_Cries"
+    },
+    {
       "name": "Deep Freeze",
       "type": "Support gem",
       "description": "Supports any skill that Hits enemies, causing Freeze it inflicts to last longer.",
@@ -546,6 +764,27 @@
       "description": "(6—10)% increased maximum Life\n+(10—20) to Strength\n(25—40)% increased Mana Regeneration Rate\nRecover (20—30)% of Missing Life before being Hit by an Enemy",
       "image": "/images/game-tooltips/defiance-of-destiny.webp",
       "source": "https://poe2db.tw/us/Defiance_of_Destiny"
+    },
+    {
+      "name": "Deliberation",
+      "type": "Support gem",
+      "description": "Supports skills that can be used while moving, causing you to move slower while using them, but granting more damage in exchange.",
+      "image": "/images/game-tooltips/deliberation.webp",
+      "source": "https://poe2db.tw/us/Deliberation"
+    },
+    {
+      "name": "Desensitisation",
+      "type": "Passive skill",
+      "description": "25% increased Critical Damage Bonus\nHits against you have 25% reduced Critical Damage Bonus",
+      "image": "/images/game-tooltips/desensitisation.webp",
+      "source": "https://poe2db.tw/us/Desensitisation"
+    },
+    {
+      "name": "Devoted Protector",
+      "type": "Passive skill",
+      "description": "15% increased Armour\n+15% of Armour also applies to Elemental Damage\n10% faster start of Energy Shield Recharge\n+5 to Strength and Intelligence\nDruid: 15% increased Armour\nDruid: +15% of Armour also applies to Elemental Damage\nDruid: 10% faster start of Energy Shield Recharge\nDruid: +5 to Strength and Intelligence",
+      "image": "/images/game-tooltips/devoted-protector.webp",
+      "source": "https://poe2db.tw/us/Devoted_Protector"
     },
     {
       "name": "Dialla's Desire",
@@ -590,6 +829,13 @@
       "source": "https://poe2db.tw/us/Efficiency_I"
     },
     {
+      "name": "Electrified Claw",
+      "type": "Passive skill",
+      "description": "Gain 8% of Damage as Extra Lightning Damage while Shapeshifted",
+      "image": "/images/game-tooltips/electrified-claw.webp",
+      "source": "https://poe2db.tw/us/Electrified_Claw"
+    },
+    {
       "name": "Elemental Armament I",
       "type": "Support gem",
       "description": "Supports Attacks, causing them to deal more Elemental damage.",
@@ -615,6 +861,13 @@
       "type": "Game mechanic",
       "description": "Protects the Bear Spirit's Allies while they are in its Presence, granting them 2% of maximum Life regenerated per second and causing 8% of the damage they would take to be taken by the Bear Spirit instead.",
       "source": "https://poe2db.tw/us/Embrace_of_the_Wild"
+    },
+    {
+      "name": "Enhanced Barrier",
+      "type": "Passive skill",
+      "description": "25% increased maximum Energy Shield\n5% of Maximum Life Converted to Energy Shield",
+      "image": "/images/game-tooltips/enhanced-barrier.webp",
+      "source": "https://poe2db.tw/us/Enhanced_Barrier"
     },
     {
       "name": "Entwined Realities",
@@ -645,6 +898,13 @@
       "source": "https://poe2db.tw/us/Execute_I"
     },
     {
+      "name": "Explosive Empowerment",
+      "type": "Passive skill",
+      "description": "Empowered Attacks deal 20% increased Damage\nEnemies you kill with Empowered Attacks have a 10% chance to Explode, dealing a tenth of their maximum Life as Fire Damage",
+      "image": "/images/game-tooltips/explosive-empowerment.webp",
+      "source": "https://poe2db.tw/us/Explosive_Empowerment"
+    },
+    {
       "name": "Falcon Dive",
       "type": "Passive skill",
       "description": "4% increased Attack Speed\n1% increased Attack Speed per 400 Accuracy Rating, up to 20%",
@@ -652,11 +912,46 @@
       "source": "https://poe2db.tw/us/Falcon_Dive"
     },
     {
+      "name": "Favourable Odds",
+      "type": "Passive skill",
+      "description": "30% increased Block chance while Surrounded\n10% increased Deflection Rating while Surrounded\n40% increased Ailment and Stun Threshold while Surrounded",
+      "image": "/images/game-tooltips/favourable-odds.webp",
+      "source": "https://poe2db.tw/us/Favourable_Odds"
+    },
+    {
+      "name": "Fenumus' Rune of Agony",
+      "type": "Rune",
+      "description": "Martial Weapon: Gain 13% of Damage as Extra Chaos Damage\nWand or Staff: Gain 13% of Damage as Extra Chaos Damage\nBonded: Martial Weapon: Gain 8% of Damage as Extra Physical Damage\nBonded: Wand or Staff: Gain 8% of Damage as Extra Physical Damage",
+      "image": "/images/game-tooltips/fenumus-rune-of-agony.webp",
+      "source": "https://poe2db.tw/us/Fenumus'_Rune_of_Agony"
+    },
+    {
       "name": "Forgotten Warden Primal Markings",
       "type": "Unique item",
       "description": "+(70—100) to Deflection Rating per 50 missing Energy Shield\n(200—300)% increased Evasion and Energy Shield\n+(20—30) to Dexterity\nCompanions have (30—50)% increased maximum Life\n(10—15)% of Damage from Deflected Hits is taken from Damageable Companion's Life before you\nenable ancient order task [1]",
       "image": "/images/game-tooltips/forgotten-warden-primal-markings.webp",
       "source": "https://poe2db.tw/us/Forgotten_Warden"
+    },
+    {
+      "name": "Forsaken Bangle Amethyst Charm",
+      "type": "Unique item",
+      "description": "(15—25)% increased Duration\n50% of Chaos damage you prevent when Hit Recouped as Life and Mana during effect",
+      "image": "/images/game-tooltips/forsaken-bangle-amethyst-charm.webp",
+      "source": "https://poe2db.tw/us/Forsaken_Bangle"
+    },
+    {
+      "name": "Fox Idol",
+      "type": "Idol",
+      "description": "Body Armours: Idols socketed in this item gain the benefits of their Bonded modifiers, display additional socketable mods for idols\nSceptres: 50% increased Presence Area of Effect\nBonded: Body Armours: +5% to Quality of all Skills\nBonded: Sceptres: Minions have 30% increased Area of Effect",
+      "image": "/images/game-tooltips/fox-idol.webp",
+      "source": "https://poe2db.tw/us/Fox_Idol"
+    },
+    {
+      "name": "Frantic Fighter",
+      "type": "Passive skill",
+      "description": "30% reduced Accuracy Rating while Surrounded\n100% increased Attack Damage while Surrounded",
+      "image": "/images/game-tooltips/frantic-fighter.webp",
+      "source": "https://poe2db.tw/us/Frantic_Fighter"
     },
     {
       "name": "Freeze",
@@ -680,11 +975,39 @@
       "source": "https://poe2db.tw/us/From_Nothing"
     },
     {
+      "name": "Frozen Claw",
+      "type": "Passive skill",
+      "description": "Gain 8% of Damage as Extra Cold Damage while Shapeshifted",
+      "image": "/images/game-tooltips/frozen-claw.webp",
+      "source": "https://poe2db.tw/us/Frozen_Claw"
+    },
+    {
       "name": "Garukhan's Resolve",
       "type": "Support gem",
       "description": "Supports Attack Skills you use yourself which do not already have some Condition for use. Supported Skills have a maximum Critical Hit chance, but will Bifurcate Critical Hit Chance.",
       "image": "/images/game-tooltips/garukhan-s-resolve.webp",
       "source": "https://poe2db.tw/us/Garukhan's_Resolve"
+    },
+    {
+      "name": "Gem Enthusiast",
+      "type": "Passive skill",
+      "description": "5% increased Maximum Life if you have at least 10 Red Support Gems Socketed\n5% increased Maximum Mana if you have at least 10 Blue Support Gems Socketed\n5% increased Movement Speed if you have at least 10 Green Support Gems Socketed",
+      "image": "/images/game-tooltips/gem-enthusiast.webp",
+      "source": "https://poe2db.tw/us/Gem_Enthusiast"
+    },
+    {
+      "name": "Gem Studded",
+      "type": "Passive skill",
+      "description": "For each colour of Socketed Support Gem that is most numerous, gain:•Red: Hits against you have no Critical Damage Bonus•Blue: Skills have 30% less cost•Green: 40% less Movement Speed Penalty from using Skills while Moving",
+      "image": "/images/game-tooltips/gem-studded.webp",
+      "source": "https://poe2db.tw/us/Gem_Studded"
+    },
+    {
+      "name": "General's Bindings",
+      "type": "Passive skill",
+      "description": "Gain 8% of Evasion Rating as extra Armour",
+      "image": "/images/game-tooltips/general-s-bindings.webp",
+      "source": "https://poe2db.tw/us/General's_Bindings"
     },
     {
       "name": "Grace of the Ancestors",
@@ -694,11 +1017,25 @@
       "source": "https://poe2db.tw/us/Grace_of_the_Ancestors"
     },
     {
+      "name": "Greater Desert Rune",
+      "type": "Rune",
+      "description": "Martial Weapon: Adds 13 to 16 Fire Damage\nWand or Staff: Gain 10% of Damage as Extra Fire Damage\nArmour: +18% to Fire Resistance\nBonded: Martial Weapon: 30% increased Ignite Magnitude\nBonded: Wand or Staff: 30% increased Ignite Magnitude\nBonded: Armour: +20 to maximum Life, +20 to maximum Mana",
+      "image": "/images/game-tooltips/greater-desert-rune.webp",
+      "source": "https://poe2db.tw/us/Greater_Desert_Rune"
+    },
+    {
       "name": "Greater Ward Rune",
       "type": "Rune",
       "description": "+25 to maximum Runic Ward. Bonded: 15% increased Global Armour, Evasion and Energy Shield.",
       "image": "/images/game-tooltips/greater-ward-rune.webp",
       "source": "https://poe2db.tw/us/Greater_Ward_Rune"
+    },
+    {
+      "name": "Guttural Roar",
+      "type": "Passive skill",
+      "description": "25% increased Warcry Speed\nWarcry Skills have 25% increased Area of Effect\nWarcries Debilitate Enemies",
+      "image": "/images/game-tooltips/guttural-roar.webp",
+      "source": "https://poe2db.tw/us/Guttural_Roar"
     },
     {
       "name": "Harmonic Remnants I",
@@ -750,6 +1087,27 @@
       "source": "https://poe2db.tw/us/Herald_of_Ice"
     },
     {
+      "name": "Hide of the Bear",
+      "type": "Passive skill",
+      "description": "40% increased Armour while Shapeshifted\n+1% to Maximum Fire Resistance while Shapeshifted\n25% increased Stun Threshold while Shapeshifted",
+      "image": "/images/game-tooltips/hide-of-the-bear.webp",
+      "source": "https://poe2db.tw/us/Hide_of_the_Bear"
+    },
+    {
+      "name": "Holy Descent",
+      "type": "Support gem",
+      "description": "Supports Skills that leap into the air, causing them to create Consecrated Ground when you land.",
+      "image": "/images/game-tooltips/holy-descent.webp",
+      "source": "https://poe2db.tw/us/Holy_Descent"
+    },
+    {
+      "name": "Howling Beast",
+      "type": "Passive skill",
+      "description": "Warcries inflict 3 Critical Weakness on Enemies",
+      "image": "/images/game-tooltips/howling-beast.webp",
+      "source": "https://poe2db.tw/us/Howling_Beast"
+    },
+    {
       "name": "Hulking Minions",
       "type": "Support gem",
       "description": "Supports Skills which summon Persistent Minions. Supported Minions are larger, have more Life, and deal more Damage, but cost significantly more Spirit.",
@@ -778,6 +1136,20 @@
       "source": "https://poe2db.tw/us/Ice_Bite_I"
     },
     {
+      "name": "Ignore Pain",
+      "type": "Passive skill",
+      "description": "Gain 3 Rage when Hit by an Enemy\nEvery Rage also grants 2% increased Stun Threshold",
+      "image": "/images/game-tooltips/ignore-pain.webp",
+      "source": "https://poe2db.tw/us/Ignore_Pain"
+    },
+    {
+      "name": "In the Thick of It",
+      "type": "Passive skill",
+      "description": "Regenerate 2.5% of maximum Life per second while Surrounded",
+      "image": "/images/game-tooltips/in-the-thick-of-it.webp",
+      "source": "https://poe2db.tw/us/In_the_Thick_of_It"
+    },
+    {
       "name": "Inevitable Critical Hits",
       "type": "Ascendancy passive",
       "description": "Hits which could potentially be a Critical Hit but do not roll a Critical Hit will re-roll Critical Hit chance until they succeed.\r\n\r\nHits have 30% less Critical Damage Bonus for each time Critical Hit chance was re-rolled.",
@@ -798,11 +1170,11 @@
       "source": "https://poe2db.tw/us/Inspiring_Ally"
     },
     {
-      "name": "Insulating Hide",
+      "name": "Integrated Efficiency",
       "type": "Passive skill",
-      "description": "20% faster start of Energy Shield Recharge while Shapeshifted\n+20% of Armour also applies to Elemental Damage while Shapeshifted",
-      "image": "/images/game-tooltips/insulating-hide.webp",
-      "source": "https://poe2db.tw/us/Insulating_Hide"
+      "description": "Skills deal 20% increased Damage per Connected Red Support Gem\nSkills have 20% increased Critical Hit Chance per Connected Blue Support Gem\nSkills have 6% increased Skill Speed per Connected Green Support Gem",
+      "image": "/images/game-tooltips/integrated-efficiency.webp",
+      "source": "https://poe2db.tw/us/Integrated_Efficiency"
     },
     {
       "name": "Iron Rune",
@@ -826,6 +1198,13 @@
       "source": "https://poe2db.tw/us/Khatal's_Rejuvenation"
     },
     {
+      "name": "Lasting Incantations",
+      "type": "Passive skill",
+      "description": "20% increased Spell Damage\n15% increased Skill Effect Duration",
+      "image": "/images/game-tooltips/lasting-incantations.webp",
+      "source": "https://poe2db.tw/us/Lasting_Incantations"
+    },
+    {
       "name": "Lavianga's Spirits",
       "type": "Unique item",
       "description": "This Flask cannot be Used but applies its Effect constantly\n(70—80)% reduced Amount Recovered",
@@ -838,6 +1217,20 @@
       "description": "This Flask cannot be Used but applies its Effect constantly\n(70—80)% reduced Amount Recovered",
       "image": "/images/game-tooltips/lavianga-s-spirits-gargantuan-mana-flask.webp",
       "source": "https://poe2db.tw/us/Lavianga's_Spirits"
+    },
+    {
+      "name": "Lay Siege",
+      "type": "Passive skill",
+      "description": "1% increased Damage per 1% Chance to Block",
+      "image": "/images/game-tooltips/lay-siege.webp",
+      "source": "https://poe2db.tw/us/Lay_Siege"
+    },
+    {
+      "name": "Leather Bound Gauntlets",
+      "type": "Passive skill",
+      "description": "+1 to Evasion Rating per 1 Item Armour on Equipped Gloves",
+      "image": "/images/game-tooltips/leather-bound-gauntlets.webp",
+      "source": "https://poe2db.tw/us/Leather_Bound_Gauntlets"
     },
     {
       "name": "Legacy of Wanderlust",
@@ -965,6 +1358,13 @@
       "source": "https://poe2db.tw/us/Mind_over_Matter"
     },
     {
+      "name": "Molten Claw",
+      "type": "Passive skill",
+      "description": "Gain 8% of Damage as Extra Fire Damage while Shapeshifted",
+      "image": "/images/game-tooltips/molten-claw.webp",
+      "source": "https://poe2db.tw/us/Molten_Claw"
+    },
+    {
       "name": "Morior Invictus",
       "type": "Unique item",
       "description": "(300—400)% increased Armour, Evasion and Energy Shield\n[3 Random Socket Modifiers]\nHas 4 Augment Sockets (Hidden)",
@@ -1062,6 +1462,41 @@
       "source": "https://poe2db.tw/us/Paquate's_Pact"
     },
     {
+      "name": "Path of the Renegade",
+      "type": "Passive skill",
+      "description": "+8% to Chaos Resistance\n+20% of Armour also applies to Chaos Damage\nRequires Mutewind Agility, Brinerot Ferocity, Redblade Discipline",
+      "image": "/images/game-tooltips/path-of-the-renegade.webp",
+      "source": "https://poe2db.tw/us/Path_of_the_Renegade"
+    },
+    {
+      "name": "Patient Barrier",
+      "type": "Passive skill",
+      "description": "50% increased maximum Energy Shield\n20% slower start of Energy Shield Recharge",
+      "image": "/images/game-tooltips/patient-barrier.webp",
+      "source": "https://poe2db.tw/us/Patient_Barrier"
+    },
+    {
+      "name": "Perfect Iron Rune",
+      "type": "Rune",
+      "description": "Martial Weapon: 20% increased Physical Damage\nWand or Staff: 35% increased Spell Damage\nArmour: 20% increased Armour, Evasion and Energy Shield\nBonded: Martial Weapon: 20% increased effect of Fully Broken Armour\nBonded: Wand or Staff: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt\nBonded: Armour: +20 to maximum Life, +20 to maximum Mana",
+      "image": "/images/game-tooltips/perfect-iron-rune.webp",
+      "source": "https://poe2db.tw/us/Perfect_Iron_Rune"
+    },
+    {
+      "name": "Perfect Rebirth Rune",
+      "type": "Rune",
+      "description": "Martial Weapon: Gain 45 Life per enemy killed\nWand or Staff: 12% increased Energy Shield Recharge Rate\nArmour: Regenerate 0.5% of maximum Life per second\nBonded: Martial Weapon: Regenerate 0.4% of maximum Life per second\nBonded: Wand or Staff: 8% of Damage taken Recouped as Life\nBonded: Armour: +20 to maximum Life, +20 to maximum Mana",
+      "image": "/images/game-tooltips/perfect-rebirth-rune.webp",
+      "source": "https://poe2db.tw/us/Perfect_Rebirth_Rune"
+    },
+    {
+      "name": "Perfect Robust Rune",
+      "type": "Rune",
+      "description": "All Equipment: +15 to Strength\nBonded: Martial Weapon: Adds 6 to 10 Physical Damage to Attacks, Adds 6 to 10 Fire damage to Attacks\nBonded: Wand or Staff: +100 to Armour\nBonded: Armour: +20 to maximum Life, +20 to maximum Mana",
+      "image": "/images/game-tooltips/perfect-robust-rune.webp",
+      "source": "https://poe2db.tw/us/Perfect_Robust_Rune"
+    },
+    {
       "name": "Piercing Claw",
       "type": "Passive skill",
       "description": "Damage Penetrates 15% of Enemy Elemental Resistances while Shapeshifted",
@@ -1097,6 +1532,13 @@
       "source": "https://poe2db.tw/us/Predatory_Instinct"
     },
     {
+      "name": "Presence Present",
+      "type": "Passive skill",
+      "description": "Allies in your Presence have +100 to Accuracy Rating\n35% increased Attack Damage while you have an Ally in your Presence",
+      "image": "/images/game-tooltips/presence-present.webp",
+      "source": "https://poe2db.tw/us/Presence_Present"
+    },
+    {
       "name": "Primal Bounty",
       "type": "Passive skill",
       "description": "Empowers the next Projectile Skill you use, causing it to create additional Projectiles and fly faster.",
@@ -1111,11 +1553,39 @@
       "source": "https://poe2db.tw/us/Primal_Rage"
     },
     {
+      "name": "Prism Guard",
+      "type": "Passive skill",
+      "description": "+30% of Armour also applies to Elemental Damage",
+      "image": "/images/game-tooltips/prism-guard.webp",
+      "source": "https://poe2db.tw/us/Prism_Guard"
+    },
+    {
+      "name": "Profanity I",
+      "type": "Support gem",
+      "description": "Supports Skills you use yourself. Supported Skills consume a Corpse on use, dealing more Chaos Damage if they do.",
+      "image": "/images/game-tooltips/profanity-i.webp",
+      "source": "https://poe2db.tw/us/Profanity_I"
+    },
+    {
       "name": "Prolonged Duration I",
       "type": "Support gem",
       "description": "Supports any skill that has a duration, making that duration longer.",
       "image": "/images/game-tooltips/prolonged-duration-i.webp",
       "source": "https://poe2db.tw/us/Prolonged_Duration_I"
+    },
+    {
+      "name": "Pure Chaos",
+      "type": "Passive skill",
+      "description": "Gain 11% of Damage as Extra Chaos Damage",
+      "image": "/images/game-tooltips/pure-chaos.webp",
+      "source": "https://poe2db.tw/us/Pure_Chaos"
+    },
+    {
+      "name": "Rage I",
+      "type": "Support gem",
+      "description": "Supports Melee Attacks, causing them to grant Rage on Hit.",
+      "image": "/images/game-tooltips/rage-i.webp",
+      "source": "https://poe2db.tw/us/Rage_I"
     },
     {
       "name": "Rakiata's Flow",
@@ -1138,11 +1608,25 @@
       "source": "https://poe2db.tw/us/Raven-Touched"
     },
     {
+      "name": "Raven-Touched Shard",
+      "type": "Augment",
+      "description": "Helmets: Raven-Touched\nSocket-bound. Limited to: 1",
+      "image": "/images/game-tooltips/raven-touched-shard.webp",
+      "source": "https://poe2db.tw/us/Raven-Touched_Shard"
+    },
+    {
       "name": "Reactive Growth",
       "type": "Passive skill",
       "description": "10% less Elemental Damage taken\nAdapt 1 times to the highest Elemental Damage Type of each Hit you take\n10% less Damage taken of each Elemental Damage Type per matching Adaptation\nbase max adaptations [3]",
       "image": "/images/game-tooltips/reactive-growth.webp",
       "source": "https://poe2db.tw/us/Reactive_Growth"
+    },
+    {
+      "name": "Relentless Vindicator",
+      "type": "Passive skill",
+      "description": "10% increased Damage\n10% increased Critical Hit Chance\n+5 to Strength and Intelligence\nDruid: 10% increased Damage\nDruid: Gain 5% of Damage as Extra Damage of a random Element\nDruid: +5 to Strength and Intelligence",
+      "image": "/images/game-tooltips/relentless-vindicator.webp",
+      "source": "https://poe2db.tw/us/Relentless_Vindicator"
     },
     {
       "name": "Rigwald's Ferocity",
@@ -1173,6 +1657,13 @@
       "source": "https://poe2db.tw/us/Ruinic_Helm"
     },
     {
+      "name": "Rune of the Blossom",
+      "type": "Rune",
+      "description": "Body Armours: +50 to Spirit, -1 to Spirit per 2 Levels\nBonded: Body Armours: 5% increased Spirit Reservation Efficiency of Skills",
+      "image": "/images/game-tooltips/rune-of-the-blossom.webp",
+      "source": "https://poe2db.tw/us/Rune_of_the_Blossom"
+    },
+    {
       "name": "Sacred Flow",
       "type": "Passive skill",
       "description": "+40 to Spirit for each of your empty Charm slots",
@@ -1201,11 +1692,32 @@
       "source": "https://poe2db.tw/us/Sanguimantic_Rituals"
     },
     {
+      "name": "Saqawal's Rune of the Sky",
+      "type": "Rune",
+      "description": "Martial Weapon: Gain 5% of Damage as Extra Damage of all Elements\nWand or Staff: Gain 5% of Damage as Extra Damage of all Elements\nBonded: Martial Weapon: 8% chance to gain an additional random Charge when you gain a Charge\nBonded: Wand or Staff: 12% chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type",
+      "image": "/images/game-tooltips/saqawal-s-rune-of-the-sky.webp",
+      "source": "https://poe2db.tw/us/Saqawal's_Rune_of_the_Sky"
+    },
+    {
       "name": "Savage Fury",
       "type": "Skill gem",
       "description": "While active, your Fury builds from Attacking enemies. Using this Skill releases your Fury to send you into a bestial frenzy, gaining damage and Onslaught but constantly losing life and forcing you into animal form. The frenzy ends immediately if you return to human form. You cannot gain Fury while in a frenzy.",
       "image": "/images/werewolf-skills/savage-fury.webp",
       "source": "https://poe2db.tw/us/Savage_Fury"
+    },
+    {
+      "name": "Second Wind I",
+      "type": "Support gem",
+      "description": "Supports Skills which have a cooldown, giving them extra uses of that cooldown. Cannot support Meta, instant, or Triggered Skills, and cannot modify the Skills of Minions.",
+      "image": "/images/game-tooltips/second-wind-i.webp",
+      "source": "https://poe2db.tw/us/Second_Wind_I"
+    },
+    {
+      "name": "Sekhema Sandals",
+      "type": "Boots base",
+      "description": "Boots base with 83 Energy Shield.\nRequires Level 80, 108 Intelligence",
+      "image": "/images/build-items/bootsint06.webp",
+      "source": "https://poe2db.tw/us/Sekhema_Sandals"
     },
     {
       "name": "Seraph's Heart",
@@ -1219,6 +1731,13 @@
       "type": "Ascendancy class",
       "description": "Druid ascendancy\n+3 to Maximum Rage\n10% less Elemental Damage taken\nEvery 2 Rage also grants 1% more Spell damage",
       "source": "https://poe2db.tw/us/Shaman"
+    },
+    {
+      "name": "Sharpened Claw",
+      "type": "Passive skill",
+      "description": "30% increased Physical Damage while Shapeshifted",
+      "image": "/images/game-tooltips/sharpened-claw.webp",
+      "source": "https://poe2db.tw/us/Sharpened_Claw"
     },
     {
       "name": "Shred",
@@ -1242,11 +1761,39 @@
       "source": "https://poe2db.tw/us/Sine_Aequo"
     },
     {
+      "name": "Soul Core of Tacati",
+      "type": "Soul Core",
+      "description": "Martial Weapon: 25% increased Magnitude of Poison you inflict\nArmour: +13% to Chaos Resistance",
+      "image": "/images/game-tooltips/soul-core-of-tacati.webp",
+      "source": "https://poe2db.tw/us/Soul_Core_of_Tacati"
+    },
+    {
       "name": "Spiny Talisman",
       "type": "Talisman base",
       "description": "Talisman base with 5% base weapon Critical Hit Chance.",
       "image": "/images/game-tooltips/spiny-talisman.webp",
       "source": "https://poe2db.tw/us/Spiny_Talisman"
+    },
+    {
+      "name": "Spirit of the Bear",
+      "type": "Passive skill",
+      "description": "50% increased Damage against Immobilised Enemies while Shapeshifted\n25% increased Stun buildup while Shapeshifted",
+      "image": "/images/game-tooltips/spirit-of-the-bear.webp",
+      "source": "https://poe2db.tw/us/Spirit_of_the_Bear"
+    },
+    {
+      "name": "Spirit of the Wolf",
+      "type": "Passive skill",
+      "description": "20% increased Critical Hit Chance while Shapeshifted\n8% increased Skill Speed while Shapeshifted",
+      "image": "/images/game-tooltips/spirit-of-the-wolf.webp",
+      "source": "https://poe2db.tw/us/Spirit_of_the_Wolf"
+    },
+    {
+      "name": "Spirit of the Wyvern",
+      "type": "Passive skill",
+      "description": "20% increased Accuracy Rating while Shapeshifted\n25% increased Elemental Damage while Shapeshifted",
+      "image": "/images/game-tooltips/spirit-of-the-wyvern.webp",
+      "source": "https://poe2db.tw/us/Spirit_of_the_Wyvern"
     },
     {
       "name": "Spirit Vessel",
@@ -1277,6 +1824,20 @@
       "source": "https://poe2db.tw/us/Stone_Charm"
     },
     {
+      "name": "Swift Claw",
+      "type": "Passive skill",
+      "description": "10% increased Skill Speed while Shapeshifted",
+      "image": "/images/game-tooltips/swift-claw.webp",
+      "source": "https://poe2db.tw/us/Swift_Claw"
+    },
+    {
+      "name": "Tactical Retreat",
+      "type": "Passive skill",
+      "description": "+0.5 metres to Dodge Roll distance while Surrounded\n10% increased Movement Speed while Surrounded",
+      "image": "/images/game-tooltips/tactical-retreat.webp",
+      "source": "https://poe2db.tw/us/Tactical_Retreat"
+    },
+    {
       "name": "Tecrod's Gaze",
       "type": "Unique item",
       "description": "Body Armours: Regenerate 1.5% of maximum Life per second\nGloves: 25% increased Life Cost Efficiency\nBoots: 10% increased Movement Speed when on Low Life",
@@ -1289,6 +1850,20 @@
       "description": "Curse all enemies in an area, Slowing them and making other effects on them expire more slowly.",
       "image": "/images/game-tooltips/temporal-chains.webp",
       "source": "https://poe2db.tw/us/Temporal_Chains"
+    },
+    {
+      "name": "Thawing Charm",
+      "type": "Charm",
+      "description": "A charm that activates when you become Frozen and grants immunity to Freeze.",
+      "image": "/images/game-tooltips/thawing-charm.webp",
+      "source": "https://poe2db.tw/us/Thawing_Charm"
+    },
+    {
+      "name": "The Greatwolf's Rune of Willpower",
+      "type": "Rune",
+      "description": "Body Armours: 15% of Damage is taken from Mana before Life\nBonded: Body Armours: 8% of Maximum Life Converted to Energy Shield",
+      "image": "/images/game-tooltips/the-greatwolf-s-rune-of-willpower.webp",
+      "source": "https://poe2db.tw/us/The_Greatwolf's_Rune_of_Willpower"
     },
     {
       "name": "The Lesser Harm",
@@ -1326,6 +1901,20 @@
       "source": "https://poe2db.tw/us/The_Winter_Owl"
     },
     {
+      "name": "Thrill of Battle",
+      "type": "Passive skill",
+      "description": "20% increased Attack Speed while Surrounded",
+      "image": "/images/game-tooltips/thrill-of-battle.webp",
+      "source": "https://poe2db.tw/us/Thrill_of_Battle"
+    },
+    {
+      "name": "Time-Lost Ruby",
+      "type": "Jewel",
+      "description": "Place into an allocated Jewel Socket on the Passive Skill Tree.",
+      "image": "/images/game-tooltips/time-lost-ruby.webp",
+      "source": "https://poe2db.tw/us/Time-Lost_Ruby"
+    },
+    {
       "name": "Tireless",
       "type": "Support gem",
       "description": "Supports Warcry Skills. Attacks Empowered by Supported Skills have a chance not to lower the Empowerment count of Supported Skills when they are used.",
@@ -1333,11 +1922,25 @@
       "source": "https://poe2db.tw/us/Tireless"
     },
     {
+      "name": "Touch the Arcane",
+      "type": "Passive skill",
+      "description": "40% increased effect of Arcane Surge on you",
+      "image": "/images/game-tooltips/touch-the-arcane.webp",
+      "source": "https://poe2db.tw/us/Touch_the_Arcane"
+    },
+    {
       "name": "Turning of the Seasons",
       "type": "Passive skill",
       "description": "Enemies in your Presence have Exposure\nGain 10% of Damage as Extra Damage of a random Element",
       "image": "/images/game-tooltips/turning-of-the-seasons.webp",
       "source": "https://poe2db.tw/us/Turning_of_the_Seasons"
+    },
+    {
+      "name": "Tzamoto's Soul Core of Ferocity",
+      "type": "Soul Core",
+      "description": "Helmets: +4 to Maximum Rage",
+      "image": "/images/game-tooltips/tzamoto-s-soul-core-of-ferocity.webp",
+      "source": "https://poe2db.tw/us/Tzamoto's_Soul_Core_of_Ferocity"
     },
     {
       "name": "Uhtred's Augury",
@@ -1361,6 +1964,20 @@
       "source": "https://poe2db.tw/us/Uhtred's_Chalice"
     },
     {
+      "name": "Uhtred's Constellation",
+      "type": "Support gem",
+      "description": "Supports non-instant skills which have a cooldown, granting them two additional cooldown uses and more damage per different skill with a cooldown you have used recently.",
+      "image": "/images/game-tooltips/uhtred-s-constellation.webp",
+      "source": "https://poe2db.tw/us/Uhtred's_Constellation"
+    },
+    {
+      "name": "Uhtred's Omen",
+      "type": "Support gem",
+      "description": "Supports Skills which can gain levels, granting them additional levels provided exactly one other support is used with the supported Skill. Does not support skills which do not have levels.",
+      "image": "/images/game-tooltips/uhtred-s-omen.webp",
+      "source": "https://poe2db.tw/us/Uhtred's_Omen"
+    },
+    {
       "name": "Ulaman's Gaze",
       "type": "Rune",
       "description": "Limited to: 1 Ancient Augment\nHelmets: +1 to Accuracy Rating per 1 Item Evasion Rating on Equipped Helmet\nGloves: Critical Hit chance is Lucky against Parried enemies\nBody Armours: Prevent +3% of Damage from Deflected Hits",
@@ -1373,6 +1990,13 @@
       "description": "Glorifying the defilement of (79—30977) souls in tribute to AmanamuPassives in radius are Conquered by the AbyssalsDesecration makes this item unstable\nHistoric\nlocal unique jewel break timeless jewel calculators [0]",
       "image": "/images/game-tooltips/undying-hate-timeless-jewel.webp",
       "source": "https://poe2db.tw/us/Undying_Hate"
+    },
+    {
+      "name": "Unforgiving",
+      "type": "Passive skill",
+      "description": "+4 to Maximum Rage\nInherent loss of Rage is 20% slower",
+      "image": "/images/game-tooltips/unforgiving.webp",
+      "source": "https://poe2db.tw/us/Unforgiving"
     },
     {
       "name": "Unfurled Finger",
@@ -1401,6 +2025,13 @@
       "description": "Every Rage also grants 1% increased Armour\nGain 5 Rage when Hit by an Enemy",
       "image": "/images/game-tooltips/vengeful-fury.webp",
       "source": "https://poe2db.tw/us/Vengeful_Fury"
+    },
+    {
+      "name": "Virtuous Barrier",
+      "type": "Skill gem",
+      "description": "While active, conjures a glittering barrier that accumulates protective gemstone Motes of each Attribute type over time, but loses a random Mote when you are Hit.",
+      "image": "/images/game-tooltips/virtuous-barrier.webp",
+      "source": "https://poe2db.tw/us/Virtuous_Barrier"
     },
     {
       "name": "Vitality",
@@ -1443,6 +2074,13 @@
       "description": "Supports Warcries, causing them to destroy Ice Crystals and Ice Fragments. Supported Skills empower additional Attacks if they destroy enough Ice Crystals and Ice Fragments.",
       "image": "/images/game-tooltips/vruun-s-aftermath.webp",
       "source": "https://poe2db.tw/us/Vruun's_Aftermath"
+    },
+    {
+      "name": "Vulgar Methods",
+      "type": "Passive skill",
+      "description": "10% reduced maximum Mana\n+10 to Strength\n30% increased Critical Hit Chance",
+      "image": "/images/game-tooltips/vulgar-methods.webp",
+      "source": "https://poe2db.tw/us/Vulgar_Methods"
     },
     {
       "name": "Warm Blooded",

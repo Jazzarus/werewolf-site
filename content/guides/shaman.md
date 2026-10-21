@@ -4,190 +4,90 @@ image: /images/ascendancies/shaman.png
 class: Druid
 tier: S
 sections:
-  - title: "Intro"
+  - title: "Introduction"
     content: |
-      The Shaman is a powerful Werewolf ascendancy built around stacking Rage. With **Mystical Rage** and **Crown of Eyes**, Rage increases both Attack Damage and Spell Damage, while also contributing to Armour. **Berserk** amplifies the benefits, letting the same investment improve damage and defense.
+      - [Introduction](#introduction)
+      - [Build Links](#build-links)
+      - [Skill Gems](#skill-gems)
+      - [Gear](#gear)
+      - [Passive Tree](#passive-tree)
 
-      The build combines high Armour, Energy Shield, and Life Regeneration, with **Zealot's Oath** redirecting Life Regeneration to Energy Shield. It's fast, durable, and capable of dealing enormous damage without mirror-tier equipment. **Headhunter** is a powerful mapping upgrade, but it's not required.
-  - title: "Path of Building"
+      This guide builds on the [general werewolf guide](/werewolf-general/) and only covers what is specific to the **Shaman**. If a skill, support, or mechanic here is unclear, read the general guide first.
+
+      The **Shaman** is a druid ascendancy that stacks rage. I run 80 rage, and the build gets four benefits out of it. Rage gives attack damage, **Mystical Rage** makes every rage also grant increased spell damage, and the **Crown of Eyes** makes increases to spell damage apply to attacks as well, so the same rage pays us twice. **Bestial Rage** adds physical damage per 10 rage, and **Vengeful Fury** gives 1% increased armour per rage. **Berserk** amplifies all of it. The result is a lot of damage, a lot of movement, and a very tanky character.
+
+      The defence is armour and energy shield. **Zealot’s Oath** applies excess life recovery from regeneration to energy shield and stops energy shield from recharging. Energy shield works as life, and we stack life regeneration to feed it. **Prism Guard** makes part of our armour apply to elemental damage on top of that.
+
+      A **Headhunter** takes this build to the next level, but you don’t need one. Without it the build is already insane.
+  - title: "Build Links"
     content: |
       - **[Leveling Build](https://poe.ninja/poe2/pob/23af8)**
       - **[Budget Endgame Build](https://poe.ninja/poe2/pob/23af7)**
       - **[Full Endgame Build](https://poe.ninja/poe2/pob/23af9)**
-
-      Start with the budget version. The more expensive setup improves damage, survivability, and quality of life, but the core interactions work without premium gear.
-  - title: "Skills"
+  - title: "Skill Gems"
     content: |
-      The main choices focus on scaling Rage, getting more value from Freeze and immobilization, and using minions to increase damage.
+      The setups follow the [general guide](/werewolf-general/#gem-setups), and **Shred** uses its standard setup unchanged. Everything below is what the **Shaman** changes.
 
-      ### **Shred** and **Lunar Assault**
+      **Lunar Assault**. **Bhatair’s Vengeance** replaces **Ice Bite II**. When you freeze a target, it gives you and your allies 1% of damage as extra cold damage for every 2 rage you have, so at 80 rage that is 40% for 15 seconds. If you don’t have much rage, stay on **Ice Bite II**. Until you have **Rakiata’s Flow**, take **Piercing Claw** and **Dimensional Weakspot** on the tree for the penetration the [general guide](/werewolf-general/#rakiatas-flow) describes, and drop both once you have it.
 
-      **Long Fuse** improves the damage of **Shred**'s ice fragments. The build also takes advantage of **Heavy Frost**, which lets hits ignore non-negative elemental resistances on frozen enemies.
+      **Pounce**. **Brutus’ Brain** keeps the wolves alive. They deal no damage, but **Predator’s Mark** makes the target take more damage for each enemy near it, and **Pack Encouragement** gives us increased attack damage for each minion in our presence. The wolves feed both, so we want as many as possible at all times. **Mark of Siphoning II** replaces **Mark for Death II**, and **Eternal Mark** lets us detonate the mark while keeping it on the target, so we keep the damage from the wolves and the leech from **Mark of Siphoning II**. **Holy Descent** replaces **Culling Strike II** and creates consecrated ground where I land.
 
-      For **Lunar Assault**, **Bhatair's Vengeance** grants additional Cold Damage based on your Rage when you freeze enemies with supported skills. It's particularly valuable once you've built up a large Rage pool. **Ice Bite** is a cheaper alternative if you don't have enough Rage to make the most of **Bhatair's Vengeance**.
+      **Arctic Howl**. I run **Ice Bite II** here instead of the damage supports in the general setup. If I freeze the target with **Arctic Howl** instead of **Lunar Assault**, I still get the extra damage from freezing. **Living Lightning II** triggers on any lightning damage, and **Arctic Howl** hits several times across the whole screen, so we summon a pile of minions. They count for **Predator’s Mark** and for **Pack Encouragement**, at 5% increased attack damage each.
 
-      **Elemental Armament** increases damage, while **Ancestral Call** helps **Lunar Assault** cover more ground. **Rigwald's Ferocity** and **Rakiata's Flow** are powerful upgrades, but they're expensive. Until you have **Rakiata's Flow**, invest in elemental penetration on the passive tree. **Piercing Claw** Damage and **Dimensional Weakspot** are alternative ways to improve damage against enemies with elemental resistance.
+      **Cross Slash**. **Close Combat II** replaces **Elemental Armament II** from the general setup, since we always use it up close.
 
-      ### **Pounce**: Wolves and **Predator's Mark**
+      **Lunar Blessing**. **Efficiency II** replaces **Cooldown Recovery II**, because **Lunar Blessing** is very mana hungry. **Oisin’s Oath** replaces **Atalui’s Bloodletting**. **Lunar Assault** deals no physical damage, so **Oisin’s Oath** lets us leech mana from elemental damage, which gives us a lot of mana sustain. For it to work you need one mana leech roll on your gear, on the weapon or on either ring. **Vorana’s Siege** is only for damage and area, and you can use **Magnified Area II** or another support in its place.
 
-      **Brutus' Brain** makes your seven wolves immortal, although they no longer deal damage. Their value comes from the bonuses they provide through **Predator's Mark** and **Pack Encouragement**.
+      **Herald of Ice**. I don’t have **Dangerous Blossom** on the tree, so I run the [standard setup](/werewolf-general/#setup-herald-of-ice) without armour break.
 
-      **Predator's Mark** rewards having enemies near the marked target, while **Pack Encouragement** grants increased Attack Damage for each minion in your Presence. Keeping the wolves around therefore improves both effects.
+      **Savage Fury**. The general guide puts it in the second weapon set. Here it goes in the first weapon set with **Arctic Howl**, because **Lunar Blessing** stays in the second one with all the damage nodes.
 
-      **Eternal Mark** lets the mark remain on the target after **Cross Slash** detonates it. Combined with **Charged Mark**, this lets you trigger the mark and create Shocked Ground without permanently losing the benefits of **Predator's Mark** and **Mark of Siphoning**.
+      **Eternal Rage**. As the general guide recommends for late game, I get it from an **Absent Amulet** to free up its 100 spirit. The supports on it are mostly comfort. **Her Declaration** intimidates enemies and **Seraph’s Heart** gives enemies a chance to treat my resistances as 90%. They cost 30 and 45 spirit, so you can skip them. **Vitality II** is the one you need. **Berserk** drains life per second and **Zealot’s Oath** wants as much life regeneration as possible, so we want that life back. **Warm Blooded** shortens the freeze duration on me. I use it because **Sacred Flow** pays spirit for empty charm slots, so I don’t run a **Thawing Charm**. **Clarity I** is there because the wolf is mana hungry.
 
-      ### **Cross Slash**
+      **Berserk**. This one is 100% needed, since we get four benefits from rage. **Dialla’s Desire** and **Uhtred’s Omen** improve it but are expensive, so skip them if you are short on spirit.
 
-      **Cross Slash** is the main finisher and mark detonator. **Elemental Armament** and **Heavy Swing** increase its damage, while **Execute** and **Close Combat** support its role as a finishing hit.
+      **Barkskin**. It is the buff that fits an armour and energy shield build, and it is not that good, so skip it if you lack the spirit. I run **Vitality I** and **Clarity II** on it, which stack with the **Vitality II** and **Clarity I** on **Eternal Rage**, and **Precision I** with my last 10 spirit for accuracy against evasive monsters.
 
-      **Mórrigan's Insight** consumes Freeze to increase **Cross Slash**'s damage and grants a Guard benefit. **Biting Frost** is a cheaper alternative, but you lose that additional defense.
+      ### Full Endgame Gem Setups
 
-      ### **Arctic Howl** and **Living Lightning**
+      These are the exact setups from the [Full Endgame build](https://poe.ninja/poe2/pob/23af9). Hover any gem to see what it does.
 
-      **Arctic Howl** is a major part of the build's damage setup. **Echoing Cry** provides multiple cries per activation, while **Tireless** improves the value of empowered attacks. The remaining supports can improve war cry speed, cooldown recovery, damage, and utility.
-
-      **Living Lightning** is particularly useful because the build gains damage as extra Lightning Damage. **Arctic Howl** activates repeatedly over a large area, helping summon lightning minions. These minions contribute to **Pack Encouragement** and **Predator's Mark**, adding another source of damage scaling.
-
-      ### **Lunar Blessing** and Other Buffs
-
-      **Lunar Blessing** provides the white Werewolf form and its damaging moonbeams. Cooldown Recovery helps maintain uptime, **Prolonged Duration** extends the effect, and **Elemental Armament** increases its damage.
-
-      **Savage Fury** provides a damage buff and Onslaught. Keep it in the other weapon set so it doesn't reserve Spirit from your main setup. Activate it when needed, then switch back.
-
-      **Berserk** is central to the build because it amplifies the benefits of Rage. **Vitality** supports the Life Regeneration setup, and **Clarity** helps with mana sustain. **Barkskin** is an optional defensive addition if you have enough Spirit.
-
-      You can use different levels of **Vitality** and **Clarity** across separate skills, as shown in the Path of Building setups. **Warm Blooded** is also useful if you leave your Charm slots empty for The Shaman's Spirit bonus and need protection against Freeze.
+      ::build-gems[shaman-full-endgame]
   - title: "Gear"
     content: |
-      The main priorities are maximum Rage, damage, attributes, Life Regeneration, and the Armour and Energy Shield interactions on the passive tree. **Crown of Eyes** is essential to the main damage setup; most other slots offer more flexibility.
+      ::build-gear[shaman-full-endgame]
 
-      ### Helmet: **Crown of Eyes**
+      **Weapon**. A **Maji Talisman**, because we want maximum rage. Mine rolled the low plus 7 and you can get up to plus 10. Besides that you want as much damage as possible, attack speed, levels of attack skills, and strength or intelligence. The build is very attribute hungry, and you will be juggling your attributes. The runes matter. **Saqawal’s Rune of the Sky** gives 5% of damage as extra damage of all elements. **Fenumus’ Rune of Agony** gives 13% of damage as extra chaos damage, and since I am a **Shaman**, **Wisdom of the Maji** adds its bonded modifier, 8% of damage as extra physical damage. That is 21% extra damage from this one rune.
 
-      **Crown of Eyes** is essential because it allows increases and reductions to Spell Damage to apply to attacks. That makes the Spell Damage gained from **Mystical Rage** contribute directly to your attack damage.
+      **Helmet**. The **Crown of Eyes**. You need it, and without it you are reworking the whole build. I have a **Raven-Touched Shard** in mine, which lets me anoint **Patient Barrier** for more energy shield. That is only extra tankiness, so skip it if you don’t have the money. The **Tzamoto’s Soul Core of Ferocity** is worth having for plus 4 maximum rage.
 
-      The rest of your gear and passive tree can then scale this interaction alongside your regular attack modifiers.
+      **Amulet**. An **Absent Amulet** with **Eternal Rage**. Spell damage is great on it, since the **Crown of Eyes** converts it into attack damage, and maximum energy shield and levels of melee skills are also good. Mine rolled lightning and chaos resistance, which was a miss, because it is very hard to find one with four perfect modifiers. Use whatever you can find.
 
-      ### Talisman
+      **Body armour**. **Morior Invictus**, as on almost all my werewolf builds. Every filled socket gives life regeneration, elemental resistances, and spirit. We want the life regeneration for **Zealot’s Oath** and **Berserk**. Mine has five sockets, but four is enough. I run two **Perfect Rebirth Rune**s for regeneration, a **Perfect Robust Rune** for 15 strength to fix my attributes, a **Greater Desert Rune** for fire resistance, and **Tecrod’s Gaze**, which regenerates 1.5% of maximum life per second and scales with your life pool. Runes for maximum life also work, and they make **Vitality** regenerate more. I end up with 285 spirit, which is more than you need.
 
-      A **Maji Talisman** is a strong choice because it can roll additional maximum Rage. The showcased setup has room to improve its Rage roll, so a better one is a straightforward upgrade.
+      **Belt**. Armour, life, mana, strength, chaos resistance, and life regeneration. Take all the life regeneration you can get.
 
-      Look for Melee Skill Levels, Attack Speed, damage, and useful Attributes. The build is attribute-hungry, making Strength and Intelligence valuable even when they don't directly increase damage.
+      **Gloves**. I always use **Sine Aequo** on a werewolf. It makes you immobilise enemies at 50% buildup instead of 100%, so bosses freeze very fast, and in maps one swing freezes a pack. Frozen and immobilised enemies take extra damage from us, so this is a must for me. Once your damage is high enough, you can swap to rare gloves with more damage. The catch is that freeze buildup scales with your damage, so you need a lot of it to still freeze fast without **Sine Aequo**. My gloves have a jewel socket from **Cadigan’s Epiphany**, which is the best thing you can put in your gloves. The jewel rolls life regeneration rate, melee damage, attack damage, and plus 3 maximum rage. A jewel normally rolls plus 2 maximum rage, but I crafted mine with 50% increased effect of prefixes, which is how it reaches plus 3.
 
-      The build also uses runes that grant damage as extra damage, including extra elemental and Chaos Damage. The Shaman's rune-related ascendancy interaction adds another source of extra Physical Damage through Bonded modifiers.
+      **Boots**. A **Sekhema Sandals**, which is a full energy shield base. We take **Iron Slippers** on the tree, which gives armour per energy shield on your boots, so you want full energy shield boots. I roll maximum energy shield, increased energy shield, fire and chaos resistance, life regeneration, and movement speed. The slot is open for attributes or resistances as well. I use a **Perfect Iron Rune** in the socket.
 
-      ### Amulet
+      **Rings**. Flat damage on both, physical and fire in my case, with the rest in resistances and attributes. You also need one mana leech roll between the weapon and the rings to enable **Oisin’s Oath**. Mana on kill is a nice extra and nothing more.
 
-      An **Eternal Rage** amulet is highly recommended. It provides additional maximum Rage and frees up Spirit that would otherwise be needed for the **Eternal Rage** support.
-
-      Spell Damage is especially valuable on this build because of **Crown of Eyes**. Other useful modifiers include maximum Energy Shield, Melee Skill Levels, Attributes, and Resistances.
-
-      A regular amulet can still work if the **Eternal Rage** version is outside your budget.
-
-      ### Body Armour
-
-      **Morior Invictus** is the preferred body armour. Prioritize Life Regeneration, Resistances, and Spirit per socketed rune.
-
-      Four sockets are sufficient, although the showcased setup uses five. Use the sockets to cover your recovery, resistance, and Attribute requirements. Maximum Life can also be useful for effects that scale with it.
-
-      ### Gloves
-
-      **Sine Aequo** immobilizes enemies at 50% buildup instead of 100%, making it easier to Freeze and immobilize enemies during mapping and against bosses. It also grants increased damage against immobilized enemies.
-
-      You can further invest in its socketed upgrade for additional maximum Rage. The showcased crafted jewel upgrade reaches **+3 maximum Rage**, but this is an expensive optimization rather than a requirement.
-
-      Once your damage and Freeze buildup are high enough, rare gloves with flat damage and Melee Skill Levels can provide a higher damage ceiling.
-
-      ### Boots
-
-      Prioritize Energy Shield, Resistances, Life Regeneration, and Movement Speed. The **Iron Slippers** notable grants Armour based on the Item Energy Shield on your equipped boots, making a pure Energy Shield base particularly useful. It also reduces the Slowing Potency of Debuffs on you.
-
-      Attributes and additional Life Regeneration are useful if you need them to balance your other equipment.
-
-      ### Rings
-
-      Flat damage and mana leech are the main priorities. You need at least one source of mana leech on a ring or weapon to sustain the setup using **Oisín's Oath**.
-
-      The remaining affixes can cover Attributes, elemental and Chaos Resistance, and other defensive gaps. Additional mana modifiers are useful only if you still have sustain problems.
-
-      ### Belt and Flasks
-
-      Use the belt to round out your defenses and Attributes. Armour, Life, Strength, Chaos Resistance, and Life Regeneration are all useful.
-
-      **Lavianga's Spirits** provides convenient mana recovery, but it isn't mandatory. A regular Mana Flask works if you prefer to use that slot differently.
-
-      ### Jewels
-
-      Prioritize Attack Damage, Spell Damage, Attack Speed, elemental damage, Critical Damage Bonus, Life Regeneration, Armour, Energy Shield, and maximum Rage.
-
-      Spell Damage is particularly valuable because **Crown of Eyes** lets it contribute to attacks. Area-related bonuses can also help the build's broad attacks.
-
-      Crafted jewels that add maximum Rage and Life Regeneration are strong high-investment upgrades. Regular jewels with useful offensive and defensive modifiers are perfectly fine while you work toward them.
+      **Flasks and charms**. A big life flask and **Lavianga’s Spirits**, which is passive mana regeneration I never think about. A normal mana flask works too. I leave all three charm slots empty for **Sacred Flow**.
   - title: "Passive Tree"
     content: |
-      The passive tree combines Rage scaling with **Heavy Frost**, the Armour and Energy Shield setup, and The Shaman's ascendancy bonuses. You can shift some investment between offense and defense as your gear improves.
+      **Avatar of Evolution** and **Reactive Growth** are non-negotiable. **Avatar of Evolution** makes 5% of the physical damage you take be taken as fire, 5% as lightning, and 5% as cold. Physical damage is hard to mitigate in Path of Exile, and this makes your elemental resistances work against it. **Reactive Growth** adapts to the highest elemental damage type of each hit you take, so you take less damage from that type, and it also reduces the elemental damage you take.
 
-      ### **Mystical Rage** and Maximum Rage
+      **Sacred Flow** gives plus 40 spirit for each empty charm slot, so 120 spirit with three. If freeze gives you trouble, you can use a charm and lose some of it. With one charm you still keep 80. **Wisdom of the Maji** is the flexible one. In my build it only gives plus 20 maximum life and mana from my armour runes, and I take it for the 8% extra physical damage on **Fenumus’ Rune of Agony**. You can swap it for **Turning of the Seasons**, which gives 10% of damage as extra damage of a random element and makes enemies in your presence have exposure. The exposure does little with penetration or **Rakiata’s Flow**, but the extra damage is good.
 
-      **Mystical Rage** is mandatory It grants increased Spell Damage per point of Rage, and **Crown of Eyes** lets that bonus apply to attacks. Rage also contributes to Armour through the tree, giving it value on both sides of the build.
+      **Mystical Rage** is a must, even if you have to path through other nodes to reach it. **Zealot’s Oath** is integral too. You could play a build like this without it, but you would have to rework the whole defensive layer. **Bestial Rage** is the fourth benefit from rage, and **Vengeful Fury** gives the armour. **Prism Guard** makes 30% of our armour apply to elemental damage, which is a big part of the tankiness. **Primal Rage** gives plus 12 maximum rage while shapeshifted, and the path to it has two small nodes with plus 3 each. All our damage is elemental, so **All Natural** gives us elemental damage and resistances.
 
-      Aim for around **80 Rage**, then invest in maximum Rage where it's efficient. Your talisman, amulet, jewels, and passive tree can all contribute to that total.
+      I have a **Megalomaniac** with **Heavy Frost** and **Unforgiving**. You need **Heavy Frost** from some source, and it doesn’t matter which. It gives 20% increased freeze buildup and makes hits ignore non-negative elemental resistances of frozen enemies. Once you freeze something it has no resistances, which makes **Shred** hit a lot harder on a frozen target. **Unforgiving** is a bonus, with plus 4 maximum rage and slower rage loss.
 
-      ### **Heavy Frost**
+      I took **Pain Attunement** on my **From Nothing**. It lets me allocate the nodes in its radius without a connected path, so I can take **Pack Encouragement** without paying three points for the useless minion nodes around it, and I can also put a point in **Desensitisation**. **Desensitisation** gives 25% increased critical damage bonus and reduces the critical damage bonus of hits against you, so it works for both attack and defence. You could put the **From Nothing** on another keystone, such as **Chaos Inoculation**, but I wanted these nodes.
 
-      **Heavy Frost** is essential It increases Freeze buildup and allows hits to ignore non-negative elemental resistances on frozen enemies, making it particularly valuable for **Shred**.
+      For defence, **Barrier of Venarius** makes us defend with 120% of our armour while not on low energy shield, and we are almost always on full energy shield. **Enhanced Barrier** gives 25% increased maximum energy shield and converts 5% of our maximum life to energy shield. The converted life then gets multiplied by all our increased energy shield, so we end up with more energy shield than we would have had life. **Ancient Aegis** boosts the armour and energy shield of our body armour. **Iron Slippers** gives plus 2 armour per 1 energy shield on our boots, which is why they are full energy shield, and **Blood of the Wolf** gives life regeneration while shapeshifted.
 
-      You can access it through a **Megalomaniac**, an amulet anointment, or another available allocation method. The route depends on your tree and gear, but make sure you have it.
+      We are always shapeshifted, so the shapeshifted nodes apply all the time. **Frozen Claw**, **Molten Claw**, and **Electrified Claw** each give 8% of damage as extra cold, fire, and lightning damage. **Spirit of the Bear** gives increased damage against immobilised enemies, and frozen enemies count as immobilised. **Hide of the Bear** gives armour, **Spirit of the Wolf** gives critical hit chance and skill speed, and **Spirit of the Wyvern** gives elemental damage and accuracy. **Swift Claw** and **Sharpened Claw** give skill speed and physical damage. **Bolstering Presence** and **Relentless Vindicator** add damage, critical damage bonus, and area damage, and all our attacks are area attacks. **Lasting Incantations** gives spell damage, which the **Crown of Eyes** turns into attack damage. On the small nodes I look for attack damage, spell damage, skill speed, elemental damage, armour, energy shield, and life regeneration.
 
-      ### **Zealot's Oath** and Life Regeneration
-
-      **Zealot's Oath** makes Life Regeneration apply to Energy Shield. The build therefore invests heavily in regeneration through gear, socketed runes, and the passive tree.
-
-      This helps sustain Energy Shield and offsets **Berserk**'s life drain. Because this version doesn't use **Blood Magic**, you still need to manage mana and maintain a source of mana leech.
-
-      ### Armour and Energy Shield
-
-      Two passives are especially important for combining these defenses.
-
-      **Iron Slippers** grants Armour based on the Item Energy Shield on your equipped boots, which is why a pure Energy Shield base works well here.
-
-      **Insulating Hide** allows 20% of your Armour to apply to Elemental Damage while shapeshifted. Combined with the Armour gained through Rage, this gives the build meaningful elemental mitigation alongside its physical defenses.
-
-      ### **Pack Encouragement**
-
-      **Pack Encouragement** grants increased Attack Damage for each minion in your Presence, up to its maximum. **Brutus' Brain** maintains the wolves, while **Living Lightning** can summon additional minions.
-
-      **Living Lightning** therefore contributes more than utility. The extra minions help scale the same passive that makes the wolves valuable.
-
-      ### **From Nothing** and Additional Scaling
-
-      The showcased tree uses **From Nothing** to access **Pain Attunement** and nearby passive options without spending points on unwanted pathing nodes.
-
-      The remaining investment covers Critical Damage Bonus, reduced Critical Damage Bonus from enemy hits, Energy Shield, Armour, Life Regeneration, damage gained as extra elemental damage, and damage against immobilized enemies. Adjust the balance to suit your gear. With Rage already providing substantial damage, further defensive investment remains worthwhile.
-
-      ### Shaman Ascendancy
-
-      The ascendancy choices support the build's Spirit budget, damage gained from runes and idols, and defensive layering.
-
-      **Sacred Flow** grants 40 Spirit for each empty Charm slot. Leaving all three slots empty provides **120 Spirit**, which makes it easier to fit additional buffs and supports. You can equip a Charm when you need protection against an ailment, but doing so sacrifices some of that Spirit.
-
-      **Wisdom of the Maji** grants the benefits of Bonded modifiers on equipped Runes and Idols. This works well with the build's extra damage from runes. **Turning of the Seasons** is an offensive alternative that applies Exposure to enemies in your Presence and grants 10% of Damage as Extra Damage of a random Element.
-
-      For defense, **Reactive Growth** grants 10% less Elemental Damage taken and provides Adaptations based on the highest Elemental Damage Type of each hit you take. Each matching Adaptation grants another 10% less damage taken of that type.
-
-      **Avatar of Evolution** shifts 5% of Physical Damage taken to each of Cold, Fire, and Lightning Damage and doubles Adaptation effects, although Adaptations last only five seconds. Together with **Insulating Hide**, these effects help make The Shaman exceptionally durable.
-
-      Choose the remaining ascendancy options based on whether you want to lean further into damage or survivability.
-  - title: "High-End Upgrades"
-    content: |
-      The build works well without expensive equipment, but several upgrades can improve its damage, defense, and convenience.
-
-      **Headhunter** is the standout mapping upgrade, while **Mageblood** is another high-investment option if you prefer its flask benefits.
-
-      An **Eternal Rage** amulet frees up Spirit for additional supports. Better maximum Rage rolls on the talisman and crafted socket upgrades further improve the build. Better **Morior Invictus** rolls and additional Life Regeneration can strengthen the defensive setup.
-
-      Additional jewel investment can improve damage, maximum Rage, Life Regeneration, Armour, and Energy Shield. These are incremental upgrades, not requirements for the build to function.
-  - title: "Final Thoughts"
-    content: |
-      The Shaman brings several strong interactions together. Rage scales Attack Damage, Spell Damage, and Armour, while **Crown of Eyes** turns the Spell Damage bonus into more attack damage. **Zealot's Oath**, Life Regeneration, Armour, and Energy Shield provide a durable defensive foundation.
-
-      Start with the budget setup, prioritize **Crown of Eyes**, **Mystical Rage**, **Heavy Frost**, and the core defensive interactions, then scale maximum Rage and damage as your gear improves. You can get a powerful, fast Werewolf running without mirror-tier equipment.
+      We use two weapon sets. The first has the war cry nodes, which only apply to **Arctic Howl**, and the second has **Lunar Blessing** and the shapeshifted damage. **Guttural Roar** gives war cry speed and makes war cries debilitate enemies, so mobs hit us for less after an **Arctic Howl**. **Deafening Cries** gives war cry cooldown recovery and 8% increased damage for each time you have war cried recently. Every echo from **Echoing Cry** counts, so we get 24% with three. **Explosive Empowerment** gives empowered attacks increased damage, and **Arctic Howl** is what empowers them. **Howling Beast** makes war cries inflict critical weakness, so the target is easier to crit.

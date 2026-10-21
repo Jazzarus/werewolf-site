@@ -148,11 +148,14 @@ These are the skill and support gem setups shared across werewolf builds. Hover 
     - **Rigwald's Ferocity**
     - **Rakiata's Flow**
 - **Pounce** {#setup-pounce}
-  - **Brutus' Brain**
   - **Eternal Mark**
   - **Mark for Death II**
   - **Charged Mark**
   - **Culling Strike II**
+  - Without **Pack Encouragement**
+    - **Freezing Mark**
+  - With **Pack Encouragement**
+    - **Brutus' Brain**
 - **Arctic Howl** {#setup-arctic-howl}
   - **Tireless**
   - **Echoing Cry**

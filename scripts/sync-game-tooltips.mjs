@@ -50,6 +50,9 @@ const conciseFallbackDescriptions = new Map([
   ["dousing charm", "A charm that activates when you become Ignited."],
   ["thawing charm", "A charm that activates when you become Frozen and grants immunity to Freeze."],
   ["maji talisman", "Talisman base with +(7–10) to Maximum Rage."],
+  ["alpha talisman", "Talisman base with +(14–18)% to Block chance."],
+  ["soul core of tacati", "Martial Weapon: 25% increased Magnitude of Poison you inflict\nArmour: +13% to Chaos Resistance"],
+  ["time-lost ruby", "Place into an allocated Jewel Socket on the Passive Skill Tree."],
   ["spiny talisman", "Talisman base with 5% base weapon Critical Hit Chance."],
   ["dangerous blossom", "Gain 10% of Damage as Extra Physical Damage."],
   [
@@ -107,6 +110,16 @@ const fallbackEntities = new Map([
 const descriptionOverrides = new Map([
   ["absent amulet", "Grants one random Spirit skill at level 12: Cast on Elemental Ailment, Cast on Critical, Cast on Dodge, Rhoa Mount, Archmage, Trinity, or Eternal Rage\nThe granted skill does not cost you any Spirit\n-1 Prefix Modifier allowed\n-1 Suffix Modifier allowed"],
   ["unset ring", "Grants 1 additional Skill Slot"],
+  ["raven-touched shard", "Helmets: Raven-Touched\nSocket-bound. Limited to: 1"],
+  ["saqawal's rune of the sky", "Martial Weapon: Gain 5% of Damage as Extra Damage of all Elements\nWand or Staff: Gain 5% of Damage as Extra Damage of all Elements\nBonded: Martial Weapon: 8% chance to gain an additional random Charge when you gain a Charge\nBonded: Wand or Staff: 12% chance when collecting an Elemental Infusion to gain an additional Elemental Infusion of the same type"],
+  ["fenumus' rune of agony", "Martial Weapon: Gain 13% of Damage as Extra Chaos Damage\nWand or Staff: Gain 13% of Damage as Extra Chaos Damage\nBonded: Martial Weapon: Gain 8% of Damage as Extra Physical Damage\nBonded: Wand or Staff: Gain 8% of Damage as Extra Physical Damage"],
+  ["tzamoto's soul core of ferocity", "Helmets: +4 to Maximum Rage"],
+  ["the greatwolf's rune of willpower", "Body Armours: 15% of Damage is taken from Mana before Life\nBonded: Body Armours: 8% of Maximum Life Converted to Energy Shield"],
+  ["fox idol", "Body Armours: Idols socketed in this item gain the benefits of their Bonded modifiers, display additional socketable mods for idols\nSceptres: 50% increased Presence Area of Effect\nBonded: Body Armours: +5% to Quality of all Skills\nBonded: Sceptres: Minions have 30% increased Area of Effect"],
+  ["rune of the blossom", "Body Armours: +50 to Spirit, -1 to Spirit per 2 Levels\nBonded: Body Armours: 5% increased Spirit Reservation Efficiency of Skills"],
+  ["alpha talisman", "Talisman base with +(14–18)% to Block chance."],
+  ["soul core of tacati", "Martial Weapon: 25% increased Magnitude of Poison you inflict\nArmour: +13% to Chaos Resistance"],
+  ["time-lost ruby", "Place into an allocated Jewel Socket on the Passive Skill Tree."],
 ]);
 const explicitEntityTypes = new Map([
   ["absent amulet", "Amulet base"],
@@ -119,6 +132,16 @@ const explicitEntityTypes = new Map([
   ["greater ward rune", "Rune"],
   ["unset ring", "Ring base"],
   ["sacrifice of flesh", "Keystone passive"],
+  ["raven-touched shard", "Augment"],
+  ["saqawal's rune of the sky", "Rune"],
+  ["fenumus' rune of agony", "Rune"],
+  ["tzamoto's soul core of ferocity", "Soul Core"],
+  ["the greatwolf's rune of willpower", "Rune"],
+  ["fox idol", "Idol"],
+  ["rune of the blossom", "Rune"],
+  ["alpha talisman", "Talisman base"],
+  ["soul core of tacati", "Soul Core"],
+  ["time-lost ruby", "Jewel"],
 ]);
 const failedLookups = new Set();
 
