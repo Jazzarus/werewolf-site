@@ -1,0 +1,12 @@
+.article {
+  max-width: var(--reading-width);
+  margin-inline: auto;
+}
+
+.article h2:first-of-type {
+  margin-top: 2rem;
+}
+
+.article h3 {
+  overflow-wrap: normal;
+}

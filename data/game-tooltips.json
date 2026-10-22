@@ -1,25 +1,33 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-21T20:23:34.423Z",
+  "refreshedAt": "2026-10-22T08:11:47.839Z",
   "checkedNames": [
+    "abasement",
     "absent amulet",
     "advanced thaumaturgy",
     "all natural",
     "alpha talisman",
     "amanamu",
     "amazon",
+    "amethyst charm",
     "amulet",
     "ancestral bond",
     "ancestral call",
+    "ancestral call i",
     "ancestral call ii",
     "ancient aegis",
     "anger management",
+    "apex of the moment",
+    "arcane nature",
     "arcane surge",
     "arcane surge on critical hit",
     "arctic howl",
     "armour break",
+    "armour break i",
     "armour break iii",
+    "armour demolisher i",
+    "armour demolisher ii",
     "armour explosion",
     "atalui's bloodletting",
     "atziri's communion",
@@ -35,7 +43,9 @@
     "bestial rage",
     "bhatair's vengeance",
     "biting frost",
+    "biting frost i",
     "biting frost ii",
+    "black scythe training",
     "blazing critical",
     "blind i",
     "blind ii",
@@ -44,44 +54,59 @@
     "body armour",
     "bolstering presence",
     "boots",
+    "bringer of order",
     "brutus' brain",
+    "budget endgame build",
+    "buff expiry rate",
     "caddigan's epiphany",
     "cadigan's epiphany",
     "calculated hunter",
     "captivating companionship",
     "carrion finger",
     "carrion hunger",
+    "chakra of life",
     "chaos inoculation",
     "charged mark",
     "charms",
+    "chronomancer",
     "clarity",
     "clarity i",
     "clarity ii",
     "close combat",
+    "close combat i",
     "close combat ii",
     "cold attunement",
     "cold exposure",
     "cold mastery",
     "cold penetration",
+    "constant gale",
     "constricting command",
+    "constricting command viper cap",
     "convergence",
     "cooldown recovery",
+    "cooldown recovery i",
     "cooldown recovery ii",
     "cower before the first ones",
     "crescendo",
+    "crescendo i",
     "crescendo ii",
     "critical strike",
     "cross slash",
     "crown of eyes",
     "crown of eyes is essential",
+    "crown of eyes vermeil circlet",
     "cruel fate",
     "culling strike",
+    "culling strike i",
     "culling strike ii",
     "culmination",
+    "culmination i",
     "culmination ii",
+    "dampening shield",
     "dangerous blossom",
     "dangerous blossoms",
     "darkness enthroned",
+    "darkness enthroned fine belt",
     "deadly swarm",
     "deafening cries",
     "deep freeze",
@@ -99,13 +124,16 @@
     "dread knot",
     "echoing cry",
     "efficiency",
+    "efficiency i",
     "efficiency ii",
     "electrified claw",
     "elemental armament",
+    "elemental armament i",
     "elemental armament ii",
     "elemental equilibrium",
     "elemental focus",
     "embrace of the wild",
+    "endless blizzard",
     "enhanced barrier",
     "entropy joy",
     "entwined realities",
@@ -113,22 +141,30 @@
     "eternal rage",
     "eternal rage amulet",
     "execute",
+    "execute i",
     "execute ii",
     "execute iii",
     "explosive empowerment",
+    "extinguishing exhalation",
     "falcon dive",
     "favourable odds",
     "fenumus' rune of agony",
+    "flask",
     "flasks and charms",
+    "footprints in the sand",
     "for utopia",
+    "force of will",
     "forgotten warden",
+    "forgotten warden primal markings",
     "forsaken bangle",
+    "forsaken bangle amethyst charm",
     "fox idol",
     "frantic fighter",
     "freeze",
     "freezing mark",
     "from nothing",
     "frozen claw",
+    "full endgame build",
     "gale ornament",
     "garukhan's resolve",
     "garukhan's resolve:",
@@ -136,12 +172,14 @@
     "gem studded",
     "gemling legionnaire",
     "general's bindings",
+    "glaciation",
     "gloves",
     "grace of the ancestors",
     "greater desert rune",
     "greater rune of ward",
     "greater rune of willpower",
     "greater ward rune",
+    "grim gloves",
     "guttural roar",
     "harmonic remnants",
     "harmonic remnants i",
@@ -153,17 +191,24 @@
     "helmet",
     "her declaration",
     "herald of ice",
+    "herbalism i",
+    "herbalism ii",
+    "heroic tragedy",
     "hide of the bear",
     "holy descent",
     "howling beast",
     "hulking minions",
     "hyrri's ire",
+    "hyrri's ire armoured vest",
     "ice bite",
+    "ice bite i",
     "ice bite ii",
     "ignore pain",
     "in the thick of it",
+    "inescapable cold",
     "inevitable critical hits",
     "ingenuity",
+    "insightfulness",
     "inspiring ally",
     "insulating hide",
     "integrated efficiency",
@@ -172,16 +217,19 @@
     "khatal's rejuvenation",
     "lasting incantations",
     "lavianga's spirits",
+    "lavianga's spirits gargantuan mana flask",
     "lay siege",
     "leather bound gauntlets",
     "legacy of the wanderlust",
     "legacy of wanderlust",
+    "leveling build",
     "life leech",
     "life leech i",
     "life leech iii",
     "living lightning",
     "living lightning ii",
     "long fuse",
+    "long fuse i",
     "long fuse ii",
     "low life",
     "loyalty",
@@ -192,6 +240,7 @@
     "mageblood or headhunter:",
     "magi talisman",
     "magnified area",
+    "magnified area i",
     "magnified area ii",
     "maim",
     "maji talisman",
@@ -202,15 +251,19 @@
     "mark of siphoning ii",
     "material solidification",
     "megalomaniac",
+    "melding",
     "mind over matter",
     "molten claw",
     "more upgrades",
     "morior invictus",
+    "morior invictus grand regalia",
     "morrigan's insight",
     "mystic attunement",
     "mystic harvest",
     "mystical rage",
+    "nascent hope",
     "oisin's oath",
+    "open mind",
     "oracle",
     "other spirit gems",
     "overcharge",
@@ -226,9 +279,12 @@
     "perfect iron rune",
     "perfect rebirth rune",
     "perfect robust rune",
+    "perfect vision rune",
     "personal touch",
+    "phased form",
     "piercing claw",
     "piercing claw damage",
+    "potent incantation",
     "pounce",
     "precision",
     "precision i",
@@ -239,54 +295,80 @@
     "primal bounty",
     "primal rage",
     "prism guard",
+    "prismatic ring",
+    "profanity i",
     "profanity ii",
     "prolonged duration",
+    "prolonged duration i",
     "prolonged duration ii",
     "pure chaos",
+    "pure energy",
+    "quicksand hourglass",
+    "rage i",
     "rage iii",
     "rakiata's flow",
     "rapid attacks",
+    "rapid attacks i",
     "rapid attacks ii",
     "raven-touched",
     "raven-touched shard",
+    "raw power",
     "reactive growth",
     "relentless vindicator",
     "resilient soul",
+    "reverie",
     "rigwald's ferocity",
     "rings",
     "rite of passage",
+    "rite of passage golden charm",
     "rite of passage:",
+    "rite of restoration",
     "ruinic helm",
     "rune of the blossom",
     "sacred flow",
     "sacred unity",
     "sacrifice of flesh",
+    "sands of time",
     "sanguimantic rituals",
     "saqawal's rune of the sky",
     "savage fury",
+    "scales of the wyvern",
     "second wind",
+    "second wind i",
     "sekhema sandals",
     "seraph's heart",
     "shaman",
+    "shaper of storms",
     "sharpened claw",
+    "shavronne's satchel",
     "shred",
+    "silver charm",
     "sine aequo",
+    "sine aequo grand manchettes",
+    "slow potency",
     "soul core of tacati",
     "spiny talisman",
     "spirit gems",
     "spirit of the bear",
+    "spirit of the owl",
     "spirit of the wolf",
     "spirit of the wyvern",
     "spirit vessel",
+    "split personality",
     "stalking panther",
     "starkonja's head",
+    "starkonja's head leatherbound hood",
     "stone charm",
+    "stormweaver",
+    "strike twice",
     "swift claw",
     "tactical retreat",
     "tecrod's gaze",
     "temporal chains",
+    "temporal rift",
     "test guide",
     "thawing charm",
+    "the fall of the axe",
     "the greatwolf's rune of willpower",
     "the lesser harm",
     "the morrigan's guidance",
@@ -294,6 +376,7 @@
     "the spring hare",
     "the unseen path",
     "the winter owl",
+    "thin ice",
     "thrill of battle",
     "time-lost ruby",
     "tireless",
@@ -302,9 +385,12 @@
     "tzamoto's soul core of ferocity",
     "uhtred's augury",
     "uhtred's chalice",
+    "uhtred's chalice transcendent mana flask",
     "uhtred's constellation",
     "uhtred's omen",
+    "uhtred's rite",
     "ulaman's gaze",
+    "ultimate life flask",
     "undying hate",
     "undying hate timeless jewel",
     "unforgiving",
@@ -313,6 +399,7 @@
     "upgrades",
     "uruk's smelting",
     "vengeful fury",
+    "vile robe",
     "virtuous barrier",
     "vitality",
     "vitality i",
@@ -333,6 +420,13 @@
     "zealot's oath"
   ],
   "entities": [
+    {
+      "name": "Abasement",
+      "type": "Passive skill",
+      "description": "20% increased Stun Recovery\nGain additional Stun Threshold equal to 30% of maximum Energy Shield",
+      "image": "/images/game-tooltips/abasement.webp",
+      "source": "https://poe2db.tw/us/Abasement"
+    },
     {
       "name": "Absent Amulet",
       "type": "Amulet base",
@@ -368,6 +462,13 @@
       "source": "https://poe2db.tw/us/Amazon"
     },
     {
+      "name": "Amethyst Charm",
+      "type": "Charm",
+      "description": "You have additional Chaos Resistance while active. Used when you take Chaos damage from a Hit.",
+      "image": "/images/game-tooltips/amethyst-charm.webp",
+      "source": "https://poe2db.tw/us/Amethyst_Charm"
+    },
+    {
       "name": "Ancestral Bond",
       "type": "Passive skill",
       "description": "Your Totem Limit is doubled\nNo cost or Charge requirement for placing Totems\nTotems reserve 75 Spirit each",
@@ -396,6 +497,27 @@
       "source": "https://poe2db.tw/us/Anger_Management"
     },
     {
+      "name": "Apex of the Moment",
+      "type": "Ascendancy passive",
+      "description": "Enemies in your Presence are Slowed by 20%",
+      "image": "/images/game-tooltips/apex-of-the-moment.webp",
+      "source": "https://poe2db.tw/us/Apex_of_the_Moment"
+    },
+    {
+      "name": "Arcane Nature",
+      "type": "Passive skill",
+      "description": "12% increased Area of Effect while you have Arcane Surge\n30% increased Spell Damage while you have Arcane Surge",
+      "image": "/images/game-tooltips/arcane-nature.webp",
+      "source": "https://poe2db.tw/us/Arcane_Nature"
+    },
+    {
+      "name": "Arcane Surge",
+      "type": "Game mechanic",
+      "description": "Arcane Surge grants 15% increased Cast Speed and 20% more Mana Regeneration Rate.",
+      "image": "/images/game-tooltips/arcane-surge.webp",
+      "source": "https://poe2db.tw/us/Arcane_Surge"
+    },
+    {
       "name": "Arcane Surge on Critical Hit",
       "type": "Passive skill",
       "description": "5% chance to Gain Arcane Surge when you deal a Critical Hit",
@@ -422,6 +544,13 @@
       "description": "Supports Skills that Hit Enemies, causing those Hits to Break Armour based on a portion of Physical Damage dealt.",
       "image": "/images/game-tooltips/armour-break-i.webp",
       "source": "https://poe2db.tw/us/Armour_Break_I"
+    },
+    {
+      "name": "Armour Demolisher I",
+      "type": "Support gem",
+      "description": "Supports any skill, causing Armour Break it inflicts to be stronger.",
+      "image": "/images/game-tooltips/armour-demolisher-i.webp",
+      "source": "https://poe2db.tw/us/Armour_Demolisher_I"
     },
     {
       "name": "Armour Explosion",
@@ -529,6 +658,13 @@
       "source": "https://poe2db.tw/us/Biting_Frost_I"
     },
     {
+      "name": "Black Scythe Training",
+      "type": "Keystone passive",
+      "description": "Gain no inherent bonus from Strength\n1% increased Energy Shield per 2 Strength",
+      "image": "/images/game-tooltips/black-scythe-training.webp",
+      "source": "https://poe2db.tw/us/Black_Scythe_Training"
+    },
+    {
       "name": "Blazing Critical",
       "type": "Support gem",
       "description": "Supports Skills you use yourself which Hit enemies. Critical Hits with Supported Skills imbue all of your Attacks with Fire damage for a duration.",
@@ -564,11 +700,25 @@
       "source": "https://poe2db.tw/us/Bolstering_Presence"
     },
     {
+      "name": "Bringer of Order",
+      "type": "Passive skill",
+      "description": "20% increased Damage\nMinions deal 20% increased Damage",
+      "image": "/images/game-tooltips/bringer-of-order.webp",
+      "source": "https://poe2db.tw/us/Bringer_of_Order"
+    },
+    {
       "name": "Brutus' Brain",
       "type": "Support gem",
       "description": "Supports skills which create Minions, causing those Minions to be unable to deal or take Damage. Cannot support skills which create undamageable Minions.",
       "image": "/images/game-tooltips/brutus-brain.webp",
       "source": "https://poe2db.tw/us/Brutus'_Brain"
+    },
+    {
+      "name": "Buff Expiry Rate",
+      "type": "Ascendancy passive",
+      "description": "Buffs on you expire 10% slower",
+      "image": "/images/game-tooltips/buff-expiry-rate.webp",
+      "source": "https://poe2db.tw/us/Buff_Expiry_Rate"
     },
     {
       "name": "Cadigan's Epiphany",
@@ -592,6 +742,13 @@
       "source": "https://poe2db.tw/us/Captivating_Companionship"
     },
     {
+      "name": "Chakra of Life",
+      "type": "Passive skill",
+      "description": "3% increased maximum Life\n10% increased Life Recovery rate",
+      "image": "/images/game-tooltips/chakra-of-life.webp",
+      "source": "https://poe2db.tw/us/Chakra_of_Life"
+    },
+    {
       "name": "Chaos Inoculation",
       "type": "Keystone passive",
       "description": "Maximum Life is 1\nImmune to Chaos Damage and Bleeding",
@@ -610,6 +767,12 @@
       "type": "Game mechanic",
       "description": "Charms are protective trinkets you can equip that automatically trigger a defensive effect when a specific condition is met. Similar to Flasks, Charms require charges to trigger. Charm charges can be regained by killing monsters, granting charges equal to half of the monster's Power. Checkpoints and Wells completely recharge Charms when activated.\r\n\r\nThe maximum number of Charm slots is capped at 3.",
       "source": "https://poe2db.tw/us/Charms"
+    },
+    {
+      "name": "Chronomancer",
+      "type": "Ascendancy class",
+      "description": "Sorceress ascendancy\nPhased Form: take 30% less Damage, and take 30% of each Hit's Damage 4 seconds later\nQuicksand Hourglass: grants Sands of Time\nFootprints in the Sand: grants Temporal Rift",
+      "source": "https://poe2db.tw/us/Chronomancer"
     },
     {
       "name": "Clarity",
@@ -659,6 +822,13 @@
       "description": "Supports any skill that Hits enemies, making those Hits Penetrate enemy Cold resistance.",
       "image": "/images/game-tooltips/cold-penetration.webp",
       "source": "https://poe2db.tw/us/Cold_Penetration"
+    },
+    {
+      "name": "Constant Gale",
+      "type": "Ascendancy passive",
+      "description": "You have Arcane Surge",
+      "image": "/images/game-tooltips/constant-gale.webp",
+      "source": "https://poe2db.tw/us/Constant_Gale"
     },
     {
       "name": "Constricting Command Viper Cap",
@@ -729,6 +899,13 @@
       "description": "Supports Melee Attack Skills. Supported Skills gain Combo when you successfully Strike Enemies with other Melee Attacks. Supported Skills reset their Combo on use, dealing more Damage the higher Combo you had on use. Cannot support skills which already gain Combo. Cannot modify the Skills of Minions.",
       "image": "/images/game-tooltips/culmination-i.webp",
       "source": "https://poe2db.tw/us/Culmination_I"
+    },
+    {
+      "name": "Dampening Shield",
+      "type": "Passive skill",
+      "description": "28% increased maximum Energy Shield\nGain additional Ailment Threshold equal to 12% of maximum Energy Shield\nGain additional Stun Threshold equal to 12% of maximum Energy Shield",
+      "image": "/images/game-tooltips/dampening-shield.webp",
+      "source": "https://poe2db.tw/us/Dampening_Shield"
     },
     {
       "name": "Dangerous Blossom",
@@ -863,6 +1040,13 @@
       "source": "https://poe2db.tw/us/Embrace_of_the_Wild"
     },
     {
+      "name": "Endless Blizzard",
+      "type": "Passive skill",
+      "description": "+1 to Level of all Cold Skills",
+      "image": "/images/game-tooltips/endless-blizzard.webp",
+      "source": "https://poe2db.tw/us/Endless_Blizzard"
+    },
+    {
       "name": "Enhanced Barrier",
       "type": "Passive skill",
       "description": "25% increased maximum Energy Shield\n5% of Maximum Life Converted to Energy Shield",
@@ -905,6 +1089,13 @@
       "source": "https://poe2db.tw/us/Explosive_Empowerment"
     },
     {
+      "name": "Extinguishing Exhalation",
+      "type": "Passive skill",
+      "description": "Remove Ignite when you Warcry",
+      "image": "/images/game-tooltips/extinguishing-exhalation.webp",
+      "source": "https://poe2db.tw/us/Extinguishing_Exhalation"
+    },
+    {
       "name": "Falcon Dive",
       "type": "Passive skill",
       "description": "4% increased Attack Speed\n1% increased Attack Speed per 400 Accuracy Rating, up to 20%",
@@ -924,6 +1115,27 @@
       "description": "Martial Weapon: Gain 13% of Damage as Extra Chaos Damage\nWand or Staff: Gain 13% of Damage as Extra Chaos Damage\nBonded: Martial Weapon: Gain 8% of Damage as Extra Physical Damage\nBonded: Wand or Staff: Gain 8% of Damage as Extra Physical Damage",
       "image": "/images/game-tooltips/fenumus-rune-of-agony.webp",
       "source": "https://poe2db.tw/us/Fenumus'_Rune_of_Agony"
+    },
+    {
+      "name": "Footprints in the Sand",
+      "type": "Ascendancy passive",
+      "description": "Grants Skill: Temporal Rift",
+      "image": "/images/game-tooltips/footprints-in-the-sand.webp",
+      "source": "https://poe2db.tw/us/Footprints_in_the_Sand"
+    },
+    {
+      "name": "For Utopia",
+      "type": "Unique item",
+      "description": "Cannot be Stunned\nUsed when you become Stunned\nDefend with 200% of Armour during effect",
+      "image": "/images/game-tooltips/for-utopia.webp",
+      "source": "https://poe2db.tw/us/For_Utopia"
+    },
+    {
+      "name": "Force of Will",
+      "type": "Ascendancy passive",
+      "description": "20% of Damage is taken from Mana before Life\n20% increased Effect of Arcane Surge on you per ten percent missing Mana",
+      "image": "/images/game-tooltips/force-of-will.webp",
+      "source": "https://poe2db.tw/us/Force_of_Will"
     },
     {
       "name": "Forgotten Warden Primal Markings",
@@ -1010,6 +1222,13 @@
       "source": "https://poe2db.tw/us/General's_Bindings"
     },
     {
+      "name": "Glaciation",
+      "type": "Passive skill",
+      "description": "Damage Penetrates 18% Cold Resistance\nGain 6% of Elemental Damage as Extra Cold Damage",
+      "image": "/images/game-tooltips/glaciation.webp",
+      "source": "https://poe2db.tw/us/Glaciation"
+    },
+    {
       "name": "Grace of the Ancestors",
       "type": "Passive skill",
       "description": "10% increased Attack Speed\nEvery Rage also grants 1% increased Evasion Rating",
@@ -1087,6 +1306,20 @@
       "source": "https://poe2db.tw/us/Herald_of_Ice"
     },
     {
+      "name": "Herbalism I",
+      "type": "Support gem",
+      "description": "Supports Persistent Buff Skills, causing you to gain increased Life recovery from Flasks while the Skill is active.",
+      "image": "/images/game-tooltips/herbalism-i.webp",
+      "source": "https://poe2db.tw/us/Herbalism_I"
+    },
+    {
+      "name": "Heroic Tragedy",
+      "type": "Unique item",
+      "description": "Remembrancing (100—8000) songworthy deeds by the line of Vorana\nPassives in radius are Conquered by the Kalguur\nHistoric",
+      "image": "/images/game-tooltips/heroic-tragedy.webp",
+      "source": "https://poe2db.tw/us/Heroic_Tragedy"
+    },
+    {
       "name": "Hide of the Bear",
       "type": "Passive skill",
       "description": "40% increased Armour while Shapeshifted\n+1% to Maximum Fire Resistance while Shapeshifted\n25% increased Stun Threshold while Shapeshifted",
@@ -1150,6 +1383,13 @@
       "source": "https://poe2db.tw/us/In_the_Thick_of_It"
     },
     {
+      "name": "Inescapable Cold",
+      "type": "Passive skill",
+      "description": "40% increased Freeze Buildup\n20% increased Freeze Duration on Enemies",
+      "image": "/images/game-tooltips/inescapable-cold.webp",
+      "source": "https://poe2db.tw/us/Inescapable_Cold"
+    },
+    {
       "name": "Inevitable Critical Hits",
       "type": "Ascendancy passive",
       "description": "Hits which could potentially be a Critical Hit but do not roll a Critical Hit will re-roll Critical Hit chance until they succeed.\r\n\r\nHits have 30% less Critical Damage Bonus for each time Critical Hit chance was re-rolled.",
@@ -1161,6 +1401,13 @@
       "description": "+25 to Intelligence",
       "image": "/images/game-tooltips/ingenuity.webp",
       "source": "https://poe2db.tw/us/Ingenuity"
+    },
+    {
+      "name": "Insightfulness",
+      "type": "Passive skill",
+      "description": "18% increased maximum Energy Shield\n12% increased Mana Regeneration Rate\n6% increased Intelligence",
+      "image": "/images/game-tooltips/insightfulness.webp",
+      "source": "https://poe2db.tw/us/Insightfulness"
     },
     {
       "name": "Inspiring Ally",
@@ -1352,6 +1599,13 @@
       "source": "https://poe2db.tw/us/Megalomaniac"
     },
     {
+      "name": "Melding",
+      "type": "Passive skill",
+      "description": "40% increased maximum Energy Shield\n10% reduced maximum Mana",
+      "image": "/images/game-tooltips/melding.webp",
+      "source": "https://poe2db.tw/us/Melding"
+    },
+    {
       "name": "Mind over Matter",
       "type": "Keystone passive",
       "description": "All Damage is taken from Mana before Life\n50% less Mana Recovery Rate",
@@ -1407,11 +1661,25 @@
       "source": "https://poe2db.tw/us/Mystical_Rage"
     },
     {
+      "name": "Nascent Hope",
+      "type": "Unique item",
+      "description": "(20—25)% Chance to gain a Charge when you kill an enemy\nEnergy Shield Recharge starts on use",
+      "image": "/images/game-tooltips/nascent-hope.webp",
+      "source": "https://poe2db.tw/us/Nascent_Hope"
+    },
+    {
       "name": "Oisín's Oath",
       "type": "Support gem",
       "description": "Supports Skills which Hit enemies, causing their Mana Leech to recover based on Elemental damage instead of Physical damage.",
       "image": "/images/game-tooltips/oisin-s-oath.webp",
       "source": "https://poe2db.tw/us/Ois%C3%ADn's_Oath"
+    },
+    {
+      "name": "Open Mind",
+      "type": "Passive skill",
+      "description": "25% increased Mana Regeneration Rate",
+      "image": "/images/game-tooltips/open-mind.webp",
+      "source": "https://poe2db.tw/us/Open_Mind"
     },
     {
       "name": "Oracle",
@@ -1497,11 +1765,32 @@
       "source": "https://poe2db.tw/us/Perfect_Robust_Rune"
     },
     {
+      "name": "Perfect Vision Rune",
+      "type": "Rune",
+      "description": "Armour: 20% increased Life and Mana Recovery from Flasks\nBonded: +20 to maximum Life, +20 to maximum Mana",
+      "image": "/images/game-tooltips/perfect-vision-rune.webp",
+      "source": "https://poe2db.tw/us/Perfect_Vision_Rune"
+    },
+    {
+      "name": "Phased Form",
+      "type": "Ascendancy passive",
+      "description": "Take 30% less Damage\n4 seconds after being Damaged by an Enemy Hit, take Damage equal to 30% of that Hit's Damage",
+      "image": "/images/game-tooltips/phased-form.webp",
+      "source": "https://poe2db.tw/us/Phased_Form"
+    },
+    {
       "name": "Piercing Claw",
       "type": "Passive skill",
       "description": "Damage Penetrates 15% of Enemy Elemental Resistances while Shapeshifted",
       "image": "/images/game-tooltips/piercing-claw.webp",
       "source": "https://poe2db.tw/us/Piercing_Claw"
+    },
+    {
+      "name": "Potent Incantation",
+      "type": "Passive skill",
+      "description": "30% increased Spell Damage\n5% reduced Cast Speed",
+      "image": "/images/game-tooltips/potent-incantation.webp",
+      "source": "https://poe2db.tw/us/Potent_Incantation"
     },
     {
       "name": "Pounce",
@@ -1560,6 +1849,13 @@
       "source": "https://poe2db.tw/us/Prism_Guard"
     },
     {
+      "name": "Prismatic Ring",
+      "type": "Ring base",
+      "description": "+(7—10)% to all Elemental Resistances\nRequires Level 35",
+      "image": "/images/game-tooltips/prismatic-ring.webp",
+      "source": "https://poe2db.tw/us/Prismatic_Ring"
+    },
+    {
       "name": "Profanity I",
       "type": "Support gem",
       "description": "Supports Skills you use yourself. Supported Skills consume a Corpse on use, dealing more Chaos Damage if they do.",
@@ -1579,6 +1875,20 @@
       "description": "Gain 11% of Damage as Extra Chaos Damage",
       "image": "/images/game-tooltips/pure-chaos.webp",
       "source": "https://poe2db.tw/us/Pure_Chaos"
+    },
+    {
+      "name": "Pure Energy",
+      "type": "Passive skill",
+      "description": "30% increased maximum Energy Shield\n+10 to Intelligence",
+      "image": "/images/game-tooltips/pure-energy.webp",
+      "source": "https://poe2db.tw/us/Pure_Energy"
+    },
+    {
+      "name": "Quicksand Hourglass",
+      "type": "Ascendancy passive",
+      "description": "Grants Sands of Time",
+      "image": "/images/game-tooltips/quicksand-hourglass.webp",
+      "source": "https://poe2db.tw/us/Quicksand_Hourglass"
     },
     {
       "name": "Rage I",
@@ -1615,6 +1925,13 @@
       "source": "https://poe2db.tw/us/Raven-Touched_Shard"
     },
     {
+      "name": "Raw Power",
+      "type": "Passive skill",
+      "description": "20% increased Spell Damage\n+10 to Intelligence",
+      "image": "/images/game-tooltips/raw-power.webp",
+      "source": "https://poe2db.tw/us/Raw_Power"
+    },
+    {
       "name": "Reactive Growth",
       "type": "Passive skill",
       "description": "10% less Elemental Damage taken\nAdapt 1 times to the highest Elemental Damage Type of each Hit you take\n10% less Damage taken of each Elemental Damage Type per matching Adaptation\nbase max adaptations [3]",
@@ -1627,6 +1944,13 @@
       "description": "10% increased Damage\n10% increased Critical Hit Chance\n+5 to Strength and Intelligence\nDruid: 10% increased Damage\nDruid: Gain 5% of Damage as Extra Damage of a random Element\nDruid: +5 to Strength and Intelligence",
       "image": "/images/game-tooltips/relentless-vindicator.webp",
       "source": "https://poe2db.tw/us/Relentless_Vindicator"
+    },
+    {
+      "name": "Reverie",
+      "type": "Unique item",
+      "description": "(100—150)% increased Armour and Energy Shield\n-10% to Fire Resistance\n+(17—23)% to Chaos Resistance\nCannot use Life Flasks\nNon-Unique Life Flasks apply their Effects constantly\nRecovery from Life Flasks cannot be Instant\nRecovery from your Life Flasks cannot be applied to anything other than you\n(40—60)% less Life Flask Recovery",
+      "image": "/images/game-tooltips/reverie.webp",
+      "source": "https://poe2db.tw/us/Reverie"
     },
     {
       "name": "Rigwald's Ferocity",
@@ -1648,6 +1972,13 @@
       "description": "Possessed by Spirit Of The [Azmeri Spirit] for (10–20) seconds on use",
       "image": "/images/game-tooltips/rite-of-passage-golden-charm.webp",
       "source": "https://poe2db.tw/us/Rite_of_Passage"
+    },
+    {
+      "name": "Rite of Restoration",
+      "type": "Skill gem",
+      "description": "Place a Sigil on the ground, providing a powerful Buff to you and Allies standing in it which grants Life Regeneration and amplifies Armour, Evasion and Energy Shield.",
+      "image": "/images/game-tooltips/rite-of-restoration.webp",
+      "source": "https://poe2db.tw/us/Rite_of_Restoration"
     },
     {
       "name": "Ruinic Helm",
@@ -1685,6 +2016,13 @@
       "source": "https://poe2db.tw/us/Sacrifice_of_Flesh"
     },
     {
+      "name": "Sands of Time",
+      "type": "Game mechanic",
+      "description": "Grants 60% increased Skill Speed, scaling down to 1% over 10 seconds, at which point it scales back up to 60%.\nAlso grants 1% increased Area of Effect, scaling up to 60% over 10 seconds, at which point it scales back down to 1%.",
+      "image": "/images/game-tooltips/sands-of-time.webp",
+      "source": "https://poe2db.tw/us/Sands_of_Time"
+    },
+    {
       "name": "Sanguimantic Rituals",
       "type": "Passive skill",
       "description": "Regenerate 1% of maximum Life per second\nArcane Surge grants more Life Regeneration Rate instead of Mana Regeneration Rate",
@@ -1704,6 +2042,13 @@
       "description": "While active, your Fury builds from Attacking enemies. Using this Skill releases your Fury to send you into a bestial frenzy, gaining damage and Onslaught but constantly losing life and forcing you into animal form. The frenzy ends immediately if you return to human form. You cannot gain Fury while in a frenzy.",
       "image": "/images/werewolf-skills/savage-fury.webp",
       "source": "https://poe2db.tw/us/Savage_Fury"
+    },
+    {
+      "name": "Scales of the Wyvern",
+      "type": "Passive skill",
+      "description": "20% faster start of Energy Shield Recharge while Shapeshifted\n20% increased Energy Shield Recharge Rate while Shapeshifted\n+1% to Maximum Lightning Resistance while Shapeshifted",
+      "image": "/images/game-tooltips/scales-of-the-wyvern.webp",
+      "source": "https://poe2db.tw/us/Scales_of_the_Wyvern"
     },
     {
       "name": "Second Wind I",
@@ -1733,6 +2078,13 @@
       "source": "https://poe2db.tw/us/Shaman"
     },
     {
+      "name": "Shaper of Storms",
+      "type": "Ascendancy passive",
+      "description": "All Damage from Hits Contributes to Shock Chance",
+      "image": "/images/game-tooltips/shaper-of-storms.webp",
+      "source": "https://poe2db.tw/us/Shaper_of_Storms"
+    },
+    {
       "name": "Sharpened Claw",
       "type": "Passive skill",
       "description": "30% increased Physical Damage while Shapeshifted",
@@ -1740,11 +2092,25 @@
       "source": "https://poe2db.tw/us/Sharpened_Claw"
     },
     {
+      "name": "Shavronne's Satchel",
+      "type": "Unique item",
+      "description": "(20—30)% reduced Flask Life Recovery rate\n+(20—30) to Intelligence\n(20—30)% increased Flask Charges gained\nLife Recovery from Flasks also applies to Energy Shield",
+      "image": "/images/game-tooltips/shavronne-s-satchel.webp",
+      "source": "https://poe2db.tw/us/Shavronne's_Satchel"
+    },
+    {
       "name": "Shred",
       "type": "Skill gem",
       "description": "Shapeshift into a Werewolf and lash out with a flurry of claw swipes. The first Attack can dash to faraway enemies and the final Attack Strikes twice. Attacking a Frozen enemy will create Ice Fragments, which are Projectiles that land and explode after a short delay.",
       "image": "/images/werewolf-skills/shred.webp",
       "source": "https://poe2db.tw/us/Shred"
+    },
+    {
+      "name": "Silver Charm",
+      "type": "Charm",
+      "description": "A charm that activates when you are affected by a Slow and makes your speed unaffected by Slows.",
+      "image": "/images/game-tooltips/silver-charm.webp",
+      "source": "https://poe2db.tw/us/Silver_Charm"
     },
     {
       "name": "Sine Aequo",
@@ -1759,6 +2125,13 @@
       "description": "(10—15)% increased Skill Speed\n(150—200)% increased Armour, Evasion and Energy Shield\nImmobilise enemies at 50% buildup instead of 100%\n(30—50)% increased Damage against Immobilised Enemies",
       "image": "/images/game-tooltips/sine-aequo-grand-manchettes.webp",
       "source": "https://poe2db.tw/us/Sine_Aequo"
+    },
+    {
+      "name": "Slow Potency",
+      "type": "Support gem",
+      "description": "Supports any skill, causing inflicted Slows to be more powerful.",
+      "image": "/images/game-tooltips/slow-potency.webp",
+      "source": "https://poe2db.tw/us/Slow_Potency"
     },
     {
       "name": "Soul Core of Tacati",
@@ -1824,6 +2197,19 @@
       "source": "https://poe2db.tw/us/Stone_Charm"
     },
     {
+      "name": "Stormweaver",
+      "type": "Ascendancy class",
+      "description": "Sorceress ascendancy\nYou have Arcane Surge\n20% of Damage is taken from Mana before Life\nTargets can be affected by two of your Shocks at the same time\nAll Damage from Hits Contributes to Shock Chance",
+      "source": "https://poe2db.tw/us/Stormweaver"
+    },
+    {
+      "name": "Strike Twice",
+      "type": "Ascendancy passive",
+      "description": "Targets can be affected by two of your Shocks at the same time\n25% less Magnitude of Shock you inflict",
+      "image": "/images/game-tooltips/strike-twice.webp",
+      "source": "https://poe2db.tw/us/Strike_Twice"
+    },
+    {
       "name": "Swift Claw",
       "type": "Passive skill",
       "description": "10% increased Skill Speed while Shapeshifted",
@@ -1852,11 +2238,25 @@
       "source": "https://poe2db.tw/us/Temporal_Chains"
     },
     {
+      "name": "Temporal Rift",
+      "type": "Skill gem",
+      "description": "While active, passively leaves afterimages of your recent past. Cast the Spell to return to the oldest afterimage, teleporting to that location and resetting your Life, Mana and Energy Shield to the values they had at the time. Removes any upcoming damage delayed by Phased Form on use.",
+      "image": "/images/game-tooltips/temporal-rift.webp",
+      "source": "https://poe2db.tw/us/Temporal_Rift"
+    },
+    {
       "name": "Thawing Charm",
       "type": "Charm",
       "description": "A charm that activates when you become Frozen and grants immunity to Freeze.",
       "image": "/images/game-tooltips/thawing-charm.webp",
       "source": "https://poe2db.tw/us/Thawing_Charm"
+    },
+    {
+      "name": "The Fall of the Axe",
+      "type": "Unique item",
+      "description": "Grants Onslaught during effect",
+      "image": "/images/game-tooltips/the-fall-of-the-axe.webp",
+      "source": "https://poe2db.tw/us/The_Fall_of_the_Axe"
     },
     {
       "name": "The Greatwolf's Rune of Willpower",
@@ -1899,6 +2299,13 @@
       "description": "3% increased Evasion Rating per 10 Intelligence\nGain Accuracy Rating equal to your Intelligence\n+10 to Intelligence",
       "image": "/images/game-tooltips/the-winter-owl.webp",
       "source": "https://poe2db.tw/us/The_Winter_Owl"
+    },
+    {
+      "name": "Thin Ice",
+      "type": "Passive skill",
+      "description": "20% increased Freeze Buildup\n50% increased Damage with Hits against Frozen Enemies",
+      "image": "/images/game-tooltips/thin-ice.webp",
+      "source": "https://poe2db.tw/us/Thin_Ice"
     },
     {
       "name": "Thrill of Battle",
@@ -1978,11 +2385,25 @@
       "source": "https://poe2db.tw/us/Uhtred's_Omen"
     },
     {
+      "name": "Uhtred's Rite",
+      "type": "Support gem",
+      "description": "Supports skills with Cooldowns, causing them to grant Overflowing Chalice when used. Supported skills deal more damage during the effect of your Life Flask and have increased Mana Cost Efficiency during the effect of your Mana Flask.",
+      "image": "/images/game-tooltips/uhtred-s-rite.webp",
+      "source": "https://poe2db.tw/us/Uhtred's_Rite"
+    },
+    {
       "name": "Ulaman's Gaze",
       "type": "Rune",
       "description": "Limited to: 1 Ancient Augment\nHelmets: +1 to Accuracy Rating per 1 Item Evasion Rating on Equipped Helmet\nGloves: Critical Hit chance is Lucky against Parried enemies\nBody Armours: Prevent +3% of Damage from Deflected Hits",
       "image": "/images/game-tooltips/ulaman-s-gaze.webp",
       "source": "https://poe2db.tw/us/Ulaman's_Gaze"
+    },
+    {
+      "name": "Ultimate Life Flask",
+      "type": "Flask base",
+      "description": "Recovers 920 Life over 3 Seconds\nRequires Level 60",
+      "image": "/images/game-tooltips/ultimate-life-flask.webp",
+      "source": "https://poe2db.tw/us/Ultimate_Life_Flask"
     },
     {
       "name": "Undying Hate Timeless Jewel",
@@ -2025,6 +2446,13 @@
       "description": "Every Rage also grants 1% increased Armour\nGain 5 Rage when Hit by an Enemy",
       "image": "/images/game-tooltips/vengeful-fury.webp",
       "source": "https://poe2db.tw/us/Vengeful_Fury"
+    },
+    {
+      "name": "Vile Robe",
+      "type": "Body armour base",
+      "description": "Body armour base with 171 Energy Shield.\nRequires Level 65, 121 Intelligence",
+      "image": "/images/game-tooltips/vile-robe.webp",
+      "source": "https://poe2db.tw/us/Vile_Robe"
     },
     {
       "name": "Virtuous Barrier",

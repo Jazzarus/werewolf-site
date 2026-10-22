@@ -20,6 +20,14 @@ const pageVideos: Record<string, { id: string; title: string }> = {
     id: "u4uEKqXzATU",
     title: "Shaman Werewolf guide video",
   },
+  "/werewolf/stormweaver": {
+    id: "Kanxx3ASkEs",
+    title: "Stormweaver Werewolf guide video",
+  },
+  "/werewolf/chronomancer": {
+    id: "gWpdr12L_kk",
+    title: "Chronomancer Werewolf guide video",
+  },
 };
 
 /**

@@ -67,7 +67,7 @@ sections:
 
       **Boots**. The **Iron Slippers** node gives plus 2 armour per 1 energy shield on your equipped boots, so you want full energy shield boots. Not hybrid, and not pure armour. Mine give almost 700 armour on top of 300 energy shield, with fire resistance, chaos resistance, life regeneration per second, and movement speed. The rune sockets on both pieces are flexible. You can use them to fix attributes or resistances, or use an **Iron Rune** for more energy shield and armour.
 
-      **Legacy of Wanderlust**. I use it because I had the money to buy it, and it is very good if you can get one. Your speed is unaffected by slows. One of the werewolf’s biggest weaknesses is anything that slows attack speed, like **Temporal Chains** and shocked ground. Movement speed slows don’t matter, but we need to attack fast.
+      **Legacy of Wanderlust**. It is very good if you can afford one. Your speed is unaffected by slows. One of the werewolf’s biggest weaknesses is anything that slows attack speed, like **Temporal Chains** and shocked ground. Movement speed slows don’t matter, but we need to attack fast.
 
       **Charms**. Because we use **Blood Magic**, there is no mana flask. Ignite is very annoying for this build, so I run a **Dousing Charm** to prevent it.
   - title: "Passive Tree"
