@@ -4,142 +4,91 @@ image: /images/ascendancies/ritualist.png
 class: Huntress
 tier: S
 sections:
-  - title: "Intro"
+  - title: "Introduction"
     content: |
-      The Ritualist is a great fit for a tanky Werewolf build. We're stacking Evasion and Deflection, using **Wildwood Persistence** to get more out of Life Recovery, and taking advantage of the Ritualist's extra Ring slot to scale our damage.
+      - [Introduction](#introduction)
+      - [Build Links](#build-links)
+      - [Skill Gems](#skill-gems)
+      - [Gear](#gear)
+      - [Passive Tree](#passive-tree)
 
-      The build is designed to be comfortable to play without requiring expensive gear. The version showcased here can handle 200 Deliriousness, and there's plenty of room to invest further if you want to push the damage. You can also play a Life-stacking variant, although I found it weaker than this version.
-  - title: "Path of Building"
+      This guide builds on the [general werewolf guide](/werewolf-general/) and only covers what is specific to the **Ritualist**. If a skill, support, or mechanic here is unclear, read the general guide first.
+
+      The **Ritualist** is a huntress ascendancy that is balanced in the best way: it helps the defence and the damage at the same time, and it asks very little of the werewolf in return. It is tanky, comfortable to play, and it deals enough damage that you can build it cheaply and keep investing later. The rotation is the one from the general guide, with nothing changed.
+
+      Defence comes first, as on every werewolf. The best defensive node in the ascendancy is **Wildwood Persistence**, which gives 10% increased life recovery rate for every 5% of unreserved life we are missing. That applies to every kind of recovery: the life flask, regeneration, leech, recoup. The lower our life, the faster all of it works. This is a recovery layer, which is the last layer of defence, after avoidance, mitigation, and the life pool, so the rest has to be solved elsewhere. And since it only works with life, I could not go hybrid with energy shield. Most of the time the energy shield would be up and **Wildwood Persistence** would do almost nothing, so the best defence in the ascendancy would sit unused. So we commit to life and go full evasion. Evasion is the avoidance layer, and deflection is the mitigation layer. The life pool is the layer where evasion builds are weakest, because they evade everything until a single large hit lands and kills them. We make that pool bigger in two ways: we take a part of every hit from mana before life, and we use the **Undying Hate Timeless Jewel** to turn the **Chaos Inoculation** node into **Sacrifice of Flesh**, which makes every hit smaller. The Passive Tree section explains how.
+
+      The damage idea is simple. The **Ritualist** has **Unfurled Finger**, which gives a third ring slot, and **Mystic Attunement**, which increases the bonuses we get from rings and amulets. A third ring means two more sources of flat damage to attacks, and each of them is stronger. On top of that, **Corrupted Lifeforce** gives 15% more damage against enemies affected by **Blood Boil**. The ascendancy does not push us toward critical hits, so that was my choice. As a huntress we have access to a lot of very good critical hit nodes in the tree, so we go critical.
+  - title: "Build Links"
     content: |
       - **[Leveling Build](https://poe.ninja/poe2/pob/27508)**
       - **[Budget Build](https://poe.ninja/poe2/pob/27503)**
       - **[Full Build](https://poe.ninja/poe2/pob/27502)**
       - **[Life Stacker Build](https://poe.ninja/poe2/pob/27501)**
+
+      The Full build is still a budget build compared to a fully invested character, and you can keep pushing it as far as you want. The Life Stacker is the life based version of this character. It is weaker than the Full build but plays differently, and some people will like it more.
   - title: "Skill Gems"
     content: |
-      ### **Mana Remnants**
+      The setups follow the [general guide](/werewolf-general/#gem-setups). Everything below is what the **Ritualist** changes.
 
-      **Mana Remnants** is an important part of this setup because we're using Mana for both skill costs and defense. It creates remnants when you kill enemies affected by Elemental Ailments and when you critically hit enemies affected by them. Picking up the remnants restores Mana and can overflow your maximum Mana.
+      **Blood Boil**. This comes from **Corrupted Lifeforce**. Enemies in our presence accumulate blood boils, and when an enemy dies the boils pop and apply Corrupted Blood to the enemies around it. That is some nice area damage, but it is not why we take the node. What we want is the 15% more damage against enemies affected by **Blood Boil**. I still support it for the damage, with **Physical Mastery** for the extra level, **Brutality III** for more physical damage, **Swift Affliction II** for more damage over time, **Prolonged Duration II** to make up for the shorter duration it causes, and **Magnified Area II** for a larger area. This group is not essential, and you can run the bare skill.
 
-      Since we're already building around critical strikes, we generate remnants naturally while attacking. You don't need to stop and manage a separate rotation. Just keep attacking, collect the remnants as you move, and keep your Mana Flask active.
+      **Arctic Howl**. The change is **Raging Cry** in place of the lineage support **Paquate’s Pact**. It makes the warcry grant rage depending on the power of the enemies it affects. Rage matters more here than elsewhere, because the helmet’s **Grace of the Ancestors** turns every rage into evasion rating, and **Berserk** amplifies all of it.
+
+      **Wind Dancer**. This is the evasion defensive layer from the general guide. **Life Leech III** is on it because everything we recover is multiplied by **Wildwood Persistence**, so leech is worth more here than on any other ascendancy. **Maim**, **Blind II**, and **Magnified Area II** apply to the hit it releases around us when we are struck, so it maims and blinds the enemies that hit us, over a larger area.
+
+      **Berserk**. **Dialla’s Desire** and **Uhtred’s Augury** are the usual ones, and **Uhtred’s Augury** needs exactly two other supports. **Vitality II** is the third, and it gives life regeneration while the skill is active. Regeneration is the thing **Sacrifice of Flesh** needs to repay its cost, and **Wildwood Persistence** makes it faster the lower we are.
+
+      **Mana Remnants**. This is the answer to the mana problem, and it works particularly well on a critical hit build because we are constantly creating remnants. **Harmonic Remnants II** and **Remnant Potency I** make them more frequent and more powerful. Once the sockets are set up you do not have to think about them, because the mana comes back while you fight.
+
+      **Eternal Rage**. The **Absent Amulet** carries it, so it costs no spirit.
+
+      ### Full Endgame Gem Setups
+
+      These are the exact setups from the [Full build](https://poe.ninja/poe2/pob/27502). Hover any gem to see what it does.
+
+      ::build-gems[ritualist-full-endgame]
   - title: "Gear"
     content: |
-      ### Body Armour: **Hyrri's Ire**
+      ::build-gear[ritualist-full-endgame]
 
-      **Hyrri's Ire** is an excellent choice for this build. It doubles your Evasion Rating if you haven't been Hit Recently, and it also grants Damage as Extra Cold Damage. With all the Evasion we're stacking, that defensive bonus is active frequently, while the extra Cold Damage helps our offense.
+      The rare items below are described by their mods, because the bases change for everyone depending on their resistances, attributes, and the rest of their gear. Everything we wear is evasion based, except for the jewellery.
 
-      The rest of your armour should also be Evasion-based. Look for Life and the modifier that grants Deflection Rating equal to Evasion Rating. This lets us reach the 95% Deflection Chance cap without spending too many passive points on it.
+      **Weapon**. A rare **Spiny Talisman**, because it has the highest base critical hit chance of any talisman. I want levels of melee skills first, then physical damage, fire damage, and critical hit chance. I socket **Saqawal’s Rune of the Sky** and two **Perfect Iron Rune**.
 
-      ### Rings
+      **Helmet**. A rare evasion helmet. I want evasion, life, critical hit chance, dexterity, and the mod that grants deflection rating equal to a share of our evasion rating. It has a **Raven-Touched Shard** in the socket, which lets me anoint the helmet with **Grace of the Ancestors**. If you do not have the shard, do not anoint it, and take the node some other way.
 
-      The Ritualist's **Unfurled Finger** grants an additional Ring slot, so we can use three Rings. That's a big deal for a Werewolf because each Ring gives us another source of flat damage.
+      **Amulet**. An **Absent Amulet** with **Eternal Rage**. I want evasion, levels of melee skills, resistances, and spirit. **Zarokh’s Gift** is anointed on it for an extra jewel socket.
 
-      **Mystic Attunement** increases the bonuses gained from equipped Rings and Amulets by 25%, making those slots even more valuable. I use Rings with at least two flat damage modifiers while keeping Life on them. If you're comfortable giving up some defense, triple-flat-damage Rings can push your damage further.
+      **Body armour**. **Hyrri’s Ire**. It gives some of the biggest evasion you can wear on a chest, and its evasion rating is doubled if we have not been hit recently. Since we evade so much, we are rarely hit, so that bonus is almost always on. It also gives extra cold damage, so it is good both defensively and offensively. I socket **Perfect Body Rune** for life, **The Greatwolf’s Rune of Willpower** for 15% of damage taken from mana before life, and **Ulaman’s Gaze** to prevent 3% of the damage from deflected hits.
 
-      **Ingenuity** is a great belt for this setup because it further improves the bonuses from your Rings. Between the extra Ring slot, **Mystic Attunement**, and **Ingenuity**, good jewellery does a lot of work here.
+      **Belt**. **Ingenuity**. It increases the bonuses from both of the equipped left and right rings, and our rings are where much of our damage comes from. The price is fewer charm charges.
 
-      ### Talisman
+      **Flasks**. A life flask, and **Uhtred’s Chalice**. Normally you do not want the chalice because of the life it takes while it is active, but it lets mana overflow above our maximum, and we are short on mana and also take damage from it. The chalice makes you lose 5% of your life per second while you have no runic ward, and I do not like putting runic ward into my builds. The **Greater Ward Rune** in the boots gives 25 maximum runic ward, which is enough for the chalice to stop taking life, and I never use the ward for anything else. I prefer this to rune forging the pieces, because every rune forged takes evasion away from them, and evasion is also our deflection.
 
-      Use a **Spiny Talisman** for its high base Critical Hit Chance. Since we're going crit, we want to take advantage of that base and scale Critical Hit Chance and Critical Damage Bonus through the rest of our gear and passive tree.
+      **Rings**. Three rare rings, since **Unfurled Finger** gives a third ring slot. The gear box only shows two of them. We want flat damage to attacks, life, and resistances. All of mine have at least two sources of flat damage, and I did not give up life on any of them. If you are less paranoid than I am, you can have three flat damage mods on each ring, and the damage will be insane. The third ring does not receive the **Ingenuity** bonus, but it does receive **Mystic Attunement**.
 
-      ### Helmet
+      **Gloves**. Rare evasion gloves. I want flat damage to attacks, life, levels of melee skills, leech, and critical damage bonus. The **Cadigan’s Epiphany** rune destroys the augment sockets and turns them into a jewel socket, and mine holds a rare **Emerald** with evasion, critical damage bonus, attack damage, and critical hit chance for attacks.
 
-      Look for Critical Hit Chance and useful defensive modifiers. The helmet also uses a **Raven-Touched** socket, which allows you to anoint a second notable passive on it. Along with the Amulet anointment and a **Megalomaniac**, this gives us several ways to pick up important passives without spending points pathing to them.
+      **Boots**. Rare evasion boots. I want life, 30% movement speed, evasion, chaos resistance, life regeneration, and the mod that grants deflection rating equal to a share of our evasion rating. The **Greater Ward Rune** is in the socket.
 
-      ### Timeless Jewel
-
-      The **Undying Hate** Timeless Jewel with Amanamu selected grants **Sacrifice of Flesh**. When you take damage from Hits, it prevents 20% of the Life Loss, then causes 150% of that prevented loss to be lost over four seconds.
-
-      This doesn't eliminate the damage, but it spreads part of it out over time. That's a good trade for this build because **Wildwood Persistence** improves our Life Recovery as our Life gets lower, helping us recover from the delayed loss.
-
-      This jewel is an additional defensive layer rather than a requirement. I use it because I want the build to be as tanky as possible, especially when dealing with dangerous content.
-
-      ### Mana Flask and Runes
-
-      **Uhtred's Chalice** is essential to the showcased setup. Its Mana Recovery can overflow your maximum Mana during the flask effect. With the flask active, my Mana pool effectively goes from around 400 to roughly 700, giving us more room both to pay for skills and to absorb damage through Damage Taken from Mana before Life.
-
-      The downside is that you lose 5% Life per second while the flask is active and you have no Runic Ward. To avoid that, I use a **Greater Ward Rune** for additional maximum Runic Ward.
-
-      I prefer this over runeforging one of my Evasion pieces. Losing Evasion also means losing Deflection, so sacrificing that defense to solve the flask's downside isn't worth it here.
-
-      ### Other Gear and Jewels
-
-      Keep prioritizing Life, Evasion, and the modifier that grants Deflection Rating equal to Evasion Rating. The goal is to reach 95% Deflection Chance through gear and only a modest investment in the passive tree.
-
-      For damage, look for Critical Hit Chance, Critical Damage Bonus, Attack Damage, and flat damage where available. Your jewellery handles a lot of the flat damage, so the other slots can help balance offense and defense.
+      **Charms**. A **Thawing Charm** so you never stay frozen, **Beira’s Anguish**, which makes us immune to ignite when we are ignited, and **The Black Cat**, which triggers when we are shocked and makes the lightning damage of enemies that hit us unlucky.
   - title: "Passive Tree"
     content: |
-      ### **Wildwood Persistence**
+      On the ascendancy I take **Wildwood Persistence**, **Mystic Attunement**, **Unfurled Finger**, and **Corrupted Lifeforce**, plus the life recovery rate, physical damage, and attribute nodes along the way. The cost is that the path takes 30% reduced maximum mana. It is unfortunate, because the werewolf is mana hungry, and the Skill Gems and Gear sections cover how we pay for it.
 
-      **Wildwood Persistence** is the foundation of the Ritualist's defensive setup. It grants 10% increased Life Recovery Rate for every 5% of missing unreserved Life. This applies to Life Flasks, regeneration, leech, recoup, and other sources of Life Recovery.
+      Mana is the part of the build you have to understand. We take damage from mana before life, which is defence, and we also spend mana on skills, which is offence. **Lucidity** gives 8% of damage taken from mana before life and 15 intelligence, two small nodes give another 4% each, and **The Greatwolf’s Rune of Willpower** on the chest gives 15%. Together that is 31% of our damage, and it works as a second health pool without taking all of it from life, so **Wildwood Persistence** keeps working. The ascendancy leaves us little mana, so the pool has to be made larger. **Uhtred’s Chalice** lets our mana overflow to 1.5 times its maximum, and **Mana Remnants** keeps it full. As long as you press the flask, you have mana for attacks and for tankiness.
 
-      The more Life you're missing, the stronger the bonus becomes. That's why I commit to a Life-based setup instead of going hybrid Evasion and Energy Shield. If most of our damage is being absorbed by Energy Shield, we'd get much less value from the ascendancy's strongest defensive tool.
+      Avoidance is evasion. **Beastial Skin** gives 100% increased evasion from the body armour, which is a lot with **Hyrri’s Ire**. **Escape Velocity** gives evasion and movement speed. **Careful Consideration** and **Escape Strategy** are opposites. One gives 100% increased evasion if we have not been hit recently and takes away 30% if we have, and the other does the reverse, so with both allocated we get a flat 70% increased evasion in both states. I take **Enhanced Reflexes** for deflection rating on top of evasion, and the small evasion nodes. **Honed Instincts**, **Acceleration**, and the small skill speed nodes are speed that works for damage too.
 
-      We still need to solve our avoidance and mitigation, though. Evasion handles avoidance, Deflection handles mitigation, and Life is our main health pool. All three work together with the recovery bonus.
+      Deflection is how we reach the 95% cap. Deflection chance cannot go above 95%, and we want to reach it with as few tree points as possible, so most of it comes from the gear: the helmet and boots give deflection rating equal to a share of our evasion rating. The last of it comes from the small deflection and evasion nodes and **Enduring Deflection**, which also prevents more of the damage from deflected hits.
 
-      ### Damage Taken from Mana before Life
+      The part that keeps the character alive when evasion and deflection both fail is **Sacrifice of Flesh**. The **Undying Hate Timeless Jewel** turns the **Chaos Inoculation** node into it, and it prevents 20% of the life lost when we take damage from hits, then makes us lose 150% of what was prevented over 4 seconds. A hit lands as 80% of its damage at once, and the rest arrives slowly. That cuts the burst that can kill us, which is the weakness of an evasion build, so it works like a bigger life pool. I am paranoid, so I take it. Losing life over time only matters if we cannot recover it, and we have **Wildwood Persistence**, regeneration, and leech, so that does not worry me. **Chakra of Life** and the small life regeneration nodes help with that. You do not need it, but I recommend it.
 
-      The build also takes **31% of Damage from Mana before Life**. This is particularly useful for an Evasion-based character because it gives us another buffer against the big hit that slips through both Evasion and Deflection.
+      The rest is damage. **Pain Attunement** is where I socket **From Nothing**, so I can allocate the nodes in its radius without a connected path. That gives me **Pack Encouragement**, which grants 5% increased attack damage for each minion in our presence, up to 80%. We have the wolves from **Pounce** with **Brutus’ Brain** and the lightning minions from **Living Lightning** on **Arctic Howl**, so it adds up quickly. It also gets me **Bringer of Order** and **Desensitisation** without the nodes around them that I do not want. The other damage nodes are **Chakra of Impact**, **Maiming Strike**, **Catalysis**, **Material Solidification**, and **Coming Calamity**, which gives 40% increased cold damage while we are affected by **Herald of Ice**, along with the small herald damage nodes. **Stupefy** and **Dizzying Hits** daze enemies, and then give us damage and critical hit chance against them. **Hide of the Bear** is a small defensive node for stun threshold while shapeshifted. I take **Heavy Frost** and **Thin Ice** as on all my werewolf builds.
 
-      The setup combines a Greater Rune of Willpower, which provides 15% of Damage Taken from Mana before Life, with **Lucidity**, which provides another 8% and +15 Intelligence. Two additional sources contribute the remaining 8%.
+      We go critical. The talisman and helmet give critical hit chance, and the tree has **Heartstopping**, **Struck Through**, and **Serrated Edges** for critical hit chance, with **Heartbreaking** and the small critical damage nodes for critical damage bonus. **Throatseeker** and **Careful Assassin** each give up a little of what the other gives, and together they come out as 30% increased critical hit chance and 40% increased critical damage bonus. **Cooked** gives 60% increased critical damage bonus, and it costs 25% of our armour, evasion, and energy shield, which is a real price for an evasion build. If you do not need to be this tanky, for example when you are not doing the hardest content, you can drop some of the evasion nodes and put the points into more critical nodes.
 
-      The catch is that the Ritualist has 30% reduced maximum Mana, and Werewolf skills are Mana-hungry. That's why **Uhtred's Chalice** and **Mana Remnants** are so important: the extra Mana helps us sustain our attacks while also supporting this defensive layer.
+      I use the **Time-Lost Emerald** in one of the jewel sockets, which makes small passives in its radius also grant 2% increased evasion and 2% increased elemental damage, and notables grant 7% critical hit chance and 9% critical damage bonus for attacks. There are two more rare emeralds in the tree with critical hit chance, critical damage bonus, attack damage, and evasion.
 
-      ### Deflection
-
-      We aim for **95% Deflection Chance**, the cap. Since our gear already grants Deflection Rating equal to Evasion Rating, we can pick up a little more Evasion on the tree to reach the cap without spending too many points on defense.
-
-      This matters because Evasion and Deflection can both fail against the same hit. The build is much more comfortable when we combine high avoidance, capped Deflection, a reasonable Life pool, and Damage Taken from Mana before Life.
-
-      ### Critical Strikes and **Overwhelming Strike**
-
-      The Ritualist doesn't force us into a particular damage archetype, so I chose to go crit. The Huntress has access to plenty of good critical strike passives, and **Overwhelming Strike** is one of the main targets.
-
-      It grants 15% increased Critical Hit Chance for Attacks, 20% increased Critical Damage Bonus for Attack Damage, and 20% more Stun Buildup with Critical Hits. That's a lot of value for a build already investing in critical strikes.
-
-      The tree also uses a **From Nothing** jewel to access **Pain Attunement** and nearby passives without spending points on the normal connecting path. The jewel setup lets us pick up more of the critical strike bonuses available around that area.
-
-      I keep some extra Evasion investment because I like being tanky, especially for 200 Deliriousness. If you're running content where you don't need that much defense, you can move some of those points into additional critical strike investment instead.
-
-      ### **Primal Rage** and **Heavy Frost**
-
-      **Primal Rage** grants +12 to maximum Rage while Shapeshifted. It's a priority for this build, just as it is for my other Werewolf builds, because it increases the Rage available while transformed.
-
-      **Heavy Frost** is another core Werewolf passive. It's already accessible from our side of the tree, so there's no need to spend an anointment or a **Megalomaniac** slot on it.
-
-      ### **Grace of the Ancestors**
-
-      **Grace of the Ancestors** grants 10% increased Attack Speed, and every point of Rage grants 1% increased Evasion Rating. At 42 Rage, that's 42% increased Evasion Rating, which also helps our Deflection thanks to the modifiers on our gear.
-
-      It's a great fit because it improves both offense and defense from a stat we're already stacking. You can't path to this notable normally, so you need to get it through an anointment or a **Megalomaniac**.
-
-      ### **Zarokh's Gift** and the Four-Notable Setup
-
-      I use an anointment on the Amulet, another on the **Raven-Touched** Helmet, and a **Megalomaniac** that provides two more notables. That gives us four passive notables without having to path to all of them normally.
-
-      The four targets are:
-
-      - **Zarokh's Gift**, which grants an additional Sinister Jewel socket.
-      - **Primal Rage**, for +12 maximum Rage while Shapeshifted.
-      - **Grace of the Ancestors**, for Attack Speed and Evasion scaling from Rage.
-      - **Overwhelming Strike**, for critical strike scaling and additional Stun Buildup.
-
-      Don't get too attached to finding one perfect **Megalomaniac**. Decide which four notables you want, find a **Megalomaniac** with two of them, then anoint the other two on your Amulet and Helmet. For example, you could get **Zarokh's Gift** and **Grace of the Ancestors** from the **Megalomaniac**, then anoint **Primal Rage** and **Overwhelming Strike**.
-
-      ### **Pack Encouragement**
-
-      **Pack Encouragement** grants increased Attack Damage for each minion in your Presence, up to its maximum. Our wolves contribute to this, and **Living Lightning** gives us another way to add minions to the mix.
-
-      It's a useful source of extra damage, so make sure you're taking advantage of the minions already present in the build.
-  - title: "Budget and Further Investment"
-    content: |
-      Start by getting the defensive foundation in place: Evasion, Deflection, Life, and the Mana setup. Then focus on improving your Rings and critical strike investment.
-
-      The budget version is enough to get the build going. The full version gives you more room to improve your damage and fine-tune your passives, but you don't need mirror-tier jewellery to make the build work. If you want to keep investing, expensive Rings can offer a lot of additional damage because of how well this ascendancy scales their bonuses.
-
-      The Life-stacking version is another option if that playstyle appeals to you. I found it weaker than the main version, but it's still a fun alternative.
-  - title: "Final Thoughts"
-    content: |
-      The Ritualist gives us a solid combination of damage and survivability. **Wildwood Persistence** makes Life Recovery stronger when we need it most, Evasion and Deflection handle avoidance and mitigation, and Damage Taken from Mana before Life helps protect us against the big hits that get through.
-
-      On offense, three Rings, **Mystic Attunement**, Corrupted Lifeforce, and critical strike scaling give us plenty of room to grow. It's a comfortable build that can handle serious content on a budget, with a high ceiling if you want to keep investing.
+      We need power from wherever we can get it, so I take nodes that cannot be reached through the tree. I have two anoints, one on the amulet and one on the helmet, and a **Megalomaniac** that allocates two more nodes, which makes four passives that are not connected to the tree. I choose the four I want and look for a **Megalomaniac** that has two of them, and I anoint the other two. My **Megalomaniac** allocates **Primal Rage** and **Overwhelming Strike**. **Primal Rage** is plus 12 maximum rage while shapeshifted, and every werewolf build wants it. **Overwhelming Strike** adds critical hit chance and critical damage bonus, and almost every critical build tries to get it by some route. The helmet has **Grace of the Ancestors**, which is hidden from the tree and can only be reached by an anoint or a **Megalomaniac**. It gives 10% increased attack speed, and every rage also grants 1% increased evasion rating, so 40 rage is 40% increased evasion. The amulet has **Zarokh’s Gift** for the extra socket. If you find a **Megalomaniac** with other nodes, you can juggle them. For example, a **Megalomaniac** with **Primal Rage** and **Grace of the Ancestors**, and anoint **Overwhelming Strike** and **Zarokh’s Gift**.

@@ -36,6 +36,10 @@ const pageVideos: Record<string, { id: string; title: string }> = {
     id: "-Yi07MUTHNE",
     title: "Spirit Walker Werewolf guide video",
   },
+  "/werewolf/ritualist": {
+    id: "Rp1ydfNhvzA",
+    title: "Ritualist Werewolf guide video",
+  },
 };
 
 /**

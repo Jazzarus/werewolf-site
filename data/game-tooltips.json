@@ -1,7 +1,7 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-23T06:43:13.767Z",
+  "refreshedAt": "2026-10-23T07:07:03.148Z",
   "checkedNames": [
     "abasement",
     "absent amulet",
@@ -12,6 +12,7 @@
     "amanamu",
     "amazon",
     "amethyst charm",
+    "amethyst ring",
     "amulet",
     "ancestral bond",
     "ancestral call",
@@ -41,6 +42,7 @@
     "barya of navira",
     "baryanic leylines",
     "battle trance",
+    "beastial skin",
     "beira's anguish",
     "belt",
     "berserk",
@@ -56,12 +58,15 @@
     "blazing critical",
     "blind i",
     "blind ii",
+    "blood boil",
     "blood magic",
     "blood of the wolf",
     "body armour",
     "bolstering presence",
     "boots",
     "bringer of order",
+    "brutality i",
+    "brutality iii",
     "brutus' brain",
     "budget endgame build",
     "buff expiry rate",
@@ -70,10 +75,12 @@
     "calculated hunter",
     "captivating companionship",
     "careful assassin",
+    "careful consideration",
     "carrion finger",
     "carrion hunger",
     "catalysis",
     "catha's brilliance",
+    "chakra of impact",
     "chakra of life",
     "chaos inoculation",
     "charged mark",
@@ -90,6 +97,7 @@
     "cold exposure",
     "cold mastery",
     "cold penetration",
+    "coming calamity",
     "commiserate",
     "constant gale",
     "constricting command",
@@ -100,6 +108,7 @@
     "cooldown recovery",
     "cooldown recovery i",
     "cooldown recovery ii",
+    "corrupted lifeforce",
     "cower before the first ones",
     "crescendo",
     "crescendo i",
@@ -137,6 +146,7 @@
     "disciple of varashta",
     "dizzying hits",
     "dousing charm",
+    "drakeskin boots",
     "dread knot",
     "echoing cry",
     "efficiency",
@@ -155,9 +165,12 @@
     "endless blizzard",
     "enduring deflection",
     "enhanced barrier",
+    "enhanced reflexes",
     "enlightened robe",
     "entropy joy",
     "entwined realities",
+    "escape strategy",
+    "escape velocity",
     "eternal mark",
     "eternal rage",
     "eternal rage amulet",
@@ -171,6 +184,7 @@
     "favourable odds",
     "fenumus' rune of agony",
     "flask",
+    "flasks",
     "flasks and charms",
     "footprints in the sand",
     "for utopia",
@@ -181,6 +195,7 @@
     "forsaken bangle amethyst charm",
     "fox idol",
     "frantic fighter",
+    "freebooter cap",
     "freeze",
     "freezing mark",
     "from nothing",
@@ -195,6 +210,7 @@
     "general's bindings",
     "glaciation",
     "gloves",
+    "gold ring",
     "grace of the ancestors",
     "greater desert rune",
     "greater iron rune",
@@ -271,6 +287,7 @@
     "magnified area i",
     "magnified area ii",
     "maim",
+    "maiming strike",
     "maji talisman",
     "mana remnants",
     "mark for death",
@@ -278,6 +295,7 @@
     "mark of siphoning",
     "mark of siphoning ii",
     "material solidification",
+    "meat shield i",
     "meat shield ii",
     "medved's felling",
     "megalomaniac",
@@ -310,15 +328,18 @@
     "path of the renegade",
     "paths not taken",
     "patient barrier",
+    "perfect body rune",
     "perfect iron rune",
     "perfect rebirth rune",
     "perfect robust rune",
     "perfect vision rune",
     "personal touch",
     "phased form",
+    "physical mastery",
     "piercing claw",
     "piercing claw damage",
     "plate belt",
+    "polished bracers",
     "potent incantation",
     "pounce",
     "precision",
@@ -341,6 +362,7 @@
     "quicksand hourglass",
     "rage i",
     "rage iii",
+    "raging cry",
     "rakiata's flow",
     "rapid attacks",
     "rapid attacks i",
@@ -352,6 +374,7 @@
     "raw power",
     "reactive growth",
     "relentless vindicator",
+    "remnant potency i",
     "resilient soul",
     "reverie",
     "rigwald's ferocity",
@@ -360,6 +383,7 @@
     "rite of passage golden charm",
     "rite of passage:",
     "rite of restoration",
+    "ritualist",
     "romira's requital",
     "ruinic helm",
     "rune of the blossom",
@@ -378,6 +402,7 @@
     "secured wraps",
     "sekhema sandals",
     "seraph's heart",
+    "serrated edges",
     "shaman",
     "shaper of storms",
     "shared companion damage",
@@ -411,6 +436,8 @@
     "struck through",
     "stupefy",
     "sturdy ally",
+    "swift affliction i",
+    "swift affliction ii",
     "swift claw",
     "tactical retreat",
     "tecrod's gaze",
@@ -419,6 +446,7 @@
     "temporal rift",
     "test guide",
     "thawing charm",
+    "the black cat",
     "the catha's balance",
     "the fall of the axe",
     "the fourth teaching",
@@ -437,6 +465,7 @@
     "time-lost emerald",
     "time-lost ruby",
     "tireless",
+    "topaz ring",
     "touch the arcane",
     "trained deflection",
     "turning of the seasons",
@@ -705,6 +734,13 @@
       "source": "https://poe2db.tw/us/Battle_Trance"
     },
     {
+      "name": "Beastial Skin",
+      "type": "Passive skill",
+      "description": "100% increased Evasion Rating from Equipped Body Armour",
+      "image": "/images/game-tooltips/beastial-skin.webp",
+      "source": "https://poe2db.tw/us/Beastial_Skin"
+    },
+    {
       "name": "Beira's Anguish",
       "type": "Unique item",
       "description": "Grants Immunity to Ignite\nUsed when you become Ignited\n(20—25)% Chance to gain a Charge when you kill an enemy\nCreates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500% of your maximum Life",
@@ -782,6 +818,13 @@
       "source": "https://poe2db.tw/us/Blind_I"
     },
     {
+      "name": "Blood Boil",
+      "type": "Skill gem",
+      "description": "Enemies in your Presence accumulate blood boils periodically. When they die, the boils pop applying Corrupted Blood to enemies near them.\nCorrupted Blood deals 2% of slain Enemy's maximum Life as Physical damage per second",
+      "image": "/images/game-tooltips/blood-boil.webp",
+      "source": "https://poe2db.tw/us/Blood_Boil"
+    },
+    {
       "name": "Blood Magic",
       "type": "Passive skill",
       "description": "You have no Mana\r\nSkill Mana Costs Converted to Life Costs",
@@ -808,6 +851,13 @@
       "description": "20% increased Damage\nMinions deal 20% increased Damage",
       "image": "/images/game-tooltips/bringer-of-order.webp",
       "source": "https://poe2db.tw/us/Bringer_of_Order"
+    },
+    {
+      "name": "Brutality I",
+      "type": "Support gem",
+      "description": "Supports any skill that deals damage, boosting its Physical damage at the expense of all other Damage Types.",
+      "image": "/images/game-tooltips/brutality-i.webp",
+      "source": "https://poe2db.tw/us/Brutality_I"
     },
     {
       "name": "Brutus' Brain",
@@ -852,6 +902,13 @@
       "source": "https://poe2db.tw/us/Careful_Assassin"
     },
     {
+      "name": "Careful Consideration",
+      "type": "Passive skill",
+      "description": "30% reduced Evasion Rating if you have been Hit Recently\n100% increased Evasion Rating if you haven't been Hit Recently",
+      "image": "/images/game-tooltips/careful-consideration.webp",
+      "source": "https://poe2db.tw/us/Careful_Consideration"
+    },
+    {
       "name": "Catalysis",
       "type": "Passive skill",
       "description": "20% increased Elemental Damage with Attacks\n5% of Physical Damage from Hits taken as Damage of a Random Element",
@@ -864,6 +921,13 @@
       "description": "Supports skills which create Companions, causing enemies near them to be Blinded and Ignited. The damage of the Ignite is based on the Life of the supported Minion.",
       "image": "/images/game-tooltips/catha-s-brilliance.webp",
       "source": "https://poe2db.tw/us/Cathas_Brilliance"
+    },
+    {
+      "name": "Chakra of Impact",
+      "type": "Passive skill",
+      "description": "20% increased Attack Damage\nSkills deal 8% increased Damage per Combo consumed, up to 40%",
+      "image": "/images/game-tooltips/chakra-of-impact.webp",
+      "source": "https://poe2db.tw/us/Chakra_of_Impact"
     },
     {
       "name": "Chakra of Life",
@@ -885,13 +949,6 @@
       "description": "Supports Mark Skills, causing them to Trigger Charged Mark when they are Activated. Charged Mark creates Shocked Ground at the target's location.",
       "image": "/images/game-tooltips/charged-mark.webp",
       "source": "https://poe2db.tw/us/Charged_Mark"
-    },
-    {
-      "name": "Charmed Shoes",
-      "type": "Boots base",
-      "description": "Boots base with 128 Evasion Rating and 39 Energy Shield.\nRequires Level 70, 51 Dexterity, 51 Intelligence",
-      "image": "/images/game-tooltips/charmed-shoes.webp",
-      "source": "https://poe2db.tw/us/Charmed_Shoes"
     },
     {
       "name": "Charms",
@@ -955,6 +1012,13 @@
       "source": "https://poe2db.tw/us/Cold_Penetration"
     },
     {
+      "name": "Coming Calamity",
+      "type": "Passive skill",
+      "description": "40% increased Cold Damage while affected by Herald of Ice\n40% increased Fire Damage while affected by Herald of Ash\n40% increased Lightning Damage while affected by Herald of Thunder",
+      "image": "/images/game-tooltips/coming-calamity.webp",
+      "source": "https://poe2db.tw/us/Coming_Calamity"
+    },
+    {
       "name": "Commiserate",
       "type": "Support gem",
       "description": "Supports Skills you use or Trigger yourself, which can cause Damaging Hits. Supported Skills inflict more powerful Ailments if you are afflicted with those Ailments when you inflict them, while also removing from you any Ailment that they inflict.",
@@ -995,6 +1059,13 @@
       "description": "Supports skills with Cooldowns, increasing the rate at which those Cooldowns Recover. Cannot modify the skills of minions.",
       "image": "/images/game-tooltips/cooldown-recovery-i.webp",
       "source": "https://poe2db.tw/us/Cooldown_Recovery_I"
+    },
+    {
+      "name": "Corrupted Lifeforce",
+      "type": "Passive skill",
+      "description": "Grants Skill: Blood Boil\n15% more Damage against Enemies affected by Blood Boils",
+      "image": "/images/game-tooltips/corrupted-lifeforce.webp",
+      "source": "https://poe2db.tw/us/Corrupted_Lifeforce"
     },
     {
       "name": "Cower Before the First Ones",
@@ -1247,11 +1318,32 @@
       "source": "https://poe2db.tw/us/Enhanced_Barrier"
     },
     {
+      "name": "Enhanced Reflexes",
+      "type": "Passive skill",
+      "description": "20% increased Evasion Rating\nGain Deflection Rating equal to 5% of Evasion Rating\n8% increased Dexterity",
+      "image": "/images/game-tooltips/enhanced-reflexes.webp",
+      "source": "https://poe2db.tw/us/Enhanced_Reflexes"
+    },
+    {
       "name": "Entwined Realities",
       "type": "Passive skill",
       "description": "Non-Keystone Passive Skills in Medium Radius of allocated Keystone Passive Skills can be allocated without being connected to your tree",
       "image": "/images/game-tooltips/entwined-realities.webp",
       "source": "https://poe2db.tw/us/Entwined_Realities"
+    },
+    {
+      "name": "Escape Strategy",
+      "type": "Passive skill",
+      "description": "100% increased Evasion Rating if you have been Hit Recently\n30% reduced Evasion Rating if you haven't been Hit Recently",
+      "image": "/images/game-tooltips/escape-strategy.webp",
+      "source": "https://poe2db.tw/us/Escape_Strategy"
+    },
+    {
+      "name": "Escape Velocity",
+      "type": "Passive skill",
+      "description": "3% increased Movement Speed\n30% increased Evasion Rating",
+      "image": "/images/game-tooltips/escape-velocity.webp",
+      "source": "https://poe2db.tw/us/Escape_Velocity"
     },
     {
       "name": "Eternal Mark",
@@ -1308,6 +1400,12 @@
       "description": "Martial Weapon: Gain 13% of Damage as Extra Chaos Damage\nWand or Staff: Gain 13% of Damage as Extra Chaos Damage\nBonded: Martial Weapon: Gain 8% of Damage as Extra Physical Damage\nBonded: Wand or Staff: Gain 8% of Damage as Extra Physical Damage",
       "image": "/images/game-tooltips/fenumus-rune-of-agony.webp",
       "source": "https://poe2db.tw/us/Fenumus'_Rune_of_Agony"
+    },
+    {
+      "name": "Flasks",
+      "type": "Game mechanic",
+      "description": "Flasks can be used to recover your Life or Mana. Flasks are not consumable, but require charges to use. Flask charges can be regained by killing enemies. \r\n\r\nNormal enemies grant Flask charges equal to half their Power\r\nMagic enemies grant Flask charges equal to their Power\r\nRare and Unique enemies grant Flask charges equal to twice their Power\r\n\r\nCheckpoints and Wells completely refill Flasks when activated. Flasks can only hold charges while in a Flask slot.",
+      "source": "https://poe2db.tw/us/Flasks"
     },
     {
       "name": "Footprints in the Sand",
@@ -1625,9 +1723,9 @@
     },
     {
       "name": "Ingenuity",
-      "type": "Passive skill",
-      "description": "+25 to Intelligence",
-      "image": "/images/game-tooltips/ingenuity.webp",
+      "type": "Unique item",
+      "description": "Has (1—3) Charm Slots\n20% of Flask Recovery applied Instantly\n(-20—20)% reduced Charm Charges gained\n(-10—10)% reduced Charm Charges used\n(20—30)% increased bonuses gained from left Equipped Ring\n(20—30)% increased bonuses gained from right Equipped Ring",
+      "image": "/images/build-items/ingenuitybelt.webp",
       "source": "https://poe2db.tw/us/Ingenuity"
     },
     {
@@ -1797,6 +1895,13 @@
       "description": "Supports Attacks, causing them to Maim enemies.",
       "image": "/images/game-tooltips/maim.webp",
       "source": "https://poe2db.tw/us/Maim"
+    },
+    {
+      "name": "Maiming Strike",
+      "type": "Passive skill",
+      "description": "25% increased Attack Damage\nAttacks have 25% chance to Maim on Hit",
+      "image": "/images/game-tooltips/maiming-strike.webp",
+      "source": "https://poe2db.tw/us/Maiming_Strike"
     },
     {
       "name": "Maji Talisman",
@@ -2028,6 +2133,13 @@
       "source": "https://poe2db.tw/us/Patient_Barrier"
     },
     {
+      "name": "Perfect Body Rune",
+      "type": "Rune",
+      "description": "Martial Weapon: Leeches 6% of Physical Damage as Life\nWand or Staff: +60 to maximum Energy Shield\nArmour: +75 to maximum Life",
+      "image": "/images/game-tooltips/perfect-body-rune.webp",
+      "source": "https://poe2db.tw/us/Perfect_Body_Rune"
+    },
+    {
       "name": "Perfect Iron Rune",
       "type": "Rune",
       "description": "Martial Weapon: 20% increased Physical Damage\nWand or Staff: 35% increased Spell Damage\nArmour: 20% increased Armour, Evasion and Energy Shield\nBonded: Martial Weapon: 20% increased effect of Fully Broken Armour\nBonded: Wand or Staff: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt\nBonded: Armour: +20 to maximum Life, +20 to maximum Mana",
@@ -2063,18 +2175,18 @@
       "source": "https://poe2db.tw/us/Phased_Form"
     },
     {
+      "name": "Physical Mastery",
+      "type": "Support gem",
+      "description": "Supports Physical skills, granting them an additional level. Does not support skills which do not have levels.",
+      "image": "/images/game-tooltips/physical-mastery.webp",
+      "source": "https://poe2db.tw/us/Physical_Mastery"
+    },
+    {
       "name": "Piercing Claw",
       "type": "Passive skill",
       "description": "Damage Penetrates 15% of Enemy Elemental Resistances while Shapeshifted",
       "image": "/images/game-tooltips/piercing-claw.webp",
       "source": "https://poe2db.tw/us/Piercing_Claw"
-    },
-    {
-      "name": "Plate Belt",
-      "type": "Belt base",
-      "description": "Has (1—3) Charm Slots\n+(140—180) to Armour\nRequires Level 25",
-      "image": "/images/game-tooltips/plate-belt.webp",
-      "source": "https://poe2db.tw/us/Plate_Belt"
     },
     {
       "name": "Potent Incantation",
@@ -2189,6 +2301,13 @@
       "source": "https://poe2db.tw/us/Rage_I"
     },
     {
+      "name": "Raging Cry",
+      "type": "Support gem",
+      "description": "Supports Warcry skills, causing them to grant you Rage on use depending on counted monster Power.",
+      "image": "/images/game-tooltips/raging-cry.webp",
+      "source": "https://poe2db.tw/us/Raging_Cry"
+    },
+    {
       "name": "Rakiata's Flow",
       "type": "Support gem",
       "description": "Supports Skills that can cause Damaging Hits, causing those Hits to treat Enemy Elemental Resistances as inverted.",
@@ -2208,12 +2327,6 @@
       "description": "Supports Spells, causing them to cast faster.",
       "image": "/images/game-tooltips/rapid-casting-i.webp",
       "source": "https://poe2db.tw/us/Rapid_Casting_I"
-    },
-    {
-      "name": "Raven-Touched",
-      "type": "Item mechanic",
-      "description": "Raven-Touched items have been warped by the Raven Trickster, Tangmazu.\r\n\r\nThe influence of the mist allows you to instil the item with a Notable Passive Skill at the Withered Willow.\r\n\r\nItems that are already instillable will not be able to gain an additional instillment if they become Raven-Touched.",
-      "source": "https://poe2db.tw/us/Raven-Touched"
     },
     {
       "name": "Raven-Touched Shard",
@@ -2242,6 +2355,13 @@
       "description": "10% increased Damage\n10% increased Critical Hit Chance\n+5 to Strength and Intelligence\nDruid: 10% increased Damage\nDruid: Gain 5% of Damage as Extra Damage of a random Element\nDruid: +5 to Strength and Intelligence",
       "image": "/images/game-tooltips/relentless-vindicator.webp",
       "source": "https://poe2db.tw/us/Relentless_Vindicator"
+    },
+    {
+      "name": "Remnant Potency I",
+      "type": "Support gem",
+      "description": "Supports Skills which create Remnants, making those Remnants more powerful.",
+      "image": "/images/game-tooltips/remnant-potency-i.webp",
+      "source": "https://poe2db.tw/us/Remnant_Potency_I"
     },
     {
       "name": "Reverie",
@@ -2277,6 +2397,12 @@
       "description": "Place a Sigil on the ground, providing a powerful Buff to you and Allies standing in it which grants Life Regeneration and amplifies Armour, Evasion and Energy Shield.",
       "image": "/images/game-tooltips/rite-of-restoration.webp",
       "source": "https://poe2db.tw/us/Rite_of_Restoration"
+    },
+    {
+      "name": "Ritualist",
+      "type": "Ascendancy class",
+      "description": "Huntress ascendancy\nWildwood Persistence: 10% increased Life Recovery rate per 5% missing Unreserved Life\nMystic Attunement: 25% increased bonuses gained from Equipped Rings and Amulets\nUnfurled Finger: +1 Ring Slot\nCorrupted Lifeforce: grants Blood Boil",
+      "source": "https://poe2db.tw/us/Ritualist"
     },
     {
       "name": "Romira's Requital",
@@ -2377,13 +2503,6 @@
       "source": "https://poe2db.tw/us/Second_Wind_I"
     },
     {
-      "name": "Secured Wraps",
-      "type": "Gloves base",
-      "description": "Gloves base with 94 Evasion Rating and 29 Energy Shield.\nRequires Level 80, 55 Dexterity, 55 Intelligence",
-      "image": "/images/game-tooltips/secured-wraps.webp",
-      "source": "https://poe2db.tw/us/Secured_Wraps"
-    },
-    {
       "name": "Sekhema Sandals",
       "type": "Boots base",
       "description": "Boots base with 83 Energy Shield.\nRequires Level 80, 108 Intelligence",
@@ -2396,6 +2515,13 @@
       "description": "Supports Persistent Buff Skills, providing a chance for enemies to calculate their Hits as though your Resistances were 90% while the skill is active.",
       "image": "/images/game-tooltips/seraph-s-heart.webp",
       "source": "https://poe2db.tw/us/Seraph's_Heart"
+    },
+    {
+      "name": "Serrated Edges",
+      "type": "Passive skill",
+      "description": "10% increased Critical Hit Chance for Attacks\n30% increased Attack Damage against Rare or Unique Enemies",
+      "image": "/images/game-tooltips/serrated-edges.webp",
+      "source": "https://poe2db.tw/us/Serrated_Edges"
     },
     {
       "name": "Shaman",
@@ -2598,6 +2724,13 @@
       "source": "https://poe2db.tw/us/Sturdy_Ally"
     },
     {
+      "name": "Swift Affliction I",
+      "type": "Support gem",
+      "description": "Supports any skill that deals damage, causing it to deal more non-Ailment damage over time but have a shorter duration.",
+      "image": "/images/game-tooltips/swift-affliction-i.webp",
+      "source": "https://poe2db.tw/us/Swift_Affliction_I"
+    },
+    {
       "name": "Swift Claw",
       "type": "Passive skill",
       "description": "10% increased Skill Speed while Shapeshifted",
@@ -2645,6 +2778,13 @@
       "description": "A charm that activates when you become Frozen and grants immunity to Freeze.",
       "image": "/images/game-tooltips/thawing-charm.webp",
       "source": "https://poe2db.tw/us/Thawing_Charm"
+    },
+    {
+      "name": "The Black Cat",
+      "type": "Unique item",
+      "description": "Used when you become Shocked\n(10—20)% increased Duration\nLightning Damage of Enemies Hitting you is Unlucky during effect",
+      "image": "/images/game-tooltips/the-black-cat.webp",
+      "source": "https://poe2db.tw/us/The_Black_Cat"
     },
     {
       "name": "The Catha's Balance",
@@ -2852,7 +2992,7 @@
     {
       "name": "Undying Hate Timeless Jewel",
       "type": "Unique item",
-      "description": "Glorifying the defilement of (79—30977) souls in tribute to AmanamuPassives in radius are Conquered by the AbyssalsDesecration makes this item unstable\nHistoric\nlocal unique jewel break timeless jewel calculators [0]",
+      "description": "Glorifying the defilement of (79—30977) souls in tribute to Amanamu\nPassives in radius are Conquered by the Abyssals\nDesecration makes this item unstable",
       "image": "/images/game-tooltips/undying-hate-timeless-jewel.webp",
       "source": "https://poe2db.tw/us/Undying_Hate"
     },

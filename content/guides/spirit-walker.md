@@ -53,7 +53,7 @@ sections:
     content: |
       ::build-gear[spirit-walker-full-endgame]
 
-      The bases of the rare items below are the ones I wear, and they are not fixed. Yours will change depending on your resistances, attributes, and the rest of your gear. The one exception is the **Unset Ring**, which gives us the extra skill slot.
+      The rare items below are described by their mods, because the bases change for everyone depending on their resistances, attributes, and the rest of their gear. The one exception is the **Unset Ring**, which gives us the extra skill slot.
 
       **Weapon**. A rare **Spiny Talisman**. I picked it for its 5% base critical hit chance, because we build around critical hits. I want levels of melee skills first, then physical damage, fire damage, and critical hit chance. I socket **Saqawal’s Rune of the Sky** and two **Perfect Iron Rune**.
 
@@ -63,13 +63,13 @@ sections:
 
       **Body armour**. **Forgotten Warden**. It is the centre of the build. Companions get 50% more maximum life, deflected hits take part of their damage from a companion’s life, and it grants **Spirit Vessel**. It also gives deflection rating for every 50 energy shield we are missing, and the base is evasion and energy shield, which is why the build wants both. I socket two **Perfect Iron Rune** and an **Ulaman’s Gaze**, which prevents 3% of the damage from deflected hits.
 
-      **Belt**. A rare **Plate Belt**, which gives three charm slots. Besides the slots I want life, mana, strength, and resistances.
+      **Belt**. A rare belt with three charm slots. Besides the slots I want life, mana, strength, and resistances.
 
-      **Rings**. Rare rings. One of them has to be an **Unset Ring**, because I need the extra skill slot to run **Wind Dancer** and **Savage Fury** together. You can use two if you want. We want flat damage to attacks and resistances, and mine are an **Unset Ring** and a **Prismatic Ring**. The ring bases will change for you based on your resistance needs, except for the **Unset Ring**.
+      **Rings**. Rare rings. One of them has to be an **Unset Ring**, because I need the extra skill slot to run **Wind Dancer** and **Savage Fury** together. You can use two if you want. We want flat damage to attacks and resistances, and one of mine is the **Unset Ring**, and the other is whatever fixes my resistances.
 
-      **Gloves**. Rare evasion and energy shield gloves instead of **Sine Aequo**, because we get more damage from them. I want flat damage to attacks, levels of melee skills, resistances, and evasion and energy shield. Mine are a **Secured Wraps** with **Cadigan’s Epiphany**, which turns the augment sockets into a jewel socket. In that socket is a rare **Emerald** with critical hit chance for attacks, attack speed, elemental damage, critical damage bonus for attacks, and the effect of suffixes.
+      **Gloves**. Rare evasion and energy shield gloves instead of **Sine Aequo**, because we get more damage from them. I want flat damage to attacks, levels of melee skills, resistances, and evasion and energy shield. Mine has **Cadigan’s Epiphany**, which turns the augment sockets into a jewel socket. In that socket is a rare **Emerald** with critical hit chance for attacks, attack speed, elemental damage, critical damage bonus for attacks, and the effect of suffixes.
 
-      **Boots**. Rare evasion and energy shield boots, which for me are **Charmed Shoes**. I want 30% movement speed, dexterity, fire and chaos resistance, and the mod that grants deflection rating equal to a share of our evasion rating. I have a **Greater Iron Rune** in the socket.
+      **Boots**. Rare evasion and energy shield boots. I want 30% movement speed, dexterity, fire and chaos resistance, and the mod that grants deflection rating equal to a share of our evasion rating. I have a **Greater Iron Rune** in the socket.
 
       **Charms**. **Nascent Hope**, a **Thawing Charm** so you never stay frozen, which also starts our energy shield recharge when it triggers. **Forsaken Bangle**, which triggers when we take chaos damage from a hit and recoups half of the chaos damage it prevents as life and mana. The third is **Rite of Passage** with the Spirit of the Bear, which raises our maximum life and lowers the damage we take, and both are maximum hit. It is cheap and not required for the build, but I recommend it for the extra tankiness.
   - title: "Passive Tree"
