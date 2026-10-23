@@ -1430,3 +1430,53 @@
     height: 3.5rem;
   }
 }
+
+/* Passive tree screenshots ("::tree-image[slug]"): a framed picture that opens
+   the enlarged viewer (app/ImageZoom.tsx), framed and centred like the build gear box. */
+.content :global(figure.treeImage) {
+  max-width: 100%;
+  margin: 1.5rem auto 2rem;
+  padding: 0.85rem 0.9rem 0.6rem;
+  border: 10px solid transparent;
+  border-image: url("/assets/dialog-bg-mirrored.webp") 60 fill / 10px / 0 stretch;
+}
+.content :global(.treeImageButton) {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: #000;
+  border: 1px solid var(--color-gold-dark);
+  cursor: zoom-in;
+  transition: border-color 160ms ease;
+}
+.content :global(.treeImageButton:hover) { border-color: var(--color-gold-bright); }
+.content :global(.treeImageButton)::after {
+  content: "Enlarge";
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  padding: 0.15rem 0.65rem;
+  background: rgb(6 8 10 / 82%);
+  border: 1px solid var(--color-gold-dark);
+  color: var(--color-gold-bright);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+/* Screenshots come in different shapes: cap the height so a tall one does not
+   dominate the page, and let the black frame fill the sides. */
+.content :global(.treeImageThumb) {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 36rem;
+  object-fit: contain;
+}
+.content :global(.treeImageHint) {
+  margin-top: 0.5rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}

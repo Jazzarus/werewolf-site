@@ -76,6 +76,8 @@ sections:
       **Flasks and charms**. A big life flask and **Lavianga’s Spirits**, which is passive mana regeneration I never think about. A normal mana flask works too. I leave all three charm slots empty for **Sacred Flow**.
   - title: "Passive Tree"
     content: |
+      ::tree-image[shaman]
+
       **Avatar of Evolution** and **Reactive Growth** are non-negotiable. **Avatar of Evolution** makes 5% of the physical damage you take be taken as fire, 5% as lightning, and 5% as cold. Physical damage is hard to mitigate in Path of Exile, and this makes your elemental resistances work against it. **Reactive Growth** adapts to the highest elemental damage type of each hit you take, so you take less damage from that type, and it also reduces the elemental damage you take.
 
       **Sacred Flow** gives plus 40 spirit for each empty charm slot, so 120 spirit with three. If freeze gives you trouble, you can use a charm and lose some of it. With one charm you still keep 80. **Wisdom of the Maji** is the flexible one. In my build it only gives plus 20 maximum life and mana from my armour runes, and I take it for the 8% extra physical damage on **Fenumus’ Rune of Agony**. You can swap it for **Turning of the Seasons**, which gives 10% of damage as extra damage of a random element and makes enemies in your presence have exposure. The exposure does little with penetration or **Rakiata’s Flow**, but the extra damage is good.

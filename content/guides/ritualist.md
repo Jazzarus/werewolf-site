@@ -70,6 +70,8 @@ sections:
 
   - title: "Passive Tree"
     content: |
+      ::tree-image[ritualist]
+
       On the ascendancy I take **Wildwood Persistence**, **Mystic Attunement**, **Unfurled Finger**, and **Corrupted Lifeforce**, plus the life recovery rate, physical damage, and attribute nodes along the way. The cost is that the path takes 30% reduced maximum mana. It is unfortunate, because the werewolf is mana hungry, and the Skill Gems and Gear sections cover how we pay for it.
 
       Mana is the part of the build you have to understand. We take damage from mana before life, which is defence, and we also spend mana on skills, which is offence. **Lucidity** gives 8% of damage taken from mana before life and 15 intelligence, two small nodes give another 4% each, and **The Greatwolf’s Rune of Willpower** on the chest gives 15%. Together that is 31% of our damage, and it works as a second health pool without taking all of it from life, so **Wildwood Persistence** keeps working. The ascendancy leaves us little mana, so the pool has to be made larger. **Uhtred’s Chalice** lets our mana overflow to 1.5 times its maximum, and **Mana Remnants** keeps it full. As long as you press the flask, you have mana for attacks and for tankiness.

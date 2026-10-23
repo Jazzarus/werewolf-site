@@ -645,6 +645,53 @@ function buildGear(idPrefix: string) {
   };
 }
 
+/**
+ * A "::tree-image[slug]" paragraph becomes a screenshot of that ascendancy's
+ * passive tree (public/images/passive-trees/<slug>.webp). Clicking it opens
+ * the enlarged viewer in app/ImageZoom.tsx.
+ */
+function treeImages() {
+  const smallWords = new Set(["of", "the"]);
+  return (tree: MarkdownNode) => {
+    tree.children?.forEach((node) => {
+      if (node.type !== "paragraph") return;
+      const slug = getText(node).trim().match(/^::tree-image\[([a-z0-9-]+)\]$/)?.[1];
+      if (!slug) return;
+      const name = slug
+        .split("-")
+        .map((word, index) =>
+          index > 0 && smallWords.has(word) ? word : word.charAt(0).toUpperCase() + word.slice(1),
+        )
+        .join(" ");
+      node.data = {
+        hName: "figure",
+        hProperties: { className: ["treeImage"] },
+        hChildren: [
+          makeHastElement(
+            "button",
+            {
+              type: "button",
+              className: ["treeImageButton"],
+              ariaLabel: `Enlarge the ${name} passive tree`,
+            },
+            [
+              makeHastElement("img", {
+                src: `/images/passive-trees/${slug}.webp`,
+                alt: `${name} passive tree`,
+                loading: "lazy",
+                className: ["treeImageThumb"],
+              }),
+            ],
+          ),
+          makeHastElement("figcaption", { className: ["treeImageHint"] }, [
+            { type: "text", value: "Click the image to enlarge it." },
+          ]),
+        ],
+      };
+    });
+  };
+}
+
 /** A list made only of Path of Building links renders as game buttons. */
 function buildLinkButtons() {
   return (tree: MarkdownNode) => {
@@ -718,7 +765,7 @@ function withClassNames(tagName: string, classNames: string[]) {
 
 const articleHtmlSchema: Schema = {
   ...defaultSchema,
-  tagNames: [...(defaultSchema.tagNames ?? []), "nav", "button"],
+  tagNames: [...(defaultSchema.tagNames ?? []), "nav", "button", "figure", "figcaption"],
   attributes: {
     ...defaultSchema.attributes,
     a: [
@@ -735,9 +782,11 @@ const articleHtmlSchema: Schema = {
       ["role", "tooltip"],
     ],
     nav: [["className", "tableOfContents"], "ariaLabel"],
+    figure: [["className", "treeImage"]],
+    figcaption: [["className", "treeImageHint"]],
     button: [
       ["type", "button"],
-      ["className", "gemSliderArrow", "gemSliderPrev", "gemSliderNext"],
+      ["className", "gemSliderArrow", "gemSliderPrev", "gemSliderNext", "treeImageButton"],
       "ariaLabel",
     ],
     ol: withClassNames("ol", ["skillRotation"]),
@@ -760,7 +809,7 @@ const articleHtmlSchema: Schema = {
       ["width", 64],
       ["height", 64],
       ["loading", "lazy"],
-      ["className", "buildSlotIcon"],
+      ["className", "buildSlotIcon", "treeImageThumb"],
     ],
   },
 };
@@ -774,6 +823,7 @@ export async function renderArticleMarkdown(
     .use(headingAnchors)
     .use(buildLinkButtons)
     .use(gemSetups)
+    .use(treeImages)
     .use(() => buildGear(idPrefix))
     .use(() => gameEntityTooltips(idPrefix))
     .use(html, { sanitize: articleHtmlSchema })

@@ -77,6 +77,8 @@ sections:
       **Upgrades**. I’m not maxed. You can get a **Headhunter**, a **Mageblood**, a better amulet, and a better everything. **Voices** gets you more sockets. My gem levels aren’t maxed either, so you can take this build further than I did.
   - title: "Passive Tree"
     content: |
+      ::tree-image[amazon]
+
       The **Amazon** ascendancy gives us **Stalking Panther**, **Mystic Harvest**, **Predatory Instinct**, and **Critical Strike**. **Stalking Panther** is the big defensive node, and it is why we stack evasion on the helmet, gloves, and boots. **Mystic Harvest** makes life leech work with elemental damage too. **Predatory Instinct** reveals weaknesses on enemies, and that is big damage. **Critical Strike** lets your chance to hit with attacks exceed 100% and gives you additional critical hit chance equal to 25% of the excess. That turns accuracy into damage, so I scale accuracy in other parts of the tree as well.
 
       The rest of the tree builds around evasion, deflection, accuracy, and critical stats. I take evasion wherever I can because I like not dying, and I scale deflection rating from evasion. **Falcon Dive** is another way to scale with accuracy. It gives 4% increased attack speed, plus 1% increased attack speed per 400 accuracy rating, up to 20%. Intelligence is my best attribute whenever I can manage it, because of **The Winter Owl**. It gives 3% increased evasion rating per 10 intelligence and accuracy rating equal to your intelligence, so intelligence gives me damage through accuracy and defense through evasion. I also take movement speed and skill speed along the way, and as much critical damage bonus as I can.

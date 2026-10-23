@@ -80,6 +80,8 @@ sections:
       **Charms**. A **Thawing Charm** so you never stay frozen, **Beira’s Anguish**, which makes us immune to ignite when we are ignited, and **Forsaken Bangle**, which triggers when we take chaos damage from a hit and recoups half of the chaos damage it prevents as life and mana.
   - title: "Passive Tree"
     content: |
+      ::tree-image[tactician]
+
       On the ascendancy I take **A Solid Plan**, **Polish That Gear**, **Stay Light, Use Cover**, and **Suppressing Fire**, plus the spirit and the two armour and evasion nodes on the way.
 
       **Stay Light, Use Cover** is the node to understand, because used badly it makes us less tanky than a build without it. Our maximum chance to evade and our maximum physical damage reduction are both 50%, so everything above 50% in either one does nothing for us. We take enough armour and evasion to reach the caps, and no more. The surrounded nodes raise both in combat, so a sheet a little under the caps outside of combat is fine, because we reach them while we fight. After that we put our points into the stats the caps do not touch. **Polish That Gear** gives deflection rating equal to 20% of our armour on top of what evasion already gives, and it also turns our evasion rating into ailment threshold. The share of our armour that also applies to elemental damage is not limited by the cap either, so we take **Tempered Defences** and look for it on gear.

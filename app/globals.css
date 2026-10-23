@@ -72,3 +72,65 @@ button, summary, a { -webkit-tap-highlight-color: rgb(228 207 156 / 15%); }
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Enlarged image viewer (app/ImageZoom.tsx). It is added to the body, so these are global. */
+.zoomOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  background: rgb(3 4 6 / 94%);
+}
+.zoomStage {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  padding: 1rem 1rem 2.75rem;
+  overscroll-behavior: contain;
+  cursor: zoom-out;
+}
+.zoomImage {
+  /* auto margins centre the picture while still letting it scroll when larger. */
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid var(--color-gold-dark);
+  background: #000;
+  cursor: zoom-in;
+}
+.zoomOverlay[data-size="full"] .zoomImage {
+  max-width: none;
+  max-height: none;
+  cursor: zoom-out;
+}
+.zoomClose {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: radial-gradient(circle at 50% 38%, #221e16, #08090b 68%);
+  border: 1px solid var(--color-gold-dark);
+  border-radius: 50%;
+  color: var(--color-gold-bright);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.zoomClose:hover { color: #fff0c8; border-color: var(--color-gold-bright); }
+.zoomHint {
+  position: absolute;
+  right: 0;
+  bottom: 0.6rem;
+  left: 0;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  pointer-events: none;
+}

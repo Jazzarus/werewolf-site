@@ -70,6 +70,8 @@ sections:
       **Charms**. **Nascent Hope**, a **Thawing Charm** so you never stay frozen, which also starts our energy shield recharge when it triggers. **Beira’s Anguish**, a **Dousing Charm**, which makes us immune to ignite when we are ignited. The third is **Rite of Passage**, for the Spirit of the Owl, which gives 60% increased energy shield and a good amount of damage and is cheap. It is what takes us over 10k energy shield in combat.
   - title: "Passive Tree"
     content: |
+      ::tree-image[disciple-of-varashta]
+
       On the ascendancy I take **Sacred Rituals**, **Varashta’s Intuition**, **The Fourth Teaching**, **Barya of Navira**, and **Navira’s Well**, plus the maximum energy shield and maximum mana nodes along the way. **Varashta’s Intuition** makes 100% of elemental damage be taken from mana before life, and that works like extra health, because mana counts as a health pool. **The Fourth Teaching** removes a second from the energy shield recharge delay and gives 40% more recharge rate while on low energy shield. **Barya of Navira** and **Navira’s Well** give us the recovery button. I skipped **Instruments of Power**, which only helps with a staff and we wield a talisman, and **Baryanic Leylines**, which enlarges non-unique time-lost jewels, because the tree has no good place for one.
 
       I take **Chaos Inoculation**, since energy shield is our whole health pool. It is also what makes **Uhtred’s Chalice** free. The rest of the tree is stacked with maximum energy shield. I take **Pure Energy**, **Melding**, **Patient Barrier**, **Enhanced Barrier**, **Insightfulness**, and **Dampening Shield**, and **Abasement** gives us stun threshold equal to 30% of our maximum energy shield, which basically solves stuns.

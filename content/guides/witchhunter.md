@@ -78,6 +78,8 @@ sections:
       **Charms**. A **Thawing Charm** so you never stay frozen, **Beira’s Anguish**, which makes us immune to ignite when we are ignited, and **Forsaken Bangle**, which triggers when we take chaos damage from a hit and recoups half of the chaos damage it prevents as life and mana.
   - title: "Passive Tree"
     content: |
+      ::tree-image[witchhunter]
+
       On the ascendancy I take **Witchbane**, **No Mercy**, **Obsessive Rituals**, and **Ceremonial Ablution**, plus the two cooldown recovery nodes and the two armour and evasion nodes on the way. **Witchbane** gives enemies a concentration bar equal to 30% of their maximum life, and our hits break it by the damage they deal, and **No Mercy** gives up to 40% more damage against enemies based on how much concentration they are missing. We break a lot of concentration without noticing, so we deal extra damage all the time. It is not only for bosses. It also works on the big rares in your maps, the ones that take several hits to kill, so it is useful everywhere. The cooldown recovery on the small nodes helps **Pounce**, **Arctic Howl**, and **Lunar Blessing**.
 
       Being surrounded is the other half. **Thrill of Battle** gives 20% increased attack speed while surrounded, **In the Thick of It** regenerates 2.5% of our maximum life per second, **Favourable Odds** gives deflection and ailment protection, **Last Stand** and **Frantic Fighter** give attack damage, and **Tactical Retreat** gives movement speed. The small nodes around them give attack damage, armour, and evasion while surrounded. **Frantic Fighter** costs us accuracy, and we do not care.

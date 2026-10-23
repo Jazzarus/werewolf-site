@@ -74,6 +74,8 @@ sections:
       **Attributes**. The wolf is starved for attributes. It wants intelligence and strength, and since we are evasion based, we also need dexterity to equip the evasion pieces. Because **Traveller’s Wisdom** spends the small attribute nodes on damage, the attributes come from the gear. **Morior Invictus** and the **Unset Ring** under **Ingenuity** give most of them, and the notables in the tree give the rest.
   - title: "Passive Tree"
     content: |
+      ::tree-image[pathfinder]
+
       The ascendancy comes first. **Relentless Pursuit** is the first one, and on the way there we get skill speed. Then we get one passive skill point, and then **Path Seeker**. It lets us allocate passive skills from the starting point of the Warrior or the Sorceress, and above all it grants 4 passive skill points. We pick **Path of the Warrior** for those points, because we do not use the Warrior or the Sorceress side of the tree. After that we get another passive skill point, then **Traveller’s Wisdom**, and **Sustainable Practices** after it. In total the ascendancy gives us 6 extra passive skill points, and an evasion node on the way.
 
       **Traveller’s Wisdom** is the damage. Normally the small nodes that grant strength, intelligence, or dexterity can instead be made to grant increased damage, armour, evasion, and energy shield, or cost efficiency. Every one of them in my tree grants 5% increased damage. I fix my mana and my defences elsewhere, and the amount of damage that gives us is insane. If you feel you are not tanky enough, you can come in and put increased armour, evasion, and energy shield on them, and if you need more mana, you can put cost efficiency. I have damage on every one of them.

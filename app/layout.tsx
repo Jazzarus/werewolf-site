@@ -8,6 +8,7 @@ import { SiteNavigation } from "./SiteNavigation";
 import { TwitchPlayer } from "./TwitchPlayer";
 import { BackToTop } from "./BackToTop";
 import { GemSliders } from "./GemSliders";
+import { ImageZoom } from "./ImageZoom";
 import { YouTubePanel } from "./YouTubePlayer";
 
 const fontin = localFont({
@@ -99,6 +100,7 @@ export default function RootLayout({
 
         <BackToTop />
         <GemSliders />
+        <ImageZoom />
       </body>
     </html>
   );

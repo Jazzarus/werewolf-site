@@ -72,6 +72,8 @@ sections:
       **Charms**. Because we use **Blood Magic**, there is no mana flask. Ignite is very annoying for this build, so I run a **Dousing Charm** to prevent it.
   - title: "Passive Tree"
     content: |
+      ::tree-image[oracle]
+
       As an **Oracle**, you always pick the same ascendancy nodes. Start with **Inevitable Critical Hits**, which makes every hit you deal a crit. If a hit doesn’t crit, it rerolls to see if it crits, and each reroll gives 30% less critical bonus. That is why you still want some critical chance, since the sooner you crit, the fewer rerolls you pay for. I already did the math, so you don’t have to. The sweet spot for critical chance is between 30% and 50%, and I’m at 41%. After that, take all the critical bonus you can get. Take **The Lesser Harm** as well, which makes you a bit tankier.
 
       On the other side, take **The Unseen Path**, which reveals the **Oracle**-only nodes that aren’t normally in the tree. Then take **Entwined Realities**, one of my favorite things in the game. It lets you allocate nodes that aren’t connected to your tree if they are near a keystone you allocated. **From Nothing** is similar, but it lets you skip taking the keystone. With **Entwined Realities** you have to take the keystone, but the range is bigger and you can have as many as you want. **From Nothing** has a smaller range, and you can only have one. I use several **Entwined Realities**.
