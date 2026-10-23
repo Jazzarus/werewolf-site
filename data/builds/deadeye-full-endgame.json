@@ -1,0 +1,1144 @@
+{
+  "source": "https://poe.ninja/poe2/pob/2b37b",
+  "title": "Full Endgame",
+  "character": {
+    "className": "Ranger",
+    "ascendancy": "Deadeye",
+    "level": 93
+  },
+  "slots": [
+    {
+      "slot": "Charm 1",
+      "item": {
+        "name": "Tidebound Thawing Charm of the Copious",
+        "base": "Thawing Charm",
+        "rarity": "magic",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you become Frozen"
+        ],
+        "explicits": [
+          {
+            "text": "Recover 108 Mana when Used"
+          },
+          {
+            "text": "38% increased Charges"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/thawingcharm.webp"
+      }
+    },
+    {
+      "slot": "Flask 2",
+      "item": {
+        "name": "Full-bodied Ultimate Mana Flask of the Verdant",
+        "base": "Ultimate Mana Flask",
+        "rarity": "magic",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Gains 0.20 Charges per Second"
+          },
+          {
+            "text": "51% increased Amount Recovered"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/flaskmana09.webp"
+      }
+    },
+    {
+      "slot": "Flask 1",
+      "item": {
+        "name": "Abundant Ultimate Life Flask of the Verdant",
+        "base": "Ultimate Life Flask",
+        "rarity": "magic",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Gains 0.20 Charges per Second"
+          },
+          {
+            "text": "56% increased Amount Recovered"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/flasklife09.webp"
+      }
+    },
+    {
+      "slot": "Charm 3",
+      "item": {
+        "name": "Beira's Anguish",
+        "base": "Dousing Charm",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you become Ignited"
+        ],
+        "explicits": [
+          {
+            "text": "24% Chance to gain a Charge when you kill an enemy"
+          },
+          {
+            "text": "Creates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500% of your maximum Life"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/beira-s-anguish.webp"
+      }
+    },
+    {
+      "slot": "Charm 2",
+      "item": {
+        "name": "Forsaken Bangle",
+        "base": "Amethyst Charm",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Used when you take Chaos damage from a Hit"
+        ],
+        "explicits": [
+          {
+            "text": "19% increased Duration"
+          },
+          {
+            "text": "50% of Chaos damage you prevent when Hit Recouped as Life and Mana during effect"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/forsaken-bangle-amethyst-charm.webp"
+      }
+    },
+    {
+      "slot": "Belt",
+      "item": {
+        "name": "Ingenuity",
+        "base": "Utility Belt",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Has 3 Charm Slots",
+          "20% of Flask Recovery applied Instantly"
+        ],
+        "explicits": [
+          {
+            "text": "3% reduced Charm Charges gained"
+          },
+          {
+            "text": "5% increased Charm Charges used"
+          },
+          {
+            "text": "30% increased bonuses gained from left Equipped Ring"
+          },
+          {
+            "text": "29% increased bonuses gained from right Equipped Ring"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/ingenuitybelt.webp"
+      }
+    },
+    {
+      "slot": "Weapon 1",
+      "item": {
+        "name": "Wildwood Solace",
+        "base": "Spiny Talisman",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Quality",
+            "30"
+          ]
+        ],
+        "runes": [
+          "Saqawal's Rune of the Sky",
+          "Fenumus' Rune of Agony"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "Bonded: Gain 8% of Damage as Extra Physical Damage",
+          "Gain 13% of Damage as Extra Chaos Damage",
+          "Bonded: 8% chance to gain an additional random Charge when you gain a Charge",
+          "Gain 5% of Damage as Extra Damage of all Elements"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Adds 43 to 93 Physical Damage"
+          },
+          {
+            "text": "Adds 104 to 160 Fire Damage"
+          },
+          {
+            "text": "+5 to Level of all Melee Skills"
+          },
+          {
+            "text": "Gain 49 Life per enemy killed"
+          },
+          {
+            "text": "+3.69% to Critical Hit Chance"
+          },
+          {
+            "text": "133% increased Physical Damage"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/nettletalisman.webp"
+      }
+    },
+    {
+      "slot": "Amulet",
+      "item": {
+        "name": "Hate Braid",
+        "base": "Absent Amulet",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [
+          "Allocates Grace of the Ancestors"
+        ],
+        "runeMods": [],
+        "implicits": [
+          "-1 Prefix Modifier allowed",
+          "-1 Suffix Modifier allowed",
+          "Grants Skill: Level 19 Eternal Rage"
+        ],
+        "explicits": [
+          {
+            "text": "+111 to maximum Life"
+          },
+          {
+            "text": "+4 to Level of all Melee Skills"
+          },
+          {
+            "text": "+37% to Fire Resistance"
+          },
+          {
+            "text": "+34 to Spirit"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/absentamulet.webp"
+      }
+    },
+    {
+      "slot": "Helmet",
+      "item": {
+        "name": "Golem Cowl",
+        "base": "Deerstalker Hood",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Evasion",
+            "1103"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Raven-Touched Shard"
+        ],
+        "enchants": [
+          "Allocates Zarokh's Gift"
+        ],
+        "runeMods": [
+          "Raven-Touched"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "+199 to Evasion Rating"
+          },
+          {
+            "text": "96% increased Evasion Rating"
+          },
+          {
+            "text": "33% increased Critical Hit Chance"
+          },
+          {
+            "text": "+39% to Cold Resistance"
+          },
+          {
+            "text": "+103 to maximum Life"
+          },
+          {
+            "text": "Gain Deflection Rating equal to 23% of Evasion Rating"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/helmetdex05.webp"
+      }
+    },
+    {
+      "slot": "Body Armour",
+      "item": {
+        "name": "Morior Invictus",
+        "base": "Grand Regalia",
+        "rarity": "unique",
+        "properties": [
+          [
+            "Armour",
+            "994"
+          ],
+          [
+            "Evasion",
+            "901"
+          ],
+          [
+            "Energy Shield",
+            "273"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Soul Core of Tacati",
+          "Soul Core of Tacati",
+          "Soul Core of Tacati",
+          "Tecrod's Gaze"
+        ],
+        "enchants": [
+          "+32 to maximum Life"
+        ],
+        "runeMods": [
+          "+33% to Chaos Resistance",
+          "Regenerate 1.5% of maximum Life per second"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "355% increased Armour, Evasion and Energy Shield"
+          },
+          {
+            "text": "+60 to maximum Life per Socket filled"
+          },
+          {
+            "text": "+10% to all Elemental Resistances per Socket filled"
+          },
+          {
+            "text": "+14 to Spirit per Socket filled"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/game-tooltips/morior-invictus.webp"
+      }
+    },
+    {
+      "slot": "Gloves",
+      "item": {
+        "name": "Demon Talons",
+        "base": "Polished Bracers",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Evasion",
+            "355"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Cadigan's Epiphany"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "Destroys all Augment Sockets on the item to create a Jewel Socket"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "74% increased Evasion Rating"
+          },
+          {
+            "text": "Adds 1 to 49 Lightning damage to Attacks"
+          },
+          {
+            "text": "+2 to Level of all Melee Skills"
+          },
+          {
+            "text": "Gain Deflection Rating equal to 19% of Evasion Rating"
+          },
+          {
+            "text": "27% increased Critical Damage Bonus"
+          },
+          {
+            "text": "Adds 9 to 19 Physical Damage to Attacks"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/glovesdex06.webp"
+      }
+    },
+    {
+      "slot": "Boots",
+      "item": {
+        "name": "Dire Trail",
+        "base": "Dragonscale Boots",
+        "rarity": "rare",
+        "properties": [
+          [
+            "Evasion",
+            "638"
+          ],
+          [
+            "Quality",
+            "20"
+          ]
+        ],
+        "runes": [
+          "Greater Iron Rune"
+        ],
+        "enchants": [],
+        "runeMods": [
+          "18% increased Armour, Evasion and Energy Shield",
+          "Bonded: +20 to maximum Life",
+          "Bonded: +20 to maximum Mana"
+        ],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "35% increased Movement Speed"
+          },
+          {
+            "text": "100% increased Evasion Rating"
+          },
+          {
+            "text": "+102 to maximum Life"
+          },
+          {
+            "text": "46% reduced Shock duration on you"
+          },
+          {
+            "text": "+32% to Lightning Resistance"
+          },
+          {
+            "text": "+13 to Spirit"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/bootsdex05.webp"
+      }
+    },
+    {
+      "slot": "Ring 1",
+      "item": {
+        "name": "Oblivion Spiral",
+        "base": "Prismatic Ring",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "+8% to all Elemental Resistances"
+        ],
+        "explicits": [
+          {
+            "text": "Adds 12 to 24 Physical Damage to Attacks"
+          },
+          {
+            "text": "Adds 2 to 43 Lightning damage to Attacks"
+          },
+          {
+            "text": "+41% to Fire Resistance"
+          },
+          {
+            "text": "+28% to Lightning Resistance"
+          },
+          {
+            "text": "+33% to Cold Resistance"
+          },
+          {
+            "text": "+102 to maximum Life"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/prismaticring.webp"
+      }
+    },
+    {
+      "slot": "Ring 2",
+      "item": {
+        "name": "Storm Hold",
+        "base": "Unset Ring",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [
+          "Grants 1 additional Skill Slot"
+        ],
+        "explicits": [
+          {
+            "text": "Adds 19 to 38 Physical Damage to Attacks"
+          },
+          {
+            "text": "Adds 25 to 39 Fire damage to Attacks"
+          },
+          {
+            "text": "Adds 8 to 15 Cold damage to Attacks"
+          },
+          {
+            "text": "+12 to all Attributes"
+          },
+          {
+            "text": "+31 to Strength"
+          },
+          {
+            "text": "+27% to Chaos Resistance"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/unset-ring.webp"
+      }
+    }
+  ],
+  "jewels": [
+    {
+      "location": "Gloves",
+      "item": {
+        "name": "Chimeric Ichor",
+        "base": "Emerald",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "18% increased Evasion Rating"
+          },
+          {
+            "text": "13% increased Critical Damage Bonus for Attack Damage"
+          },
+          {
+            "text": "14% increased Attack Damage"
+          },
+          {
+            "text": "16% increased Critical Hit Chance for Attacks"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/emeraldjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Pandemonium Heart",
+        "base": "Time-Lost Emerald",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Small Passive Skills in Radius also grant 3% increased Evasion Rating"
+          },
+          {
+            "text": "Small Passive Skills in Radius also grant 2% increased Attack Damage"
+          },
+          {
+            "text": "Notable Passive Skills in Radius also grant 6% increased Critical Hit Chance for Attacks"
+          },
+          {
+            "text": "Notable Passive Skills in Radius also grant 10% increased Critical Damage Bonus for Attack Damage"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/time-lost-emerald.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Undying Hate",
+        "base": "Timeless Jewel",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Glorifying the defilement of 9942 souls in tribute to Amanamu"
+          },
+          {
+            "text": "Passives in radius are Conquered by the Abyssals"
+          },
+          {
+            "text": "Desecration makes this item unstable"
+          },
+          {
+            "text": "Historic"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/undying-hate-timeless-jewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Dragon Desire",
+        "base": "Emerald",
+        "rarity": "rare",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "19% increased Evasion Rating"
+          },
+          {
+            "text": "17% increased Critical Damage Bonus for Attack Damage"
+          },
+          {
+            "text": "11% increased Attack Damage"
+          },
+          {
+            "text": "11% increased Critical Hit Chance for Attacks"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/build-items/emeraldjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Heart of the Well",
+        "base": "Diamond",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Gain 15% of Damage as Extra Fire Damage"
+          },
+          {
+            "text": "6% increased Critical Hit Chance"
+          },
+          {
+            "text": "12% increased Critical Damage Bonus"
+          },
+          {
+            "text": "10% increased Life Regeneration rate"
+          },
+          {
+            "text": "Gain 12% of Damage as Extra Chaos Damage"
+          }
+        ],
+        "corrupted": false,
+        "icon": "/images/game-tooltips/heart-of-the-well.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "From Nothing",
+        "base": "Diamond",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [
+          {
+            "text": "Passives in Radius of Pain Attunement can be Allocated"
+          },
+          {
+            "text": "without being connected to your tree"
+          }
+        ],
+        "corrupted": true,
+        "icon": "/images/build-items/ritualjewel.webp"
+      }
+    },
+    {
+      "location": "Passive Tree",
+      "item": {
+        "name": "Megalomaniac",
+        "base": "Diamond",
+        "rarity": "unique",
+        "properties": [],
+        "runes": [],
+        "enchants": [
+          "Allocates Primal Rage",
+          "Allocates The Noble Wolf",
+          "Allocates Casting Cascade"
+        ],
+        "runeMods": [],
+        "implicits": [],
+        "explicits": [],
+        "corrupted": true,
+        "icon": "/images/build-items/deliriumjewel.webp"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "gems": [
+        {
+          "name": "Shred",
+          "level": 20,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Rapid Attacks II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Close Combat II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Crescendo II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Long Fuse II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Called Shots",
+          "level": 20,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Sniper's Mark",
+          "level": 15,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Charged Mark",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Mark of Siphoning II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Charge Profusion II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Cooldown Recovery II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Eternal Rage",
+          "level": 19,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Vitality I",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Uhtred's Omen",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Wind Dancer",
+          "level": 15,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Blind II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Maim",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Magnified Area II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Lunar Assault",
+          "level": 20,
+          "quality": 23,
+          "support": false
+        },
+        {
+          "name": "Ice Bite II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Ancestral Call II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Rigwald's Ferocity",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Rakiata's Flow",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Pounce",
+          "level": 19,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Brutus' Brain",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Mark for Death",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Eternal Mark",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Holy Descent",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Culling Strike II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Cross Slash",
+          "level": 19,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Culmination II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Heavy Swing",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Heft",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Ailith's Chimes",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Morrigan's Insight",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Mana Remnants",
+          "level": 14,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Harmonic Remnants II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Remnant Potency I",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Herald of Ice",
+          "level": 18,
+          "quality": 0,
+          "support": false
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Magnified Area II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Armour Break III",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Armour Explosion",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Uruk's Smelting",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Arctic Howl",
+          "level": 19,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Tireless",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Echoing Cry",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Living Lightning II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Vruun's Aftermath",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Paquate's Pact",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Charge Regulation",
+          "level": 15,
+          "quality": 0,
+          "support": false
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Lunar Blessing",
+          "level": 20,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Cooldown Recovery II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Prolonged Duration II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Elemental Armament II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Atalui's Bloodletting",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Vorana's Siege",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    },
+    {
+      "gems": [
+        {
+          "name": "Berserk",
+          "level": 14,
+          "quality": 20,
+          "support": false
+        },
+        {
+          "name": "Dialla's Desire",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        },
+        {
+          "name": "Vitality II",
+          "level": 1,
+          "quality": 0,
+          "support": true
+        }
+      ]
+    }
+  ]
+}

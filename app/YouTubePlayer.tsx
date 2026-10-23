@@ -40,6 +40,22 @@ const pageVideos: Record<string, { id: string; title: string }> = {
     id: "Rp1ydfNhvzA",
     title: "Ritualist Werewolf guide video",
   },
+  "/werewolf/witchhunter": {
+    id: "oPAvbXZZUNI",
+    title: "Witchhunter Werewolf guide video",
+  },
+  "/werewolf/tactician": {
+    id: "2FhyPUqV778",
+    title: "Tactician Werewolf guide video",
+  },
+  "/werewolf/deadeye": {
+    id: "TgbQresBtDo",
+    title: "Deadeye Werewolf guide video",
+  },
+  "/werewolf/pathfinder": {
+    id: "nRvd9SFSj0A",
+    title: "Pathfinder Werewolf guide video",
+  },
 };
 
 /**
