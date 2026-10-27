@@ -134,6 +134,10 @@
 }
 .guideMeta span + span { color: #c3ad7f; }
 .guideMeta span + span::before { content: "·"; margin-right: 0.6rem; color: #766649; }
+/* Class cards list their ascendancies: every one gets the same colour and bullet. */
+.guideMetaList { flex-direction: column; gap: 0.1rem; }
+.guideMetaList span { color: #c3ad7f; }
+.guideMetaList span::before { content: "·"; margin-right: 0.6rem; color: #766649; }
 .guideCardHome {
   grid-template-columns: 5.25rem minmax(0, 1fr);
   grid-template-rows: auto;

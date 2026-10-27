@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import {
   getAllGuides,
   groupGuidesByMetadata,
@@ -32,11 +34,42 @@ export default function TierList() {
           players can realistically put together.
         </p>
       </section>
+
+      <section className={styles.container} aria-labelledby="class-tier-list">
+        <h2 id="class-tier-list">Class Tier List</h2>
+        <ClassTierSections />
+        <h3>About the Class Tier List</h3>
+        <p>
+          This tier list ranks each class by <strong>how good its ascendancies
+          are for Werewolf builds</strong>. A class ranks high when its
+          ascendancies as a group are strong, not because one of them is
+          great and the others are weak.
+        </p>
+        <p>
+          It is made for two kinds of players. The first want to be able to
+          change ascendancies easily inside the same class. The second are
+          not sure which ascendancy they want yet, but want a good start.
+          Picking a high ranked class from the beginning maximizes your
+          chances: whichever ascendancy you end up choosing, it is likely to
+          be a good one, and the others stay available if you change your
+          mind.
+        </p>
+        <p>
+          If you already know the ascendancy you want to play, use the tier
+          list above instead. Classes whose ascendancies are not ranked yet
+          are left out.
+        </p>
+      </section>
+
+      {/* Ascendancies without a tier yet sit at the very bottom, out of the way. */}
+      <section className={styles.container} aria-label="Unranked ascendancies">
+        <TierSections unranked />
+      </section>
     </main>
   );
 }
 
-async function TierSections() {
+async function TierSections({ unranked = false }: { unranked?: boolean }) {
   const guides = await getAllGuides();
   const guideGroups = groupGuidesByMetadata(
     guides,
@@ -44,7 +77,9 @@ async function TierSections() {
     GUIDE_TIER_ORDER,
   );
 
-  return guideGroups.map((group) => {
+  return guideGroups
+    .filter((group) => (group.name === "Unranked") === unranked)
+    .map((group) => {
     const isRanked = group.name !== "Unranked";
 
     return (
@@ -76,4 +111,68 @@ async function TierSections() {
       </section>
     );
   });
+}
+
+/** Class tiers, based on how good each class's ascendancies are. */
+const CLASS_TIERS = [
+  { tier: "S", classes: ["Druid"] },
+  { tier: "A", classes: ["Huntress", "Mercenary"] },
+  { tier: "B", classes: ["Sorceress"] },
+  { tier: "C", classes: ["Ranger"] },
+];
+
+async function ClassTierSections() {
+  const guides = await getAllGuides();
+
+  return CLASS_TIERS.map(({ tier, classes }) => (
+    <section
+      className={styles.tierRow}
+      data-tier={tier}
+      key={tier}
+      aria-labelledby={`${tier}-class-tier`}
+    >
+      <h3 className={styles.tierHeading} id={`${tier}-class-tier`}>
+        <span className={styles.tierPennant} aria-hidden="true">
+          {tier}
+        </span>
+        <span className={styles.tierHeadingText}>{tier} Tier</span>
+      </h3>
+      <div className={styles.guideGrid}>
+        {classes.map((name) => {
+          const ascendancies = guides
+            .filter((guide) => guide.class === name && !guide.isPlaceholder)
+            .map((guide) => guide.title);
+
+          return (
+            <Link
+              className={`${styles.guideCard} ${styles.guideCardTier}`}
+              href={`/werewolf#${name}-guides`}
+              key={name}
+            >
+              <div className={styles.imageContainer}>
+                <Image
+                  src={`/images/classes/${name.toLowerCase()}.webp`}
+                  alt=""
+                  fill
+                  sizes="72px"
+                  className={styles.guideImage}
+                />
+                <span className={styles.imageFrame} aria-hidden="true" />
+              </div>
+              <div className={styles.guideText}>
+                <h3>{name}</h3>
+                <div
+                  className={`${styles.guideMeta} ${styles.guideMetaList}`}
+                >
+                  {ascendancies.map((title) => (
+                    <span key={title}>{title}</span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  ));
 }
