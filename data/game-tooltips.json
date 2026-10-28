@@ -1,7 +1,7 @@
 {
   "source": "PoE2DB",
   "sourceLicense": "CC BY-NC-SA 3.0",
-  "refreshedAt": "2026-10-27T23:23:06.123Z",
+  "refreshedAt": "2026-10-28T20:34:33.535Z",
   "checkedNames": [
     "a solid plan",
     "abasement",
@@ -60,10 +60,14 @@
     "biting frost ii",
     "black scythe training",
     "blackflame covenant",
+    "blasphemy",
     "blazing critical",
+    "bleed on critical chance",
     "blind i",
     "blind ii",
+    "blood barbs",
     "blood boil",
+    "blood mage",
     "blood magic",
     "blood of the wolf",
     "body armour",
@@ -124,6 +128,8 @@
     "crescendo",
     "crescendo i",
     "crescendo ii",
+    "crimson power",
+    "critical exploit",
     "critical strike",
     "cross slash",
     "crown of eyes",
@@ -178,6 +184,7 @@
     "emergent possibility",
     "endless blizzard",
     "enduring deflection",
+    "enfeeble",
     "enhanced barrier",
     "enhanced reflexes",
     "enlightened robe",
@@ -228,7 +235,9 @@
     "glaciation",
     "gloves",
     "gold ring",
+    "gore spike",
     "grace of the ancestors",
+    "grasping wounds",
     "greater desert rune",
     "greater iron rune",
     "greater rune of ward",
@@ -246,6 +255,7 @@
     "heavy frost",
     "heavy swing",
     "heft",
+    "heightened curse",
     "helmet",
     "her declaration",
     "herald of ice",
@@ -290,6 +300,7 @@
     "life leech",
     "life leech i",
     "life leech iii",
+    "life remnants",
     "living lightning",
     "living lightning ii",
     "long fuse",
@@ -427,7 +438,10 @@
     "sacrifice of flesh",
     "sand in the eyes",
     "sands of time",
+    "sanguimancy",
     "sanguimantic rituals",
+    "sanguine tides",
+    "sapphire",
     "sapphire ring",
     "saqawal's rune of the sky",
     "savage fury",
@@ -547,6 +561,7 @@
     "vitality",
     "vitality i",
     "vitality ii",
+    "vitality siphon",
     "vivid stampede",
     "voices",
     "voices:",
@@ -555,6 +570,7 @@
     "vulgar methods",
     "warm blooded",
     "weapon",
+    "whispers of the flesh",
     "wild protector",
     "wildwood persistence",
     "wind dancer",
@@ -895,11 +911,25 @@
       "source": "https://poe2db.tw/us/Blackflame_Covenant"
     },
     {
+      "name": "Blasphemy",
+      "type": "Skill gem",
+      "description": "Turn socketed Curse skills into vile Auras, applying their effects to all nearby enemies.",
+      "image": "/images/game-tooltips/blasphemy.webp",
+      "source": "https://poe2db.tw/us/Blasphemy"
+    },
+    {
       "name": "Blazing Critical",
       "type": "Support gem",
       "description": "Supports Skills you use yourself which Hit enemies. Critical Hits with Supported Skills imbue all of your Attacks with Fire damage for a duration.",
       "image": "/images/game-tooltips/blazing-critical.webp",
       "source": "https://poe2db.tw/us/Blazing_Critical"
+    },
+    {
+      "name": "Bleed on Critical Chance",
+      "type": "Ascendancy passive",
+      "description": "15% chance to inflict Bleeding on Critical Hit",
+      "image": "/images/game-tooltips/bleed-on-critical-chance.webp",
+      "source": "https://poe2db.tw/us/Bleed_on_Critical_Chance"
     },
     {
       "name": "Blind I",
@@ -909,11 +939,24 @@
       "source": "https://poe2db.tw/us/Blind_I"
     },
     {
+      "name": "Blood Barbs",
+      "type": "Ascendancy passive",
+      "description": "Elemental Damage also Contributes to Bleeding Magnitude\nBleeding you inflict on Cursed targets is Aggravated",
+      "image": "/images/game-tooltips/blood-barbs.webp",
+      "source": "https://poe2db.tw/us/Blood_Barbs"
+    },
+    {
       "name": "Blood Boil",
       "type": "Skill gem",
       "description": "Enemies in your Presence accumulate blood boils periodically. When they die, the boils pop applying Corrupted Blood to enemies near them.\nCorrupted Blood deals 2% of slain Enemy's maximum Life as Physical damage per second",
       "image": "/images/game-tooltips/blood-boil.webp",
       "source": "https://poe2db.tw/us/Blood_Boil"
+    },
+    {
+      "name": "Blood Mage",
+      "type": "Ascendancy class",
+      "description": "Witch ascendancy\nSanguimancy: Grants Life Remnants, and Skills gain a Base Life Cost equal to Base Mana Cost\nCrimson Power: Gain additional maximum Life equal to 100% of the Item Energy Shield on Equipped Body Armour\nGrasping Wounds: 25% of Life Loss from Hits is prevented, then that much Life is lost over 4 seconds instead\nBlood Barbs: Elemental Damage also Contributes to Bleeding Magnitude\nWhispers of the Flesh: Targets Cursed by you have 100% reduced Life Regeneration Rate and at least 15% of Life Reserved",
+      "source": "https://poe2db.tw/us/Blood_Mage"
     },
     {
       "name": "Blood Magic",
@@ -1215,6 +1258,19 @@
       "source": "https://poe2db.tw/us/Crescendo_I"
     },
     {
+      "name": "Crimson Power",
+      "type": "Ascendancy passive",
+      "description": "Gain additional maximum Life equal to 100% of the Item Energy Shield on Equipped Body Armour",
+      "image": "/images/game-tooltips/crimson-power.webp",
+      "source": "https://poe2db.tw/us/Crimson_Power"
+    },
+    {
+      "name": "Critical Exploit",
+      "type": "Passive skill",
+      "description": "25% increased Critical Hit Chance",
+      "source": "https://poe2db.tw/us/Critical_Exploit"
+    },
+    {
       "name": "Critical Strike",
       "type": "Passive skill",
       "description": "Chance to Hit with Attacks can exceed 100%Gain additional Critical Hit Chance equal to 25% of excess chance to Hit with Attacks",
@@ -1464,6 +1520,13 @@
       "source": "https://poe2db.tw/us/Enduring_Deflection"
     },
     {
+      "name": "Enfeeble",
+      "type": "Skill gem",
+      "description": "Curse all targets in an area after a short delay, making them deal less damage.",
+      "image": "/images/game-tooltips/enfeeble.webp",
+      "source": "https://poe2db.tw/us/Enfeeble"
+    },
+    {
       "name": "Enhanced Barrier",
       "type": "Passive skill",
       "description": "25% increased maximum Energy Shield\n5% of Maximum Life Converted to Energy Shield",
@@ -1701,11 +1764,24 @@
       "source": "https://poe2db.tw/us/Glaciation"
     },
     {
+      "name": "Gore Spike",
+      "type": "Ascendancy passive",
+      "description": "1% increased Critical Damage Bonus per 50 current Life",
+      "source": "https://poe2db.tw/us/Gore_Spike"
+    },
+    {
       "name": "Grace of the Ancestors",
       "type": "Passive skill",
       "description": "10% increased Attack Speed\nEvery Rage also grants 1% increased Evasion Rating",
       "image": "/images/game-tooltips/grace-of-the-ancestors.webp",
       "source": "https://poe2db.tw/us/Grace_of_the_Ancestors"
+    },
+    {
+      "name": "Grasping Wounds",
+      "type": "Ascendancy passive",
+      "description": "25% of Life Loss from Hits is prevented, then that much Life is lost over 4 seconds instead",
+      "image": "/images/game-tooltips/grasping-wounds.webp",
+      "source": "https://poe2db.tw/us/Grasping_Wounds"
     },
     {
       "name": "Greater Desert Rune",
@@ -1790,6 +1866,13 @@
       "description": "Supports Skills which deal Damage, increasing the maximum Physical Damage of their Hits.\nSupported Skills deal 30% more Maximum Physical Hit Damage",
       "image": "/images/game-tooltips/heft.webp",
       "source": "https://poe2db.tw/us/Heft"
+    },
+    {
+      "name": "Heightened Curse",
+      "type": "Support gem",
+      "description": "Supports Curse Skills, magnifying their power.",
+      "image": "/images/game-tooltips/heightened-curse.webp",
+      "source": "https://poe2db.tw/us/Heightened_Curse"
     },
     {
       "name": "Her Declaration",
@@ -2036,6 +2119,13 @@
       "source": "https://poe2db.tw/us/Life_Leech_I"
     },
     {
+      "name": "Life Remnants",
+      "type": "Skill gem",
+      "description": "Drink the blood of your enemies to restore your Life. While active, enemies you kill have a chance to spawn a Life Remnant, and Hitting a target spawns a Life Remnant every few seconds. Picking up a Life Remnant grants you Life which can Overflow maximum Life.",
+      "image": "/images/game-tooltips/life-remnants.webp",
+      "source": "https://poe2db.tw/us/Life_Remnants"
+    },
+    {
       "name": "Living Lightning",
       "type": "Support gem",
       "description": "Supports Skills which cause Damaging Hits. Living Lightning Minions are created when dealing Lightning damage with Supported Skills - bundles of living electricity that target nearby enemies with Chaining Attacks. Enemies will not directly engage these Minions, and can pass through them. Does not modify skills used by Minions.",
@@ -2203,7 +2293,7 @@
       "source": "https://poe2db.tw/us/Morior_Invictus"
     },
     {
-      "name": "Mórrigan's Insight",
+      "name": "Morrigan's Insight",
       "type": "Support gem",
       "description": "Supports any skill that Hits enemies, causing them to deal more damage and trigger Nature's Exchange when consuming Freeze on enemies. Cannot support skills that Consume Freeze.",
       "image": "/images/game-tooltips/morrigan-s-insight.webp",
@@ -2767,11 +2857,31 @@
       "source": "https://poe2db.tw/us/Sands_of_Time"
     },
     {
+      "name": "Sanguimancy",
+      "type": "Ascendancy passive",
+      "description": "Grants Skill: Life Remnants\nSkills gain a Base Life Cost equal to Base Mana Cost",
+      "image": "/images/game-tooltips/sanguimancy.webp",
+      "source": "https://poe2db.tw/us/Sanguimancy"
+    },
+    {
       "name": "Sanguimantic Rituals",
       "type": "Passive skill",
       "description": "Regenerate 1% of maximum Life per second\nArcane Surge grants more Life Regeneration Rate instead of Mana Regeneration Rate",
       "image": "/images/game-tooltips/sanguimantic-rituals.webp",
       "source": "https://poe2db.tw/us/Sanguimantic_Rituals"
+    },
+    {
+      "name": "Sanguine Tides",
+      "type": "Ascendancy passive",
+      "description": "Flasks do not recover Life\nGain 1 Life Flask charge per 2% of Life spent\nWhile a Life Flask is at full charges, consume 40% of its charges to gain 1% of Damage as Physical Damage per charge consumed for 5 seconds",
+      "source": "https://poe2db.tw/us/Sanguine_Tides"
+    },
+    {
+      "name": "Sapphire",
+      "type": "Jewel",
+      "description": "Place into an allocated Jewel Socket on the Passive Skill Tree.",
+      "image": "/images/game-tooltips/sapphire.webp",
+      "source": "https://poe2db.tw/us/Sapphire"
     },
     {
       "name": "Sapphire Ring",
@@ -3498,6 +3608,12 @@
       "source": "https://poe2db.tw/us/Vitality_I"
     },
     {
+      "name": "Vitality Siphon",
+      "type": "Ascendancy passive",
+      "description": "Leech 20% of Spell Damage as Life",
+      "source": "https://poe2db.tw/us/Vitality_Siphon"
+    },
+    {
       "name": "Vivid Stampede",
       "type": "Skill gem",
       "description": "Call upon Spirits of the Stag, sending them leaping forward. Each Stag releases a damaging shockwave each time it lands, and any Stags that travel the maximum possible distance also leave behind Shocked Ground.",
@@ -3538,6 +3654,13 @@
       "description": "Supports Persistent Buff Skills, causing Freeze applied to you to last for a shorter duration while the Supported Skill is active.",
       "image": "/images/game-tooltips/warm-blooded.webp",
       "source": "https://poe2db.tw/us/Warm_Blooded"
+    },
+    {
+      "name": "Whispers of the Flesh",
+      "type": "Ascendancy passive",
+      "description": "Targets Cursed by you have 100% reduced Life Regeneration Rate\nTargets Cursed by you have at least 15% of Life Reserved",
+      "image": "/images/game-tooltips/whispers-of-the-flesh.webp",
+      "source": "https://poe2db.tw/us/Whispers_of_the_Flesh"
     },
     {
       "name": "Wild Protector",

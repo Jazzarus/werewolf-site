@@ -56,6 +56,10 @@ const pageVideos: Record<string, { id: string; title: string }> = {
     id: "nRvd9SFSj0A",
     title: "Pathfinder Werewolf guide video",
   },
+  "/werewolf/blood-mage": {
+    id: "72yBfVPf3XM",
+    title: "Blood Mage Werewolf guide video",
+  },
 };
 
 /**
